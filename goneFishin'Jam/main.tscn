@@ -1,3 +1,11 @@
 [gd_scene format=3 uid="uid://2ohq8yurtaoa"]
 
+[ext_resource type="Script" uid="uid://cr32n31yd0p0y" path="res://main.gd" id="1_ig7tw"]
+
 [node name="Main" type="Node2D" unique_id=2069766624]
+script = ExtResource("1_ig7tw")
+
+[node name="Label" type="Label" parent="." unique_id=399865782]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "gone fishin"
