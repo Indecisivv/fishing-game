@@ -1,0 +1,131 @@
+[gd_scene format=3 uid="uid://o6c5soab566p"]
+
+[ext_resource type="Script" uid="uid://cmpbu37xcffdu" path="res://Scenes & Scripts/intensity_bar.gd" id="1_oa1dk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5ffqw"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.1, 0.1, 0.1, 0.6)
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eq7vg"]
+content_margin_left = 2.0
+content_margin_top = 2.0
+content_margin_right = 2.0
+content_margin_bottom = 2.0
+bg_color = Color(0.42352942, 0.42352942, 0.42352942, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+corner_detail = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_87xt4"]
+content_margin_left = 2.0
+content_margin_top = 2.0
+content_margin_right = 2.0
+content_margin_bottom = 2.0
+bg_color = Color(0.13725491, 0.8039216, 0, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+corner_detail = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uorxi"]
+content_margin_left = 2.0
+content_margin_top = 2.0
+content_margin_right = 2.0
+content_margin_bottom = 2.0
+bg_color = Color(0.8849404, 0.8849406, 0, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+corner_detail = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wiyw8"]
+content_margin_left = 2.0
+content_margin_top = 2.0
+content_margin_right = 2.0
+content_margin_bottom = 2.0
+bg_color = Color(0.80365294, 0, 0.06976878, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+corner_detail = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6n3d1"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.12225223, 0.12225223, 0.12225223, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[node name="IntensityBar" type="CanvasLayer" unique_id=1808180070 node_paths=PackedStringArray("progress_bars")]
+script = ExtResource("1_oa1dk")
+progress_bars = [NodePath("Panel/ProgressBar"), NodePath("Panel/ProgressBar2"), NodePath("Panel/ProgressBar3")]
+fill_speed = 180
+
+[node name="Panel" type="Panel" parent="." unique_id=427081458]
+offset_left = -3.0
+offset_top = -3.0
+offset_right = 364.0
+offset_bottom = 31.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_5ffqw")
+
+[node name="ProgressBar" type="ProgressBar" parent="Panel" unique_id=980866977]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 3.0
+offset_right = 130.0
+offset_bottom = 30.0
+theme_override_styles/background = SubResource("StyleBoxFlat_eq7vg")
+theme_override_styles/fill = SubResource("StyleBoxFlat_87xt4")
+show_percentage = false
+
+[node name="ProgressBar2" type="ProgressBar" parent="Panel" unique_id=1481861344]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 3.0
+offset_right = 247.0
+offset_bottom = 30.0
+theme_override_styles/background = SubResource("StyleBoxFlat_eq7vg")
+theme_override_styles/fill = SubResource("StyleBoxFlat_uorxi")
+show_percentage = false
+
+[node name="ProgressBar3" type="ProgressBar" parent="Panel" unique_id=1079119738]
+layout_mode = 0
+offset_left = 237.0
+offset_top = 3.0
+offset_right = 364.0
+offset_bottom = 30.0
+theme_override_styles/background = SubResource("StyleBoxFlat_eq7vg")
+theme_override_styles/fill = SubResource("StyleBoxFlat_wiyw8")
+show_percentage = false
+
+[node name="Border1" type="Panel" parent="." unique_id=1793701327]
+offset_left = 115.0
+offset_top = -6.0
+offset_right = 121.0
+offset_bottom = 34.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_6n3d1")
+
+[node name="Border2" type="Panel" parent="." unique_id=2080696988]
+offset_left = 233.0
+offset_top = -6.0
+offset_right = 239.0
+offset_bottom = 34.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_6n3d1")
