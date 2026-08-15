@@ -1,0 +1,17 @@
+TestCharacter3: test timeline 3
+Player: test timeline 3
+[wait time="0.1" hide_text="false"]
+set {is_making_choice} = true
+- correct
+	set {is_making_choice} = false
+	TestCharacter3: test
+	set {is_tdate_success} = true
+- wrong
+	set {is_making_choice} = false
+	TestCharacter3: timeline
+	set {is_tdate_success} = false
+- wrong
+	set {is_making_choice} = false
+	TestCharacter3: three
+	set {is_tdate_success} = false
+[signal arg="scene_end"]

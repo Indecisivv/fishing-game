@@ -23,10 +23,14 @@ Dialogic="*uid://ds2q0uclmolvu"
 
 directories/dch_directory={
 "Player": "res://Characters/Player.dch",
-"TestCharacter": "res://Characters/TestCharacter.dch"
+"TestCharacter": "res://Characters/TestCharacter.dch",
+"TestCharacter2": "res://Characters/TestCharacter2.dch",
+"TestCharacter3": "res://Characters/TestCharacter3.dch"
 }
 directories/dtl_directory={
-"TestTimeline": "res://Timelines/TestTimeline.dtl"
+"TestTimeline": "res://Timelines/TestTimeline.dtl",
+"TestTimeline2": "res://Timelines/TestTimeline2.dtl",
+"TestTimeline3": "res://Timelines/TestTimeline3.dtl"
 }
 layout/style_directory={
 "": "res://Styles/SmartphoneStyle.tres",
@@ -67,7 +71,10 @@ audio/channel_defaults={
 }
 }
 variables={
-"is_making_choice": false
+"is_fdate_success": false,
+"is_making_choice": false,
+"is_sdate_success": false,
+"is_tdate_success": false
 }
 
 [display]

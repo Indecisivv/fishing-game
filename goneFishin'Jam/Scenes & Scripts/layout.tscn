@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://dv7gptjhcr8yk" path="res://Scenes & Scripts/layout.gd" id="1_hcp3l"]
 [ext_resource type="Script" uid="uid://drhfq6rmdeuri" path="res://addons/dialogic/Modules/Text/node_dialog_text.gd" id="2_tupbf"]
-[ext_resource type="Script" uid="uid://vis2wg0x55f0" path="res://Scenes & Scripts/dialogic_node_choice_button.gd" id="3_5cfvp"]
 [ext_resource type="Script" uid="uid://43sgyyydvin" path="res://Scenes & Scripts/node_choice_button.gd" id="3_tupbf"]
 [ext_resource type="PackedScene" uid="uid://o6c5soab566p" path="res://Scenes & Scripts/intensity_bar.tscn" id="4_o0gdq"]
 
@@ -134,7 +133,7 @@ alignment = 1
 layout_mode = 2
 disabled = true
 text = "Button A"
-script = ExtResource("3_5cfvp")
+script = ExtResource("3_tupbf")
 choice_index = 1
 
 [node name="DialogicNode_ChoiceButton2" type="Button" parent="Phone Screen/Choices" unique_id=1388677467]

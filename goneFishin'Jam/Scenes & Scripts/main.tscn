@@ -1,11 +1,46 @@
 [gd_scene format=3 uid="uid://2ohq8yurtaoa"]
 
 [ext_resource type="Script" uid="uid://cr32n31yd0p0y" path="res://Scenes & Scripts/main.gd" id="1_yt7ni"]
+[ext_resource type="PackedScene" uid="uid://d2bbm15diywb" path="res://Scenes & Scripts/people_near_you.tscn" id="2_0y2iw"]
+[ext_resource type="PackedScene" uid="uid://brsrvlywkb56f" path="res://Scenes & Scripts/main_menu.tscn" id="2_dbmlg"]
+[ext_resource type="PackedScene" uid="uid://rib6qm1aode3" path="res://Scenes & Scripts/date_time.tscn" id="3_dbmlg"]
+[ext_resource type="PackedScene" uid="uid://dxgnjgw3v1eh" path="res://Scenes & Scripts/date_end.tscn" id="5_qxe4v"]
+[ext_resource type="PackedScene" uid="uid://bppwvybe2yrlr" path="res://Scenes & Scripts/game_end_screen.tscn" id="5_xvj0e"]
 
-[node name="Main" type="Node2D" unique_id=2069766624]
+[node name="Main" type="Node2D" unique_id=2069766624 node_paths=PackedStringArray("scn_main_menu", "scn_people_near_you", "scn_date_time", "scn_date_end", "scn_game_end")]
 script = ExtResource("1_yt7ni")
+scn_main_menu = NodePath("Scenes/Main Menu")
+scn_people_near_you = NodePath("Scenes/PeopleNearYou")
+scn_date_time = NodePath("Scenes/DateTime")
+scn_date_end = NodePath("Scenes/DateEnd")
+scn_game_end = NodePath("Scenes/GameEndScreen")
+num_total_chars = 3
 
 [node name="Label" type="Label" parent="." unique_id=399865782]
 offset_right = 40.0
 offset_bottom = 23.0
 text = "gone fishin"
+
+[node name="Scenes" type="Node" parent="." unique_id=529808458]
+
+[node name="Main Menu" parent="Scenes" unique_id=833144508 instance=ExtResource("2_dbmlg")]
+
+[node name="PeopleNearYou" parent="Scenes" unique_id=1980871945 instance=ExtResource("2_0y2iw")]
+visible = false
+offset_left = 645.0
+offset_right = 645.0
+
+[node name="DateTime" parent="Scenes" unique_id=445802981 instance=ExtResource("3_dbmlg")]
+visible = false
+
+[node name="DateEnd" parent="Scenes" unique_id=64780911 instance=ExtResource("5_qxe4v")]
+visible = false
+
+[node name="GameEndScreen" parent="Scenes" unique_id=2012399081 instance=ExtResource("5_xvj0e")]
+visible = false
+
+[connection signal="game_started" from="Scenes/Main Menu" to="." method="_on_game_started"]
+[connection signal="all_chars_dated" from="Scenes/PeopleNearYou" to="." method="_on_all_chars_dated"]
+[connection signal="date_selected" from="Scenes/PeopleNearYou" to="." method="_on_date_selected"]
+[connection signal="on_retry" from="Scenes/DateEnd" to="." method="_on_date_selected"]
+[connection signal="on_return_to_main_menu" from="Scenes/DateEnd" to="." method="_on_return_to_main_menu"]

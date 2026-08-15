@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://bppwvybe2yrlr"]
+
+[ext_resource type="Script" uid="uid://de1p6twb0ph2t" path="res://Scenes & Scripts/game_end_screen.gd" id="1_gc2gg"]
+[ext_resource type="Texture2D" uid="uid://7dn71mtwfnev" path="res://icon.svg" id="1_r3ywd"]
+
+[node name="GameEndScreen" type="Control" unique_id=2012399081 node_paths=PackedStringArray("end_text")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gc2gg")
+end_text = NodePath("Label")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1491099701]
+layout_mode = 0
+offset_left = 405.0
+offset_right = 1484.0
+offset_bottom = 1079.0
+texture = ExtResource("1_r3ywd")
+
+[node name="Label" type="Label" parent="." unique_id=428364242]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 99.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 72
+text = "GAME END TEXT"
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://dxgnjgw3v1eh"]
+
+[ext_resource type="Script" uid="uid://p6xurxhehbwg" path="res://Scenes & Scripts/date_end.gd" id="1_eyl03"]
+[ext_resource type="Texture2D" uid="uid://7dn71mtwfnev" path="res://icon.svg" id="1_jpp7j"]
+
+[node name="DateEnd" type="Control" unique_id=64780911]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_eyl03")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=120395961]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -197.0
+offset_top = -197.0
+offset_right = 197.0
+offset_bottom = 197.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_jpp7j")
+
+[node name="Label" type="Label" parent="." unique_id=262392949]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 233.0
+offset_bottom = 256.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 48
+text = "SAMPLE TEXT"
+horizontal_alignment = 1
+
+[node name="Retry" type="Button" parent="." unique_id=843440041]
+layout_mode = 0
+offset_left = 915.0
+offset_top = 759.0
+offset_right = 1019.0
+offset_bottom = 812.0
+theme_override_font_sizes/font_size = 32
+text = "RETRY"
+
+[node name="MainMenu" type="Button" parent="." unique_id=90968296]
+layout_mode = 0
+offset_left = 880.0
+offset_top = 830.0
+offset_right = 1077.0
+offset_bottom = 883.0
+theme_override_font_sizes/font_size = 32
+text = "MAIN MENU"
+
+[connection signal="pressed" from="Retry" to="." method="on_retry_button_pressed"]
+[connection signal="pressed" from="MainMenu" to="." method="on_main_menu_button_pressed"]
