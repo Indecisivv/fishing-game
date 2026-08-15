@@ -1,15 +1,18 @@
-extends CanvasLayer
+extends Panel
 
 @export var progress_bars : Array[ProgressBar] # This contains references to the progress bar nodes.
 @export var fill_speed : int 				   # This decides how fast the progress bars fill up.
 
 # These fields are for handling the progress bars.
-var index : int = 0
+var index : int = -1
 var direction : int = 1
 
 # I call the methods in _physics_process() to avoid any calculation bugs. Not sure if it does anything,
 # but I figure it's good practice.
 func _physics_process(delta: float) -> void:
+	if !Dialogic.VAR.is_making_choice:
+		return
+	
 	if Input.is_action_pressed("dialogic_default_action"):
 		update_progress_bars(delta)
 	if Input.is_action_just_released("dialogic_default_action"):

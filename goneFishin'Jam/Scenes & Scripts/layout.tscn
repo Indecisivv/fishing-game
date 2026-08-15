@@ -1,0 +1,151 @@
+[gd_scene format=3 uid="uid://c1qm0fumjbi5i"]
+
+[ext_resource type="Script" uid="uid://dv7gptjhcr8yk" path="res://Scenes & Scripts/layout.gd" id="1_hcp3l"]
+[ext_resource type="Script" uid="uid://drhfq6rmdeuri" path="res://addons/dialogic/Modules/Text/node_dialog_text.gd" id="2_tupbf"]
+[ext_resource type="Script" uid="uid://43sgyyydvin" path="res://Scenes & Scripts/node_choice_button.gd" id="3_tupbf"]
+[ext_resource type="PackedScene" uid="uid://o6c5soab566p" path="res://Scenes & Scripts/intensity_bar.tscn" id="4_o0gdq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hcp3l"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.5729883, 0.5729883, 0.5729883, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tupbf"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 15.0
+bg_color = Color(0.972549, 0.972549, 0.972549, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_blend = true
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_e2hbn"]
+
+[node name="Layout" type="CanvasLayer" unique_id=816932843]
+script = ExtResource("1_hcp3l")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2141325191]
+offset_left = 119.0
+offset_right = 599.0
+offset_bottom = 719.0
+color = Color(0, 0, 0, 1)
+
+[node name="Phone Screen" type="Panel" parent="." unique_id=222034440]
+offset_left = 129.0
+offset_top = 10.0
+offset_right = 589.0
+offset_bottom = 710.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_hcp3l")
+
+[node name="Contact Name" type="Label" parent="Phone Screen" unique_id=1552404277]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -93.5
+offset_top = 99.0
+offset_right = 93.5
+offset_bottom = 133.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.04755766, 0.047557645, 0.047557645, 1)
+theme_override_font_sizes/font_size = 24
+text = "CONTACT NAME"
+
+[node name="Scroll" type="ScrollContainer" parent="Phone Screen" unique_id=768104273]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 13.0
+offset_top = 205.0
+offset_right = 445.0
+offset_bottom = 655.0
+horizontal_scroll_mode = 0
+
+[node name="MessageList" type="VBoxContainer" parent="Phone Screen/Scroll" unique_id=983361881]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 10
+
+[node name="DialogText" type="RichTextLabel" parent="Phone Screen/Scroll/MessageList" unique_id=1810220519 node_paths=PackedStringArray("textbox_root")]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/default_color = Color(0.11858138, 0.11858138, 0.11858138, 1)
+theme_override_font_sizes/normal_font_size = 10
+theme_override_styles/normal = SubResource("StyleBoxFlat_tupbf")
+bbcode_enabled = true
+text = "Here is some sample text"
+fit_content = true
+scroll_active = false
+script = ExtResource("2_tupbf")
+textbox_root = NodePath(".")
+metadata/_custom_type_script = "uid://drhfq6rmdeuri"
+
+[node name="Time" type="Label" parent="Phone Screen/Scroll/MessageList/DialogText" unique_id=1783809199]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="TextureRect" type="TextureRect" parent="Phone Screen" unique_id=654754497]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 13.0
+offset_right = 57.0
+offset_bottom = 53.0
+scale = Vector2(3, 3)
+texture = SubResource("PlaceholderTexture2D_e2hbn")
+
+[node name="Choices" type="HBoxContainer" parent="Phone Screen" unique_id=1408589836]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 14.0
+offset_top = 662.0
+offset_right = 442.0
+offset_bottom = 693.0
+size_flags_horizontal = 6
+size_flags_vertical = 10
+theme_override_constants/separation = 42
+alignment = 1
+
+[node name="DialogicNode_ChoiceButton" type="Button" parent="Phone Screen/Choices" unique_id=1303073598]
+layout_mode = 2
+disabled = true
+text = "Button A"
+script = ExtResource("3_tupbf")
+
+[node name="DialogicNode_ChoiceButton2" type="Button" parent="Phone Screen/Choices" unique_id=1388677467]
+layout_mode = 2
+disabled = true
+text = "Button B"
+script = ExtResource("3_tupbf")
+
+[node name="DialogicNode_ChoiceButton3" type="Button" parent="Phone Screen/Choices" unique_id=1251654595]
+layout_mode = 2
+disabled = true
+text = "Button C"
+script = ExtResource("3_tupbf")
+
+[node name="IntensityBar" parent="." unique_id=764532731 instance=ExtResource("4_o0gdq")]
+offset_left = 81.0
+offset_top = 716.0
+offset_right = 448.0
+offset_bottom = 750.0
+
+[connection signal="finished_revealing_text" from="Phone Screen/Scroll/MessageList/DialogText" to="." method="_on_dialog_text_finished_revealing_text"]
+[connection signal="started_revealing_text" from="Phone Screen/Scroll/MessageList/DialogText" to="." method="_on_dialog_text_started_revealing_text"]

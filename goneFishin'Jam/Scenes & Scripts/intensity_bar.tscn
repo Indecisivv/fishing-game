@@ -74,19 +74,18 @@ corner_radius_bottom_right = 3
 corner_radius_bottom_left = 3
 corner_detail = 5
 
-[node name="IntensityBar" type="CanvasLayer" unique_id=1808180070 node_paths=PackedStringArray("progress_bars")]
+[node name="IntensityBar" type="Panel" unique_id=764532731 node_paths=PackedStringArray("progress_bars")]
+offset_left = 3.0
+offset_top = 369.0
+offset_right = 370.0
+offset_bottom = 403.0
+rotation = 4.712389
+theme_override_styles/panel = SubResource("StyleBoxFlat_5ffqw")
 script = ExtResource("1_oa1dk")
-progress_bars = [NodePath("Panel/ProgressBar"), NodePath("Panel/ProgressBar2"), NodePath("Panel/ProgressBar3")]
+progress_bars = [NodePath("ProgressBar"), NodePath("ProgressBar2"), NodePath("ProgressBar3")]
 fill_speed = 180
 
-[node name="Panel" type="Panel" parent="." unique_id=427081458]
-offset_left = -3.0
-offset_top = -3.0
-offset_right = 364.0
-offset_bottom = 31.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_5ffqw")
-
-[node name="ProgressBar" type="ProgressBar" parent="Panel" unique_id=980866977]
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=1310832246]
 layout_mode = 0
 offset_left = 3.0
 offset_top = 3.0
@@ -96,7 +95,7 @@ theme_override_styles/background = SubResource("StyleBoxFlat_eq7vg")
 theme_override_styles/fill = SubResource("StyleBoxFlat_87xt4")
 show_percentage = false
 
-[node name="ProgressBar2" type="ProgressBar" parent="Panel" unique_id=1481861344]
+[node name="ProgressBar2" type="ProgressBar" parent="." unique_id=566792184]
 layout_mode = 0
 offset_left = 120.0
 offset_top = 3.0
@@ -106,7 +105,7 @@ theme_override_styles/background = SubResource("StyleBoxFlat_eq7vg")
 theme_override_styles/fill = SubResource("StyleBoxFlat_uorxi")
 show_percentage = false
 
-[node name="ProgressBar3" type="ProgressBar" parent="Panel" unique_id=1079119738]
+[node name="ProgressBar3" type="ProgressBar" parent="." unique_id=1393958761]
 layout_mode = 0
 offset_left = 237.0
 offset_top = 3.0
@@ -116,16 +115,18 @@ theme_override_styles/background = SubResource("StyleBoxFlat_eq7vg")
 theme_override_styles/fill = SubResource("StyleBoxFlat_wiyw8")
 show_percentage = false
 
-[node name="Border1" type="Panel" parent="." unique_id=1793701327]
-offset_left = 115.0
-offset_top = -6.0
-offset_right = 121.0
-offset_bottom = 34.0
+[node name="Border1" type="Panel" parent="." unique_id=1115664015]
+layout_mode = 0
+offset_left = 118.0
+offset_top = -3.0
+offset_right = 124.0
+offset_bottom = 37.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_6n3d1")
 
-[node name="Border2" type="Panel" parent="." unique_id=2080696988]
-offset_left = 233.0
-offset_top = -6.0
-offset_right = 239.0
-offset_bottom = 34.0
+[node name="Border2" type="Panel" parent="." unique_id=255068922]
+layout_mode = 0
+offset_left = 236.0
+offset_top = -3.0
+offset_right = 242.0
+offset_bottom = 37.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_6n3d1")

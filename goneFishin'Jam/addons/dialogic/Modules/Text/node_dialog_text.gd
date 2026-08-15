@@ -27,7 +27,7 @@ var base_visible_characters := 0
 
 # The used speed per revealed character.
 # May be overwritten when syncing reveal speed to voice.
-var active_speed: float = 0.01
+var active_speed: float = 0.0
 
 var speed_counter: float = 0
 

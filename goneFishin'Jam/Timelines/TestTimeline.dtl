@@ -1,0 +1,16 @@
+Player: Text 1
+TestCharacter: Loooooooooooooooooooooooooooonnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnggggggggggggggggggggggggggggggggggggg Teeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeexxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxtttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
+Player: Text 2
+set {is_making_choice} = true
+- Correct Choice
+	set {is_making_choice} = false
+	TestCharacter: correct
+	Player: yaaayyy
+- Wrong Choice
+	set {is_making_choice} = false
+	TestCharacter: wrong choice
+	Player: noooo
+- Wrong Choice
+	set {is_making_choice} = false
+	TestCharacter: wrong choice
+	Player: noooo
