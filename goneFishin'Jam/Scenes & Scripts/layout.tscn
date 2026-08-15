@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dv7gptjhcr8yk" path="res://Scenes & Scripts/layout.gd" id="1_hcp3l"]
 [ext_resource type="Script" uid="uid://drhfq6rmdeuri" path="res://addons/dialogic/Modules/Text/node_dialog_text.gd" id="2_tupbf"]
+[ext_resource type="Script" uid="uid://vis2wg0x55f0" path="res://Scenes & Scripts/dialogic_node_choice_button.gd" id="3_5cfvp"]
 [ext_resource type="Script" uid="uid://43sgyyydvin" path="res://Scenes & Scripts/node_choice_button.gd" id="3_tupbf"]
 [ext_resource type="PackedScene" uid="uid://o6c5soab566p" path="res://Scenes & Scripts/intensity_bar.tscn" id="4_o0gdq"]
 
@@ -35,8 +36,14 @@ corner_radius_bottom_left = 10
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_e2hbn"]
 
-[node name="Layout" type="CanvasLayer" unique_id=816932843]
+[node name="Layout" type="CanvasLayer" unique_id=816932843 node_paths=PackedStringArray("dialog_text", "scroll_container", "message_list", "timestamp", "contact_name", "intensity_bar")]
 script = ExtResource("1_hcp3l")
+dialog_text = NodePath("Phone Screen/Scroll/MessageList/DialogText")
+scroll_container = NodePath("Phone Screen/Scroll")
+message_list = NodePath("Phone Screen/Scroll/MessageList")
+timestamp = NodePath("Phone Screen/Scroll/MessageList/DialogText/Time")
+contact_name = NodePath("Phone Screen/Contact Name")
+intensity_bar = NodePath("IntensityBar")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=2141325191]
 offset_left = 119.0
@@ -127,19 +134,22 @@ alignment = 1
 layout_mode = 2
 disabled = true
 text = "Button A"
-script = ExtResource("3_tupbf")
+script = ExtResource("3_5cfvp")
+choice_index = 1
 
 [node name="DialogicNode_ChoiceButton2" type="Button" parent="Phone Screen/Choices" unique_id=1388677467]
 layout_mode = 2
 disabled = true
 text = "Button B"
 script = ExtResource("3_tupbf")
+choice_index = 2
 
 [node name="DialogicNode_ChoiceButton3" type="Button" parent="Phone Screen/Choices" unique_id=1251654595]
 layout_mode = 2
 disabled = true
 text = "Button C"
 script = ExtResource("3_tupbf")
+choice_index = 3
 
 [node name="IntensityBar" parent="." unique_id=764532731 instance=ExtResource("4_o0gdq")]
 offset_left = 81.0

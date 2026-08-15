@@ -1,6 +1,10 @@
 Player: Text 1
 TestCharacter: Loooooooooooooooooooooooooooonnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnggggggggggggggggggggggggggggggggggggg Teeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeexxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxtttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
 Player: Text 2
+[wait time="0.1" hide_text="false"]
+# This wait is here so the player has a buffer between clicking to progress from Text 2 and clicking to activate the intensity bar
+# and selecting a dialogue choice. Without this, those two things happen simultaneously with a single click. Every time a timeline
+# reaches a point where the player has to make a choice, always add this Wait function.
 set {is_making_choice} = true
 - Correct Choice
 	set {is_making_choice} = false

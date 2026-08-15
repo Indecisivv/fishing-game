@@ -5,11 +5,12 @@ extends DialogicLayoutBase
 # dialogic tab, replace the layer with a custom preset, then select this scene.
 
 # These fields are references to child nodes, and are assigned in the _ready() function.
-var dialog_text      : DialogicNode_DialogText
-var scroll_container : ScrollContainer
-var message_list     : VBoxContainer
-var timestamp        : Label
-var contact_name     : Label
+@export var dialog_text      : DialogicNode_DialogText
+@export var scroll_container : ScrollContainer
+@export var message_list     : VBoxContainer
+@export var timestamp        : Label
+@export var contact_name     : Label
+@export var intensity_bar    : Panel
 
 # These fields are where information about dialogue will be stored so it can be displayed separately.
 var last_text         := ""
@@ -17,14 +18,6 @@ var last_text_size    := Vector2()
 var last_text_speaker :  DialogicCharacter = null
 var last_text_time    := ""
 
-# Calls on start
-func _ready() -> void:
-	dialog_text      = %DialogText
-	scroll_container = %Scroll
-	contact_name     = %"Contact Name"
-	timestamp    	 = dialog_text.get_node('Time')
-	message_list 	 = scroll_container.get_node('MessageList')
-	
 # The signal method for DialogText's started_revealing_text() signal.
 # The text bubble is already configured in the node.
 # This method displays sets the size of the chat bubble, its dialogue and timestamp, 
@@ -107,3 +100,5 @@ func add_message(text:String, size:Vector2, speaker_name:String, time:String) ->
 # This changes the contact name on the top of the screen.
 func set_contact_name(text:String) -> void: 
 	contact_name.text = text
+	
+	

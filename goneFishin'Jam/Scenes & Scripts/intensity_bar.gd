@@ -10,13 +10,7 @@ var direction : int = 1
 # I call the methods in _physics_process() to avoid any calculation bugs. Not sure if it does anything,
 # but I figure it's good practice.
 func _physics_process(delta: float) -> void:
-	if !Dialogic.VAR.is_making_choice:
-		return
-	
-	if Input.is_action_pressed("dialogic_default_action"):
-		update_progress_bars(delta)
-	if Input.is_action_just_released("dialogic_default_action"):
-		reset_progress_bars()
+	select_dialogue_choice(delta)
 
 # This makes the progress bars either go upwards or downwards. It takes in delta so the fill speed
 # remains consistent regardless of framerate.
@@ -45,3 +39,38 @@ func reset_progress_bars() -> void:
 	index = 0
 	for i in progress_bars.size():
 		progress_bars[i].value = progress_bars[i].min_value
+
+# Focuses on / selects a corresponding dialogue choice depending on the intensity bar's value.
+func select_dialogue_choice(delta:float) -> void:
+	# Accessing certain properties like VAR and dialogic_default_action can produce errors
+	# if they're done before Dialogic's autoloader is ready. This line ensures that it is ready
+	# before executing the rest of the method.
+	if not Dialogic.is_node_ready():
+		await Dialogic.ready
+	
+	if not Dialogic.VAR.is_making_choice:
+		return
+	
+	# Selects a choice to be focused on based on the index's value
+	if Input.is_action_pressed("dialogic_default_action"):
+		match index: # This doesn't count as a nested if statement, right, Perry-sensei...?
+			0:
+				Dialogic.Choices.focus_choice(1)
+			1:
+				Dialogic.Choices.focus_choice(2)
+			2:
+				Dialogic.Choices.focus_choice(3)
+		
+		update_progress_bars(delta)
+	
+	# Selects a choice to be... selected... based on the index's value
+	if Input.is_action_just_released("dialogic_default_action"):
+		match index: # This doesn't count as a nested if statement, right, Perry-sensei...?
+			0:
+				Dialogic.Choices.select_choice(1)
+			1:
+				Dialogic.Choices.select_choice(2)
+			2:
+				Dialogic.Choices.select_choice(3)
+			
+		reset_progress_bars()

@@ -78,7 +78,7 @@ func _pressed():
 func _load_info(choice_info: Dictionary) -> void:
 	set_choice_text(choice_info.text)
 	visible = choice_info.visible
-	disabled = choice_info.disabled
+	disabled = true
 
 
 ## Called when the text changes.
