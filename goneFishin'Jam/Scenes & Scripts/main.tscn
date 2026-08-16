@@ -44,3 +44,4 @@ visible = false
 [connection signal="date_selected" from="Scenes/PeopleNearYou" to="." method="_on_date_selected"]
 [connection signal="on_retry" from="Scenes/DateEnd" to="." method="_on_date_selected"]
 [connection signal="on_return_to_main_menu" from="Scenes/DateEnd" to="." method="_on_return_to_main_menu"]
+[connection signal="restart_game" from="Scenes/GameEndScreen" to="." method="_on_game_restart"]

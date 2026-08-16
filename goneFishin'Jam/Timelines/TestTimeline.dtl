@@ -11,14 +11,17 @@ set {is_making_choice} = true
 	TestCharacter: correct
 	Player: yaaayyy
 	set {is_fdate_success} = true
+	set {is_date_success} = true
 - Wrong Choice
 	set {is_making_choice} = false
 	TestCharacter: wrong choice
 	Player: noooo
 	set {is_fdate_success} = false
+	set {is_date_success} = false
 - Wrong Choice
 	set {is_making_choice} = false
 	TestCharacter: wrong choice
 	Player: noooo
 	set {is_fdate_success} = false
+	set {is_date_success} = false
 [signal arg="scene_end"]

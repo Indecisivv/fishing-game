@@ -9,7 +9,12 @@ var index : int = 0
 
 func disable_button() -> void:
 	buttons[index].disabled = true
+	print(buttons[index].disabled)
 	check_buttons()
+
+func reset_all_buttons() -> void:
+	for i in buttons.size():
+		buttons[i].disabled = false
 
 func check_buttons() -> void:
 	for i in buttons.size():

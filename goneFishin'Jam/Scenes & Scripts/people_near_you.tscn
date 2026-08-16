@@ -18,7 +18,7 @@ layout_mode = 0
 offset_right = 696.0
 offset_bottom = 1072.0
 
-[node name="Button" type="Button" parent="." unique_id=410144046]
+[node name="MenuButton" type="Button" parent="." unique_id=410144046]
 layout_mode = 0
 offset_left = 16.0
 offset_top = 16.0
@@ -26,7 +26,7 @@ offset_right = 75.0
 offset_bottom = 75.0
 text = "ffl"
 
-[node name="Button2" type="Button" parent="." unique_id=1147789799]
+[node name="SettingsButton" type="Button" parent="." unique_id=1147789799]
 layout_mode = 0
 offset_left = 626.0
 offset_top = 10.0

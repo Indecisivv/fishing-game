@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://p6xurxhehbwg" path="res://Scenes & Scripts/date_end.gd" id="1_eyl03"]
 [ext_resource type="Texture2D" uid="uid://7dn71mtwfnev" path="res://icon.svg" id="1_jpp7j"]
 
-[node name="DateEnd" type="Control" unique_id=64780911]
+[node name="DateEnd" type="Control" unique_id=64780911 node_paths=PackedStringArray("date_end_text")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -11,6 +11,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_eyl03")
+date_end_text = NodePath("Label")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=120395961]
 layout_mode = 1

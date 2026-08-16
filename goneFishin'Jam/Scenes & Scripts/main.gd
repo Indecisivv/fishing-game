@@ -14,8 +14,9 @@ extends Node2D
 var timeline_uid : String
 
 # These properties are used to decide which ending CG the player gets.
-var wins         : Array[bool]
-var win_counter  : int = 0
+var wins            : Array[bool]
+var win_counter     : int = 0
+var all_chars_dated : bool
 
 # We declare the size of the wins array and connect our method to Dialogic signal.
 func _ready() -> void:
@@ -46,32 +47,47 @@ func _on_date_selected() -> void:
 func _on_dialogic_signal(argument:String) -> void:
 	if argument == "scene_end":
 		scn_people_near_you.disable_button()
-		scn_date_end.show() # TO-DO: Make the DateEnd scene display the appropriate text depending
-							# on whether or not the date was a success.
+		show_scn_date_end()
 
 # This method takes the user back to the main menu either from the date end screen or the game
 # end screen.
 func _on_return_to_main_menu() -> void:
 	scn_date_end.hide()
 	scn_game_end.hide()
-	scn_main_menu.show()
+	
+	if (all_chars_dated):
+		show_ending()
+	else:
+		scn_main_menu.show()
+
+# This method sets the all_chars_dated bool to true so the code knows to show the ending CG when the
+# user returns to the menu.
+func _on_all_chars_dated() -> void:
+	all_chars_dated = true
+
+# Signal method for restarting the game after receiving the ending.
+func _on_game_restart() -> void:
+	restart_game()
+
+# Method that shows the results of a date after it ends.
+func show_scn_date_end() -> void:
+	if Dialogic.VAR.is_date_success:
+		scn_date_end.set_date_text("Date Success!")
+	else:
+		scn_date_end.set_date_text("Date failure...")
+	
+	scn_date_end.show()
 
 # This method presents the player with the corresponding ending depending on how many characters they
 # successfully wooed.
-# TO-DO:
-# 	- Add a button for returning to the main menu
-# 	- Ensure that this screen is shown instead of date end if, upon the end of a timeline, all characters
-#     have been dated.
-func _on_all_chars_dated() -> void:
+func show_ending() -> void:
 	wins[0] = Dialogic.VAR.is_fdate_success
 	wins[1] = Dialogic.VAR.is_sdate_success
 	wins[2] = Dialogic.VAR.is_tdate_success
 	
 	for i in wins.size():
-		print(wins[i])
 		if wins[i]:
 			win_counter += 1
-			print(win_counter)
 	
 	if win_counter >= num_total_chars:
 		scn_game_end.set_end_text("You pulled everyone. Congrats!")
@@ -81,3 +97,19 @@ func _on_all_chars_dated() -> void:
 		scn_game_end.set_end_text("YOU FUMBLED EVERYONE")
 	
 	scn_game_end.show()
+
+# Resets all variables and scenes in the game
+func restart_game() -> void:
+	scn_main_menu.show()
+	scn_people_near_you.hide()
+	scn_date_time.hide()
+	scn_date_end.hide()
+	scn_game_end.hide()
+	
+	win_counter = 0
+	all_chars_dated = false
+	for i in wins.size():
+		wins[i] = false
+	
+	scn_people_near_you.reset_all_buttons()
+	

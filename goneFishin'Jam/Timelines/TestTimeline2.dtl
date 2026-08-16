@@ -6,13 +6,16 @@ set {is_making_choice} = true
 	set {is_making_choice} = false
 	TestCharacter2: test
 	set {is_sdate_success} = true
+	set {is_date_success} = true
 - wrong
 	set {is_making_choice} = false
 	TestCharacter2: timeline
 	set {is_sdate_success} = false
+	set {is_date_success} = false
 - wrong
 	set {is_making_choice} = false
 	TestCharacter2: 2
 	set {is_sdate_success} = false
+	set {is_date_success} = false
 TestCharacter3: 3
 [signal arg="scene_end"]

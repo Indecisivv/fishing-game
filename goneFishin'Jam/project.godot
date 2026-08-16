@@ -71,6 +71,7 @@ audio/channel_defaults={
 }
 }
 variables={
+"is_date_success": false,
 "is_fdate_success": false,
 "is_making_choice": false,
 "is_sdate_success": false,
