@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bppwvybe2yrlr"]
 
-[ext_resource type="Script" uid="uid://de1p6twb0ph2t" path="res://Scenes & Scripts/game_end_screen.gd" id="1_gc2gg"]
+[ext_resource type="Script" uid="uid://de1p6twb0ph2t" path="res://Scenes & Scripts/Game Scenes/game_end_screen.gd" id="1_gc2gg"]
 [ext_resource type="Texture2D" uid="uid://7dn71mtwfnev" path="res://icon.svg" id="1_r3ywd"]
 
 [node name="GameEndScreen" type="Control" unique_id=2012399081 node_paths=PackedStringArray("end_text")]

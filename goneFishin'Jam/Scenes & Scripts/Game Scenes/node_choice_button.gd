@@ -1,4 +1,4 @@
-class_name DialogicNode_ChoiceButton # This line always results in an error whenever I first launch 
+ # This line always results in an error whenever I first launch 
 									 # this project. Inexplicably, it is always fixed when I delete
 									 # the line, run the project, then type it back in. I...
 									 # I really don't know, man.

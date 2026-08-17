@@ -1,1 +1,0 @@
-extends DialogicNode_ChoiceButton

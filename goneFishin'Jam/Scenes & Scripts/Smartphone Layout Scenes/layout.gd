@@ -4,7 +4,7 @@ extends DialogicLayoutBase
 # This scene acts as a "style" template for Dialogic. To make it work, make an empty style template in the
 # dialogic tab, replace the layer with a custom preset, then select this scene.
 
-# These fields are references to child nodes, and are assigned in the _ready() function.
+# These fields are references to child nodes, and are assigned from the editor.
 @export var dialog_text      : DialogicNode_DialogText
 @export var scroll_container : ScrollContainer
 @export var message_list     : VBoxContainer
@@ -76,7 +76,7 @@ func get_message_size(text:String) -> Vector2:
 # This method adds a new text bubble with the corresponding text, size, time and position.
 # The text bubbles added are purely visual, and are separate from DialogText nodes.
 func add_message(text:String, size:Vector2, speaker_name:String, time:String) -> void:
-	var message: Control = load("res://Scenes & Scripts/message_panel.tscn").instantiate()
+	var message: Control = load("res://Scenes & Scripts/Smartphone Layout Scenes/message_panel.tscn").instantiate()
 	message_list.add_child(message)
 	message_list.move_child(message, -1)
 	

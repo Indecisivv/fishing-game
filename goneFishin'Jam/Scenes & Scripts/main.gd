@@ -2,13 +2,18 @@ extends Node2D
 
 ## This script acts as a listener and handles all the scene transitions.
 
-# These properties are all references to the different scenes in the game.
-@export var scn_main_menu       : Control
-@export var scn_people_near_you : Control
-@export var scn_date_time       : Control
-@export var scn_date_end        : Control
-@export var scn_game_end        : Control
-@export var num_total_chars     : int
+# These properties are all references to the different scenes and are assigned on ready.
+@onready var scn_main_menu       : Control = $"Scenes/Main Menu"
+@onready var scn_settings        : Control = $"Scenes/Settings"
+@onready var scn_credits         : Control = $"Scenes/Credits"
+@onready var scn_gallery         : Control = $"Scenes/Gallery"
+@onready var scn_people_near_you : Control = $"Scenes/Gameplay Scenes/PeopleNearYou"
+@onready var scn_texting_stage   : Control = $"Scenes/Gameplay Scenes/TextingStage"
+@onready var scn_date_end        : Control = $"Scenes/Gameplay Scenes/DateEnd"
+@onready var scn_game_end        : Control = $"Scenes/Gameplay Scenes/GameEndScreen"
+
+# The total number of dateable characters in the game. Assigned from the editor. 3 by default.
+@export var num_total_chars : int
 
 # This property is to specify which timeline will be loaded.
 var timeline_uid : String
@@ -23,10 +28,25 @@ func _ready() -> void:
 	Dialogic.signal_event.connect(_on_dialogic_signal)
 	wins.resize(num_total_chars)
 
+func _on_gallery_entered() -> void:
+	scn_main_menu.hide()
+	scn_gallery.show()
+
+func _on_settings_entered() -> void:
+	scn_main_menu.hide()
+	scn_settings.show()
+
+func _on_credits_entered() -> void:
+	scn_main_menu.hide()
+	scn_credits.show()
+
 # This method transitions from the main menu to the dating app.
 func _on_game_started() -> void:
+	FadeToBlackTransition.fade_to_black()
+	await FadeToBlackTransition.transition_finished
 	scn_main_menu.hide()
 	scn_people_near_you.show()
+	scn_people_near_you.enter_phone()
 
 # This method transitions from the dating app to the date. It loads a different timeline depending
 # on which character the player picks.
@@ -41,7 +61,8 @@ func _on_date_selected() -> void:
 			
 	scn_people_near_you.hide()
 	scn_date_end.hide()
-	scn_date_time.load_timeline(timeline_uid)
+	Dialogic.Styles.load_style("VisualNovelStyle")
+	scn_texting_stage.load_timeline(timeline_uid)
 
 # This method transitions from the date to the date end screen.
 func _on_dialogic_signal(argument:String) -> void:
@@ -49,9 +70,11 @@ func _on_dialogic_signal(argument:String) -> void:
 		scn_people_near_you.disable_button()
 		show_scn_date_end()
 
-# This method takes the user back to the main menu either from the date end screen or the game
-# end screen.
+# This method takes the user back to the main menu.
 func _on_return_to_main_menu() -> void:
+	scn_gallery.hide()
+	scn_settings.hide()
+	scn_credits.hide()
 	scn_date_end.hide()
 	scn_game_end.hide()
 	
@@ -102,7 +125,7 @@ func show_ending() -> void:
 func restart_game() -> void:
 	scn_main_menu.show()
 	scn_people_near_you.hide()
-	scn_date_time.hide()
+	scn_texting_stage.hide()
 	scn_date_end.hide()
 	scn_game_end.hide()
 	

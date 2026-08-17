@@ -1,47 +1,56 @@
 [gd_scene format=3 uid="uid://2ohq8yurtaoa"]
 
 [ext_resource type="Script" uid="uid://cr32n31yd0p0y" path="res://Scenes & Scripts/main.gd" id="1_yt7ni"]
-[ext_resource type="PackedScene" uid="uid://d2bbm15diywb" path="res://Scenes & Scripts/people_near_you.tscn" id="2_0y2iw"]
-[ext_resource type="PackedScene" uid="uid://brsrvlywkb56f" path="res://Scenes & Scripts/main_menu.tscn" id="2_dbmlg"]
-[ext_resource type="PackedScene" uid="uid://rib6qm1aode3" path="res://Scenes & Scripts/date_time.tscn" id="3_dbmlg"]
-[ext_resource type="PackedScene" uid="uid://dxgnjgw3v1eh" path="res://Scenes & Scripts/date_end.tscn" id="5_qxe4v"]
-[ext_resource type="PackedScene" uid="uid://bppwvybe2yrlr" path="res://Scenes & Scripts/game_end_screen.tscn" id="5_xvj0e"]
+[ext_resource type="PackedScene" uid="uid://d2bbm15diywb" path="res://Scenes & Scripts/Game Scenes/people_near_you.tscn" id="2_0y2iw"]
+[ext_resource type="PackedScene" uid="uid://brsrvlywkb56f" path="res://Scenes & Scripts/Game Scenes/main_menu.tscn" id="2_dbmlg"]
+[ext_resource type="PackedScene" uid="uid://bpdbtgij7y6x3" path="res://Scenes & Scripts/Game Scenes/settings.tscn" id="3_4ikto"]
+[ext_resource type="PackedScene" uid="uid://rib6qm1aode3" path="res://Scenes & Scripts/Game Scenes/texting_stage.tscn" id="3_dbmlg"]
+[ext_resource type="PackedScene" uid="uid://cdqkd21a24mai" path="res://Scenes & Scripts/Game Scenes/credits.tscn" id="4_pov6j"]
+[ext_resource type="PackedScene" uid="uid://b35mjjfq5w1om" path="res://Scenes & Scripts/Game Scenes/gallery.tscn" id="5_jrmb8"]
+[ext_resource type="PackedScene" uid="uid://dxgnjgw3v1eh" path="res://Scenes & Scripts/Game Scenes/date_end.tscn" id="5_qxe4v"]
+[ext_resource type="PackedScene" uid="uid://bppwvybe2yrlr" path="res://Scenes & Scripts/Game Scenes/game_end_screen.tscn" id="5_xvj0e"]
 
-[node name="Main" type="Node2D" unique_id=2069766624 node_paths=PackedStringArray("scn_main_menu", "scn_people_near_you", "scn_date_time", "scn_date_end", "scn_game_end")]
+[node name="Main" type="Node2D" unique_id=2069766624]
 script = ExtResource("1_yt7ni")
-scn_main_menu = NodePath("Scenes/Main Menu")
-scn_people_near_you = NodePath("Scenes/PeopleNearYou")
-scn_date_time = NodePath("Scenes/DateTime")
-scn_date_end = NodePath("Scenes/DateEnd")
-scn_game_end = NodePath("Scenes/GameEndScreen")
 num_total_chars = 3
-
-[node name="Label" type="Label" parent="." unique_id=399865782]
-offset_right = 40.0
-offset_bottom = 23.0
-text = "gone fishin"
 
 [node name="Scenes" type="Node" parent="." unique_id=529808458]
 
 [node name="Main Menu" parent="Scenes" unique_id=833144508 instance=ExtResource("2_dbmlg")]
 
-[node name="PeopleNearYou" parent="Scenes" unique_id=1980871945 instance=ExtResource("2_0y2iw")]
-visible = false
-offset_left = 645.0
-offset_right = 645.0
-
-[node name="DateTime" parent="Scenes" unique_id=445802981 instance=ExtResource("3_dbmlg")]
+[node name="Settings" parent="Scenes" unique_id=1674674967 instance=ExtResource("3_4ikto")]
 visible = false
 
-[node name="DateEnd" parent="Scenes" unique_id=64780911 instance=ExtResource("5_qxe4v")]
+[node name="Credits" parent="Scenes" unique_id=602286879 instance=ExtResource("4_pov6j")]
 visible = false
 
-[node name="GameEndScreen" parent="Scenes" unique_id=2012399081 instance=ExtResource("5_xvj0e")]
+[node name="Gallery" parent="Scenes" unique_id=442786049 instance=ExtResource("5_jrmb8")]
 visible = false
 
+[node name="Gameplay Scenes" type="Node" parent="Scenes" unique_id=689425113]
+
+[node name="PeopleNearYou" parent="Scenes/Gameplay Scenes" unique_id=1980871945 instance=ExtResource("2_0y2iw")]
+visible = false
+offset_right = 0.0
+
+[node name="TextingStage" parent="Scenes/Gameplay Scenes" unique_id=445802981 instance=ExtResource("3_dbmlg")]
+visible = false
+
+[node name="DateEnd" parent="Scenes/Gameplay Scenes" unique_id=64780911 instance=ExtResource("5_qxe4v")]
+visible = false
+
+[node name="GameEndScreen" parent="Scenes/Gameplay Scenes" unique_id=2012399081 instance=ExtResource("5_xvj0e")]
+visible = false
+
+[connection signal="credits_entered" from="Scenes/Main Menu" to="." method="_on_credits_entered"]
+[connection signal="gallery_entered" from="Scenes/Main Menu" to="." method="_on_gallery_entered"]
 [connection signal="game_started" from="Scenes/Main Menu" to="." method="_on_game_started"]
-[connection signal="all_chars_dated" from="Scenes/PeopleNearYou" to="." method="_on_all_chars_dated"]
-[connection signal="date_selected" from="Scenes/PeopleNearYou" to="." method="_on_date_selected"]
-[connection signal="on_retry" from="Scenes/DateEnd" to="." method="_on_date_selected"]
-[connection signal="on_return_to_main_menu" from="Scenes/DateEnd" to="." method="_on_return_to_main_menu"]
-[connection signal="restart_game" from="Scenes/GameEndScreen" to="." method="_on_game_restart"]
+[connection signal="settings_entered" from="Scenes/Main Menu" to="." method="_on_settings_entered"]
+[connection signal="return_to_menu" from="Scenes/Settings" to="." method="_on_return_to_main_menu"]
+[connection signal="return_to_menu" from="Scenes/Credits" to="." method="_on_return_to_main_menu"]
+[connection signal="return_to_menu" from="Scenes/Gallery" to="." method="_on_return_to_main_menu"]
+[connection signal="all_chars_dated" from="Scenes/Gameplay Scenes/PeopleNearYou" to="." method="_on_all_chars_dated"]
+[connection signal="date_selected" from="Scenes/Gameplay Scenes/PeopleNearYou" to="." method="_on_date_selected"]
+[connection signal="on_retry" from="Scenes/Gameplay Scenes/DateEnd" to="." method="_on_date_selected"]
+[connection signal="on_return_to_main_menu" from="Scenes/Gameplay Scenes/DateEnd" to="." method="_on_return_to_main_menu"]
+[connection signal="restart_game" from="Scenes/Gameplay Scenes/GameEndScreen" to="." method="_on_game_restart"]

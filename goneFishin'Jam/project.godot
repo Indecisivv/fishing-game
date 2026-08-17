@@ -33,10 +33,11 @@ directories/dtl_directory={
 "TestTimeline3": "res://Timelines/TestTimeline3.dtl"
 }
 layout/style_directory={
-"": "res://Styles/SmartphoneStyle.tres",
-"SmartphoneStyle": "res://Styles/SmartphoneStyle.tres"
+"": "res://Styles/Smartphone_Style.tres",
+"Smartphone_Style": "res://Styles/Smartphone_Style.tres",
+"VisualNovelStyle": "res://Styles/VisualNovelStyle.tres"
 }
-layout/style_list=["res://Styles/SmartphoneStyle.tres"]
+layout/style_list=["res://Styles/VisualNovelStyle.tres", "res://Styles/SmartphoneStyle.tres"]
 layout/default_style="res://Styles/SmartphoneStyle.tres"
 text/letter_speed=0.0
 text/initial_text_reveal_skippable=true
@@ -77,6 +78,7 @@ variables={
 "is_sdate_success": false,
 "is_tdate_success": false
 }
+glossary/default_case_sensitive=true
 
 [display]
 

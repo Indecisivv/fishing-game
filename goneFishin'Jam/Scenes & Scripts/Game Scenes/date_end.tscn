@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dxgnjgw3v1eh"]
 
-[ext_resource type="Script" uid="uid://p6xurxhehbwg" path="res://Scenes & Scripts/date_end.gd" id="1_eyl03"]
+[ext_resource type="Script" uid="uid://p6xurxhehbwg" path="res://Scenes & Scripts/Game Scenes/date_end.gd" id="1_eyl03"]
 [ext_resource type="Texture2D" uid="uid://7dn71mtwfnev" path="res://icon.svg" id="1_jpp7j"]
 
 [node name="DateEnd" type="Control" unique_id=64780911 node_paths=PackedStringArray("date_end_text")]

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://o6c5soab566p"]
 
-[ext_resource type="Script" uid="uid://cmpbu37xcffdu" path="res://Scenes & Scripts/intensity_bar.gd" id="1_oa1dk"]
+[ext_resource type="Script" uid="uid://cmpbu37xcffdu" path="res://Scenes & Scripts/Smartphone Layout Scenes/intensity_bar.gd" id="1_oa1dk"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5ffqw"]
 content_margin_left = 0.0
@@ -78,7 +78,7 @@ corner_detail = 5
 offset_left = 3.0
 offset_top = 369.0
 offset_right = 370.0
-offset_bottom = 403.0
+offset_bottom = 462.0
 rotation = 4.712389
 theme_override_styles/panel = SubResource("StyleBoxFlat_5ffqw")
 script = ExtResource("1_oa1dk")
@@ -87,46 +87,46 @@ fill_speed = 180
 
 [node name="ProgressBar" type="ProgressBar" parent="." unique_id=1310832246]
 layout_mode = 0
-offset_left = 3.0
+offset_left = 1.0
 offset_top = 3.0
-offset_right = 130.0
-offset_bottom = 30.0
+offset_right = 128.0
+offset_bottom = 88.99999
 theme_override_styles/background = SubResource("StyleBoxFlat_eq7vg")
 theme_override_styles/fill = SubResource("StyleBoxFlat_87xt4")
 show_percentage = false
 
 [node name="ProgressBar2" type="ProgressBar" parent="." unique_id=566792184]
 layout_mode = 0
-offset_left = 120.0
+offset_left = 118.0
 offset_top = 3.0
-offset_right = 247.0
-offset_bottom = 30.0
+offset_right = 245.0
+offset_bottom = 88.99999
 theme_override_styles/background = SubResource("StyleBoxFlat_eq7vg")
 theme_override_styles/fill = SubResource("StyleBoxFlat_uorxi")
 show_percentage = false
 
 [node name="ProgressBar3" type="ProgressBar" parent="." unique_id=1393958761]
 layout_mode = 0
-offset_left = 237.0
+offset_left = 235.0
 offset_top = 3.0
-offset_right = 364.0
-offset_bottom = 30.0
+offset_right = 362.0
+offset_bottom = 88.99999
 theme_override_styles/background = SubResource("StyleBoxFlat_eq7vg")
 theme_override_styles/fill = SubResource("StyleBoxFlat_wiyw8")
 show_percentage = false
 
 [node name="Border1" type="Panel" parent="." unique_id=1115664015]
 layout_mode = 0
-offset_left = 118.0
+offset_left = 116.0
 offset_top = -3.0
-offset_right = 124.0
-offset_bottom = 37.0
+offset_right = 122.0
+offset_bottom = 100.22106
 theme_override_styles/panel = SubResource("StyleBoxFlat_6n3d1")
 
 [node name="Border2" type="Panel" parent="." unique_id=255068922]
 layout_mode = 0
-offset_left = 236.0
+offset_left = 234.0
 offset_top = -3.0
-offset_right = 242.0
-offset_bottom = 37.0
+offset_right = 240.0
+offset_bottom = 97.398705
 theme_override_styles/panel = SubResource("StyleBoxFlat_6n3d1")
