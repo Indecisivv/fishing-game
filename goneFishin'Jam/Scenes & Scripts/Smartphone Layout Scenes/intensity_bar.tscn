@@ -116,6 +116,7 @@ theme_override_styles/fill = SubResource("StyleBoxFlat_wiyw8")
 show_percentage = false
 
 [node name="Border1" type="Panel" parent="." unique_id=1115664015]
+visible = false
 layout_mode = 0
 offset_left = 116.0
 offset_top = -3.0
@@ -124,6 +125,7 @@ offset_bottom = 100.22106
 theme_override_styles/panel = SubResource("StyleBoxFlat_6n3d1")
 
 [node name="Border2" type="Panel" parent="." unique_id=255068922]
+visible = false
 layout_mode = 0
 offset_left = 234.0
 offset_top = -3.0
