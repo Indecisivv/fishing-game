@@ -4,6 +4,24 @@
 [ext_resource type="Script" uid="uid://drhfq6rmdeuri" path="res://addons/dialogic/Modules/Text/node_dialog_text.gd" id="2_tupbf"]
 [ext_resource type="Script" uid="uid://43sgyyydvin" path="res://Scenes & Scripts/node_choice_button.gd" id="3_tupbf"]
 [ext_resource type="PackedScene" uid="uid://o6c5soab566p" path="res://Scenes & Scripts/intensity_bar.tscn" id="4_o0gdq"]
+[ext_resource type="Texture2D" uid="uid://caq3ohsdgxevv" path="res://Assets/CGs/Phone_BG_01.png" id="5_oymnk"]
+[ext_resource type="Texture2D" uid="uid://dyn377irshqrr" path="res://Assets/Buttons/Settings Button_01.png" id="6_0krvx"]
+[ext_resource type="Texture2D" uid="uid://dn5he0jfyu1ut" path="res://Assets/CGs/Phone_BG_02.png" id="6_v80yt"]
+[ext_resource type="Texture2D" uid="uid://br2qskk8sppbk" path="res://Assets/CGs/Dating App_Background.png" id="7_ctla8"]
+[ext_resource type="Texture2D" uid="uid://luldv4a5y5pw" path="res://Assets/CGs/Game Background_Room.jpg" id="7_x2q73"]
+[ext_resource type="Texture2D" uid="uid://bt5kmce0gi8tr" path="res://Assets/Buttons/Settings Button_02.png" id="9_rg3jm"]
+[ext_resource type="FontFile" uid="uid://cuauodtrqsmwe" path="res://Assets/FishFonts/Viga/Viga-Regular.ttf" id="10_faglw"]
+[ext_resource type="Texture2D" uid="uid://b0f8y76m7stop" path="res://Assets/Buttons/Home_DatingApp_Button_02.png" id="11_ctla8"]
+[ext_resource type="Texture2D" uid="uid://clgusrunt1jaj" path="res://Assets/Buttons/Home_DatingApp_Button.png" id="11_nhi7i"]
+[ext_resource type="Texture2D" uid="uid://cgxpucsuaqxn4" path="res://Assets/Buttons/Heart Button_01.png" id="12_e4g0c"]
+[ext_resource type="Texture2D" uid="uid://cjmoslug0n577" path="res://Assets/Buttons/Back Button_01.png" id="13_0sqv7"]
+[ext_resource type="Texture2D" uid="uid://bi761ql8dhuve" path="res://Assets/Buttons/Back Button_02.png" id="15_u33i3"]
+[ext_resource type="Texture2D" uid="uid://blosx8jwc8mxu" path="res://Assets/Buttons/Heart Button_02.png" id="16_wmbjk"]
+[ext_resource type="FontFile" uid="uid://37vndl7guwyk" path="res://Assets/FishFonts/National_Park/static/NationalPark-Bold.ttf" id="18_yextm"]
+[ext_resource type="Texture2D" uid="uid://bnb8gadln6th5" path="res://Assets/Buttons/UI_Dating Logo_Lineless.png" id="19_2tll0"]
+[ext_resource type="Texture2D" uid="uid://dia4dqoe5lh3d" path="res://Assets/CGs/Dating Profile_Ada.png" id="19_rg3jm"]
+[ext_resource type="Texture2D" uid="uid://dmnix0sf7vu2q" path="res://Assets/Buttons/UI_Dating Logo_Lineless_2.png" id="20_5ukpt"]
+[ext_resource type="Texture2D" uid="uid://debfo6h3ic5sq" path="res://Assets/CGs/Dating Profile_Ada_02.png" id="20_faglw"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hcp3l"]
 content_margin_left = 0.0
@@ -34,6 +52,260 @@ corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_e2hbn"]
+
+[sub_resource type="Animation" id="Animation_tfj7l"]
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BasePhone/Button_Settings:texture_normal")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("6_0krvx"), ExtResource("9_rg3jm")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BasePhone/Texture_AppLogo:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("11_nhi7i"), ExtResource("11_ctla8")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BasePhone/Texture_Phone:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("5_oymnk"), ExtResource("6_v80yt")]
+}
+
+[sub_resource type="Animation" id="Animation_2scry"]
+resource_name = "lineboil"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BasePhone/Texture_Phone:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("5_oymnk"), ExtResource("6_v80yt")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BasePhone/Button_Settings:texture_normal")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("6_0krvx"), ExtResource("9_rg3jm")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BasePhone/Texture_AppLogo:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("11_nhi7i"), ExtResource("11_ctla8")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_t6hor"]
+_data = {
+&"RESET": SubResource("Animation_tfj7l"),
+&"lineboil": SubResource("Animation_2scry")
+}
+
+[sub_resource type="FontVariation" id="FontVariation_ctla8"]
+base_font = ExtResource("10_faglw")
+spacing_glyph = -3
+
+[sub_resource type="LabelSettings" id="LabelSettings_n6ov8"]
+line_spacing = 0.0
+font = SubResource("FontVariation_ctla8")
+font_size = 54
+font_color = Color(0.827451, 0.44313726, 0.3137255, 1)
+
+[sub_resource type="Animation" id="Animation_uby30"]
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DateProfileViewAda/Button_Back:texture_normal")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("13_0sqv7"), ExtResource("15_u33i3")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("DateProfileViewAda/Button_Heart:texture_normal")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("12_e4g0c"), ExtResource("16_wmbjk")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("DateProfileViewAda/Texture_Profile:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("19_rg3jm"), ExtResource("20_faglw")]
+}
+
+[sub_resource type="Animation" id="Animation_f5cwt"]
+resource_name = "lineboil"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DateProfileViewAda/Button_Back:texture_normal")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("13_0sqv7"), ExtResource("15_u33i3")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("DateProfileViewAda/Button_Heart:texture_normal")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("12_e4g0c"), ExtResource("16_wmbjk")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("DateProfileViewAda/Texture_Profile:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.96666664),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("19_rg3jm"), ExtResource("20_faglw")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6hi3n"]
+_data = {
+&"RESET": SubResource("Animation_uby30"),
+&"lineboil": SubResource("Animation_f5cwt")
+}
+
+[sub_resource type="FontVariation" id="FontVariation_faglw"]
+base_font = ExtResource("10_faglw")
+spacing_glyph = -3
+
+[sub_resource type="LabelSettings" id="LabelSettings_tn7bg"]
+font = SubResource("FontVariation_faglw")
+font_size = 88
+font_color = Color(0.8156863, 0.24705882, 0.19607843, 1)
+
+[sub_resource type="FontVariation" id="FontVariation_nhi7i"]
+base_font = ExtResource("10_faglw")
+spacing_glyph = -3
+
+[sub_resource type="LabelSettings" id="LabelSettings_mjnc2"]
+font = SubResource("FontVariation_nhi7i")
+font_size = 70
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_hrsox"]
+font = ExtResource("18_yextm")
+font_size = 24
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_cgb1i"]
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Texture_AppLogo:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("19_2tll0"), ExtResource("20_5ukpt")]
+}
+
+[sub_resource type="Animation" id="Animation_jy775"]
+resource_name = "lineboil"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Texture_AppLogo:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("19_2tll0"), ExtResource("20_5ukpt")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hv2jm"]
+_data = {
+&"RESET": SubResource("Animation_cgb1i"),
+&"lineboil": SubResource("Animation_jy775")
+}
+
+[sub_resource type="Animation" id="Animation_ax3c1"]
+resource_name = "lineboil"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_k3c7d"]
+_data = {
+&"lineboil": SubResource("Animation_ax3c1")
+}
 
 [node name="Layout" type="CanvasLayer" unique_id=816932843 node_paths=PackedStringArray("dialog_text", "scroll_container", "message_list", "timestamp", "contact_name", "intensity_bar")]
 script = ExtResource("1_hcp3l")
@@ -155,6 +427,176 @@ offset_left = 81.0
 offset_top = 716.0
 offset_right = 448.0
 offset_bottom = 750.0
+
+[node name="Texture_BG" type="TextureRect" parent="." unique_id=554073330]
+z_index = -3
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("7_x2q73")
+
+[node name="BasePhone" type="Control" parent="." unique_id=1075290427]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Texture_Phone" type="TextureRect" parent="BasePhone" unique_id=1903649108]
+z_index = -1
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("5_oymnk")
+
+[node name="Button_Settings" type="TextureButton" parent="BasePhone" unique_id=785989720]
+z_index = 3
+layout_mode = 0
+offset_left = 1134.8739
+offset_top = 20.64653
+offset_right = 1231.8739
+offset_bottom = 112.64653
+texture_normal = ExtResource("6_0krvx")
+
+[node name="Texture_AppBG" type="TextureRect" parent="BasePhone" unique_id=1598598538]
+z_index = -2
+layout_mode = 0
+offset_left = 656.0
+offset_right = 1263.0
+offset_bottom = 1080.0
+texture = ExtResource("7_ctla8")
+
+[node name="Lineboil" type="AnimationPlayer" parent="BasePhone" unique_id=1424302907]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_t6hor")
+autoplay = &"RESET"
+
+[node name="Label_AppTitle" type="Label" parent="BasePhone" unique_id=1522442295]
+layout_mode = 0
+offset_left = 777.97363
+offset_top = 38.440636
+offset_right = 1120.9736
+offset_bottom = 184.44064
+text = "hook line sinker
+"
+label_settings = SubResource("LabelSettings_n6ov8")
+language = "en_US"
+
+[node name="Texture_AppLogo" type="TextureRect" parent="BasePhone" unique_id=491010814]
+layout_mode = 0
+offset_left = 671.6352
+offset_top = 17.738785
+offset_right = 768.6352
+offset_bottom = 109.738785
+texture = ExtResource("11_nhi7i")
+
+[node name="DateProfileViewAda" type="Control" parent="." unique_id=503916201]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 981.0
+offset_top = 521.0
+offset_right = 1021.0
+offset_bottom = 561.0
+
+[node name="Button_Heart" type="TextureButton" parent="DateProfileViewAda" unique_id=274676868]
+z_index = 2
+layout_mode = 0
+offset_left = 2.0
+offset_top = 14.0
+offset_right = 149.0
+offset_bottom = 160.0
+texture_normal = ExtResource("12_e4g0c")
+
+[node name="Button_Back" type="TextureButton" parent="DateProfileViewAda" unique_id=1501312463]
+z_index = 2
+layout_mode = 0
+offset_left = -210.0
+offset_top = 8.0
+offset_right = -60.0
+offset_bottom = 158.0
+texture_normal = ExtResource("13_0sqv7")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="DateProfileViewAda" unique_id=2108855691]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_6hi3n")
+autoplay = &"RESET"
+
+[node name="Label_Name" type="Label" parent="DateProfileViewAda" unique_id=1615962786]
+z_index = 1
+layout_mode = 0
+offset_left = -263.03693
+offset_top = 156.78351
+offset_right = 111.96307
+offset_bottom = 397.7835
+text = "Name, 25"
+label_settings = SubResource("LabelSettings_tn7bg")
+
+[node name="Label_Job" type="Label" parent="DateProfileViewAda" unique_id=1394909833]
+z_index = 2
+layout_mode = 0
+offset_left = -259.7744
+offset_top = 239.85986
+offset_right = -138.77441
+offset_bottom = 446.85986
+text = "Job
+"
+label_settings = SubResource("LabelSettings_mjnc2")
+
+[node name="Label_Bio" type="Label" parent="DateProfileViewAda" unique_id=40537120]
+layout_mode = 0
+offset_left = -261.9422
+offset_top = 323.80994
+offset_right = 218.0578
+offset_bottom = 510.80994
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus arcu et velit hendrerit, nec scelerisque nunc condimentum. Vivamus sed congue erat. "
+label_settings = SubResource("LabelSettings_hrsox")
+autowrap_mode = 2
+
+[node name="Texture_Profile" type="TextureRect" parent="DateProfileViewAda" unique_id=1488334488]
+z_index = 1
+layout_mode = 0
+offset_left = -313.0
+offset_top = -404.0
+offset_right = 261.0
+offset_bottom = 109.0
+texture = ExtResource("19_rg3jm")
+expand_mode = 1
+
+[node name="LoadingAppIcon" type="Control" parent="." unique_id=2087212628]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Texture_AppLogo" type="TextureRect" parent="LoadingAppIcon" unique_id=1017408169]
+layout_mode = 0
+offset_left = 702.0
+offset_top = 230.0
+offset_right = 1222.0
+offset_bottom = 783.0
+texture = ExtResource("19_2tll0")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="LoadingAppIcon" unique_id=584775206]
+libraries/ = SubResource("AnimationLibrary_hv2jm")
+autoplay = &"RESET"
+
+[node name="PeopleYouMayKnowWIP" type="Control" parent="." unique_id=1400876101]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="PeopleYouMayKnowWIP" unique_id=1483390188]
+libraries/ = SubResource("AnimationLibrary_k3c7d")
+
+[node name="TextureButton" type="TextureButton" parent="PeopleYouMayKnowWIP" unique_id=182901783]
+layout_mode = 0
+offset_left = 434.0
+offset_top = 54.0
+offset_right = 1484.0
+offset_bottom = 937.0
+texture_normal = ExtResource("19_rg3jm")
 
 [connection signal="finished_revealing_text" from="Phone Screen/Scroll/MessageList/DialogText" to="." method="_on_dialog_text_finished_revealing_text"]
 [connection signal="started_revealing_text" from="Phone Screen/Scroll/MessageList/DialogText" to="." method="_on_dialog_text_started_revealing_text"]
