@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://rib6qm1aode3"]
 
 [ext_resource type="Script" uid="uid://digx18pdjgrjb" path="res://Scenes & Scripts/Game Scenes/texting_stage.gd" id="1_j8llc"]
+[ext_resource type="Texture2D" uid="uid://luldv4a5y5pw" path="res://Assets/CGs/Game Background_Room.jpg" id="2_g7opb"]
 
 [node name="TextingStage" type="Control" unique_id=445802981]
 layout_mode = 3
@@ -10,3 +11,13 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_j8llc")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2040386407]
+modulate = Color(0.3553136, 0.35531354, 0.35531357, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_g7opb")

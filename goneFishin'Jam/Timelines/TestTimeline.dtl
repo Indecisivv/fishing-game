@@ -1,3 +1,4 @@
+[style name="SmartphoneStyle"]
 Player: Text 1
 TestCharacter: Loooooooooooooooooooooooooooonnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnggggggggggggggggggggggggggggggggggggg Teeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeexxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxtttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
 Player: Text 2
@@ -10,18 +11,18 @@ set {is_making_choice} = true
 	set {is_making_choice} = false
 	TestCharacter: correct
 	Player: yaaayyy
-	set {is_fdate_success} = true
-	set {is_date_success} = true
+	Player: <Empty Text Event>
+	[signal arg="date_time"]
+	jump TextDateTimeline1/
+	[end_timeline]
 - Wrong Choice
 	set {is_making_choice} = false
 	TestCharacter: wrong choice
 	Player: noooo
-	set {is_fdate_success} = false
-	set {is_date_success} = false
 - Wrong Choice
 	set {is_making_choice} = false
 	TestCharacter: wrong choice
 	Player: noooo
-	set {is_fdate_success} = false
-	set {is_date_success} = false
+set {is_fdate_success} = false
+set {is_date_success} = false
 [signal arg="scene_end"]

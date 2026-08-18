@@ -9,8 +9,10 @@ extends Node2D
 @onready var scn_gallery         : Control = $"Scenes/Gallery"
 @onready var scn_people_near_you : Control = $"Scenes/Gameplay Scenes/PeopleNearYou"
 @onready var scn_texting_stage   : Control = $"Scenes/Gameplay Scenes/TextingStage"
+@onready var scn_date_time       : Control = $"Scenes/Gameplay Scenes/DateTime"
 @onready var scn_date_end        : Control = $"Scenes/Gameplay Scenes/DateEnd"
 @onready var scn_game_end        : Control = $"Scenes/Gameplay Scenes/GameEndScreen"
+
 
 # The total number of dateable characters in the game. Assigned from the editor. 3 by default.
 @export var num_total_chars : int
@@ -22,6 +24,11 @@ var timeline_uid : String
 var wins            : Array[bool]
 var win_counter     : int = 0
 var all_chars_dated : bool
+
+# These properties are used for this script to distinguish who the character is dating.
+var on_date_ada     : bool
+var on_date_soccoro : bool
+var on_date_khanh   : bool
 
 # We declare the size of the wins array and connect our method to Dialogic signal.
 func _ready() -> void:
@@ -52,16 +59,27 @@ func _on_game_started() -> void:
 # on which character the player picks.
 func _on_date_selected() -> void:
 	match scn_people_near_you.index:
-		0:
+		0: # Ada Date
 			timeline_uid = "uid://cbw025irc4err"
-		1:
+			
+			on_date_ada = true
+			on_date_soccoro = false
+			on_date_khanh = false
+		1: # Soccoro Date
 			timeline_uid = "uid://ch3bft3so2h5m"
-		2:
+			
+			on_date_ada = false
+			on_date_soccoro = true
+			on_date_khanh = false
+		2: # Khanh Date
 			timeline_uid = "uid://d0fcwuv1yrdw"
 			
+			on_date_ada = false
+			on_date_soccoro = false
+			on_date_khanh = true
+		
 	scn_people_near_you.hide()
 	scn_date_end.hide()
-	Dialogic.Styles.load_style("VisualNovelStyle")
 	scn_texting_stage.load_timeline(timeline_uid)
 
 # This method transitions from the date to the date end screen.
@@ -94,10 +112,26 @@ func _on_game_restart() -> void:
 
 # Method that shows the results of a date after it ends.
 func show_scn_date_end() -> void:
-	if Dialogic.VAR.is_date_success:
-		scn_date_end.set_date_text("Date Success!")
-	else:
-		scn_date_end.set_date_text("Date failure...")
+	if on_date_ada && Dialogic.VAR.is_date_success:
+		scn_date_end.set_cg(scn_date_end.BG_DINNER_1)
+		scn_date_end.set_text('Date success!')
+	elif on_date_ada && !Dialogic.VAR.is_date_success:
+		scn_date_end.set_cg(scn_date_end.BG_DINNER_1)
+		scn_date_end.set_text('Date failure...')
+	
+	if on_date_soccoro && Dialogic.VAR.is_date_success:
+		scn_date_end.set_cg(scn_date_end.BG_DINNER_2)
+		scn_date_end.set_text('Date success!')
+	elif on_date_soccoro && !Dialogic.VAR.is_date_success:
+		scn_date_end.set_cg(scn_date_end.BG_DINNER_2)
+		scn_date_end.set_text('Date failure...')
+	
+	if on_date_khanh && Dialogic.VAR.is_date_success:
+		scn_date_end.set_cg(scn_date_end.BG_DINNER_3)
+		scn_date_end.set_text('Date success!')
+	elif on_date_khanh && !Dialogic.VAR.is_date_success:
+		scn_date_end.set_cg(scn_date_end.BG_DINNER_3)
+		scn_date_end.set_text('Date failure...')
 	
 	scn_date_end.show()
 

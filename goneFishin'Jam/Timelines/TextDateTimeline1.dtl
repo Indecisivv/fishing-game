@@ -1,0 +1,10 @@
+[style name="VisualNovelStyle"]
+[background arg="res://Assets/CGs/BG_date_1.png" fade="0.5"]
+TestCharacter: Text 1
+TestCharacter: Text 2
+TestCharacter: Text 3
+Player: Text 4
+TestCharacter: Text 5
+set {is_date_success} = true
+set {is_fdate_success} = true
+[signal arg="scene_end"]

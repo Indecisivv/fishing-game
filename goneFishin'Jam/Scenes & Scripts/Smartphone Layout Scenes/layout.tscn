@@ -223,21 +223,21 @@ _data = {
 &"lineboil": SubResource("Animation_f5cwt")
 }
 
-[sub_resource type="FontVariation" id="FontVariation_faglw"]
+[sub_resource type="FontVariation" id="FontVariation_5vbu5"]
 base_font = ExtResource("10_faglw")
 spacing_glyph = -3
 
 [sub_resource type="LabelSettings" id="LabelSettings_yextm"]
-font = SubResource("FontVariation_faglw")
+font = SubResource("FontVariation_5vbu5")
 font_size = 88
 font_color = Color(0.8156863, 0.24705882, 0.19607843, 1)
 
-[sub_resource type="FontVariation" id="FontVariation_nhi7i"]
+[sub_resource type="FontVariation" id="FontVariation_yd1jc"]
 base_font = ExtResource("10_faglw")
 spacing_glyph = -3
 
 [sub_resource type="LabelSettings" id="LabelSettings_2tll0"]
-font = SubResource("FontVariation_nhi7i")
+font = SubResource("FontVariation_yd1jc")
 font_size = 70
 font_color = Color(0, 0, 0, 1)
 

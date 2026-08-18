@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://b35mjjfq5w1om" path="res://Scenes & Scripts/Game Scenes/gallery.tscn" id="5_jrmb8"]
 [ext_resource type="PackedScene" uid="uid://dxgnjgw3v1eh" path="res://Scenes & Scripts/Game Scenes/date_end.tscn" id="5_qxe4v"]
 [ext_resource type="PackedScene" uid="uid://bppwvybe2yrlr" path="res://Scenes & Scripts/Game Scenes/game_end_screen.tscn" id="5_xvj0e"]
+[ext_resource type="PackedScene" uid="uid://1wm4u7bh74dm" path="res://Scenes & Scripts/Game Scenes/date_time.tscn" id="8_pov6j"]
 
 [node name="Main" type="Node2D" unique_id=2069766624]
 script = ExtResource("1_yt7ni")
@@ -34,6 +35,9 @@ visible = false
 offset_right = 0.0
 
 [node name="TextingStage" parent="Scenes/Gameplay Scenes" unique_id=445802981 instance=ExtResource("3_dbmlg")]
+visible = false
+
+[node name="DateTime" parent="Scenes/Gameplay Scenes" unique_id=644174744 instance=ExtResource("8_pov6j")]
 visible = false
 
 [node name="DateEnd" parent="Scenes/Gameplay Scenes" unique_id=64780911 instance=ExtResource("5_qxe4v")]

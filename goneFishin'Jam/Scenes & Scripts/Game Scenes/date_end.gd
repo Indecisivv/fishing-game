@@ -1,12 +1,20 @@
 extends Control
 
-@export var date_end_text : Label
+@onready var cg_rect: TextureRect = $CGRect
+@onready var end_text: Label = $EndText
 
 signal on_retry
 signal on_return_to_main_menu
 
-func set_date_text(text:String) -> void:
-	date_end_text.text = text
+const BG_DINNER_1 = preload("uid://dsehv58cy4f6b")
+const BG_DINNER_2 = preload("uid://774pdj57xal0")
+const BG_DINNER_3 = preload("uid://373c7gm6chbv")
+
+func set_cg(cg:CompressedTexture2D) -> void:
+	cg_rect.texture = cg
+
+func set_text(text:String) -> void:
+	end_text.text = text
 
 func on_retry_button_pressed() -> void:
 	emit_signal('on_retry')

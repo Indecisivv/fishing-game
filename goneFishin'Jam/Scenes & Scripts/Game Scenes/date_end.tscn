@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://dxgnjgw3v1eh"]
 
 [ext_resource type="Script" uid="uid://p6xurxhehbwg" path="res://Scenes & Scripts/Game Scenes/date_end.gd" id="1_eyl03"]
-[ext_resource type="Texture2D" uid="uid://7dn71mtwfnev" path="res://icon.svg" id="1_jpp7j"]
+[ext_resource type="Texture2D" uid="uid://dsehv58cy4f6b" path="res://Assets/CGs/BG_dinner_1.png" id="2_rbv0t"]
 
-[node name="DateEnd" type="Control" unique_id=64780911 node_paths=PackedStringArray("date_end_text")]
+[node name="DateEnd" type="Control" unique_id=64780911]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -11,9 +11,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_eyl03")
-date_end_text = NodePath("Label")
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=120395961]
+[node name="CGRect" type="TextureRect" parent="." unique_id=120395961]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -26,17 +25,23 @@ offset_right = 197.0
 offset_bottom = 197.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_jpp7j")
+texture = ExtResource("2_rbv0t")
 
-[node name="Label" type="Label" parent="." unique_id=262392949]
+[node name="EndText" type="Label" parent="." unique_id=583819261]
 layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_top = 233.0
-offset_bottom = 256.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -156.0
+offset_top = -218.0
+offset_right = 156.0
+offset_bottom = -151.0
 grow_horizontal = 2
+grow_vertical = 2
 theme_override_font_sizes/font_size = 48
-text = "SAMPLE TEXT"
+text = "Date success!"
 horizontal_alignment = 1
 
 [node name="Retry" type="Button" parent="." unique_id=843440041]

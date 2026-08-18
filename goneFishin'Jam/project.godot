@@ -29,9 +29,10 @@ directories/dch_directory={
 "TestCharacter3": "res://Characters/TestCharacter3.dch"
 }
 directories/dtl_directory={
-"TestTimeline": "res://Timelines/TestTimeline.dtl",
-"TestTimeline2": "res://Timelines/TestTimeline2.dtl",
-"TestTimeline3": "res://Timelines/TestTimeline3.dtl"
+"TestTextTimeline1": "res://Timelines/TestTimeline.dtl",
+"TestTextTimeline2": "res://Timelines/TestTimeline2.dtl",
+"TestTextTimeline3": "res://Timelines/TestTimeline3.dtl",
+"TextDateTimeline1": "res://Timelines/TextDateTimeline1.dtl"
 }
 layout/style_directory={
 "": "res://Styles/SmartphoneStyle.tres",
@@ -80,6 +81,7 @@ variables={
 "is_tdate_success": false
 }
 glossary/default_case_sensitive=true
+layout/end_behaviour=0
 
 [display]
 

@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://1wm4u7bh74dm"]
+
+[ext_resource type="Texture2D" uid="uid://luldv4a5y5pw" path="res://Assets/CGs/Game Background_Room.jpg" id="1_bliue"]
+
+[node name="DateTime" type="Control" unique_id=644174744]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1156428102]
+modulate = Color(0.3553136, 0.35531354, 0.35531357, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_bliue")
