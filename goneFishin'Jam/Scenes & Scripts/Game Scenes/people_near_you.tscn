@@ -5,14 +5,20 @@
 [ext_resource type="Texture2D" uid="uid://luldv4a5y5pw" path="res://Assets/CGs/Game Background_Room.jpg" id="2_ew7fw"]
 [ext_resource type="Texture2D" uid="uid://br2qskk8sppbk" path="res://Assets/CGs/Dating App_Background.png" id="4_eu4md"]
 [ext_resource type="Texture2D" uid="uid://caq3ohsdgxevv" path="res://Assets/CGs/Phone_BG_01.png" id="5_11hj3"]
+[ext_resource type="Texture2D" uid="uid://bnb8gadln6th5" path="res://Assets/Buttons/UI_Dating Logo_Lineless.png" id="6_p3ptu"]
 [ext_resource type="Texture2D" uid="uid://clgusrunt1jaj" path="res://Assets/Buttons/Home_DatingApp_Button.png" id="6_veqik"]
+[ext_resource type="AudioStream" uid="uid://cn6ullfd8rt44" path="res://Assets/SFX/testAUDIO.wav" id="7_smp7l"]
 [ext_resource type="Texture2D" uid="uid://dyn377irshqrr" path="res://Assets/Buttons/Settings Button_01.png" id="7_t105c"]
+[ext_resource type="Script" uid="uid://bdxgytfiau67d" path="res://Scenes & Scripts/Game Scenes/button_app_logo.gd" id="8_ey8pi"]
 [ext_resource type="FontFile" uid="uid://cuauodtrqsmwe" path="res://Assets/FishFonts/Viga/Viga-Regular.ttf" id="8_pc0yv"]
 [ext_resource type="Script" uid="uid://b6b1da15qusg2" path="res://Scenes & Scripts/Game Scenes/btn_ada.gd" id="9_i0j33"]
 [ext_resource type="Texture2D" uid="uid://dj8xnowoo8g3o" path="res://Assets/CGs/Dating Profile_Khanh.png" id="9_opqum"]
+[ext_resource type="Script" uid="uid://dkspty688bf2b" path="res://Scenes & Scripts/Game Scenes/button_settings.gd" id="10_ic68m"]
 [ext_resource type="Texture2D" uid="uid://cry21c65hlbai" path="res://Assets/CGs/Dating Profile_Socorro_NoFilter.png" id="10_m5o14"]
 [ext_resource type="Script" uid="uid://dv85bi025guaa" path="res://Scenes & Scripts/Game Scenes/btn_soccoro.gd" id="11_53cv8"]
 [ext_resource type="Texture2D" uid="uid://dn5he0jfyu1ut" path="res://Assets/CGs/Phone_BG_02.png" id="11_m5o14"]
+[ext_resource type="Texture2D" uid="uid://b0f8y76m7stop" path="res://Assets/Buttons/Home_DatingApp_Button_02.png" id="12_ow1qx"]
+[ext_resource type="Texture2D" uid="uid://bt5kmce0gi8tr" path="res://Assets/Buttons/Settings Button_02.png" id="13_c8y64"]
 [ext_resource type="Script" uid="uid://d2wcpdeshc3sv" path="res://Scenes & Scripts/Game Scenes/btn_khanh.gd" id="13_mjxxk"]
 [ext_resource type="Texture2D" uid="uid://cgxpucsuaqxn4" path="res://Assets/Buttons/Heart Button_01.png" id="14_0s012"]
 [ext_resource type="Texture2D" uid="uid://debfo6h3ic5sq" path="res://Assets/CGs/Dating Profile_Ada_02.png" id="14_53cv8"]
@@ -42,6 +48,33 @@ font = SubResource("FontVariation_ctla8")
 font_size = 54
 font_color = Color(0.827451, 0.44313726, 0.3137255, 1)
 
+[sub_resource type="Animation" id="Animation_m0rwl"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Phone/UI Features/Button_AppLogo:texture_normal")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("6_veqik")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Phone/UI Features/Button_Settings:texture_normal")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("7_t105c")]
+}
+
 [sub_resource type="Animation" id="Animation_0s012"]
 resource_name = "bg_line_boil"
 length = 2.0
@@ -58,10 +91,101 @@ tracks/0/keys = {
 "update": 1,
 "values": [ExtResource("5_11hj3"), ExtResource("11_m5o14")]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Phone/UI Features/Button_AppLogo:texture_normal")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("6_veqik"), ExtResource("12_ow1qx")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Phone/UI Features/Button_Settings:texture_normal")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("7_t105c"), ExtResource("13_c8y64")]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_53mxd"]
 _data = {
+&"RESET": SubResource("Animation_m0rwl"),
 &"bg_line_boil": SubResource("Animation_0s012")
+}
+
+[sub_resource type="Animation" id="Animation_c8y64"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("UI Features/Button_AppLogo:texture_normal")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("6_veqik")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("UI Features/Button_Settings:texture_normal")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("7_t105c")]
+}
+
+[sub_resource type="Animation" id="Animation_p3ptu"]
+resource_name = "logo_boiler"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("UI Features/Button_AppLogo:texture_normal")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("6_veqik"), ExtResource("12_ow1qx")]
+}
+
+[sub_resource type="Animation" id="Animation_smp7l"]
+resource_name = "settings_boiler"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("UI Features/Button_Settings:texture_normal")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("7_t105c"), ExtResource("13_c8y64")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_smp7l"]
+_data = {
+&"RESET": SubResource("Animation_c8y64"),
+&"logo_boiler": SubResource("Animation_p3ptu"),
+&"settings_boiler": SubResource("Animation_smp7l")
 }
 
 [sub_resource type="Animation" id="Animation_bfa6r"]
@@ -427,7 +551,7 @@ font = ExtResource("19_ow1qx")
 font_size = 24
 font_color = Color(0, 0, 0, 1)
 
-[node name="PeopleNearYou" type="Control" unique_id=1980871945 node_paths=PackedStringArray("buttons", "phone")]
+[node name="PeopleNearYou" type="Control" unique_id=1980871945 node_paths=PackedStringArray("buttons", "phone", "texture_loading_screen", "timer", "jingle", "loading_screen_boiler")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -438,6 +562,10 @@ grow_vertical = 2
 script = ExtResource("1_2i6yc")
 buttons = [NodePath("Phone/DateChoicesView/btn_ada"), NodePath("Phone/DateChoicesView/btn_soccoro"), NodePath("Phone/DateChoicesView/btn_khanh")]
 phone = NodePath("Phone")
+texture_loading_screen = NodePath("Phone/Texture_LoadingScreen")
+timer = NodePath("Phone/Texture_LoadingScreen/Timer")
+jingle = NodePath("Phone/Texture_LoadingScreen/Jingle")
+loading_screen_boiler = NodePath("Phone/Texture_LoadingScreen/LoadingScreenBoiler")
 
 [node name="PeopleYouMayKnowWIP" type="Control" parent="." unique_id=1626150006]
 visible = false
@@ -471,24 +599,14 @@ offset_right = -697.0
 offset_bottom = 1157.0
 rotation = -0.3926991
 
-[node name="Label_AppTitle" type="Label" parent="Phone" unique_id=1330684074]
-layout_mode = 0
-offset_left = 120.97351
-offset_top = 38.440735
-offset_right = 463.9735
-offset_bottom = 184.44073
-text = "hook line sinker
-"
-label_settings = SubResource("LabelSettings_qhipc")
-language = "en_US"
-
 [node name="Texture_AppBG" type="TextureRect" parent="Phone" unique_id=1165483630]
 z_index = -2
 layout_mode = 0
-offset_left = -1.0001221
-offset_top = 6.1035156e-05
-offset_right = 605.9999
-offset_bottom = 1080.0002
+offset_left = 4.9364147
+offset_top = 6.3742714
+offset_right = 611.9364
+offset_bottom = 1086.3745
+scale = Vector2(0.96304685, 0.99103147)
 texture = ExtResource("4_eu4md")
 
 [node name="Texture_Phone" type="TextureRect" parent="Phone" unique_id=2035289218]
@@ -500,29 +618,73 @@ offset_right = 1263.0
 offset_bottom = 1080.0001
 texture = ExtResource("5_11hj3")
 
-[node name="Texture_AppLogo" type="TextureRect" parent="Phone" unique_id=1228804345]
+[node name="Texture_LoadingScreen" type="TextureRect" parent="Phone" unique_id=1684040163]
+modulate = Color(1, 1, 1, 0)
 layout_mode = 0
-offset_left = 14.635132
-offset_top = 17.73877
-offset_right = 111.63513
-offset_bottom = 109.73877
-texture = ExtResource("6_veqik")
+offset_left = 42.261086
+offset_top = 235.06595
+offset_right = 562.2611
+offset_bottom = 788.0659
+texture = ExtResource("6_p3ptu")
 
-[node name="Button_Settings" type="TextureButton" parent="Phone" unique_id=1181050141]
+[node name="Timer" type="Timer" parent="Phone/Texture_LoadingScreen" unique_id=851525752]
+wait_time = 1.4
+
+[node name="Jingle" type="AudioStreamPlayer" parent="Phone/Texture_LoadingScreen" unique_id=793883213]
+stream = ExtResource("7_smp7l")
+
+[node name="LoadingScreenBoiler" type="AnimationPlayer" parent="Phone/Texture_LoadingScreen" unique_id=2038826050]
+
+[node name="UI Features" type="Control" parent="Phone" unique_id=160457986]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label_AppTitle" type="Label" parent="Phone/UI Features" unique_id=1330684074]
+layout_mode = 0
+offset_left = 120.97351
+offset_top = 38.440857
+offset_right = 463.9735
+offset_bottom = 184.44086
+text = "hook line sinker
+"
+label_settings = SubResource("LabelSettings_qhipc")
+language = "en_US"
+
+[node name="Button_AppLogo" type="TextureButton" parent="Phone/UI Features" unique_id=2134911500]
+layout_mode = 0
+offset_left = 14.650757
+offset_top = 16.892456
+offset_right = 111.65076
+offset_bottom = 108.892456
+pivot_offset = Vector2(48, 46)
+texture_normal = ExtResource("6_veqik")
+script = ExtResource("8_ey8pi")
+
+[node name="Button_Settings" type="TextureButton" parent="Phone/UI Features" unique_id=1181050141 node_paths=PackedStringArray("phone_line_boiler", "button_boiler")]
 z_index = 3
 layout_mode = 0
 offset_left = 477.87378
 offset_top = 20.646484
 offset_right = 574.8738
 offset_bottom = 112.646484
+pivot_offset = Vector2(48, 46)
 texture_normal = ExtResource("7_t105c")
+script = ExtResource("10_ic68m")
+phone_line_boiler = NodePath("../../PhoneLineBoiler")
+button_boiler = NodePath("../../ButtonBoiler")
 
 [node name="PhoneLineBoiler" type="AnimationPlayer" parent="Phone" unique_id=1889621046]
 root_node = NodePath("../..")
 libraries/ = SubResource("AnimationLibrary_53mxd")
 autoplay = &"bg_line_boil"
 
+[node name="ButtonBoiler" type="AnimationPlayer" parent="Phone" unique_id=1273922979]
+libraries/ = SubResource("AnimationLibrary_smp7l")
+
 [node name="DateChoicesView" type="Control" parent="Phone" unique_id=984926835]
+visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -647,6 +809,13 @@ offset_bottom = 158.00012
 pivot_offset = Vector2(75, 75)
 texture_normal = ExtResource("15_53mxd")
 
+[connection signal="tween_finished" from="." to="." method="loading_screen"]
+[connection signal="mouse_entered" from="Phone/UI Features/Button_AppLogo" to="Phone/UI Features/Button_AppLogo" method="_on_btn_entered"]
+[connection signal="mouse_exited" from="Phone/UI Features/Button_AppLogo" to="Phone/UI Features/Button_AppLogo" method="_on_btn_exited"]
+[connection signal="pressed" from="Phone/UI Features/Button_AppLogo" to="." method="_on_return_to_menu"]
+[connection signal="mouse_entered" from="Phone/UI Features/Button_Settings" to="Phone/UI Features/Button_Settings" method="_on_btn_entered"]
+[connection signal="mouse_exited" from="Phone/UI Features/Button_Settings" to="Phone/UI Features/Button_Settings" method="_on_btn_exited"]
+[connection signal="pressed" from="Phone/UI Features/Button_Settings" to="." method="_on_open_settings"]
 [connection signal="mouse_entered" from="Phone/DateChoicesView/btn_ada" to="Phone/DateChoicesView/btn_ada" method="_on_btn_ada_entered"]
 [connection signal="mouse_exited" from="Phone/DateChoicesView/btn_ada" to="Phone/DateChoicesView/btn_ada" method="_on_btn_ada_exited"]
 [connection signal="pressed" from="Phone/DateChoicesView/btn_ada" to="Phone/DateChoicesView/btn_ada" method="_on_btn_ada_pressed"]

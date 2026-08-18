@@ -33,9 +33,11 @@ func _on_dialog_text_started_revealing_text() -> void:
 	# Otherwise, the message is set on the left side.
 	var speaker : DialogicCharacter = Dialogic.Text.get_current_speaker()
 	if speaker.display_name == "Player":
+		# TO-DO: Set the text bubble's color accordingly.
 		dialog_text.size_flags_horizontal = Control.SIZE_SHRINK_END
 		timestamp.hide()
 	else:
+		# TO-DO: Set the text bubble's color accordingly.
 		dialog_text.size_flags_horizontal = Control.SIZE_SHRINK_BEGIN
 		timestamp.show()
 
@@ -88,8 +90,10 @@ func add_message(text:String, size:Vector2, speaker_name:String, time:String) ->
 	# If the one currently speaking is the player, this sets the message on the right side of the screen.
 	# Otherwise, the message is set on the left side.
 	if speaker_name == "Player":
+		# TO-DO: Set the text bubble's color accordingly.
 		message.size_flags_horizontal = Control.SIZE_SHRINK_END
 	else:
+		# TO-DO: Set the text bubble's color accordingly.
 		message.size_flags_horizontal = Control.SIZE_SHRINK_BEGIN
 		
 	await get_tree().process_frame

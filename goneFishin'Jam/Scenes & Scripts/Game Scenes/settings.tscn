@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bynl1bl3haan3" path="res://Scenes & Scripts/Game Scenes/settings.gd" id="1_0h3cg"]
 
 [node name="Settings" type="Control" unique_id=1674674967]
+z_index = 4
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -11,10 +12,27 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_0h3cg")
 
+[node name="Panel" type="Panel" parent="." unique_id=2013417446]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
 [node name="Label" type="Label" parent="." unique_id=900130051]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -33.0
+offset_top = -56.0
+offset_right = 33.0
+offset_bottom = -33.0
+grow_horizontal = 2
+grow_vertical = 2
 text = "settings "
 
 [node name="Button" type="Button" parent="." unique_id=1562301336]
@@ -31,6 +49,6 @@ offset_bottom = 15.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 32
-text = "return to main menu"
+text = "close settings"
 
 [connection signal="pressed" from="Button" to="." method="_on_menu_button_pressed"]

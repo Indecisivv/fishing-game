@@ -1,4 +1,4 @@
-extends Panel
+extends Control
 
 @export var progress_bars : Array[ProgressBar] # This contains references to the progress bar nodes.
 @export var fill_speed : int 				   # This decides how fast the progress bars fill up.

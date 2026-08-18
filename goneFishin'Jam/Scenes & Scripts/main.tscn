@@ -15,6 +15,24 @@
 script = ExtResource("1_yt7ni")
 num_total_chars = 3
 
+[node name="Gameplay Scenes" type="Node" parent="." unique_id=689425113]
+
+[node name="PeopleNearYou" parent="Gameplay Scenes" unique_id=1980871945 instance=ExtResource("2_0y2iw")]
+visible = false
+offset_right = 0.0
+
+[node name="TextingStage" parent="Gameplay Scenes" unique_id=445802981 instance=ExtResource("3_dbmlg")]
+visible = false
+
+[node name="DateTime" parent="Gameplay Scenes" unique_id=644174744 instance=ExtResource("8_pov6j")]
+visible = false
+
+[node name="DateEnd" parent="Gameplay Scenes" unique_id=64780911 instance=ExtResource("5_qxe4v")]
+visible = false
+
+[node name="GameEndScreen" parent="Gameplay Scenes" unique_id=2012399081 instance=ExtResource("5_xvj0e")]
+visible = false
+
 [node name="Scenes" type="Node" parent="." unique_id=529808458]
 
 [node name="Main Menu" parent="Scenes" unique_id=833144508 instance=ExtResource("2_dbmlg")]
@@ -28,33 +46,16 @@ visible = false
 [node name="Gallery" parent="Scenes" unique_id=442786049 instance=ExtResource("5_jrmb8")]
 visible = false
 
-[node name="Gameplay Scenes" type="Node" parent="Scenes" unique_id=689425113]
-
-[node name="PeopleNearYou" parent="Scenes/Gameplay Scenes" unique_id=1980871945 instance=ExtResource("2_0y2iw")]
-visible = false
-offset_right = 0.0
-
-[node name="TextingStage" parent="Scenes/Gameplay Scenes" unique_id=445802981 instance=ExtResource("3_dbmlg")]
-visible = false
-
-[node name="DateTime" parent="Scenes/Gameplay Scenes" unique_id=644174744 instance=ExtResource("8_pov6j")]
-visible = false
-
-[node name="DateEnd" parent="Scenes/Gameplay Scenes" unique_id=64780911 instance=ExtResource("5_qxe4v")]
-visible = false
-
-[node name="GameEndScreen" parent="Scenes/Gameplay Scenes" unique_id=2012399081 instance=ExtResource("5_xvj0e")]
-visible = false
-
+[connection signal="all_chars_dated" from="Gameplay Scenes/PeopleNearYou" to="." method="_on_all_chars_dated"]
+[connection signal="date_selected" from="Gameplay Scenes/PeopleNearYou" to="." method="_on_date_selected"]
+[connection signal="open_settings" from="Gameplay Scenes/PeopleNearYou" to="." method="_on_settings_entered"]
+[connection signal="return_to_menu" from="Gameplay Scenes/PeopleNearYou" to="." method="_on_return_to_main_menu"]
+[connection signal="on_retry" from="Gameplay Scenes/DateEnd" to="." method="_on_date_selected"]
+[connection signal="on_return_to_main_menu" from="Gameplay Scenes/DateEnd" to="." method="_on_return_to_main_menu"]
+[connection signal="restart_game" from="Gameplay Scenes/GameEndScreen" to="." method="_on_game_restart"]
 [connection signal="credits_entered" from="Scenes/Main Menu" to="." method="_on_credits_entered"]
 [connection signal="gallery_entered" from="Scenes/Main Menu" to="." method="_on_gallery_entered"]
 [connection signal="game_started" from="Scenes/Main Menu" to="." method="_on_game_started"]
 [connection signal="settings_entered" from="Scenes/Main Menu" to="." method="_on_settings_entered"]
-[connection signal="return_to_menu" from="Scenes/Settings" to="." method="_on_return_to_main_menu"]
 [connection signal="return_to_menu" from="Scenes/Credits" to="." method="_on_return_to_main_menu"]
 [connection signal="return_to_menu" from="Scenes/Gallery" to="." method="_on_return_to_main_menu"]
-[connection signal="all_chars_dated" from="Scenes/Gameplay Scenes/PeopleNearYou" to="." method="_on_all_chars_dated"]
-[connection signal="date_selected" from="Scenes/Gameplay Scenes/PeopleNearYou" to="." method="_on_date_selected"]
-[connection signal="on_retry" from="Scenes/Gameplay Scenes/DateEnd" to="." method="_on_date_selected"]
-[connection signal="on_return_to_main_menu" from="Scenes/Gameplay Scenes/DateEnd" to="." method="_on_return_to_main_menu"]
-[connection signal="restart_game" from="Scenes/Gameplay Scenes/GameEndScreen" to="." method="_on_game_restart"]

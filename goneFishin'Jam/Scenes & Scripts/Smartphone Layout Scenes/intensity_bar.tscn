@@ -1,32 +1,21 @@
 [gd_scene format=3 uid="uid://o6c5soab566p"]
 
 [ext_resource type="Script" uid="uid://cmpbu37xcffdu" path="res://Scenes & Scripts/Smartphone Layout Scenes/intensity_bar.gd" id="1_oa1dk"]
+[ext_resource type="Texture2D" uid="uid://o80l84qq0uhx" path="res://Assets/CGs/Phone_IntensityBar_Border.png" id="2_dk5jg"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5ffqw"]
-content_margin_left = 0.0
-content_margin_top = 0.0
-content_margin_right = 0.0
-content_margin_bottom = 0.0
-bg_color = Color(0.1, 0.1, 0.1, 0.6)
-corner_radius_top_left = 7
-corner_radius_top_right = 7
-corner_radius_bottom_right = 7
-corner_radius_bottom_left = 7
-corner_detail = 5
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eq7vg"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dk5jg"]
 content_margin_left = 2.0
 content_margin_top = 2.0
 content_margin_right = 2.0
 content_margin_bottom = 2.0
-bg_color = Color(0.42352942, 0.42352942, 0.42352942, 1)
+bg_color = Color(0.42352942, 0.42352942, 0.42352942, 0)
 corner_radius_top_left = 6
 corner_radius_top_right = 6
 corner_radius_bottom_right = 6
 corner_radius_bottom_left = 6
 corner_detail = 6
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_87xt4"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kdyed"]
 content_margin_left = 2.0
 content_margin_top = 2.0
 content_margin_right = 2.0
@@ -38,7 +27,7 @@ corner_radius_bottom_right = 6
 corner_radius_bottom_left = 6
 corner_detail = 6
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uorxi"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tsmqf"]
 content_margin_left = 2.0
 content_margin_top = 2.0
 content_margin_right = 2.0
@@ -50,7 +39,7 @@ corner_radius_bottom_right = 6
 corner_radius_bottom_left = 6
 corner_detail = 6
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wiyw8"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cfmxu"]
 content_margin_left = 2.0
 content_margin_top = 2.0
 content_margin_right = 2.0
@@ -62,73 +51,54 @@ corner_radius_bottom_right = 6
 corner_radius_bottom_left = 6
 corner_detail = 6
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6n3d1"]
-content_margin_left = 0.0
-content_margin_top = 0.0
-content_margin_right = 0.0
-content_margin_bottom = 0.0
-bg_color = Color(0.12225223, 0.12225223, 0.12225223, 1)
-corner_radius_top_left = 3
-corner_radius_top_right = 3
-corner_radius_bottom_right = 3
-corner_radius_bottom_left = 3
-corner_detail = 5
-
-[node name="IntensityBar" type="Panel" unique_id=764532731 node_paths=PackedStringArray("progress_bars")]
-offset_left = 3.0
-offset_top = 369.0
-offset_right = 370.0
-offset_bottom = 462.0
-rotation = 4.712389
-theme_override_styles/panel = SubResource("StyleBoxFlat_5ffqw")
+[node name="IntensityBar" type="Control" unique_id=1908362111 node_paths=PackedStringArray("progress_bars")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1753.0
+offset_bottom = -528.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_oa1dk")
 progress_bars = [NodePath("ProgressBar"), NodePath("ProgressBar2"), NodePath("ProgressBar3")]
 fill_speed = 180
 
-[node name="ProgressBar" type="ProgressBar" parent="." unique_id=1310832246]
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=1458331131]
 layout_mode = 0
-offset_left = 1.0
-offset_top = 3.0
-offset_right = 128.0
-offset_bottom = 88.99999
-theme_override_styles/background = SubResource("StyleBoxFlat_eq7vg")
-theme_override_styles/fill = SubResource("StyleBoxFlat_87xt4")
+offset_left = 33.0
+offset_top = 476.0
+offset_right = 163.63751
+offset_bottom = 580.67944
+rotation = 4.712389
+theme_override_styles/background = SubResource("StyleBoxFlat_dk5jg")
+theme_override_styles/fill = SubResource("StyleBoxFlat_kdyed")
 show_percentage = false
 
-[node name="ProgressBar2" type="ProgressBar" parent="." unique_id=566792184]
+[node name="ProgressBar2" type="ProgressBar" parent="." unique_id=1375777005]
 layout_mode = 0
-offset_left = 118.0
-offset_top = 3.0
-offset_right = 245.0
-offset_bottom = 88.99999
-theme_override_styles/background = SubResource("StyleBoxFlat_eq7vg")
-theme_override_styles/fill = SubResource("StyleBoxFlat_uorxi")
+offset_left = 33.0
+offset_top = 343.0
+offset_right = 164.36958
+offset_bottom = 444.21536
+rotation = 4.712389
+theme_override_styles/background = SubResource("StyleBoxFlat_dk5jg")
+theme_override_styles/fill = SubResource("StyleBoxFlat_tsmqf")
 show_percentage = false
 
-[node name="ProgressBar3" type="ProgressBar" parent="." unique_id=1393958761]
+[node name="ProgressBar3" type="ProgressBar" parent="." unique_id=751548182]
 layout_mode = 0
-offset_left = 235.0
-offset_top = 3.0
-offset_right = 362.0
-offset_bottom = 88.99999
-theme_override_styles/background = SubResource("StyleBoxFlat_eq7vg")
-theme_override_styles/fill = SubResource("StyleBoxFlat_wiyw8")
+offset_left = 30.0
+offset_top = 212.0
+offset_right = 171.93178
+offset_bottom = 314.7022
+rotation = 4.712389
+theme_override_styles/background = SubResource("StyleBoxFlat_dk5jg")
+theme_override_styles/fill = SubResource("StyleBoxFlat_cfmxu")
 show_percentage = false
 
-[node name="Border1" type="Panel" parent="." unique_id=1115664015]
-visible = false
-layout_mode = 0
-offset_left = 116.0
-offset_top = -3.0
-offset_right = 122.0
-offset_bottom = 100.22106
-theme_override_styles/panel = SubResource("StyleBoxFlat_6n3d1")
-
-[node name="Border2" type="Panel" parent="." unique_id=255068922]
-visible = false
-layout_mode = 0
-offset_left = 234.0
-offset_top = -3.0
-offset_right = 240.0
-offset_bottom = 97.398705
-theme_override_styles/panel = SubResource("StyleBoxFlat_6n3d1")
+[node name="TextureRect" type="TextureRect" parent="." unique_id=420575124]
+layout_mode = 1
+offset_right = 167.0
+offset_bottom = 522.0
+texture = ExtResource("2_dk5jg")

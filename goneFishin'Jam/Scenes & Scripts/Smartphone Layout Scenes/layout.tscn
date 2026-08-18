@@ -10,18 +10,11 @@
 [ext_resource type="Texture2D" uid="uid://luldv4a5y5pw" path="res://Assets/CGs/Game Background_Room.jpg" id="7_x2q73"]
 [ext_resource type="Texture2D" uid="uid://bt5kmce0gi8tr" path="res://Assets/Buttons/Settings Button_02.png" id="9_rg3jm"]
 [ext_resource type="FontFile" uid="uid://cuauodtrqsmwe" path="res://Assets/FishFonts/Viga/Viga-Regular.ttf" id="10_faglw"]
+[ext_resource type="FontFile" uid="uid://b5u7o2egl3j1f" path="res://Assets/FishFonts/National_Park/NationalPark-VariableFont_wght.ttf" id="10_nutsx"]
 [ext_resource type="Texture2D" uid="uid://b0f8y76m7stop" path="res://Assets/Buttons/Home_DatingApp_Button_02.png" id="11_ctla8"]
 [ext_resource type="Texture2D" uid="uid://clgusrunt1jaj" path="res://Assets/Buttons/Home_DatingApp_Button.png" id="11_nhi7i"]
 [ext_resource type="Script" uid="uid://bldt7xlfum7ov" path="res://addons/dialogic/Modules/Choice/node_choice_button.gd" id="11_psllm"]
-[ext_resource type="Texture2D" uid="uid://cgxpucsuaqxn4" path="res://Assets/Buttons/Heart Button_01.png" id="15_ctla8"]
-[ext_resource type="Texture2D" uid="uid://cjmoslug0n577" path="res://Assets/Buttons/Back Button_01.png" id="16_rg3jm"]
-[ext_resource type="Texture2D" uid="uid://bi761ql8dhuve" path="res://Assets/Buttons/Back Button_02.png" id="17_faglw"]
-[ext_resource type="Texture2D" uid="uid://blosx8jwc8mxu" path="res://Assets/Buttons/Heart Button_02.png" id="18_nhi7i"]
-[ext_resource type="Texture2D" uid="uid://debfo6h3ic5sq" path="res://Assets/CGs/Dating Profile_Ada_02.png" id="19_e4g0c"]
 [ext_resource type="Texture2D" uid="uid://dia4dqoe5lh3d" path="res://Assets/CGs/Dating Profile_Ada.png" id="19_rg3jm"]
-[ext_resource type="FontFile" uid="uid://37vndl7guwyk" path="res://Assets/FishFonts/National_Park/static/NationalPark-Bold.ttf" id="20_0sqv7"]
-[ext_resource type="Texture2D" uid="uid://bnb8gadln6th5" path="res://Assets/Buttons/UI_Dating Logo_Lineless.png" id="21_h4mjr"]
-[ext_resource type="Texture2D" uid="uid://dmnix0sf7vu2q" path="res://Assets/Buttons/UI_Dating Logo_Lineless_2.png" id="22_u33i3"]
 
 [sub_resource type="FontVariation" id="FontVariation_wmbjk"]
 base_font = ExtResource("10_faglw")
@@ -38,12 +31,12 @@ content_margin_left = 10.0
 content_margin_top = 10.0
 content_margin_right = 10.0
 content_margin_bottom = 15.0
-bg_color = Color(0.972549, 0.972549, 0.972549, 1)
-border_width_left = 5
-border_width_top = 5
-border_width_right = 5
-border_width_bottom = 5
-border_blend = true
+bg_color = Color(0.7137255, 0.19215687, 0.047058824, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
@@ -136,163 +129,13 @@ _data = {
 &"lineboil": SubResource("Animation_2scry")
 }
 
-[sub_resource type="Animation" id="Animation_uby30"]
-length = 2.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("DateProfileViewAda/Button_Back:texture_normal")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [ExtResource("16_rg3jm"), ExtResource("17_faglw")]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("DateProfileViewAda/Button_Heart:texture_normal")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [ExtResource("15_ctla8"), ExtResource("18_nhi7i")]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("DateProfileViewAda/Texture_Profile:texture")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [ExtResource("19_rg3jm"), ExtResource("19_e4g0c")]
-}
-
-[sub_resource type="Animation" id="Animation_f5cwt"]
-resource_name = "lineboil"
-length = 2.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("DateProfileViewAda/Button_Back:texture_normal")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [ExtResource("16_rg3jm"), ExtResource("17_faglw")]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("DateProfileViewAda/Button_Heart:texture_normal")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [ExtResource("15_ctla8"), ExtResource("18_nhi7i")]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("DateProfileViewAda/Texture_Profile:texture")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.96666664),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [ExtResource("19_rg3jm"), ExtResource("19_e4g0c")]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_ksnnb"]
-_data = {
-&"RESET": SubResource("Animation_uby30"),
-&"lineboil": SubResource("Animation_f5cwt")
-}
-
-[sub_resource type="FontVariation" id="FontVariation_5vbu5"]
-base_font = ExtResource("10_faglw")
-spacing_glyph = -3
-
-[sub_resource type="LabelSettings" id="LabelSettings_yextm"]
-font = SubResource("FontVariation_5vbu5")
-font_size = 88
-font_color = Color(0.8156863, 0.24705882, 0.19607843, 1)
-
-[sub_resource type="FontVariation" id="FontVariation_yd1jc"]
-base_font = ExtResource("10_faglw")
-spacing_glyph = -3
-
-[sub_resource type="LabelSettings" id="LabelSettings_2tll0"]
-font = SubResource("FontVariation_yd1jc")
-font_size = 70
-font_color = Color(0, 0, 0, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_5ukpt"]
-font = ExtResource("20_0sqv7")
-font_size = 24
-font_color = Color(0, 0, 0, 1)
-
-[sub_resource type="Animation" id="Animation_cgb1i"]
-length = 2.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Texture_AppLogo:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [ExtResource("21_h4mjr"), ExtResource("22_u33i3")]
-}
-
-[sub_resource type="Animation" id="Animation_jy775"]
-resource_name = "lineboil"
-length = 2.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Texture_AppLogo:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [ExtResource("21_h4mjr"), ExtResource("22_u33i3")]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_uby30"]
-_data = {
-&"RESET": SubResource("Animation_cgb1i"),
-&"lineboil": SubResource("Animation_jy775")
-}
-
-[node name="Layout" type="CanvasLayer" unique_id=816932843 node_paths=PackedStringArray("dialog_text", "scroll_container", "message_list", "timestamp", "contact_name", "intensity_bar")]
+[node name="Layout" type="CanvasLayer" unique_id=816932843 node_paths=PackedStringArray("dialog_text", "scroll_container", "message_list", "timestamp", "contact_name")]
 script = ExtResource("1_hcp3l")
 dialog_text = NodePath("BasePhone/Scroll/MessageList/DialogText")
 scroll_container = NodePath("BasePhone/Scroll")
 message_list = NodePath("BasePhone/Scroll/MessageList")
 timestamp = NodePath("BasePhone/Scroll/MessageList/DialogText/Time")
 contact_name = NodePath("BasePhone/Label_ContactName")
-intensity_bar = NodePath("BasePhone/IntensityBar")
 
 [node name="Texture_BG" type="TextureRect" parent="." unique_id=554073330]
 z_index = -3
@@ -368,13 +211,13 @@ offset_right = 1231.8739
 offset_bottom = 112.64653
 texture_normal = ExtResource("6_0krvx")
 
-[node name="IntensityBar" parent="BasePhone" unique_id=150823454 instance=ExtResource("4_o0gdq")]
-layout_mode = 0
-offset_left = 514.0
-offset_top = 1025.0
-offset_right = 881.0
-offset_bottom = 1118.428
-scale = Vector2(1.1434964, 1.0750489)
+[node name="IntensityBar" parent="BasePhone" unique_id=1908362111 instance=ExtResource("4_o0gdq")]
+layout_mode = 1
+offset_left = 484.0
+offset_top = 549.0
+offset_right = 444.0
+offset_bottom = 509.0
+scale = Vector2(0.96, 0.99999756)
 
 [node name="Scroll" type="ScrollContainer" parent="BasePhone" unique_id=567565903]
 layout_mode = 0
@@ -389,11 +232,12 @@ size_flags_horizontal = 3
 size_flags_vertical = 10
 
 [node name="DialogText" type="RichTextLabel" parent="BasePhone/Scroll/MessageList" unique_id=1307364371 node_paths=PackedStringArray("textbox_root")]
-custom_minimum_size = Vector2(100, 0)
+custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 size_flags_horizontal = 0
 theme_override_colors/default_color = Color(0.11858138, 0.11858138, 0.11858138, 1)
-theme_override_font_sizes/normal_font_size = 10
+theme_override_fonts/normal_font = ExtResource("10_nutsx")
+theme_override_font_sizes/normal_font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_tupbf")
 bbcode_enabled = true
 text = "Here is some sample text"
@@ -443,98 +287,6 @@ choice_index = 3
 [node name="Lineboil" type="AnimationPlayer" parent="BasePhone" unique_id=1424302907]
 root_node = NodePath("../..")
 libraries/ = SubResource("AnimationLibrary_t6hor")
-autoplay = &"RESET"
-
-[node name="DateProfileViewAda" type="Control" parent="." unique_id=1097729645]
-visible = false
-layout_mode = 3
-anchors_preset = 0
-offset_left = 981.0
-offset_top = 521.0
-offset_right = 1021.0
-offset_bottom = 561.0
-
-[node name="Button_Heart" type="TextureButton" parent="DateProfileViewAda" unique_id=789345286]
-z_index = 2
-layout_mode = 0
-offset_left = 2.0
-offset_top = 14.0
-offset_right = 149.0
-offset_bottom = 160.0
-texture_normal = ExtResource("15_ctla8")
-
-[node name="Button_Back" type="TextureButton" parent="DateProfileViewAda" unique_id=1276049577]
-z_index = 2
-layout_mode = 0
-offset_left = -210.0
-offset_top = 8.0
-offset_right = -60.0
-offset_bottom = 158.0
-texture_normal = ExtResource("16_rg3jm")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="DateProfileViewAda" unique_id=1459386594]
-root_node = NodePath("../..")
-libraries/ = SubResource("AnimationLibrary_ksnnb")
-autoplay = &"RESET"
-
-[node name="Label_Name" type="Label" parent="DateProfileViewAda" unique_id=1515483775]
-z_index = 1
-layout_mode = 0
-offset_left = -263.03693
-offset_top = 156.78351
-offset_right = 111.96307
-offset_bottom = 397.7835
-text = "Name, 25"
-label_settings = SubResource("LabelSettings_yextm")
-
-[node name="Label_Job" type="Label" parent="DateProfileViewAda" unique_id=476747790]
-z_index = 2
-layout_mode = 0
-offset_left = -259.7744
-offset_top = 239.85986
-offset_right = -138.77441
-offset_bottom = 446.85986
-text = "Job
-"
-label_settings = SubResource("LabelSettings_2tll0")
-
-[node name="Label_Bio" type="Label" parent="DateProfileViewAda" unique_id=160514473]
-layout_mode = 0
-offset_left = -261.9422
-offset_top = 323.80994
-offset_right = 218.0578
-offset_bottom = 510.80994
-text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus arcu et velit hendrerit, nec scelerisque nunc condimentum. Vivamus sed congue erat. "
-label_settings = SubResource("LabelSettings_5ukpt")
-autowrap_mode = 2
-
-[node name="Texture_Profile" type="TextureRect" parent="DateProfileViewAda" unique_id=714151948]
-z_index = 1
-layout_mode = 0
-offset_left = -313.0
-offset_top = -404.0
-offset_right = 261.0
-offset_bottom = 109.0
-texture = ExtResource("19_rg3jm")
-expand_mode = 1
-
-[node name="LoadingAppIcon" type="Control" parent="." unique_id=550215422]
-visible = false
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="Texture_AppLogo" type="TextureRect" parent="LoadingAppIcon" unique_id=1669915302]
-layout_mode = 0
-offset_left = 702.0
-offset_top = 230.0
-offset_right = 1222.0
-offset_bottom = 783.0
-texture = ExtResource("21_h4mjr")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="LoadingAppIcon" unique_id=2133488064]
-libraries/ = SubResource("AnimationLibrary_uby30")
 autoplay = &"RESET"
 
 [connection signal="finished_revealing_text" from="BasePhone/Scroll/MessageList/DialogText" to="." method="_on_dialog_text_finished_revealing_text"]

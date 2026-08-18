@@ -7,12 +7,11 @@ extends Node2D
 @onready var scn_settings        : Control = $"Scenes/Settings"
 @onready var scn_credits         : Control = $"Scenes/Credits"
 @onready var scn_gallery         : Control = $"Scenes/Gallery"
-@onready var scn_people_near_you : Control = $"Scenes/Gameplay Scenes/PeopleNearYou"
-@onready var scn_texting_stage   : Control = $"Scenes/Gameplay Scenes/TextingStage"
-@onready var scn_date_time       : Control = $"Scenes/Gameplay Scenes/DateTime"
-@onready var scn_date_end        : Control = $"Scenes/Gameplay Scenes/DateEnd"
-@onready var scn_game_end        : Control = $"Scenes/Gameplay Scenes/GameEndScreen"
-
+@onready var scn_people_near_you : Control = $"Gameplay Scenes/PeopleNearYou"
+@onready var scn_texting_stage   : Control = $"Gameplay Scenes/TextingStage"
+@onready var scn_date_time       : Control = $"Gameplay Scenes/DateTime"
+@onready var scn_date_end        : Control = $"Gameplay Scenes/DateEnd"
+@onready var scn_game_end        : Control = $"Gameplay Scenes/GameEndScreen"
 
 # The total number of dateable characters in the game. Assigned from the editor. 3 by default.
 @export var num_total_chars : int
@@ -40,7 +39,6 @@ func _on_gallery_entered() -> void:
 	scn_gallery.show()
 
 func _on_settings_entered() -> void:
-	scn_main_menu.hide()
 	scn_settings.show()
 
 func _on_credits_entered() -> void:
@@ -93,6 +91,8 @@ func _on_return_to_main_menu() -> void:
 	scn_gallery.hide()
 	scn_settings.hide()
 	scn_credits.hide()
+	scn_people_near_you.hide()
+	scn_people_near_you.reset_phone()
 	scn_date_end.hide()
 	scn_game_end.hide()
 	
