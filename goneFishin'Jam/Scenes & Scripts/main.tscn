@@ -5,13 +5,13 @@
 [ext_resource type="PackedScene" uid="uid://brsrvlywkb56f" path="res://Scenes & Scripts/Game Scenes/main_menu.tscn" id="2_dbmlg"]
 [ext_resource type="PackedScene" uid="uid://bpdbtgij7y6x3" path="res://Scenes & Scripts/Game Scenes/settings.tscn" id="3_4ikto"]
 [ext_resource type="PackedScene" uid="uid://rib6qm1aode3" path="res://Scenes & Scripts/Game Scenes/texting_stage.tscn" id="3_dbmlg"]
-[ext_resource type="PackedScene" uid="uid://cdqkd21a24mai" path="res://Scenes & Scripts/Game Scenes/credits.tscn" id="4_pov6j"]
-[ext_resource type="PackedScene" uid="uid://b35mjjfq5w1om" path="res://Scenes & Scripts/Game Scenes/gallery.tscn" id="5_jrmb8"]
 [ext_resource type="PackedScene" uid="uid://dxgnjgw3v1eh" path="res://Scenes & Scripts/Game Scenes/date_end.tscn" id="5_qxe4v"]
 [ext_resource type="PackedScene" uid="uid://bppwvybe2yrlr" path="res://Scenes & Scripts/Game Scenes/game_end_screen.tscn" id="5_xvj0e"]
 [ext_resource type="PackedScene" uid="uid://1wm4u7bh74dm" path="res://Scenes & Scripts/Game Scenes/date_time.tscn" id="8_pov6j"]
+[ext_resource type="PackedScene" uid="uid://cp0epwig8old5" path="res://Scenes & Scripts/quit_confirm.tscn" id="11_jrmb8"]
 
 [node name="Main" type="Node2D" unique_id=2069766624]
+visible = false
 script = ExtResource("1_yt7ni")
 num_total_chars = 3
 
@@ -40,22 +40,28 @@ visible = false
 [node name="Settings" parent="Scenes" unique_id=1674674967 instance=ExtResource("3_4ikto")]
 visible = false
 
-[node name="Credits" parent="Scenes" unique_id=602286879 instance=ExtResource("4_pov6j")]
+[node name="Pop-Ups" type="Node" parent="." unique_id=1895350741]
+
+[node name="QuitConfirm" parent="Pop-Ups" unique_id=1551610820 instance=ExtResource("11_jrmb8")]
 visible = false
 
-[node name="Gallery" parent="Scenes" unique_id=442786049 instance=ExtResource("5_jrmb8")]
-visible = false
-
+[connection signal="can_unpause" from="." to="Gameplay Scenes/TextingStage" method="_on_can_unpause"]
+[connection signal="credits_entered" from="." to="Scenes/Settings" method="_on_credits_pressed"]
+[connection signal="settings_entered" from="." to="Scenes/Settings" method="_on_settings_pressed"]
 [connection signal="all_chars_dated" from="Gameplay Scenes/PeopleNearYou" to="." method="_on_all_chars_dated"]
 [connection signal="date_selected" from="Gameplay Scenes/PeopleNearYou" to="." method="_on_date_selected"]
 [connection signal="open_settings" from="Gameplay Scenes/PeopleNearYou" to="." method="_on_settings_entered"]
-[connection signal="return_to_menu" from="Gameplay Scenes/PeopleNearYou" to="." method="_on_return_to_main_menu"]
+[connection signal="return_to_menu" from="Gameplay Scenes/PeopleNearYou" to="." method="_on_return_to_menu_btn_pressed"]
+[connection signal="settings_opened" from="Gameplay Scenes/TextingStage" to="." method="_on_settings_entered"]
 [connection signal="on_retry" from="Gameplay Scenes/DateEnd" to="." method="_on_date_selected"]
 [connection signal="on_return_to_main_menu" from="Gameplay Scenes/DateEnd" to="." method="_on_return_to_main_menu"]
 [connection signal="restart_game" from="Gameplay Scenes/GameEndScreen" to="." method="_on_game_restart"]
 [connection signal="credits_entered" from="Scenes/Main Menu" to="." method="_on_credits_entered"]
-[connection signal="gallery_entered" from="Scenes/Main Menu" to="." method="_on_gallery_entered"]
 [connection signal="game_started" from="Scenes/Main Menu" to="." method="_on_game_started"]
+[connection signal="quit_pressed" from="Scenes/Main Menu" to="." method="_on_quit_btn_pressed"]
 [connection signal="settings_entered" from="Scenes/Main Menu" to="." method="_on_settings_entered"]
-[connection signal="return_to_menu" from="Scenes/Credits" to="." method="_on_return_to_main_menu"]
-[connection signal="return_to_menu" from="Scenes/Gallery" to="." method="_on_return_to_main_menu"]
+[connection signal="can_unpause" from="Scenes/Settings" to="." method="_on_texting_stage_can_unpause"]
+[connection signal="quit_game" from="Scenes/Settings" to="." method="_on_quit_btn_pressed"]
+[connection signal="return_to_menu" from="Scenes/Settings" to="." method="_on_return_to_menu_btn_pressed"]
+[connection signal="confirm_quit" from="Pop-Ups/QuitConfirm" to="." method="_on_game_close"]
+[connection signal="confirm_return_to_menu" from="Pop-Ups/QuitConfirm" to="." method="_on_return_to_main_menu"]

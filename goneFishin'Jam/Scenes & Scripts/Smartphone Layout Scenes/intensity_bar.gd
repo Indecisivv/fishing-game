@@ -6,6 +6,7 @@ extends Control
 # These fields are for handling the progress bars.
 var index : int = -1
 var direction : int = 1
+var tween : Tween
 
 # I call the methods in _physics_process() to avoid any calculation bugs. Not sure if it does anything,
 # but I figure it's good practice.
@@ -55,10 +56,19 @@ func select_dialogue_choice(delta:float) -> void:
 	if Input.is_action_pressed("dialogic_default_action"):
 		match index: # This doesn't count as a nested if statement, right, Perry-sensei...?
 			0:
+				set_button_color(1, Color("50bbb9"))
+				set_button_color(2, Color("236463"))
+				set_button_color(3, Color("236463"))
 				Dialogic.Choices.focus_choice(1)
 			1:
+				set_button_color(1, Color("236463"))
+				set_button_color(2, Color("50bbb9"))
+				set_button_color(3, Color("236463"))
 				Dialogic.Choices.focus_choice(2)
 			2:
+				set_button_color(1, Color("236463"))
+				set_button_color(2, Color("236463"))
+				set_button_color(3, Color("50bbb9"))
 				Dialogic.Choices.focus_choice(3)
 		
 		update_progress_bars(delta)
@@ -74,3 +84,8 @@ func select_dialogue_choice(delta:float) -> void:
 				Dialogic.Choices.select_choice(3)
 			
 		reset_progress_bars()
+
+func set_button_color(choice_index:int, color:Color) -> void:
+	var stylebox : StyleBoxFlat = Dialogic.Choices.get_choice_button(choice_index).get_theme_stylebox("normal").duplicate()
+	stylebox.bg_color = color
+	Dialogic.Choices.get_choice_button(choice_index).add_theme_stylebox_override("normal", stylebox)

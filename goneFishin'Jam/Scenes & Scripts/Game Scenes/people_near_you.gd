@@ -6,7 +6,6 @@ extends Control
 @onready var ui_features          : Control         = $"Phone/UI Features"
 @onready var date_choices_view    : Control         = $Phone/DateChoicesView
 @onready var date_profile_view    : Control         = $Phone/DateProfileView
-@onready var btn_dead_line_boiler : AnimationPlayer = $Phone/DateChoicesView/BtnDeadLineBoiler
 
 @export var texture_loading_screen: TextureRect
 @export var timer: Timer
@@ -30,12 +29,12 @@ func _on_btn_ada_pressed() -> void:
 	emit_signal('date_selected')
 	reset_screen()
 
-func _on_btn_soccoro_pressed() -> void:
+func _on_btn_khanh_pressed() -> void:
 	index = 1
 	emit_signal('date_selected')
 	reset_screen()
 
-func _on_btn_khanh_pressed() -> void:
+func _on_btn_soccoro_pressed() -> void:
 	index = 2
 	emit_signal('date_selected')
 	reset_screen()
@@ -95,21 +94,13 @@ func reset_loading_screen() -> void:
 	texture_loading_screen.show()
 	ui_features.hide()
 	date_choices_view.hide()
+	date_profile_view.hide()
 
 # Disables a button and alters its visuals accordingly
 func disable_button() -> void:
-	#buttons[index].disabled = true
+	buttons[index].disabled = true
 	buttons[index].modulate = Color("777777")
 	
-	match index:
-		0:
-			btn_dead_line_boiler.get_animation("btn_line_boil_dead").track_set_enabled(0, true)
-		1:
-			btn_dead_line_boiler.get_animation("btn_line_boil_dead").track_set_enabled(1, true)
-		2:
-			btn_dead_line_boiler.get_animation("btn_line_boil_dead").track_set_enabled(2, true)
-	
-	btn_dead_line_boiler.play("btn_line_boil_dead")
 	check_buttons()
 
 # Resets all buttons and associated visual changes
@@ -117,7 +108,6 @@ func reset_all_buttons() -> void:
 	for i in buttons.size():
 		buttons[i].disabled = false
 		buttons[i].modulate = Color("ffffff")
-		btn_dead_line_boiler.get_animation("btn_line_boil_dead").track_set_enabled(i, false) 
 
 # Checks if all buttons are disabled to see if all characters have been dated
 func check_buttons() -> void:
@@ -133,27 +123,3 @@ func check_buttons() -> void:
 func reset_screen() -> void:
 	date_choices_view.show()
 	date_profile_view.hide()
-
-
-func _on_btn_khanh_mouse_entered() -> void:
-	pass # Replace with function body.
-
-
-func _on_btn_khanh_mouse_exited() -> void:
-	pass # Replace with function body.
-
-
-func _on_btn_soccoro_mouse_exited() -> void:
-	pass # Replace with function body.
-
-
-func _on_btn_soccoro_mouse_entered() -> void:
-	pass # Replace with function body.
-
-
-func _on_btn_ada_mouse_entered() -> void:
-	pass # Replace with function body.
-
-
-func _on_btn_ada_mouse_exited() -> void:
-	pass # Replace with function body.

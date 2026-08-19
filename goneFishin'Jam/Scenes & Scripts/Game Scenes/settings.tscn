@@ -1,6 +1,62 @@
 [gd_scene format=3 uid="uid://bpdbtgij7y6x3"]
 
 [ext_resource type="Script" uid="uid://bynl1bl3haan3" path="res://Scenes & Scripts/Game Scenes/settings.gd" id="1_0h3cg"]
+[ext_resource type="AudioStream" uid="uid://cn6ullfd8rt44" path="res://Assets/SFX/testAUDIO.wav" id="2_llxf6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sfvw0"]
+content_margin_left = 20.0
+content_margin_top = 20.0
+content_margin_right = 20.0
+content_margin_bottom = 20.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0.7058824)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ibcqv"]
+content_margin_left = 20.0
+content_margin_top = 20.0
+content_margin_right = 20.0
+content_margin_bottom = 20.0
+bg_color = Color(0.1, 0.1, 0.1, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_llxf6"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e5nff"]
+content_margin_left = 20.0
+content_margin_top = 20.0
+content_margin_right = 20.0
+content_margin_bottom = 20.0
+bg_color = Color(0.1, 0.1, 0.1, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sojg4"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0.1, 0.1, 0.1, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
 
 [node name="Settings" type="Control" unique_id=1674674967]
 z_index = 4
@@ -12,43 +68,329 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_0h3cg")
 
-[node name="Panel" type="Panel" parent="." unique_id=2013417446]
-layout_mode = 1
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=426794815]
+visible = false
+
+[node name="BackgroundPanel" type="Panel" parent="CanvasLayer" unique_id=2013417446]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Label" type="Label" parent="." unique_id=900130051]
-layout_mode = 1
+[node name="NavigationPanel" type="PanelContainer" parent="CanvasLayer" unique_id=1085788913]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -33.0
-offset_top = -56.0
-offset_right = 33.0
-offset_bottom = -33.0
+offset_left = -918.0
+offset_top = -500.0
+offset_right = -451.0
+offset_bottom = 501.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "settings "
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_sfvw0")
 
-[node name="Button" type="Button" parent="." unique_id=1562301336]
-layout_mode = 1
+[node name="NavContainer" type="VBoxContainer" parent="CanvasLayer/NavigationPanel" unique_id=491653678]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="ButtonMainMenu" type="Button" parent="CanvasLayer/NavigationPanel/NavContainer" unique_id=1694722938]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 31
+text = "Main Menu"
+
+[node name="ButtonSettings" type="Button" parent="CanvasLayer/NavigationPanel/NavContainer" unique_id=1851672459]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 24
+text = "Settings"
+
+[node name="ButtonCredits" type="Button" parent="CanvasLayer/NavigationPanel/NavContainer" unique_id=413871767]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 24
+text = "Credits
+"
+
+[node name="ButtonMainQuit" type="Button" parent="CanvasLayer/NavigationPanel/NavContainer" unique_id=862888164]
+layout_mode = 2
+size_flags_vertical = 10
+theme_override_font_sizes/font_size = 31
+text = "Quit
+"
+
+[node name="SettingsScreen" type="PanelContainer" parent="CanvasLayer" unique_id=132653074]
+visible = false
+offset_left = 518.0
+offset_top = 40.0
+offset_right = 1885.0
+offset_bottom = 1041.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ibcqv")
+
+[node name="ScreenContainer" type="VBoxContainer" parent="CanvasLayer/SettingsScreen" unique_id=1495200417]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_constants/separation = 24
+
+[node name="TitleContainer" type="PanelContainer" parent="CanvasLayer/SettingsScreen/ScreenContainer" unique_id=1342486156]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_llxf6")
+
+[node name="Label" type="Label" parent="CanvasLayer/SettingsScreen/ScreenContainer/TitleContainer" unique_id=144858506]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 48
+text = "SETTINGS"
+
+[node name="VolumeContainer" type="VBoxContainer" parent="CanvasLayer/SettingsScreen/ScreenContainer" unique_id=1782134729]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="MusicContainer" type="HBoxContainer" parent="CanvasLayer/SettingsScreen/ScreenContainer/VolumeContainer" unique_id=1800683168]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Label" type="Label" parent="CanvasLayer/SettingsScreen/ScreenContainer/VolumeContainer/MusicContainer" unique_id=1020704521]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "MUSIC"
+
+[node name="HSlider" type="HSlider" parent="CanvasLayer/SettingsScreen/ScreenContainer/VolumeContainer/MusicContainer" unique_id=514609659]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.01
+value = 1.0
+
+[node name="AudioContainer" type="HBoxContainer" parent="CanvasLayer/SettingsScreen/ScreenContainer/VolumeContainer" unique_id=1933218414]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Label" type="Label" parent="CanvasLayer/SettingsScreen/ScreenContainer/VolumeContainer/AudioContainer" unique_id=2075426050]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "AUDIO"
+
+[node name="HSlider" type="HSlider" parent="CanvasLayer/SettingsScreen/ScreenContainer/VolumeContainer/AudioContainer" unique_id=591187407]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.01
+value = 1.0
+
+[node name="Button" type="Button" parent="CanvasLayer/SettingsScreen/ScreenContainer/VolumeContainer/AudioContainer" unique_id=938992432]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Test Sound"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer/SettingsScreen/ScreenContainer/VolumeContainer/AudioContainer/Button" unique_id=1964780123]
+stream = ExtResource("2_llxf6")
+bus = &"Audio"
+
+[node name="LanguageContainer" type="VBoxContainer" parent="CanvasLayer/SettingsScreen/ScreenContainer" unique_id=218069520]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/SettingsScreen/ScreenContainer/LanguageContainer" unique_id=1628456654]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "LANGUAGE"
+horizontal_alignment = 1
+
+[node name="OptionButton" type="OptionButton" parent="CanvasLayer/SettingsScreen/ScreenContainer/LanguageContainer" unique_id=2066446078]
+layout_mode = 2
+size_flags_horizontal = 4
+selected = 0
+item_count = 3
+popup/item_0/text = "English"
+popup/item_0/id = 0
+popup/item_1/text = "Espanol"
+popup/item_1/id = 1
+popup/item_2/text = "Filipino"
+popup/item_2/id = 2
+
+[node name="CreditsScreen" type="PanelContainer" parent="CanvasLayer" unique_id=1154685088]
+offset_left = 518.0
+offset_top = 40.0
+offset_right = 1885.0
+offset_bottom = 1041.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_e5nff")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer/CreditsScreen" unique_id=1502401342]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="TitleContainer" type="PanelContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2" unique_id=426374377]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_llxf6")
+
+[node name="Label" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/TitleContainer" unique_id=813793099]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 48
+text = "CREDITS"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2" unique_id=771798036]
+layout_mode = 2
+theme_override_constants/separation = 28
+
+[node name="Credits" type="PanelContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer" unique_id=280837760]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_sojg4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits" unique_id=596879921]
+layout_mode = 2
+
+[node name="Writer" type="HBoxContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer" unique_id=90580273]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Label" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer/Writer" unique_id=1741292582]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "WRITER"
+
+[node name="LinkButton" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer/Writer" unique_id=993128541]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "chud"
+underline = 2
+uri = "www.google.com"
+
+[node name="Coder" type="HBoxContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer" unique_id=453795648]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Label" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer/Coder" unique_id=399961085]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "CODER"
+
+[node name="LinkButton" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer/Coder" unique_id=358384834]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "chud"
+underline = 2
+uri = "www.google.com"
+
+[node name="Artist" type="HBoxContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer" unique_id=52971059]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Label" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer/Artist" unique_id=1904258106]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "ARTIST"
+
+[node name="LinkButton" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer/Artist" unique_id=795035315]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "chud"
+underline = 2
+uri = "www.google.com"
+
+[node name="Audio Designer" type="HBoxContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer" unique_id=1918681605]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Label" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer/Audio Designer" unique_id=1022830552]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "AUDIO"
+
+[node name="LinkButton" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer/Audio Designer" unique_id=1401400379]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "chud"
+underline = 2
+uri = "www.google.com"
+
+[node name="Sounds" type="PanelContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer" unique_id=1527923197]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_sojg4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds" unique_id=53844839]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer" unique_id=226822800]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "SOUNDS"
+
+[node name="Label2" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer" unique_id=1142309863]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "the sounds we got from ... ... ..."
+
+[node name="Software" type="PanelContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer" unique_id=140404719]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_sojg4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Software" unique_id=1095883365]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Software/VBoxContainer" unique_id=1644465245]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "SOFTWARE"
+
+[node name="Label2" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Software/VBoxContainer" unique_id=1640544831]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "we used ... ..... .. "
+
+[node name="License" type="PanelContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer" unique_id=475893893]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_sojg4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/License" unique_id=1143879364]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/License/VBoxContainer" unique_id=826514274]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "License"
+
+[node name="Label2" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/License/VBoxContainer" unique_id=748521327]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "license description "
+
+[node name="GalleryScreen" type="PanelContainer" parent="CanvasLayer" unique_id=354880445]
+visible = false
+offset_left = 518.0
+offset_top = 40.0
+offset_right = 1885.0
+offset_bottom = 1041.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_e5nff")
+
+[node name="ButtonExit" type="Button" parent="CanvasLayer" unique_id=1562301336]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -85.5
-offset_top = -15.5
-offset_right = 85.5
-offset_bottom = 15.5
+offset_left = 727.0
+offset_top = -519.0
+offset_right = 943.0
+offset_bottom = -466.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 32
 text = "close settings"
 
-[connection signal="pressed" from="Button" to="." method="_on_menu_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/NavigationPanel/NavContainer/ButtonMainMenu" to="." method="_on_return_to_menu"]
+[connection signal="pressed" from="CanvasLayer/NavigationPanel/NavContainer/ButtonSettings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="CanvasLayer/NavigationPanel/NavContainer/ButtonCredits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="CanvasLayer/NavigationPanel/NavContainer/ButtonMainQuit" to="." method="_on_quit_game"]
+[connection signal="value_changed" from="CanvasLayer/SettingsScreen/ScreenContainer/VolumeContainer/MusicContainer/HSlider" to="." method="_on_music_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/SettingsScreen/ScreenContainer/VolumeContainer/AudioContainer/HSlider" to="." method="_on_sound_value_changed"]
+[connection signal="pressed" from="CanvasLayer/SettingsScreen/ScreenContainer/VolumeContainer/AudioContainer/Button" to="." method="_on_test_sound_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/ButtonExit" to="." method="_on_menu_button_pressed"]

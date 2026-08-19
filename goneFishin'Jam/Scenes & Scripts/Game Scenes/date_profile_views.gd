@@ -44,8 +44,8 @@ func set_profile(animation:String) -> void:
 	current_animation = animation
 	animation_player.play(animation)
 
-func set_text(name:String, job:String, text:String) -> void:
-	label_name.text = name
+func set_text(profile_name:String, job:String, text:String) -> void:
+	label_name.text = profile_name
 	label_job.text  = job
 	label_bio.text  = text
 

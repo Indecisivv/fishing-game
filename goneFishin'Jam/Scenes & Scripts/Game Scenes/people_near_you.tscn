@@ -245,26 +245,118 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Phone/Texture_Phone:texture")
+tracks/0/path = NodePath("Phone/DateChoicesView/btn_ada:texture_normal")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("5_11hj3"), ExtResource("11_m5o14")]
+"values": [ExtResource("22_0v1d4"), ExtResource("29_fk4pa")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Phone/DateChoicesView/btn_ada:texture_normal")
+tracks/1/path = NodePath("Phone/DateChoicesView/btn_khanh:texture_normal")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("23_x6b15")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Phone/DateChoicesView/btn_soccoro:texture_normal")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("24_36yh4")]
+}
+
+[sub_resource type="Animation" id="Animation_mjxxk"]
+resource_name = "btn_ada_line_boil"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Phone/DateChoicesView/btn_ada:texture_normal")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("22_0v1d4"), ExtResource("29_fk4pa")]
+}
+
+[sub_resource type="Animation" id="Animation_hb5hw"]
+resource_name = "btn_khanh_line_boil"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Phone/DateChoicesView/btn_khanh:texture_normal")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("23_x6b15"), ExtResource("30_wtv5n")]
+}
+
+[sub_resource type="Animation" id="Animation_bfmnk"]
+resource_name = "btn_soccoro_line_boil"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Phone/DateChoicesView/btn_soccoro:texture_normal")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("24_36yh4"), ExtResource("31_22ce1")]
+}
+
+[sub_resource type="Animation" id="Animation_x6b15"]
+resource_name = "lineboil"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Phone/DateChoicesView/btn_ada:texture_normal")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("22_0v1d4"), ExtResource("29_fk4pa")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Phone/DateChoicesView/btn_khanh:texture_normal")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("22_0v1d4"), ExtResource("29_fk4pa")]
+"values": [ExtResource("23_x6b15"), ExtResource("30_wtv5n")]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -276,39 +368,16 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("23_x6b15"), ExtResource("30_wtv5n")]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Phone/DateChoicesView/btn_khanh:texture_normal")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
 "values": [ExtResource("24_36yh4"), ExtResource("31_22ce1")]
 }
-
-[sub_resource type="Animation" id="Animation_mjxxk"]
-resource_name = "btn_ada_line_boil"
-loop_mode = 1
-
-[sub_resource type="Animation" id="Animation_hb5hw"]
-resource_name = "btn_khanh_line_boil"
-loop_mode = 1
-
-[sub_resource type="Animation" id="Animation_bfmnk"]
-resource_name = "btn_soccoro_line_boil"
-loop_mode = 1
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_i0j33"]
 _data = {
 &"RESET": SubResource("Animation_bfa6r"),
 &"btn_ada_line_boil": SubResource("Animation_mjxxk"),
 &"btn_khanh_line_boil": SubResource("Animation_hb5hw"),
-&"btn_soccoro_line_boil": SubResource("Animation_bfmnk")
+&"btn_soccoro_line_boil": SubResource("Animation_bfmnk"),
+&"lineboil": SubResource("Animation_x6b15")
 }
 
 [sub_resource type="Animation" id="Animation_uby30"]
@@ -514,7 +583,7 @@ offset_right = -1224.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_2i6yc")
-buttons = [NodePath(""), NodePath(""), NodePath("")]
+buttons = [NodePath("Phone/DateChoicesView/btn_ada"), NodePath("Phone/DateChoicesView/btn_khanh"), NodePath("Phone/DateChoicesView/btn_soccoro")]
 phone = NodePath("Phone")
 texture_loading_screen = NodePath("Phone/Texture_LoadingScreen")
 timer = NodePath("Phone/Texture_LoadingScreen/Timer")
@@ -586,6 +655,7 @@ wait_time = 1.4
 
 [node name="Jingle" type="AudioStreamPlayer" parent="Phone/Texture_LoadingScreen" unique_id=793883213]
 stream = ExtResource("7_smp7l")
+bus = &"Music"
 
 [node name="LoadingScreenBoiler" type="AnimationPlayer" parent="Phone/Texture_LoadingScreen" unique_id=2038826050]
 libraries/ = SubResource("AnimationLibrary_3ppex")
@@ -661,48 +731,51 @@ offset_bottom = 40.0
 
 [node name="btn_ada" type="TextureButton" parent="Phone/DateChoicesView" unique_id=932192840]
 layout_mode = 0
-offset_left = 41.189972
-offset_top = 201.06812
-offset_right = 635.18994
-offset_bottom = 515.0681
+offset_left = 7.1221657
+offset_top = 197.62523
+offset_right = 601.1222
+offset_bottom = 511.62524
 scale = Vector2(0.89, 0.89)
+pivot_offset = Vector2(297, 157)
 texture_normal = ExtResource("22_0v1d4")
 script = ExtResource("9_i0j33")
 
-[node name="btn_soccoro" type="TextureButton" parent="Phone/DateChoicesView" unique_id=747448375]
-layout_mode = 0
-offset_left = 39.46497
-offset_top = 479.6108
-offset_right = 633.46497
-offset_bottom = 793.61084
-scale = Vector2(0.89, 0.89)
-texture_normal = ExtResource("23_x6b15")
-script = ExtResource("11_53cv8")
-
 [node name="btn_khanh" type="TextureButton" parent="Phone/DateChoicesView" unique_id=1483301509]
 layout_mode = 0
-offset_left = 40.89435
-offset_top = 758.37756
-offset_right = 634.89435
-offset_bottom = 1072.3777
+offset_left = 6.827
+offset_top = 476.0
+offset_right = 600.827
+offset_bottom = 790.0001
 scale = Vector2(0.89, 0.89)
-texture_normal = ExtResource("24_36yh4")
+pivot_offset = Vector2(297, 157)
+texture_normal = ExtResource("23_x6b15")
 script = ExtResource("13_mjxxk")
+
+[node name="btn_soccoro" type="TextureButton" parent="Phone/DateChoicesView" unique_id=747448375]
+layout_mode = 0
+offset_left = 5.397
+offset_top = 754.0
+offset_right = 599.397
+offset_bottom = 1068.0
+scale = Vector2(0.89, 0.89)
+pivot_offset = Vector2(297, 157)
+texture_normal = ExtResource("24_36yh4")
+script = ExtResource("11_53cv8")
 
 [node name="Label_PPLNearYou" type="Label" parent="Phone/DateChoicesView" unique_id=418809051]
 layout_mode = 0
-offset_left = 54.780838
-offset_top = 152.57803
-offset_right = 481.78088
-offset_bottom = 218.57805
+offset_left = 54.78064
+offset_top = 152.57819
+offset_right = 481.7807
+offset_bottom = 218.57819
 text = "people  near you"
 label_settings = SubResource("LabelSettings_n6ov8")
 
 [node name="Label__3Online" type="Label" parent="Phone/DateChoicesView" unique_id=894720809]
 layout_mode = 0
-offset_left = 424.9574
+offset_left = 424.95728
 offset_top = 163.03442
-offset_right = 551.9574
+offset_right = 551.9573
 offset_bottom = 205.03442
 text = "● 3 online"
 label_settings = SubResource("LabelSettings_tn7bg")
@@ -710,9 +783,7 @@ label_settings = SubResource("LabelSettings_tn7bg")
 [node name="BtnLineBoiler" type="AnimationPlayer" parent="Phone/DateChoicesView" unique_id=1385143518]
 root_node = NodePath("../../..")
 libraries/ = SubResource("AnimationLibrary_i0j33")
-autoplay = &"RESET"
-
-[node name="BtnDeadLineBoiler" type="AnimationPlayer" parent="Phone/DateChoicesView" unique_id=2073562754]
+autoplay = &"lineboil"
 
 [node name="DateProfileView" type="Control" parent="Phone" unique_id=285696428]
 visible = false
@@ -796,15 +867,15 @@ texture_normal = ExtResource("15_53mxd")
 [connection signal="mouse_entered" from="Phone/UI Features/Button_Settings" to="Phone/UI Features/Button_Settings" method="_on_btn_entered"]
 [connection signal="mouse_exited" from="Phone/UI Features/Button_Settings" to="Phone/UI Features/Button_Settings" method="_on_btn_exited"]
 [connection signal="pressed" from="Phone/UI Features/Button_Settings" to="." method="_on_open_settings"]
-[connection signal="mouse_entered" from="Phone/DateChoicesView/btn_ada" to="." method="_on_btn_ada_mouse_entered"]
-[connection signal="mouse_exited" from="Phone/DateChoicesView/btn_ada" to="." method="_on_btn_ada_mouse_exited"]
-[connection signal="pressed" from="Phone/DateChoicesView/btn_ada" to="." method="_on_btn_ada_pressed"]
-[connection signal="mouse_entered" from="Phone/DateChoicesView/btn_soccoro" to="." method="_on_btn_soccoro_mouse_entered"]
-[connection signal="mouse_exited" from="Phone/DateChoicesView/btn_soccoro" to="." method="_on_btn_soccoro_mouse_exited"]
-[connection signal="pressed" from="Phone/DateChoicesView/btn_soccoro" to="." method="_on_btn_soccoro_pressed"]
-[connection signal="mouse_entered" from="Phone/DateChoicesView/btn_khanh" to="." method="_on_btn_khanh_mouse_entered"]
-[connection signal="mouse_exited" from="Phone/DateChoicesView/btn_khanh" to="." method="_on_btn_khanh_mouse_exited"]
-[connection signal="pressed" from="Phone/DateChoicesView/btn_khanh" to="." method="_on_btn_khanh_pressed"]
+[connection signal="mouse_entered" from="Phone/DateChoicesView/btn_ada" to="Phone/DateChoicesView/btn_ada" method="_on_btn_ada_entered"]
+[connection signal="mouse_exited" from="Phone/DateChoicesView/btn_ada" to="Phone/DateChoicesView/btn_ada" method="_on_btn_ada_exited"]
+[connection signal="pressed" from="Phone/DateChoicesView/btn_ada" to="Phone/DateChoicesView/btn_ada" method="_on_btn_ada_pressed"]
+[connection signal="mouse_entered" from="Phone/DateChoicesView/btn_khanh" to="Phone/DateChoicesView/btn_khanh" method="_on_btn_khanh_entered"]
+[connection signal="mouse_exited" from="Phone/DateChoicesView/btn_khanh" to="Phone/DateChoicesView/btn_khanh" method="_on_btn_khanh_exited"]
+[connection signal="pressed" from="Phone/DateChoicesView/btn_khanh" to="Phone/DateChoicesView/btn_khanh" method="_on_btn_khanh_pressed"]
+[connection signal="mouse_entered" from="Phone/DateChoicesView/btn_soccoro" to="Phone/DateChoicesView/btn_soccoro" method="_on_btn_soccoro_entered"]
+[connection signal="mouse_exited" from="Phone/DateChoicesView/btn_soccoro" to="Phone/DateChoicesView/btn_soccoro" method="_on_btn_soccoro_exited"]
+[connection signal="pressed" from="Phone/DateChoicesView/btn_soccoro" to="Phone/DateChoicesView/btn_soccoro" method="_on_btn_soccoro_pressed"]
 [connection signal="ada_pressed" from="Phone/DateProfileView" to="." method="_on_btn_ada_pressed"]
 [connection signal="khanh_pressed" from="Phone/DateProfileView" to="." method="_on_btn_khanh_pressed"]
 [connection signal="soccoro_pressed" from="Phone/DateProfileView" to="." method="_on_btn_soccoro_pressed"]

@@ -55,6 +55,7 @@ _data = {
 }
 
 [node name="FadeToBlackTransition" type="CanvasLayer" unique_id=966507377]
+layer = 128
 script = ExtResource("1_52u6u")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=719588072]

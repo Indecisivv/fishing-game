@@ -15,6 +15,10 @@ run/main_scene="uid://2ohq8yurtaoa"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[audio]
+
+buses/default_bus_layout="uid://byak87m43kh8e"
+
 [autoload]
 
 Dialogic="*uid://ds2q0uclmolvu"
@@ -52,7 +56,7 @@ animations/join_default_wait=true
 animations/leave_default_length=0.5
 animations/leave_default_wait=true
 animations/cross_fade_default_length=0.5
-choices/autofocus_first=true
+choices/autofocus_first=false
 choices/delay=0.2
 choices/reveal_delay=0
 choices/reveal_by_input=false

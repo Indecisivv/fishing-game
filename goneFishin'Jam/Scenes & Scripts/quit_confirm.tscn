@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://cp0epwig8old5"]
+
+[ext_resource type="Script" uid="uid://diukow5ou7hf8" path="res://Scenes & Scripts/quit_confirm.gd" id="1_jgdf4"]
+[ext_resource type="FontFile" uid="uid://b5u7o2egl3j1f" path="res://Assets/FishFonts/National_Park/NationalPark-VariableFont_wght.ttf" id="1_kv1m7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jgdf4"]
+content_margin_left = 5.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+bg_color = Color(0.1, 0.1, 0.1, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[node name="QuitConfirm" type="Control" unique_id=1551610820]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jgdf4")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=675122232]
+visible = false
+
+[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=2097343471]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer" unique_id=1744011155]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -137.25
+offset_top = -81.375
+offset_right = 137.25
+offset_bottom = 81.375
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_jgdf4")
+
+[node name="Label" type="Label" parent="CanvasLayer/PanelContainer" unique_id=427683079]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_kv1m7")
+text = "Are you sure you want to quit?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/PanelContainer" unique_id=5126225]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_constants/separation = 11
+
+[node name="ButtonQuit" type="Button" parent="CanvasLayer/PanelContainer/HBoxContainer" unique_id=1357634332]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_kv1m7")
+text = "Quit"
+
+[node name="ButtonCancel" type="Button" parent="CanvasLayer/PanelContainer/HBoxContainer" unique_id=753086125]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_kv1m7")
+text = "Don't Quit"
+
+[connection signal="pressed" from="CanvasLayer/PanelContainer/HBoxContainer/ButtonQuit" to="." method="on_quit"]
+[connection signal="pressed" from="CanvasLayer/PanelContainer/HBoxContainer/ButtonCancel" to="." method="on_cancel"]

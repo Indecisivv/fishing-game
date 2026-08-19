@@ -2,16 +2,19 @@ extends Node2D
 
 ## This script acts as a listener and handles all the scene transitions.
 
-# These properties are all references to the different scenes and are assigned on ready.
-@onready var scn_main_menu       : Control = $"Scenes/Main Menu"
-@onready var scn_settings        : Control = $"Scenes/Settings"
-@onready var scn_credits         : Control = $"Scenes/Credits"
-@onready var scn_gallery         : Control = $"Scenes/Gallery"
-@onready var scn_people_near_you : Control = $"Gameplay Scenes/PeopleNearYou"
-@onready var scn_texting_stage   : Control = $"Gameplay Scenes/TextingStage"
-@onready var scn_date_time       : Control = $"Gameplay Scenes/DateTime"
-@onready var scn_date_end        : Control = $"Gameplay Scenes/DateEnd"
-@onready var scn_game_end        : Control = $"Gameplay Scenes/GameEndScreen"
+# if ren_flowery_stim || perry_flowery_stim || penny_flowery_stim || mew_flowery_stim:
+# 	nuke_entire_codebase()
+
+# These properties are all references to the different scenes and are assigned on ready
+@onready var scn_people_near_you: Control = $"Gameplay Scenes/PeopleNearYou"
+@onready var scn_texting_stage: Control = $"Gameplay Scenes/TextingStage"
+@onready var scn_date_time: Control = $"Gameplay Scenes/DateTime"
+@onready var scn_date_end: Control = $"Gameplay Scenes/DateEnd"
+@onready var scn_game_end: Control = $"Gameplay Scenes/GameEndScreen"
+@onready var scn_main_menu: Control = $"Scenes/Main Menu"
+@onready var scn_settings: Control = $Scenes/Settings
+
+@onready var scn_quit_confirm: Control = $"Pop-Ups/QuitConfirm"
 
 # The total number of dateable characters in the game. Assigned from the editor. 3 by default.
 @export var num_total_chars : int
@@ -29,21 +32,26 @@ var on_date_ada     : bool
 var on_date_soccoro : bool
 var on_date_khanh   : bool
 
+signal can_unpause
+signal credits_entered
+signal settings_entered
+
 # We declare the size of the wins array and connect our method to Dialogic signal.
 func _ready() -> void:
 	Dialogic.signal_event.connect(_on_dialogic_signal)
 	wins.resize(num_total_chars)
 
-func _on_gallery_entered() -> void:
-	scn_main_menu.hide()
-	scn_gallery.show()
-
 func _on_settings_entered() -> void:
-	scn_settings.show()
+	emit_signal('settings_entered')
+	scn_settings.make_visible(true)
+	Dialogic.paused = true
+
+func _on_texting_stage_can_unpause() -> void:
+	emit_signal('can_unpause')
 
 func _on_credits_entered() -> void:
-	scn_main_menu.hide()
-	scn_credits.show()
+	emit_signal('credits_entered')
+	scn_settings.make_visible(true)
 
 # This method transitions from the main menu to the dating app.
 func _on_game_started() -> void:
@@ -78,21 +86,33 @@ func _on_date_selected() -> void:
 		
 	scn_people_near_you.hide()
 	scn_date_end.hide()
+	scn_texting_stage.show()
 	scn_texting_stage.load_timeline(timeline_uid)
 
 # This method transitions from the date to the date end screen.
 func _on_dialogic_signal(argument:String) -> void:
 	if argument == "scene_end":
 		scn_people_near_you.disable_button()
+		scn_people_near_you.reset_loading_screen()
+		scn_texting_stage.hide()
 		show_scn_date_end()
 
 # This method takes the user back to the main menu.
 func _on_return_to_main_menu() -> void:
-	scn_gallery.hide()
-	scn_settings.hide()
-	scn_credits.hide()
+	if Dialogic.current_timeline:
+		Dialogic.current_timeline.clean()
+	
+	Dialogic.end_timeline()
+	
+	if Dialogic.Styles.get_layout_node():
+		Dialogic.Styles.get_layout_node().queue_free()
+	Dialogic.paused = false
+	
+	scn_texting_stage.hide()
+	scn_settings.make_visible(false)
 	scn_people_near_you.hide()
 	scn_people_near_you.reset_phone()
+	scn_people_near_you.reset_loading_screen()
 	scn_date_end.hide()
 	scn_game_end.hide()
 	
@@ -109,6 +129,17 @@ func _on_all_chars_dated() -> void:
 # Signal method for restarting the game after receiving the ending.
 func _on_game_restart() -> void:
 	restart_game()
+
+func _on_quit_btn_pressed() -> void:
+	scn_quit_confirm.make_visible(true)
+	scn_quit_confirm.set_text(true)
+
+func _on_return_to_menu_btn_pressed() -> void:
+	scn_quit_confirm.make_visible(true)
+	scn_quit_confirm.set_text(false)
+
+func _on_game_close() -> void:
+	get_tree().quit()
 
 # Method that shows the results of a date after it ends.
 func show_scn_date_end() -> void:

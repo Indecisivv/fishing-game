@@ -11,9 +11,9 @@ func _on_btn_ada_entered() -> void:
 	
 	reset_btn_tween()
 	btn_tween.set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_ELASTIC)
-	btn_tween.tween_property(self, "scale", Vector2(0.35, 0.35), 0.4)
+	btn_tween.tween_property(self, "scale", Vector2(0.94, 0.94), 0.4)
 	
-	btn_line_boiler.stop()
+	btn_line_boiler.get_animation('lineboil').track_set_enabled(0, false)
 	
 func _on_btn_ada_pressed() -> void:
 	if (self.disabled):
@@ -30,9 +30,9 @@ func _on_btn_ada_exited() -> void:
 	
 	reset_btn_tween()
 	btn_tween.set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_ELASTIC)
-	btn_tween.tween_property(self, "scale", Vector2(0.3, 0.3), 0.4)
+	btn_tween.tween_property(self, "scale", Vector2(0.89, 0.89), 0.4)
 	
-	btn_line_boiler.play("btn_ada_line_boil")
+	btn_line_boiler.get_animation('lineboil').track_set_enabled(0, true)
 	
 func reset_btn_tween() -> void:
 	if btn_tween:

@@ -39,6 +39,7 @@ signal choice_selected
 ## This can be used to have a custom text rendering child, like a RichTextLabel.
 @export var text_node: Node
 
+var tween: Tween
 
 func _ready() -> void:
 	add_to_group('dialogic_choice_button')
@@ -118,3 +119,19 @@ func _on_choice_button_focus_entred(focused_button: Button):
 				# So we just make the cursor hover on the center of the focused button.
 				get_viewport().warp_mouse(focused_button.get_global_rect().get_center())
 				return
+
+func _on_focus_entered() -> void:
+	set_button_tween(Vector2(1.05, 1.05))
+
+func _on_focus_exited() -> void:
+	set_button_tween(Vector2.ONE)
+
+func set_button_tween(scale:Vector2) -> void:
+	reset_tween()
+	tween.set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_QUAD)
+	tween.tween_property(self, "scale", scale, 0.4)
+
+func reset_tween() -> void:
+	if tween:
+		tween.kill()
+	tween = create_tween()
