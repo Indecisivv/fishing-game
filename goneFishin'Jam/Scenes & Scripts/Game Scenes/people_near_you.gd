@@ -98,7 +98,7 @@ func reset_loading_screen() -> void:
 
 # Disables a button and alters its visuals accordingly
 func disable_button() -> void:
-	buttons[index].disabled = true
+	#buttons[index].disabled = true
 	buttons[index].modulate = Color("777777")
 	
 	match index:
@@ -133,3 +133,27 @@ func check_buttons() -> void:
 func reset_screen() -> void:
 	date_choices_view.show()
 	date_profile_view.hide()
+
+
+func _on_btn_khanh_mouse_entered() -> void:
+	pass # Replace with function body.
+
+
+func _on_btn_khanh_mouse_exited() -> void:
+	pass # Replace with function body.
+
+
+func _on_btn_soccoro_mouse_exited() -> void:
+	pass # Replace with function body.
+
+
+func _on_btn_soccoro_mouse_entered() -> void:
+	pass # Replace with function body.
+
+
+func _on_btn_ada_mouse_entered() -> void:
+	pass # Replace with function body.
+
+
+func _on_btn_ada_mouse_exited() -> void:
+	pass # Replace with function body.

@@ -18,6 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://h04w0lrwwwbc" path="res://Assets/Buttons/Menu Button_04.png" id="8_240te"]
 [ext_resource type="Script" uid="uid://d2f4iiohpht6x" path="res://Scenes & Scripts/Game Scenes/foreground_rod.gd" id="8_bedp1"]
 [ext_resource type="Texture2D" uid="uid://3uo0gervnams" path="res://Assets/Buttons/Menu Button_04_V2.png" id="9_skelg"]
+[ext_resource type="Texture2D" uid="uid://54sku0f6673d" path="res://Assets/CGs/Game Logo.png" id="10_27wo6"]
 [ext_resource type="Texture2D" uid="uid://cv8hl2t4jhylw" path="res://Assets/Buttons/Menu Button_05.png" id="10_n478d"]
 [ext_resource type="Texture2D" uid="uid://bbnsai0erw6e7" path="res://Assets/Buttons/Menu Button_05_V2.png" id="11_1cksy"]
 [ext_resource type="Texture2D" uid="uid://ckf2q3qkbefrw" path="res://Assets/CGs/Menu Background_Phone_02.png" id="21_ejx7w"]
@@ -248,6 +249,13 @@ offset_top = 700.0
 offset_right = 793.0
 offset_bottom = 1212.0
 texture = ExtResource("4_4fmd5")
+
+[node name="Texture_Logo" type="TextureRect" parent="Textures" unique_id=1268156488]
+offset_left = 34.0
+offset_top = -16.0
+offset_right = 503.0
+offset_bottom = 453.0
+texture = ExtResource("10_27wo6")
 
 [node name="Buttons" type="Node2D" parent="." unique_id=2069243938]
 
