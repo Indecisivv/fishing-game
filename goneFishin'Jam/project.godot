@@ -23,6 +23,8 @@ buses/default_bus_layout="uid://byak87m43kh8e"
 
 Dialogic="*uid://ds2q0uclmolvu"
 FadeToBlackTransition="*uid://d0sa6n0uewojx"
+Character="*uid://t83f34umwp23"
+CharacterLibrary="*uid://usyvxi2e3ij7"
 
 [dialogic]
 
