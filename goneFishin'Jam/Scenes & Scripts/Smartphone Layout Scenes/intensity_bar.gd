@@ -11,11 +11,12 @@ var tween     : Tween
 # I call the methods in _physics_process() to avoid any calculation bugs. Not sure if it does anything,
 # but I figure it's good practice.
 func _physics_process(delta: float) -> void:
-	select_dialogue_choice(delta)
+	if not Dialogic.paused:
+		select_dialogue_choice(delta)
 
 # This makes the progress bars either go upwards or downwards. It takes in delta so the fill speed
 # remains consistent regardless of framerate.
-func update_progress_bars(delta:float) -> void:
+func update_progress_bars(delta:float) -> void:	
 	# This checks whether the function has iterated to the end (index 2) or the beginning (index 0)
 	# of the array, and sets the direction accordingly. It also sets the index to 2 and 0 to avoid
 	# indexing errors.

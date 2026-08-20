@@ -42,6 +42,7 @@ func _ready() -> void:
 	Dialogic.signal_event.connect(_on_dialogic_signal)
 	wins.resize(num_total_chars)
 	num_online = num_total_chars + 1
+	print("On Start, Win Counter: " + str(win_counter))
 
 func _on_settings_entered() -> void:
 	emit_signal('settings_entered')
@@ -106,24 +107,38 @@ func _on_dialogic_signal(argument:String) -> void:
 		scn_people_near_you.reset_loading_screen()
 		scn_texting_stage.hide()
 		
+		scn_date_time.show_button(false)
+		scn_date_time.hide()
+		
 		show_scn_date_end()
+		
+		print("On Scene End, Win Counter: " + str(win_counter))
+	
+	if argument == "date_start":
+		scn_texting_stage.hide()
+		scn_date_time.show_button(true)
+		scn_date_time.show()
 
 # This method takes the user back to the main menu.
 func _on_return_to_main_menu() -> void:
 	if Dialogic.current_timeline:
 		Dialogic.current_timeline.clean()
 	
-	Dialogic.end_timeline()
+	Dialogic.end_timeline(true)
 	
 	if Dialogic.Styles.get_layout_node():
 		Dialogic.Styles.get_layout_node().queue_free()
 	Dialogic.paused = false
 	
+	FadeToBlackTransition.fade_to_black()
+	await FadeToBlackTransition.transition_finished
+	
 	scn_texting_stage.hide()
 	scn_settings.make_visible(false)
 	scn_people_near_you.hide()
-	scn_people_near_you.reset_phone()
-	scn_people_near_you.reset_loading_screen()
+	scn_people_near_you.reset_screen()
+	scn_date_time.hide()
+	scn_date_time.show_button(false)
 	scn_date_end.hide()
 	scn_game_end.hide()
 	
@@ -173,12 +188,11 @@ func show_scn_date_end() -> void:
 	if on_date_soccoro && Dialogic.VAR.is_date_success:
 		scn_date_end.set_cg(scn_date_end.BG_DINNER_3)
 		scn_date_end.set_text('Pan de Socorrazon', 'Small Shark Bread')
-		
 	elif on_date_soccoro && !Dialogic.VAR.is_date_success:
 		scn_date_end.set_cg(scn_date_end.BG_DINNER_3)
 		scn_date_end.set_text(CharacterLibrary.soccoro.char_name + " has snapped the line...")
 		scn_date_end.unmatch.play()
-
+	
 	scn_date_end.show()
 
 # This method presents the player with the corresponding ending depending on how many characters they
@@ -190,6 +204,7 @@ func show_ending() -> void:
 	
 	for i in wins.size():
 		if wins[i]:
+			print(str(wins[i]) + ", Win Counter: " + str(win_counter))
 			win_counter += 1
 	
 	if win_counter >= num_total_chars:
@@ -210,7 +225,7 @@ func show_ending() -> void:
 								  "Maybe you'd have some better luck with normal fishing?",
 								  "This amount won't last very long...")
 		scn_game_end.set_end_label(1)
-	else:
+	elif win_counter == 0:
 		scn_game_end.set_end_text("No Pull!",
 								  "Not a single catch? You're starving!",
 								  "You might want to stick to regular fish...",
@@ -224,6 +239,8 @@ func restart_game() -> void:
 	scn_main_menu.show()
 	scn_people_near_you.hide()
 	scn_texting_stage.hide()
+	scn_date_time.hide()
+	scn_date_time.show_button(false)
 	scn_date_end.hide()
 	scn_game_end.hide()
 	

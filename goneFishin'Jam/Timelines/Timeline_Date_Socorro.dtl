@@ -1,8 +1,12 @@
 [style name="VisualNovelStyle"]
-audio Musicly "res://Assets/Music/M_Date_socorro.ogg" [volume="-5.0" bus="Music"]
-[background scene="res://Scenes & Scripts/CG Scenes/socorro_date_cg.tscn" fade="1.5" wait="true"]
+[signal arg="date_start"]
+[background arg="res://Assets/CGs/BG_Ending.png" fade="1.5" wait="true"]
+audio Musicly "res://Assets/Music/M_Date_socorro.ogg" [volume="-20.0" bus="Music" sync="Musicly"]
 Narrator: The dinner that the Dogfish had chosen was small and quaint, clean and lit by lowlights. It was a reflection of them from what you learned from your text exchange.
-Narrator: However, despite their claims that this was a hangout, they show up with a bouquet in hand.
+Narrator: However...
+audio Musicly "res://Assets/Music/M_Date_socorro.ogg" [volume="-5.0" bus="Music" sync="Musicly"]
+[background scene="res://Scenes & Scripts/CG Scenes/socorro_date_cg.tscn" fade="1.5" wait="true"]
+Narrator: Despite their claims that this was a hangout, they show up with a bouquet in hand.
 Socorro: I know we said it was meant to not be a date… especially because I asked- but I thought I’d bring you these anyway! I hope it’s alright… I grew them myself! Do you know flower language…?
 Narrator: Her voice was nervous and she had a distinct stutter. What a cute woman.
 audio "res://Assets/SFX/SFX_ForkPlate.wav" [volume="-3.0" bus="Audio"]

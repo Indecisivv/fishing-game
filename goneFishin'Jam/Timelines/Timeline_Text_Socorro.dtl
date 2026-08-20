@@ -22,16 +22,22 @@ set {is_making_choice} = true
 			Player: I think there is no time to waste, I fell in love with your eyes and would like to get to know you.
 			Socorro: I am sorry, you are obviously looking for someone who is more ready to move to the next step than me. I don't think we fit each other. I will unmatch with you now.
 			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
 		- Sorry, but...
 			set {is_making_choice} = false
 			Player: Sorry if I came on too strong, but this app is for dating right?
 			Socorro: I suppose you are right but everyone will have different speeds they are comfortable with no? I think you and I aren't compatible. I will unmatch with you now.
 			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
 		- Not usually, but...
 			set {is_making_choice} = false
 			Player: Not usually, I typically prefer slower romance. But I really want to go on a date today.
 			Socorro: I understand but I do not think I am the right person for you if that's what you're looking for! Sorry, I will unmatch you now.
 			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
 	- No, more effort
 		set {is_making_choice} = false
 		Player: They're just green onions, I didn't realize it was super important, my bad.
@@ -43,16 +49,22 @@ set {is_making_choice} = true
 			Player: I think I am good, even though I am sure your produce is great. Are you trying to sell on the app? Or is that your only interest?
 			Socorro: I apologize, I clearly did not pick the right topic... And you seem quite unkind. I do not think I want to continue this conversation however, so I will unmatch you now.
 			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
 		- Maybe sometime
 			set {is_making_choice} = false
 			Player: I don't really think it matters much? I have never met someone who cares so much before
 			Socorro: It is my life's work, I apologize for being strange... I do not want to continue. I will unmatch you now.
 			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
 		- Persuaded too easily
 			set {is_making_choice} = false
 			Player: Hm, maybe you have a point? But I can't tell if that is because I am easy to persuade and not because it actually matters... Maybe I will try... Or not
 			Socorro: I am glad you are willing to give them a try but I think the way we see things is too different. I will unmatch now.
 			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
 	- Oh sorry!
 		set {is_making_choice} = false
 		Player: Oh, sorry. That must've seen impolite... I was just distracted. I got farmers’ market, I prefer it over the fluorescence of the grocery store.
@@ -64,11 +76,15 @@ set {is_making_choice} = true
 			Player: Whatever I need at the moment. I like that you can haggle with the vendors unlike the grocery store
 			Socorro: Oh! You know, local farmers can not really compete with chain grocery stores. Haggling them is not the best practice... I do not think we could even be friends. I will unmatch with you now.
 			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
 		- Anything but produce
 			set {is_making_choice} = false
 			Player: Things like bread or other cooked goods. I don't like buying dirty vegetables... I have to wash them
 			Socorro: You understand that grocery vegetables are also dirty... You should be washing them too- Ah, I do not think we are compatible. I will unmatch with you now.
 			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
 		- Anything yummy
 			set {is_making_choice} = false
 			Player: I don’t usually go with a set list or plan, just whatever looks yummy... I think wandering is part of the appeal
@@ -94,16 +110,22 @@ set {is_making_choice} = true
 			Player: Well, we really haven't talked about anything else and you seem cute but at this point it feels like I know more about the market than you
 			Socorro: I am sorry, you clearly feel like this conversation was a waste of time and I am starting to feel the same. I will unmatch with you now.
 			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
 		- As a bonus
 			set {is_making_choice} = false
 			Player: Maybe not 'only' but wouldn't you consider it a bonus if I offered something high quality for free?
 			Socorro: The only high quality thing I am after is good company, but I do not think you can provide that. I will unmatch you now.
 			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
 		- Sorry, got excited
 			set {is_making_choice} = false
 			Player: Sorry if that offended you, I was enthused by the idea of free produce and came off rudely.
 			Socorro: Thank you for apologizing but you have mostly come off as rude. I think it would be best if I unmatch with you now.
 			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
 	- No plans to
 		set {is_making_choice} = false
 		Player: No, it's too early in the morning, I don’t like that... and I don't like sweat honestly.
@@ -115,16 +137,22 @@ set {is_making_choice} = true
 			Player: Anyone! I don't want to be around people who stink, it's gross!
 			Socorro: Some of have jobs that cause a lot of sweat... that doesn't make them gross... I do not think this will go anywhere... I will unmatch with you now.
 			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
 		- Both
 			set {is_making_choice} = false
 			Player: Both, the idea of my partner being sweaty is unappealing, even if they shower I will smell them first...
 			Socorro: I think our lifestyles will make us incompatible... I will unmatch with you now.
 			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
 		- I avoid it
 			set {is_making_choice} = false
 			Player: I avoid sweating and I don't think people who are sweaty are gross but...
 			Socorro: You'd rather avoid them? I understand but I don't think we will mesh well. My job requires it. I will unmatch with you now.
 			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
 	- Oh, yes
 		set {is_making_choice} = false
 		Player: Yes, a few times. I guess you're right then, it just didn't come to mind.
@@ -136,11 +164,15 @@ set {is_making_choice} = true
 			Player: What I need to buy? What kind of question is that? Do you not have another topic?
 			Socorro: I apologize, but you do not have to be so hostile. I do not think this conversation will go anywhere. I will unmatch with you now.
 			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
 		- I have a vendor
 			set {is_making_choice} = false
 			Player: The usual things, produce mostly. I already have a vendor though for when it's not the grocery store... So I'm alright
 			Socorro: I must have come off like a sales pitch... Maybe I am not ready for this, I apologize. I will unmatch with you now.
 			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
 		- Lots of things!
 			set {is_making_choice} = false
 			Player: Vegetables and fruits, I sometimes look at the flowers but I don't usually buy... maybe I will buy some next time
@@ -166,11 +198,15 @@ set {is_making_choice} = true
 			Player: I don't know but I'm tired of dinner and a movie, can you get creative please? Surely you can figure something out, right?
 			Socorro: I do not think I want to get creative enough for you... It will be best if we did not continue this conversation it seems. I will unmatch with you now.
 			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
 		- Indoor events
 			set {is_making_choice} = false
 			Player: I prefer indoor events, away from the sun. It’s cooler indoors. I especially like watching sports. Most normal people have at least one sport they're into I think
 			Socorro: Indoors and away from the sun? Oh... I apologize, but I do not think we will have fun together. That sounds like the opposite of what I would enjoy. I will unmatch with you now.
 			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
 		- Focus activities
 			set {is_making_choice} = false
 			Player: Well, I like calmer activities that require focus. Especially if they can be done in pairs... Any type of activity too. I have a few I enjoy already, like puzzles.
@@ -190,11 +226,15 @@ set {is_making_choice} = true
 			Player: LOL. 'haong'.
 			Socorro: ...I do not think this will work out. I will unmatch with you now.
 			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
 		- What does that mean?
 			set {is_making_choice} = false
 			Player: What is 'haong?' I don’t recognize that word lol.
 			Socorro: I meant... hang... Sorry, I have to go. I will unmatch with you now.
 			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
 		- Yes please
 			set {is_making_choice} = false
 			Player: Slow? That sounds alright, perfect even... I would like to hang out!

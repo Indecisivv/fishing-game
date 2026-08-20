@@ -14,7 +14,6 @@ signal return_to_menu
 signal quit_game
 
 func _on_menu_button_pressed() -> void:
-	Dialogic.paused = false
 	make_visible(false)
 	emit_signal('can_unpause')
 

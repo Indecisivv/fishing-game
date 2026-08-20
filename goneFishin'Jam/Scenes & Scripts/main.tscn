@@ -46,6 +46,7 @@ visible = false
 visible = false
 
 [connection signal="can_unpause" from="." to="Gameplay Scenes/TextingStage" method="_on_can_unpause"]
+[connection signal="can_unpause" from="." to="Gameplay Scenes/DateTime" method="_on_can_unpause"]
 [connection signal="credits_entered" from="." to="Scenes/Settings" method="_on_credits_pressed"]
 [connection signal="settings_entered" from="." to="Scenes/Settings" method="_on_settings_pressed"]
 [connection signal="all_chars_dated" from="Gameplay Scenes/PeopleNearYou" to="." method="_on_all_chars_dated"]
@@ -53,6 +54,7 @@ visible = false
 [connection signal="open_settings" from="Gameplay Scenes/PeopleNearYou" to="." method="_on_settings_entered"]
 [connection signal="return_to_menu" from="Gameplay Scenes/PeopleNearYou" to="." method="_on_return_to_menu_btn_pressed"]
 [connection signal="settings_opened" from="Gameplay Scenes/TextingStage" to="." method="_on_settings_entered"]
+[connection signal="settings_opened" from="Gameplay Scenes/DateTime" to="." method="_on_settings_entered"]
 [connection signal="on_retry" from="Gameplay Scenes/DateEnd" to="." method="_on_date_selected"]
 [connection signal="on_return_to_main_menu" from="Gameplay Scenes/DateEnd" to="." method="_on_return_to_main_menu"]
 [connection signal="restart_game" from="Gameplay Scenes/GameEndScreen" to="." method="_on_game_restart"]

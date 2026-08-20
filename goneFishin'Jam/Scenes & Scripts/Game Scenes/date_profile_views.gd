@@ -8,13 +8,10 @@ extends Control
 @onready var button_heart     : TextureButton     = $Button_Heart
 @onready var button_back      : TextureButton     = $Button_Back
 @onready var match_sound      : AudioStreamPlayer = $Button_Heart/MatchSound
+@onready var match_screen     : Control           = $"../MatchScreen"
 
 var btn_tween         : Tween
 var current_animation : String
-
-signal ada_pressed
-signal soccoro_pressed
-signal khanh_pressed
 
 func _on_button_heart_entered() -> void:
 	set_tween(button_heart, Vector2(1.1, 1.1))
@@ -23,11 +20,17 @@ func _on_button_heart_entered() -> void:
 func _on_button_heart_pressed() -> void:
 	match current_animation:
 		"lineboil_ada":
-			emit_signal('ada_pressed')
+			self.hide()
+			match_screen.set_icon("ada_icon")
+			match_screen.show()
 		"lineboil_soccoro":
-			emit_signal('soccoro_pressed')
+			self.hide()
+			match_screen.set_icon("socorro_icon")
+			match_screen.show()
 		"lineboil_khanh":
-			emit_signal('khanh_pressed')
+			self.hide()
+			match_screen.set_icon("khanh_icon")
+			match_screen.show()
 	match_sound.play()
 
 # who up tweening it and by it i mean haha my fucking buttons hahahaha

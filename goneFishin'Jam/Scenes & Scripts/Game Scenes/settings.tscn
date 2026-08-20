@@ -72,6 +72,7 @@ grow_vertical = 2
 script = ExtResource("1_0h3cg")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=426794815]
+layer = 2
 visible = false
 
 [node name="BackgroundPanel" type="Panel" parent="CanvasLayer" unique_id=2013417446]
@@ -132,7 +133,6 @@ text = "Quit
 "
 
 [node name="SettingsScreen" type="PanelContainer" parent="CanvasLayer" unique_id=132653074]
-visible = false
 offset_left = 518.0
 offset_top = 40.0
 offset_right = 1885.0
@@ -229,6 +229,7 @@ popup/item_2/text = "Filipino"
 popup/item_2/id = 2
 
 [node name="CreditsScreen" type="PanelContainer" parent="CanvasLayer" unique_id=1154685088]
+visible = false
 offset_left = 518.0
 offset_top = 40.0
 offset_right = 1885.0

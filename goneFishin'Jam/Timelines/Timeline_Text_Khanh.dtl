@@ -153,4 +153,4 @@ set {is_making_choice} = true
 			set {is_sdate_success} = true
 			set {is_date_success} = true
 			jump Timeline_Date_Khanh/
-	[signal arg="scene_end"]
+[signal arg="scene_end"]

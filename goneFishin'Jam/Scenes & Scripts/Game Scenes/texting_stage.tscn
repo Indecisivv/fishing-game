@@ -322,6 +322,7 @@ offset_left = 477.8739
 offset_top = 20.64653
 offset_right = 574.8739
 offset_bottom = 112.64653
+pivot_offset = Vector2(48, 46)
 texture_normal = ExtResource("6_ocqkl")
 
 [node name="Button_AppLogo" type="TextureButton" parent="UI Features" unique_id=1660958475]

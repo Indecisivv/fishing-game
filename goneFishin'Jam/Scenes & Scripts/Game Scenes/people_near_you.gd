@@ -3,16 +3,18 @@ extends Control
 @export var buttons : Array[TextureButton]
 @export var phone   : Control
 
+
 @onready var ui_features          : Control = $"Phone/UI Features"
 @onready var date_choices_view    : Control = $Phone/DateChoicesView
 @onready var date_profile_view    : Control = $Phone/DateProfileView
+@onready var match_screen         : Control = $Phone/MatchScreen
 @onready var label_3_online       : Label   = $Phone/DateChoicesView/Label_3Online
+@onready var button_app_logo: TextureButton = $"Phone/UI Features/Button_AppLogo"
+@onready var button_heart: TextureButton = $Phone/DateProfileView/Button_Heart
 
 @export var texture_loading_screen: TextureRect
-@export var timer: Timer
 @export var jingle: AudioStreamPlayer
 @export var loading_screen_boiler: AnimationPlayer
-
 
 signal date_selected
 signal all_chars_dated
@@ -42,12 +44,13 @@ func _on_btn_soccoro_pressed() -> void:
 	reset_screen()
 	
 func _on_return_to_date_choices() -> void:
+	button_heart.modulate = Color("ffffff")
 	reset_screen()
 
 func _on_return_to_menu() -> void:
 	emit_signal("return_to_menu")
 
-func _on_open_settings() -> void:
+func _on_open_settings() -> void:	
 	emit_signal("open_settings")
 
 # Handles the tweening of the phone
@@ -76,9 +79,8 @@ func loading_screen() -> void:
 	await tween.finished
 	
 	jingle.play()
-	timer.start()
 	
-	await timer.timeout
+	await get_tree().create_timer(1.4).timeout
 	
 	tween = create_tween()
 	tween.set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_OUT)
@@ -89,6 +91,8 @@ func loading_screen() -> void:
 	texture_loading_screen.hide()
 	ui_features.show()
 	date_choices_view.show()
+	
+	button_app_logo.can_press = true
 
 # Resets the scenes back to their default states
 func reset_loading_screen() -> void:
@@ -122,8 +126,10 @@ func check_buttons() -> void:
 
 # Takes the player back to the date choices view from the date profile view
 func reset_screen() -> void:
-	date_choices_view.show()
+	reset_phone()
+	reset_loading_screen()
 	date_profile_view.hide()
+	match_screen.hide()
 
 func set_people_online(num:int) -> void:
 	label_3_online.text = "● " + str(num) + " online"

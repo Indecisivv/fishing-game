@@ -1,7 +1,10 @@
 [style name="VisualNovelStyle"]
-audio Musicly "res://Assets/Music/M_Date_ada.ogg" [volume="-5.0" bus="Music"]
-[background scene="res://Scenes & Scripts/CG Scenes/ada_date_cg.tscn" fade="1.5" wait="true"]
+[signal arg="date_start"]
+[background arg="res://Assets/CGs/BG_Ending.png" fade="1.5" wait="true"]
+audio Musicly "res://Assets/Music/M_Date_ada.ogg" [fade="2.0" volume="-30.0" bus="Music" sync="Musicly"]
 Narrator: You and Ada head out to the hottest club in town!
+audio Musicly "res://Assets/Music/M_Date_ada.ogg" [fade="2.0" volume="-15.0" bus="Music" sync="Musicly"]
+[background scene="res://Scenes & Scripts/CG Scenes/ada_date_cg.tscn" fade="1.5" wait="true"]
 Narrator: They're fun and prettier than in their photos. Not a single lie about them being the life of the party was told.
 Ada: Wooo! I love this song! Let's dance until we drop! You better keep up okay? I want to party all night!
 Narrator: The energy they carry is electric. While the sparkle of their dress and the body glitter isn’t the only thing that keeps your eyes on them all night, they certainly do help.

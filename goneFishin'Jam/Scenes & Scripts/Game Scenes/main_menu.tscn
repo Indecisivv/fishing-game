@@ -287,8 +287,8 @@ texture = ExtResource("4_4fmd5")
 [node name="Texture_Logo" type="TextureRect" parent="Textures" unique_id=1268156488]
 offset_left = 34.0
 offset_top = -16.0
-offset_right = 503.0
-offset_bottom = 453.0
+offset_right = 683.0
+offset_bottom = 633.0
 texture = ExtResource("10_27wo6")
 
 [node name="Buttons" type="Node2D" parent="." unique_id=2069243938]

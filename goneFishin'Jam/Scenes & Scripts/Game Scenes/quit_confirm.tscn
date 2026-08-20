@@ -25,6 +25,7 @@ grow_vertical = 2
 script = ExtResource("1_jgdf4")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=675122232]
+layer = 3
 visible = false
 
 [node name="Panel" type="Panel" parent="CanvasLayer" unique_id=2097343471]
