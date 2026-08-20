@@ -4,8 +4,13 @@
 [ext_resource type="Texture2D" uid="uid://luldv4a5y5pw" path="res://Assets/CGs/Game Background_Room.jpg" id="2_g7opb"]
 [ext_resource type="Texture2D" uid="uid://br2qskk8sppbk" path="res://Assets/CGs/Dating App_Background.png" id="3_fwxhm"]
 [ext_resource type="Texture2D" uid="uid://caq3ohsdgxevv" path="res://Assets/CGs/Phone_BG_01.png" id="4_hntrj"]
+[ext_resource type="Texture2D" uid="uid://bt5kmce0gi8tr" path="res://Assets/Buttons/Settings Button_02.png" id="5_hntrj"]
 [ext_resource type="Texture2D" uid="uid://dyn377irshqrr" path="res://Assets/Buttons/Settings Button_01.png" id="6_ocqkl"]
+[ext_resource type="Texture2D" uid="uid://b0f8y76m7stop" path="res://Assets/Buttons/Home_DatingApp_Button_02.png" id="7_ee45f"]
 [ext_resource type="Texture2D" uid="uid://clgusrunt1jaj" path="res://Assets/Buttons/Home_DatingApp_Button.png" id="8_6fb11"]
+[ext_resource type="Texture2D" uid="uid://dn5he0jfyu1ut" path="res://Assets/CGs/Phone_BG_02.png" id="9_ocqkl"]
+[ext_resource type="Texture2D" uid="uid://o80l84qq0uhx" path="res://Assets/CGs/Phone_IntensityBar_Border.png" id="10_nx3au"]
+[ext_resource type="Texture2D" uid="uid://xy3mfrot7myt" path="res://Assets/CGs/Phone_IntensityBar_Border_02.png" id="11_6fb11"]
 [ext_resource type="Texture2D" uid="uid://b770o530jiktm" path="res://Assets/Buttons/UI_Dating Logo_Mini Version.png" id="11_kstlk"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_musq8"]
@@ -23,6 +28,54 @@ corner_detail = 12
 [sub_resource type="Animation" id="Animation_tfj7l"]
 length = 2.0
 loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../UI Features/Button_Settings:texture_normal")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("6_ocqkl"), ExtResource("5_hntrj")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../UI Features/Button_AppLogo:texture_normal")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("8_6fb11"), ExtResource("7_ee45f")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../Texture_Phone:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("4_hntrj"), ExtResource("9_ocqkl")]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../TextureRect:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("10_nx3au"), ExtResource("11_6fb11")]
+}
 
 [sub_resource type="Animation" id="Animation_2scry"]
 resource_name = "lineboil"
@@ -105,6 +158,16 @@ layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
 texture = ExtResource("4_hntrj")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=232407825]
+visible = false
+z_index = 1
+layout_mode = 0
+offset_left = 483.0
+offset_top = 549.0
+offset_right = 650.0
+offset_bottom = 1071.0
+texture = ExtResource("10_nx3au")
 
 [node name="UI Features" type="Control" parent="." unique_id=1492680768]
 anchors_preset = 0

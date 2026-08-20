@@ -19,9 +19,15 @@
 [ext_resource type="Texture2D" uid="uid://54sku0f6673d" path="res://Assets/CGs/Game Logo.png" id="10_27wo6"]
 [ext_resource type="Texture2D" uid="uid://cv8hl2t4jhylw" path="res://Assets/Buttons/Menu Button_05.png" id="10_n478d"]
 [ext_resource type="Texture2D" uid="uid://bbnsai0erw6e7" path="res://Assets/Buttons/Menu Button_05_V2.png" id="11_1cksy"]
+[ext_resource type="Texture2D" uid="uid://dfbigdoqq1ck7" path="res://Assets/Buttons/Button_NoText.png" id="11_ak5qu"]
+[ext_resource type="Texture2D" uid="uid://bpvr6we7s14wk" path="res://Assets/Buttons/Credits_Button.png" id="14_27wo6"]
+[ext_resource type="AudioStream" uid="uid://bqhwjppvi24h2" path="res://Assets/SFX/SFX_ButtonClick.wav" id="17_7ifw3"]
+[ext_resource type="AudioStream" uid="uid://bsdyx2gheqjxb" path="res://Assets/SFX/SFX_ButtonHover.wav" id="18_7ifw3"]
+[ext_resource type="AudioStream" uid="uid://u5wkj8nkps2c" path="res://Assets/SFX/SFX_ReelIn.wav" id="18_prr8j"]
+[ext_resource type="Texture2D" uid="uid://hvbeg1pqwe1h" path="res://Assets/Buttons/Credits_Button_2.png" id="19_4vn5f"]
 [ext_resource type="Texture2D" uid="uid://ckf2q3qkbefrw" path="res://Assets/CGs/Menu Background_Phone_02.png" id="21_ejx7w"]
 [ext_resource type="Script" uid="uid://dqt40mctpv24g" path="res://Scenes & Scripts/Game Scenes/button_play.gd" id="22_cf8nl"]
-[ext_resource type="AudioStream" uid="uid://cn6ullfd8rt44" path="res://Assets/SFX/testAUDIO.wav" id="23_240te"]
+[ext_resource type="Texture2D" uid="uid://c8ktetir5ehy1" path="res://Assets/Buttons/Button_NoText_2.png" id="24_prr8j"]
 
 [sub_resource type="Animation" id="Animation_ejx7w"]
 length = 2.0
@@ -60,7 +66,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("8_240te"), ExtResource("9_skelg")]
+"values": [ExtResource("14_27wo6"), ExtResource("19_4vn5f")]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -97,6 +103,18 @@ tracks/5/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [ExtResource("4_4fmd5"), ExtResource("21_ejx7w")]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Buttons/Texture_YellowFish:texture")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("11_ak5qu"), ExtResource("24_prr8j")]
 }
 
 [sub_resource type="Animation" id="Animation_x1uqn"]
@@ -233,22 +251,30 @@ texture = ExtResource("10_27wo6")
 
 [node name="Buttons" type="Node2D" parent="." unique_id=2069243938]
 
+[node name="Texture_YellowFish" type="TextureRect" parent="Buttons" unique_id=450573728]
+offset_left = 1232.0001
+offset_top = 277.0
+offset_right = 1725.0001
+offset_bottom = 476.0
+scale = Vector2(0.96, 0.96)
+texture = ExtResource("11_ak5qu")
+
 [node name="Button_Play" type="TextureButton" parent="Buttons" unique_id=465019279]
 z_index = 3
 offset_left = 1200.7986
-offset_top = 97.81291
+offset_top = 100.81291
 offset_right = 1693.7986
-offset_bottom = 296.81293
+offset_bottom = 299.81293
 pivot_offset = Vector2(246, 99)
 texture_normal = ExtResource("2_1eolb")
 script = ExtResource("22_cf8nl")
 
 [node name="Button_Settings" type="TextureButton" parent="Buttons" unique_id=1917679379]
 z_index = 3
-offset_left = 1204.0197
-offset_top = 286.0
-offset_right = 1706.0197
-offset_bottom = 485.0
+offset_left = 1204.0198
+offset_top = 444.0
+offset_right = 1706.0198
+offset_bottom = 643.0
 pivot_offset = Vector2(251, 99)
 texture_normal = ExtResource("6_x1uqn")
 script = ExtResource("22_cf8nl")
@@ -256,19 +282,19 @@ script = ExtResource("22_cf8nl")
 [node name="Button_Credits" type="TextureButton" parent="Buttons" unique_id=2005012286]
 z_index = 3
 offset_left = 1203.6794
-offset_top = 456.71365
+offset_top = 614.7136
 offset_right = 1704.6794
-offset_bottom = 655.7136
+offset_bottom = 813.7136
 pivot_offset = Vector2(250, 99)
-texture_normal = ExtResource("8_240te")
+texture_normal = ExtResource("14_27wo6")
 script = ExtResource("22_cf8nl")
 
 [node name="Button_Quit" type="TextureButton" parent="Buttons" unique_id=1117115526]
 z_index = 3
 offset_left = 1214.0
-offset_top = 614.7698
+offset_top = 776.7698
 offset_right = 1707.0
-offset_bottom = 813.7698
+offset_bottom = 975.7698
 pivot_offset = Vector2(246, 99)
 texture_normal = ExtResource("10_n478d")
 script = ExtResource("22_cf8nl")
@@ -276,12 +302,16 @@ script = ExtResource("22_cf8nl")
 [node name="Button Sounds" type="Node" parent="Buttons" unique_id=482102279]
 
 [node name="ClickSound" type="AudioStreamPlayer" parent="Buttons/Button Sounds" unique_id=674137834]
-stream = ExtResource("23_240te")
+stream = ExtResource("17_7ifw3")
 bus = &"Audio"
 
 [node name="HoverSound" type="AudioStreamPlayer" parent="Buttons/Button Sounds" unique_id=865105165]
-stream = ExtResource("23_240te")
+stream = ExtResource("18_7ifw3")
+volume_db = -31.605
 bus = &"Audio"
+
+[node name="PlaySound" type="AudioStreamPlayer" parent="Buttons/Button Sounds" unique_id=684074711]
+stream = ExtResource("18_prr8j")
 
 [node name="Lineboil" type="AnimationPlayer" parent="." unique_id=1166985579]
 libraries/ = SubResource("AnimationLibrary_cf8nl")

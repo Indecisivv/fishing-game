@@ -1,5 +1,6 @@
 [style name="VisualNovelStyle"]
-[background arg="res://Assets/CGs/BG_date_1.png" fade="0.5"]
+audio Musicly "res://Assets/Music/M_Date_ada.ogg" [volume="-5.0" bus="Music"]
+[background arg="res://Assets/CGs/Dating CG_Ada.jpg" fade="0.5"]
 TestCharacter: Text 1
 TestCharacter: Text 2
 TestCharacter: Text 3

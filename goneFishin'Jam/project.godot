@@ -70,9 +70,9 @@ audio/channel_defaults={
 "loop": false,
 "volume": 0.0
 },
-"music": {
-"audio_bus": "",
-"fade_length": 0.0,
+"Musicly": {
+"audio_bus": "Music",
+"fade_length": 1.5,
 "loop": true,
 "volume": 0.0
 }
@@ -86,6 +86,7 @@ variables={
 }
 glossary/default_case_sensitive=true
 layout/end_behaviour=0
+audio/type_sound_bus="Master"
 
 [display]
 

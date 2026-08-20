@@ -7,9 +7,10 @@
 [ext_resource type="Texture2D" uid="uid://caq3ohsdgxevv" path="res://Assets/CGs/Phone_BG_01.png" id="5_11hj3"]
 [ext_resource type="Texture2D" uid="uid://bnb8gadln6th5" path="res://Assets/Buttons/UI_Dating Logo_Lineless.png" id="6_p3ptu"]
 [ext_resource type="Texture2D" uid="uid://clgusrunt1jaj" path="res://Assets/Buttons/Home_DatingApp_Button.png" id="6_veqik"]
-[ext_resource type="AudioStream" uid="uid://cn6ullfd8rt44" path="res://Assets/SFX/testAUDIO.wav" id="7_smp7l"]
+[ext_resource type="AudioStream" uid="uid://d5tmpwxp4im8" path="res://Assets/SFX/SFX_AppLoad.wav" id="6_x6b15"]
 [ext_resource type="Texture2D" uid="uid://dyn377irshqrr" path="res://Assets/Buttons/Settings Button_01.png" id="7_t105c"]
 [ext_resource type="Script" uid="uid://bdxgytfiau67d" path="res://Scenes & Scripts/Game Scenes/button_app_logo.gd" id="8_ey8pi"]
+[ext_resource type="Texture2D" uid="uid://o80l84qq0uhx" path="res://Assets/CGs/Phone_IntensityBar_Border.png" id="8_fk4pa"]
 [ext_resource type="Texture2D" uid="uid://dmnix0sf7vu2q" path="res://Assets/Buttons/UI_Dating Logo_Lineless_2.png" id="8_m0rwl"]
 [ext_resource type="FontFile" uid="uid://cuauodtrqsmwe" path="res://Assets/FishFonts/Viga/Viga-Regular.ttf" id="8_pc0yv"]
 [ext_resource type="Script" uid="uid://b6b1da15qusg2" path="res://Scenes & Scripts/Game Scenes/btn_ada.gd" id="9_i0j33"]
@@ -38,16 +39,9 @@
 [ext_resource type="Texture2D" uid="uid://bm6lhkxtxy365" path="res://Assets/CGs/People Near You Profile_Khanh_02.png" id="30_wtv5n"]
 [ext_resource type="Texture2D" uid="uid://deaext6dogjc4" path="res://Assets/CGs/People Near You Profile_Socorro_02.png" id="31_22ce1"]
 
-[sub_resource type="Animation" id="Animation_ax3c1"]
-resource_name = "lineboil"
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_5udaf"]
-_data = {
-&"lineboil": SubResource("Animation_ax3c1")
-}
-
 [sub_resource type="Animation" id="Animation_7oxxn"]
-length = 0.001
+length = 2.0
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -55,10 +49,10 @@ tracks/0/path = NodePath(".:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 1.0666667),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("6_p3ptu")]
+"values": [ExtResource("6_p3ptu"), ExtResource("8_m0rwl")]
 }
 
 [sub_resource type="Animation" id="Animation_38xud"]
@@ -590,23 +584,6 @@ timer = NodePath("Phone/Texture_LoadingScreen/Timer")
 jingle = NodePath("Phone/Texture_LoadingScreen/Jingle")
 loading_screen_boiler = NodePath("Phone/Texture_LoadingScreen/LoadingScreenBoiler")
 
-[node name="PeopleYouMayKnowWIP" type="Control" parent="." unique_id=1626150006]
-visible = false
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="PeopleYouMayKnowWIP" unique_id=505104405]
-libraries/ = SubResource("AnimationLibrary_5udaf")
-
-[node name="TextureButton" type="TextureButton" parent="PeopleYouMayKnowWIP" unique_id=259531164]
-layout_mode = 0
-offset_left = 434.0
-offset_top = 54.0
-offset_right = 1484.0
-offset_bottom = 937.0
-texture_normal = ExtResource("2_1weuw")
-
 [node name="Texture_BG" type="TextureRect" parent="." unique_id=135938329]
 z_index = -3
 layout_mode = 0
@@ -621,6 +598,14 @@ offset_top = 1117.0
 offset_right = -697.0
 offset_bottom = 1157.0
 rotation = -0.3926991
+
+[node name="TextureRect" type="TextureRect" parent="Phone" unique_id=848816557]
+layout_mode = 0
+offset_left = -175.6969
+offset_top = 549.5995
+offset_right = -8.696899
+offset_bottom = 1071.5999
+texture = ExtResource("8_fk4pa")
 
 [node name="Texture_AppBG" type="TextureRect" parent="Phone" unique_id=1165483630]
 z_index = -2
@@ -654,15 +639,14 @@ texture = ExtResource("6_p3ptu")
 wait_time = 1.4
 
 [node name="Jingle" type="AudioStreamPlayer" parent="Phone/Texture_LoadingScreen" unique_id=793883213]
-stream = ExtResource("7_smp7l")
+stream = ExtResource("6_x6b15")
 bus = &"Music"
 
 [node name="LoadingScreenBoiler" type="AnimationPlayer" parent="Phone/Texture_LoadingScreen" unique_id=2038826050]
 libraries/ = SubResource("AnimationLibrary_3ppex")
-autoplay = &"boil"
+autoplay = &"RESET"
 
 [node name="UI Features" type="Control" parent="Phone" unique_id=160457986]
-visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
