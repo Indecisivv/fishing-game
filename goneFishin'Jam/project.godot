@@ -27,7 +27,11 @@ FadeToBlackTransition="*uid://d0sa6n0uewojx"
 [dialogic]
 
 directories/dch_directory={
+"Ada": "res://Timelines/Ada.dch",
+"Khanh": "res://Timelines/Khanh.dch",
+"Narrator": "res://Narrator.dch",
 "Player": "res://Characters/Player.dch",
+"Socorro": "res://Timelines/Socorro.dch",
 "TestCharacter": "res://Characters/TestCharacter.dch",
 "TestCharacter2": "res://Characters/TestCharacter2.dch",
 "TestCharacter3": "res://Characters/TestCharacter3.dch"
@@ -36,7 +40,13 @@ directories/dtl_directory={
 "TestTextTimeline1": "res://Timelines/TestTimeline.dtl",
 "TestTextTimeline2": "res://Timelines/TestTimeline2.dtl",
 "TestTextTimeline3": "res://Timelines/TestTimeline3.dtl",
-"TextDateTimeline1": "res://Timelines/TextDateTimeline1.dtl"
+"TextDateTimeline1": "res://Timelines/TextDateTimeline1.dtl",
+"Timeline_Date_Ada": "res://Timelines/Timeline_Date_Ada.dtl",
+"Timeline_Date_Khanh": "res://Timelines/Timeline_Date_Khanh.dtl",
+"Timeline_Date_Socorro": "res://Timelines/Timeline_Date_Socorro.dtl",
+"Timeline_Text_Ada": "res://Timelines/Timeline_Text_Ada.dtl",
+"Timeline_Text_Khanh": "res://Timelines/Timeline_Text_Khanh.dtl",
+"Timeline_Text_Socorro": "res://Timelines/Timeline_Text_Socorro.dtl"
 }
 layout/style_directory={
 "": "res://Styles/SmartphoneStyle.tres",

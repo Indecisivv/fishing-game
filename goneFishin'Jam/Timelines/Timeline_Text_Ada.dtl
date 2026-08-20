@@ -1,0 +1,387 @@
+[style name="SmartphoneStyle"]
+Ada: Hiya!😘 Just got off work!
+Ada: Sorry to keep you waiting~
+Ada: Being a shop owner is just soooo busy. Would totes make me dizzy😵‍💫
+Ada: Well
+Ada: WOULD, if I wasn't such a natural at it~
+Ada: Hopefully I'm not disturbing your work hours!
+Ada: Speaking of...
+Ada: What do you do for work?
+[wait time="0.1" hide_text="false"]
+set {is_making_choice} = true
+- A chef
+	set {is_making_choice} = false
+	Player: I'm the owner and chef at our town's fanciest restaurant, I make good money and it makes me an excellent cook.
+	Player: I'd love to make you something.
+	Ada: Wow, wow, wow!
+	Ada: I looove that!
+	Ada: And I love that place! 🥰🥰
+	Ada: Two business owners?! We could like totally be the faces of this town!
+	Ada: The food in your picture DOES look yummy.
+	Ada: Speaking of which, why can't I see your face?
+	[wait time="0.1" hide_text="false"]
+	set {is_making_choice} = true
+	- Not flattering
+		set {is_making_choice} = false
+		Player: All my pictures are of me at the club so they're not exactly flattering
+		Player: But I love to socialize in my free time.
+		Player: I need to go out and take better pictures, wanna come with?
+		Ada: That's okay. I'll see you on our dream date!💕
+		Ada: Cus that's what that plan sounds like to me!!
+		Ada: It's time to partay!!!🥳🥳
+		Ada: Got any fave tunes to dance to?
+		[wait time="0.1" hide_text="false"]
+		set {is_making_choice} = true
+		- Anything!
+			set {is_making_choice} = false
+			Player: I love anything that makes me feel it in my bones.
+			Player: I need to be able to dance to the beat!
+			Ada: OMG!!💕💕
+			Ada: Me too!
+			Ada: We should dance together!💃💃💃
+			Ada: Let's decide on where to go! TONITE!
+			# SUCCESS
+			set {is_fdate_success} = true
+			set {is_date_success} = true
+		- Nothing in particular
+			set {is_making_choice} = false
+			Player: I love what everyone else loves, I'm not particular about what I listen to...
+			Ada: Fun is important to me so I must know❗❗
+			Ada: I think knowing what you like is soooo important!!!
+			Ada: but 🤚🤚!!
+			Ada: You can always get a strong opinion as you explore
+			Ada: So let's explore 🗺🗺 tonite!
+			# SUCCESS
+			set {is_fdate_success} = true
+			set {is_date_success} = true
+		- Classical
+			set {is_making_choice} = false
+			Player: I love slow classical... Melodic soft music is the best...
+			Ada: Oh!
+			Ada: Welll, I hope you're open to learning to 💕LOVE💕 something new!
+			Ada: Let's show you what you're missing tonite!🌟
+			# SUCCESS
+			set {is_fdate_success} = true
+			set {is_date_success} = true
+	- Undecided
+		set {is_making_choice} = false
+		Player: I haven't been able to decide which my selfies to put up but you're right, I should.
+		Player: I will do that soon
+		Ada: Now is always better than soon or later!
+		Ada: You should totally get to it! ⏰⏰⏰
+		Ada: After that tell me, what do you do for fun?!
+		Ada: Fun is important to me so I must know❗❗
+		[wait time="0.1" hide_text="false"]
+		set {is_making_choice} = true
+		- Full Adventures
+			set {is_making_choice} = false
+			Player: I love going on adventures, I'm a thrill seeker, especially if I can do it in a group!
+			Ada: Wow!!
+			Ada: That's totes sooo cool 😎😎.
+			Ada: How about one tonite?
+			Ada: arty time!🥂
+			# SUCCESS
+			set {is_fdate_success} = true
+			set {is_date_success} = true
+		- Go out Sometimes
+			set {is_making_choice} = false
+			Player: I go out once in a while, usually wherever my friends decide
+			Player: I couldn't do it every day though, I don't have the energy...
+			Ada: Oh!
+			Ada: You might have missed it but I love going out every night!
+			Ada: You’re not the one for me!🥀
+			Ada: Sea ya~!
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+		- Homebody
+			set {is_making_choice} = false
+			Player: My social battery is kind of shit tbh, so I'm more of a homebody.
+			Player: I prefer to do things that keep me inside, away from people... Maybe we could do that together?
+			Ada: Oh
+			Ada: That sounds very... chill🧊.
+			Ada: You might have missed it but I don't really do... that.
+			Ada: You’re not the one for me! 🥀🥀
+			Ada: Sea Ya!
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+	- I’m shy
+		set {is_making_choice} = false
+		Player: I don't want strangers to look at me...
+		Player: I'm shy.
+		Player: What if they think I'm ugly...?
+		Ada: Confidence is key!! 💪
+		Ada: No one can decide you're ugly except you!
+		Ada: How often do you go out? With you being shy...
+		[wait time="0.1" hide_text="false"]
+		set {is_making_choice} = true
+		- Skiing
+			set {is_making_choice} = false
+			Player: I actually like skiing!
+			Player: It can get intense but being out in the snow is so fun even when it gets risky.
+			Ada: Woah!!
+			Ada: Maybe you are shy but you sound so so cool!
+			Ada: You should tell me more about it!
+			Ada: Tonite!!
+			# SUCCESS
+			set {is_fdate_success} = true
+			set {is_date_success} = true
+		- Here and there
+			set {is_making_choice} = false
+			Player: I go out here and there
+			Player: To house parties or small gatherings
+			Player: Definitely nothing more intense than that
+			Ada: That's kinda cool...
+			Ada: Not really my style tho
+			Ada: kinda like you!
+			Ada: You’re not the one for me.🥀
+			Ada: Sea ya!
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+		- Not much...
+			set {is_making_choice} = false
+			Player: Not much, I prefer to do as little as possible to not get my heart stressing...
+			Ada: A chef that can't handle the heat🔥 of the kitchen?
+			Ada: That's so disappointing😒👎
+			Ada: You’re not the one for me.🥀
+			Ada: Sea ya!
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+- Grocery store
+	set {is_making_choice} = false
+	Player: I work at a grocery store, it's just to carry me until I can start my forever career soon.
+	Ada: I've been there!🤝
+	Ada: It can totally feel hard to start but once you do, you better grind
+	Ada: ill you're at the top!
+	Ada: Hopefully you start soon...
+	Ada: What's your dream career?
+	[wait time="0.1" hide_text="false"]
+	set {is_making_choice} = true
+	- Business owner
+		set {is_making_choice} = false
+		Player: I love working, I would like something that challenges me daily so that I feel like I always have something to overcome!
+		Player: I'd love to start my own business
+		Ada: Wow!
+		Ada: Respect that 💯%
+		Ada: You will totally get there, trust!
+		Ada: What do you do for fun when you're not preparing to be a big shot? 😎
+		[wait time="0.1" hide_text="false"]
+		set {is_making_choice} = true
+		- Social events
+			set {is_making_choice} = false
+			Player: I like to go to social events, both for people looking to make connections and ones for fun!
+			Ada: Hey hey, you're totally like me! Once you're a boss, you're going far!
+			Ada: Let's meet up!
+			Ada: Tonite!!!
+			# SUCCESS
+			set {is_fdate_success} = true
+			set {is_date_success} = true
+		- Walks around town
+			set {is_making_choice} = false
+			Player: I enjoy walking the town
+			Player: Spending time just taking things in and decompressing
+			Player: It is my favorite past time for sure
+			Ada: We seem to have a similar drive but don't click anywhere else😩😭
+			Ada: You’re not the one for me! Sea ya!
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+		- Relax at home
+			set {is_making_choice} = false
+			Player: I stay home and relax
+			Player: I think any time I'm not working, I take the opportunity to rest...
+			Ada: You'll make a good business owner but I need someone who is also the life of the party!🎉
+			Ada: You aren't the one for me! 🥀🥀
+			Ada: Sea ya!
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+	- Anything
+		set {is_making_choice} = false
+		Player: Work is work, doesn't really matter if I'm the boss or the employee as long as I get paid
+		Ada: I guess,,,
+		Ada: Being so apathetic to your role doesn't seem like a career oriented move...🫤❓
+		Ada: Well, what you do for fun?
+		Ada: Maybe your energy is directed elsewhere!
+		[wait time="0.1" hide_text="false"]
+		set {is_making_choice} = true
+		- Sports
+			set {is_making_choice} = false
+			Player: I love intense sports, things outside work must be wild and get my blood running!
+			Ada: You seem fun outside of work, but I'd like someone that can totally ♊match♊ me in all aspects
+			Ada: This isn't going to work! You’re not the one for me!🥀
+			Ada: Sea ya!
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+		- Little of everything
+			set {is_making_choice} = false
+			Player: A little big of everything I suppose... running... swimming
+			Ada: You don't know yourself and I want someone like that to get to know me??
+			Ada: I don’t even think you can.
+			Ada: You are not the one for me!🥀
+			Ada: Sea ya!
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+		- Reading
+			set {is_making_choice} = false
+			Player: I mostly read and stay home, I prefer quiet spaces
+			Ada: LOVE someone with knowledge🤓!!!
+			Ada: But we don't seem to match anywhere🙁🙁 !
+			Ada: You are not the one for me🥀, sea ya!
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+	- Not sure...
+		set {is_making_choice} = false
+		Player: I don't know, hopefully something where I don't have to speak to people often...
+		Player: I would rather get to hide in the back and not be there for long
+		Ada: You seem to not have a lot of confidence...
+		Ada: What are your hobbies?
+		Ada: You must do something for fun!
+		[wait time="0.1" hide_text="false"]
+		set {is_making_choice} = true
+		- Thrill seeking
+			set {is_making_choice} = false
+			Player: I enjoy amusement parks, I specifically travel to places with wild coasters!
+			Ada: That sounds so fun!
+			Ada: Not exactly my idea of a good time however, soz!
+			Ada: You're not the one for me.🥀 Sea Ya!
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+		- Running
+			set {is_making_choice} = false
+			Player: I like going on runs, it gets the blood running without too much other types of intensity
+			Ada: We both love to feel our blood pumping but not even in the same way.
+			Ada: We don't match at all. 🥀🥀
+			Ada: You're not the one for me! Sea Ya!
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+		- I do but...
+			set {is_making_choice} = false
+			Player: I don't like going out...
+			Player: My hobbies have big communities online and I'm still too scared to participate  in that honestly
+			Ada: You clearly need a confidence boost...
+			Ada: However, I'd prefer someone already stable.
+			Ada: You are not the one for me!🥀 Sea Ya!
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+- Unemployed
+	set {is_making_choice} = false
+	Player: I'm unemployed...
+	Player: Not really looking for a job at the moment... It'll come when it comes.
+	Ada: Yikes! 😬
+	Ada: That's not great mentality!
+	Ada: What do you do in your free time? 🤔
+	Ada: I'm sure you have a lot of it!
+	[wait time="0.1" hide_text="false"]
+	set {is_making_choice} = true
+	- Party
+		set {is_making_choice} = false
+		Player: I love to party!
+		Player: I love being the center of attention and the life of the room
+		Ada: Well, we have that in common!
+		Ada: I love a good party! What's your favorite kind of party scene?
+		[wait time="0.1" hide_text="false"]
+		set {is_making_choice} = true
+		- Loud Party
+			set {is_making_choice} = false
+			Player: A loud party! Either music or chatting.
+			Player: I enjoy when everyone can sing to the music and dance together!
+			Ada: Well, you need to get your motivation to thrive in the work place, but at least we could have a blast together!
+			Ada: Let's meet tonite!
+			# SUCCESS
+			set {is_fdate_success} = true
+			set {is_date_success} = true
+		- Chatty Party
+			set {is_making_choice} = false
+			Player: Something for chatting, like a dinner party where everyone can listen to me speak.
+			Player: Preferably it ends early too.
+			Ada: We both enjoy to socialize our vibes are too different.
+			Ada: You're not the one for me!🥀
+			Ada: Sea ya!
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+		- Dj Booth
+			set {is_making_choice} = false
+			Player: I enjoy the party from the DJ booth so I don't have to dance! Everyone can listen to my tunes instead
+			Ada: The 🎧DJ🎶 carries the party but I need someone who can take me to the dance floor! What’s a party without some?!
+			Ada: You're not the one for me🥀, sea ya!
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+	- Relaxing vibes
+		set {is_making_choice} = false
+		Player: I like going out once in a while, no parties or crowded spaces regularly thoug
+		Ada: I love going out! We don't have the same taste though, what a shame...
+		Ada: Well, what kind of music do you play at your party?
+		[wait time="0.1" hide_text="false"]
+		set {is_making_choice} = true
+		- Something with rhythm
+			set {is_making_choice} = false
+			Player: Something fun and with a good vibe but never loud enough that we can't sit and chat
+			Ada: That sounds like a vibe but not like mine🫤🫤
+			Ada: It's too bad. You're not the one for me!🥀 Sea ya!
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+		- Indie artists
+			set {is_making_choice} = false
+			Player: I like niche music most people don't know, I don’t let others choose, honestly.
+			Player: I love showing everyone good new music they've never heard of, nothing mainstream
+			Ada: That's interesting but if I can't put in a request, it doesn't sound like my space.
+			Ada: You're not the one for me!🥀 Sea ya!
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+		- Soft Vibes
+			set {is_making_choice} = false
+			Player: Soft music, I like relaxing vibes for my gatherings because then what everyone remembers is my stories!
+			Ada: I'm glad you've found your stage but I don't feel like watching a play at a party...🥱🥱
+			Ada: You're not the one for me!🥀 Sea ya!
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+	- Stay home
+		set {is_making_choice} = false
+		Player: I like staying home and having fun indoors, I love a good board game!
+		Ada: Board games are not my style unfortunately..
+		Ada: Although I dominate at Fishopoly when I do play of course! 💪🥇
+		Ada: What music do you listen to when at home?
+		[wait time="0.1" hide_text="false"]
+		set {is_making_choice} = true
+		- To sing to
+			set {is_making_choice} = false
+			Player: I love loud music with a good beat, I adore singing to myself
+			Ada: It's great that we have the same music taste, but everything else doesn't sit right with me...🤔
+			Ada: You're not the one for me🥀, sea ya!
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+		- Lo-fi
+			set {is_making_choice} = false
+			Player: Lo-fi music. I don't think music should be too loud...
+			Ada: We don't match at all, not even in what we listen to.
+			Ada: I don’t think we could have fun together, why did you😕?
+			Ada: You’re not the one for me!🥀 Sea ya!
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+		- No vocals
+			set {is_making_choice} = false
+			Player: Classical only. I think every other kind of music is scary... Too many strangers singing
+			Ada: Scared of a singer? Timid as can be huh? I feel like if I got even a bit excited, I would definitely scare you off.. 🙊🙊
+			Ada: Not sure why you thought we would match…
+			Ada: You're not the one for me!🥀 Sea ya!
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+[signal arg="scene_end"]

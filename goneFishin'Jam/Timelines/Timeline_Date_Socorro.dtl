@@ -1,0 +1,31 @@
+[style name="VisualNovelStyle"]
+audio Musicly "res://Assets/Music/M_Date_socorro.ogg" [volume="-5.0" bus="Music"]
+[background arg="res://Assets/CGs/Dating CG_Socorro.jpg" fade="1.5" wait="true"]
+Narrator: The dinner that the Dogfish had chosen was small and quaint, clean and lit by lowlights. It was a reflection of them from what you learned from your text exchange.
+Narrator: However, despite their claims that this was a hangout, they show up with a bouquet in hand.
+Socorro: I know we said it was meant to not be a date… especially because I asked- but I thought I’d bring you these anyway! I hope it’s alright… I grew them myself! Do you know flower language…?
+Narrator: Her voice was nervous and she had a distinct stutter. What a cute woman.
+audio "res://Assets/SFX/SFX_ForkPlate.wav" [volume="-3.0" bus="Audio"]
+Narrator: The food at the diner was mediocre, but you complimented it enthusiastically with a smile.
+Narrator: Thankfully Socorro came with an appetite from her job and didn’t seem to take notice she had eaten way more than her half, allowing you to get away with not partaking much.
+Narrator: You spend a long time chatting, learning all about what plants grow best in what weather and how she had just started bee keeping.
+Socorro: I think they like me honestly! I’ve read other bee keepers say they know their bees recognize them and I agree! It feels like they greet me when I come into the garden.
+Narrator: You throw in a fact about bees mourning their keepers when they die. Socorro’s shoulders fall a little bit and she replies that she hopes she’ll be safe for a long time to not make them sad then. You smile at that.
+Narrator: Once it was time to head out, both of you talking about your next meeting. You trip and fall, wincing as you try to stand.
+Narrator: It was clear you couldn’t get home alone, and Socorro, not willing to let her new friend struggle, offered to drive your car.
+Narrator: The ride was a lot of her checking on you and saying that she’d replace the flowers you fell on.
+[background arg="res://Assets/CGs/BG_Ending.png" fade="1.5" wait="true"]
+Narrator: When you reached the cabin she asked if she could carry you in and you agreed. She takes you through your front door and sets you on the couch, going through your freezer for ice after excusing herself.
+Narrator: It was late and she didn’t seem to be planning to leave.
+Narrator: That presumption was proven correct when she told you that she didn’t feel comfortable leaving you like this, at least for tonight.
+Narrator: Apologetically, she asked if you’d be alright with her staying. Of course, that would be so helpful, how could you say no? Thankfully you had a spare bedroom.
+Narrator: It was a little awkward of course, having to move silently in your own home once she was asleep.
+Narrator: The recipe you planned took a lot of preparation and ingredients. Since it called for beans and a salsa, you had done that in advance. All you needed now was to cook and shred the shark.
+Narrator: You open the door that you were keeping the shark in, making sure it was ready. Soft snoring came from the room. You knife sliced in and you mourned that the clean up would have you replacing furniture, it would be worth it however.
+Narrator: Once it was ready, you placed the fish, onion, garlic, epazote, and salt into a pan with water before covering it with a lid.
+Narrator: After it was ready and shredded, all it took was a few more steps before you could stack tortillas and fillings, dousing them with a generous amount of salsa.
+Narrator: Poor Socorro, sweet, innocent, helpful…. Her first relationship ending in her death?
+Narrator: Talk about bad luck, but at least you got a delicious meal out of her, right?
+audio "res://Assets/SFX/SFX_Cooking_Socorro.wav" [bus="Audio"]
+[background arg="res://Assets/CGs/BG_dinner_3.png" fade="3.5" wait="true"]
+[end_timeline]
