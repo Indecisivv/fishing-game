@@ -1,6 +1,6 @@
 [style name="VisualNovelStyle"]
 audio Musicly "res://Assets/Music/M_Date_khanh.ogg" [volume="-5.0" bus="Music"]
-[background arg="res://Assets/CGs/Dating CG_Khanh_03.jpg" fade="1.5" wait="true"]
+[background scene="res://Scenes & Scripts/CG Scenes/khanh_date_cg.tscn" arg="res://" fade="1.5" wait="true"]
 Narrator: Unlike the tall handsome Lionfish you expected, the real Khanh turned out to be… A Catfish!
 Narrator: It’s a good thing you are a kind and understanding soul, isn’t it? He seemed nervous until you reassured him that you didn’t mind and would like to get to know him anyway.
 Narrator: You spend hours browsing the shelves of the shop and listening to him talk about his interest.
@@ -13,6 +13,7 @@ Narrator: He wasn’t exactly rushing to go home with you at the end of the nigh
 Narrator: The little you had heard of his chatter had come in handy here. The silver Catfish excitedly declared he could help, and that if the copy was high enough quality he could buy it.
 Narrator: You softly smile and make an off hand comment about how maybe you should gift to him instead, to celebrate your first meeting.
 Khanh: Wow, really?! Well, if you’re really okay with me going over for it today, I’d be stoked! I have wanted this thing for so long. You’re the best date I’ve had ever, although you’re probably the only one.
+audio Musicly - [volume="-5.0" bus="Music"]
 [background arg="res://Assets/CGs/BG_Ending.png" fade="1.5" wait="true"]
 Narrator: He complimented your cabin, seemingly undisturbed by the lack of decoration other than wall to wall aquariums. Like the great host you are, you offer him a drink.
 Khanh: Oh, yes please!
@@ -24,5 +25,9 @@ Narrator: Your stomach was growling already. You must prepare the fish first so 
 Narrator: Cutting into the flesh wasn’t very hard thankfully. Once the fish was marinating, you prepare the rest of the things you need in the claypot you purchased once long ago for this sort of occasion.
 Narrator: Poor Khan, kind and hopeful Khan. The Catfish who just needed time to learn to love himself, robbed of it… But at least you got a delicious dinner out of them, right?
 audio "res://Assets/SFX/SFX_Cooking_Khanh.wav" [bus="Audio"]
+[wait time="25.0"]
 [background arg="res://Assets/CGs/BG_dinner_2.png" fade="3.5" wait="true"]
+set {is_fdate_success} = true
+set {is_date_success} = true
+[signal arg="scene_end"]
 [end_timeline]

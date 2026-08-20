@@ -21,9 +21,6 @@ var last_text_time    := ""
 
 signal settings_pressed
 
-func _ready() -> void:
-	Dialogic.timeline_ended.connect(_on_timeline_ended)
-
 # The signal method for DialogText's started_revealing_text() signal.
 # The text bubble is already configured in the node.
 # This method displays sets the size of the chat bubble, its dialogue and timestamp, 
@@ -68,10 +65,6 @@ func _on_dialog_text_finished_revealing_text() -> void:
 
 func _on_settings_entered() -> void:
 	emit_signal("settings_pressed")
-
-func _on_timeline_ended() -> void:
-	print("Test")
-	queue_free()
 
 # This method calculates the minimum size a chat bubble needs to be, given the text it will display.
 func get_message_size(text:String) -> Vector2:

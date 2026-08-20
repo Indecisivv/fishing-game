@@ -3,27 +3,96 @@
 [ext_resource type="Script" uid="uid://digx18pdjgrjb" path="res://Scenes & Scripts/Game Scenes/texting_stage.gd" id="1_j8llc"]
 [ext_resource type="Texture2D" uid="uid://luldv4a5y5pw" path="res://Assets/CGs/Game Background_Room.jpg" id="2_g7opb"]
 [ext_resource type="Texture2D" uid="uid://br2qskk8sppbk" path="res://Assets/CGs/Dating App_Background.png" id="3_fwxhm"]
+[ext_resource type="FontFile" uid="uid://cuauodtrqsmwe" path="res://Assets/FishFonts/Viga/Viga-Regular.ttf" id="3_kstlk"]
 [ext_resource type="Texture2D" uid="uid://caq3ohsdgxevv" path="res://Assets/CGs/Phone_BG_01.png" id="4_hntrj"]
+[ext_resource type="Texture2D" uid="uid://cjxnxqoy531mv" path="res://Assets/CGs/Dating Icon_Ada_V2.jpg" id="5_3sdto"]
 [ext_resource type="Texture2D" uid="uid://bt5kmce0gi8tr" path="res://Assets/Buttons/Settings Button_02.png" id="5_hntrj"]
+[ext_resource type="Texture2D" uid="uid://dp7rwvw504riq" path="res://Assets/CGs/Dating Icon_Khanh.jpg" id="6_kstlk"]
 [ext_resource type="Texture2D" uid="uid://dyn377irshqrr" path="res://Assets/Buttons/Settings Button_01.png" id="6_ocqkl"]
 [ext_resource type="Texture2D" uid="uid://b0f8y76m7stop" path="res://Assets/Buttons/Home_DatingApp_Button_02.png" id="7_ee45f"]
+[ext_resource type="Texture2D" uid="uid://bd75o4kr6o13l" path="res://Assets/CGs/Dating Icon_Khanh_V2.jpg" id="7_musq8"]
 [ext_resource type="Texture2D" uid="uid://clgusrunt1jaj" path="res://Assets/Buttons/Home_DatingApp_Button.png" id="8_6fb11"]
+[ext_resource type="Texture2D" uid="uid://bq0hjdax30skw" path="res://Assets/CGs/Dating Icon_Socorro.jpg" id="8_6xlox"]
+[ext_resource type="Texture2D" uid="uid://cwu5kg0hlmh13" path="res://Assets/CGs/Dating Icon_Socorro_V2.jpg" id="9_3x2ol"]
 [ext_resource type="Texture2D" uid="uid://dn5he0jfyu1ut" path="res://Assets/CGs/Phone_BG_02.png" id="9_ocqkl"]
 [ext_resource type="Texture2D" uid="uid://o80l84qq0uhx" path="res://Assets/CGs/Phone_IntensityBar_Border.png" id="10_nx3au"]
 [ext_resource type="Texture2D" uid="uid://xy3mfrot7myt" path="res://Assets/CGs/Phone_IntensityBar_Border_02.png" id="11_6fb11"]
 [ext_resource type="Texture2D" uid="uid://b770o530jiktm" path="res://Assets/Buttons/UI_Dating Logo_Mini Version.png" id="11_kstlk"]
+[ext_resource type="Texture2D" uid="uid://5m0sks5cc36e" path="res://Assets/CGs/Dating Icon_Ada.jpg" id="12_ee45f"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_musq8"]
-content_margin_left = 0.0
-content_margin_top = 0.0
-content_margin_right = 0.0
-content_margin_bottom = 0.0
-bg_color = Color(0.40392157, 0.047058824, 0.03529412, 1)
-corner_radius_top_left = 80
-corner_radius_top_right = 80
-corner_radius_bottom_right = 80
-corner_radius_bottom_left = 80
-corner_detail = 12
+[sub_resource type="Animation" id="Animation_4oqih"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureIcon:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("12_ee45f")]
+}
+
+[sub_resource type="Animation" id="Animation_2omkp"]
+resource_name = "ada_icon"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureIcon:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("12_ee45f"), ExtResource("5_3sdto")]
+}
+
+[sub_resource type="Animation" id="Animation_5p5kd"]
+resource_name = "khanh_icon"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureIcon:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("6_kstlk"), ExtResource("7_musq8")]
+}
+
+[sub_resource type="Animation" id="Animation_n5ivo"]
+resource_name = "socorro_icon"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureIcon:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("8_6xlox"), ExtResource("9_3x2ol")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_oxb4s"]
+_data = {
+&"RESET": SubResource("Animation_4oqih"),
+&"ada_icon": SubResource("Animation_2omkp"),
+&"khanh_icon": SubResource("Animation_5p5kd"),
+&"socorro_icon": SubResource("Animation_n5ivo")
+}
 
 [sub_resource type="Animation" id="Animation_tfj7l"]
 length = 2.0
@@ -81,6 +150,54 @@ tracks/3/keys = {
 resource_name = "lineboil"
 length = 2.0
 loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../UI Features/Button_Settings:texture_normal")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("6_ocqkl"), ExtResource("5_hntrj")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../UI Features/Button_AppLogo:texture_normal")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("8_6fb11"), ExtResource("7_ee45f")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../Texture_Phone:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("4_hntrj"), ExtResource("9_ocqkl")]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../TextureRect:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("10_nx3au"), ExtResource("11_6fb11")]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_6xlox"]
 _data = {
@@ -120,24 +237,10 @@ offset_top = 290.0
 offset_right = 1082.0
 offset_bottom = 335.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_kstlk")
 theme_override_font_sizes/font_size = 32
 text = "CONTACT NAME"
-
-[node name="Panel" type="Panel" parent="BasePhone" unique_id=1611983812]
-z_index = 1
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 858.0
-offset_top = 113.0
-offset_right = 1010.0
-offset_bottom = 265.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_musq8")
+horizontal_alignment = 1
 
 [node name="Texture_AppBG" type="TextureRect" parent="BasePhone" unique_id=231630782]
 layout_mode = 0
@@ -147,10 +250,22 @@ offset_bottom = 1080.0
 scale = Vector2(0.96902394, 1)
 texture = ExtResource("3_fwxhm")
 
+[node name="TextureIcon" type="TextureRect" parent="BasePhone" unique_id=818307943]
+layout_mode = 0
+offset_left = 878.0
+offset_top = 128.0
+offset_right = 1378.0
+offset_bottom = 628.0
+scale = Vector2(0.32, 0.32)
+texture = ExtResource("12_ee45f")
+
+[node name="IconLineboil" type="AnimationPlayer" parent="BasePhone" unique_id=458515171]
+libraries/ = SubResource("AnimationLibrary_oxb4s")
+
 [node name="Lineboil" type="AnimationPlayer" parent="BasePhone" unique_id=1643435561]
 root_node = NodePath("../../TextureBG")
 libraries/ = SubResource("AnimationLibrary_6xlox")
-autoplay = &"RESET"
+autoplay = &"lineboil"
 
 [node name="Texture_Phone" type="TextureRect" parent="." unique_id=1179054298]
 z_index = 1
@@ -220,6 +335,3 @@ texture_normal = ExtResource("8_6fb11")
 [connection signal="mouse_entered" from="UI Features/Button_Settings" to="." method="_on_btn_entered"]
 [connection signal="mouse_exited" from="UI Features/Button_Settings" to="." method="_on_btn_exited"]
 [connection signal="pressed" from="UI Features/Button_Settings" to="." method="on_btn_settings_pressed"]
-[connection signal="mouse_entered" from="UI Features/Button_AppLogo" to="." method="_on_btn_entered"]
-[connection signal="mouse_exited" from="UI Features/Button_AppLogo" to="." method="_on_btn_exited"]
-[connection signal="pressed" from="UI Features/Button_AppLogo" to="." method="on_btn_logo_pressed"]

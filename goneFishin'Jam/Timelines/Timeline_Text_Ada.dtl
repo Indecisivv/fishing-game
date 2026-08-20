@@ -43,6 +43,7 @@ set {is_making_choice} = true
 			# SUCCESS
 			set {is_fdate_success} = true
 			set {is_date_success} = true
+			jump Timeline_Date_Ada/
 		- Nothing in particular
 			set {is_making_choice} = false
 			Player: I love what everyone else loves, I'm not particular about what I listen to...
@@ -54,6 +55,7 @@ set {is_making_choice} = true
 			# SUCCESS
 			set {is_fdate_success} = true
 			set {is_date_success} = true
+			jump Timeline_Date_Ada/
 		- Classical
 			set {is_making_choice} = false
 			Player: I love slow classical... Melodic soft music is the best...
@@ -63,6 +65,7 @@ set {is_making_choice} = true
 			# SUCCESS
 			set {is_fdate_success} = true
 			set {is_date_success} = true
+			jump Timeline_Date_Ada/
 	- Undecided
 		set {is_making_choice} = false
 		Player: I haven't been able to decide which my selfies to put up but you're right, I should.
@@ -83,6 +86,7 @@ set {is_making_choice} = true
 			# SUCCESS
 			set {is_fdate_success} = true
 			set {is_date_success} = true
+			jump Timeline_Date_Ada/
 		- Go out Sometimes
 			set {is_making_choice} = false
 			Player: I go out once in a while, usually wherever my friends decide
@@ -127,6 +131,7 @@ set {is_making_choice} = true
 			# SUCCESS
 			set {is_fdate_success} = true
 			set {is_date_success} = true
+			jump Timeline_Date_Ada/
 		- Here and there
 			set {is_making_choice} = false
 			Player: I go out here and there
@@ -179,6 +184,7 @@ set {is_making_choice} = true
 			# SUCCESS
 			set {is_fdate_success} = true
 			set {is_date_success} = true
+			jump Timeline_Date_Ada/
 		- Walks around town
 			set {is_making_choice} = false
 			Player: I enjoy walking the town
@@ -300,6 +306,7 @@ set {is_making_choice} = true
 			# SUCCESS
 			set {is_fdate_success} = true
 			set {is_date_success} = true
+			jump Timeline_Date_Ada/
 		- Chatty Party
 			set {is_making_choice} = false
 			Player: Something for chatting, like a dinner party where everyone can listen to me speak.

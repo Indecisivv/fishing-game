@@ -2,6 +2,9 @@
 
 [ext_resource type="Script" uid="uid://bynl1bl3haan3" path="res://Scenes & Scripts/Game Scenes/settings.gd" id="1_0h3cg"]
 [ext_resource type="AudioStream" uid="uid://cn6ullfd8rt44" path="res://Assets/SFX/testAUDIO.wav" id="2_llxf6"]
+[ext_resource type="FontFile" uid="uid://cuauodtrqsmwe" path="res://Assets/FishFonts/Viga/Viga-Regular.ttf" id="2_sojg4"]
+[ext_resource type="FontFile" uid="uid://b5u7o2egl3j1f" path="res://Assets/FishFonts/National_Park/NationalPark-VariableFont_wght.ttf" id="4_348px"]
+[ext_resource type="FontFile" uid="uid://c0fss6t1fq1md" path="res://Assets/FishFonts/Freckle_Face/FreckleFace-Regular.ttf" id="5_348px"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sfvw0"]
 content_margin_left = 20.0
@@ -101,18 +104,21 @@ theme_override_constants/separation = 12
 [node name="ButtonMainMenu" type="Button" parent="CanvasLayer/NavigationPanel/NavContainer" unique_id=1694722938]
 layout_mode = 2
 size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("2_sojg4")
 theme_override_font_sizes/font_size = 31
 text = "Main Menu"
 
 [node name="ButtonSettings" type="Button" parent="CanvasLayer/NavigationPanel/NavContainer" unique_id=1851672459]
 layout_mode = 2
 size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("2_sojg4")
 theme_override_font_sizes/font_size = 24
 text = "Settings"
 
 [node name="ButtonCredits" type="Button" parent="CanvasLayer/NavigationPanel/NavContainer" unique_id=413871767]
 layout_mode = 2
 size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("2_sojg4")
 theme_override_font_sizes/font_size = 24
 text = "Credits
 "
@@ -120,6 +126,7 @@ text = "Credits
 [node name="ButtonMainQuit" type="Button" parent="CanvasLayer/NavigationPanel/NavContainer" unique_id=862888164]
 layout_mode = 2
 size_flags_vertical = 10
+theme_override_fonts/font = ExtResource("2_sojg4")
 theme_override_font_sizes/font_size = 31
 text = "Quit
 "
@@ -144,6 +151,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_llxf6")
 [node name="Label" type="Label" parent="CanvasLayer/SettingsScreen/ScreenContainer/TitleContainer" unique_id=144858506]
 layout_mode = 2
 size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("2_sojg4")
 theme_override_font_sizes/font_size = 48
 text = "SETTINGS"
 
@@ -157,6 +165,7 @@ theme_override_constants/separation = 20
 
 [node name="Label" type="Label" parent="CanvasLayer/SettingsScreen/ScreenContainer/VolumeContainer/MusicContainer" unique_id=1020704521]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_sojg4")
 theme_override_font_sizes/font_size = 36
 text = "MUSIC"
 
@@ -174,6 +183,7 @@ theme_override_constants/separation = 20
 
 [node name="Label" type="Label" parent="CanvasLayer/SettingsScreen/ScreenContainer/VolumeContainer/AudioContainer" unique_id=2075426050]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_sojg4")
 theme_override_font_sizes/font_size = 36
 text = "AUDIO"
 
@@ -187,6 +197,7 @@ value = 1.0
 
 [node name="Button" type="Button" parent="CanvasLayer/SettingsScreen/ScreenContainer/VolumeContainer/AudioContainer" unique_id=938992432]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("4_348px")
 theme_override_font_sizes/font_size = 24
 text = "Test Sound"
 
@@ -199,6 +210,7 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="CanvasLayer/SettingsScreen/ScreenContainer/LanguageContainer" unique_id=1628456654]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_sojg4")
 theme_override_font_sizes/font_size = 28
 text = "LANGUAGE"
 horizontal_alignment = 1
@@ -206,6 +218,7 @@ horizontal_alignment = 1
 [node name="OptionButton" type="OptionButton" parent="CanvasLayer/SettingsScreen/ScreenContainer/LanguageContainer" unique_id=2066446078]
 layout_mode = 2
 size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("4_348px")
 selected = 0
 item_count = 3
 popup/item_0/text = "English"
@@ -234,6 +247,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_llxf6")
 [node name="Label" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/TitleContainer" unique_id=813793099]
 layout_mode = 2
 size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("5_348px")
 theme_override_font_sizes/font_size = 48
 text = "CREDITS"
 
@@ -254,11 +268,13 @@ theme_override_constants/separation = 16
 
 [node name="Label" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer/Writer" unique_id=1741292582]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_sojg4")
 theme_override_font_sizes/font_size = 28
 text = "WRITER"
 
 [node name="LinkButton" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer/Writer" unique_id=993128541]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("4_348px")
 theme_override_font_sizes/font_size = 28
 text = "chud"
 underline = 2
@@ -270,11 +286,13 @@ theme_override_constants/separation = 16
 
 [node name="Label" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer/Coder" unique_id=399961085]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_sojg4")
 theme_override_font_sizes/font_size = 28
 text = "CODER"
 
 [node name="LinkButton" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer/Coder" unique_id=358384834]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("4_348px")
 theme_override_font_sizes/font_size = 28
 text = "chud"
 underline = 2
@@ -286,11 +304,13 @@ theme_override_constants/separation = 16
 
 [node name="Label" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer/Artist" unique_id=1904258106]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_sojg4")
 theme_override_font_sizes/font_size = 28
 text = "ARTIST"
 
 [node name="LinkButton" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer/Artist" unique_id=795035315]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("4_348px")
 theme_override_font_sizes/font_size = 28
 text = "chud"
 underline = 2
@@ -302,11 +322,13 @@ theme_override_constants/separation = 16
 
 [node name="Label" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer/Audio Designer" unique_id=1022830552]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_sojg4")
 theme_override_font_sizes/font_size = 28
 text = "AUDIO"
 
 [node name="LinkButton" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer/Audio Designer" unique_id=1401400379]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("4_348px")
 theme_override_font_sizes/font_size = 28
 text = "chud"
 underline = 2
@@ -321,11 +343,13 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer" unique_id=226822800]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("5_348px")
 theme_override_font_sizes/font_size = 48
 text = "SOUNDS"
 
 [node name="Label2" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer" unique_id=1142309863]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("4_348px")
 theme_override_font_sizes/font_size = 28
 text = "the sounds we got from ... ... ..."
 
@@ -338,11 +362,13 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Software/VBoxContainer" unique_id=1644465245]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("5_348px")
 theme_override_font_sizes/font_size = 48
 text = "SOFTWARE"
 
 [node name="Label2" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Software/VBoxContainer" unique_id=1640544831]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("4_348px")
 theme_override_font_sizes/font_size = 28
 text = "we used ... ..... .. "
 
@@ -355,11 +381,13 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/License/VBoxContainer" unique_id=826514274]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("5_348px")
 theme_override_font_sizes/font_size = 48
-text = "License"
+text = "LICENSE "
 
 [node name="Label2" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/License/VBoxContainer" unique_id=748521327]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("4_348px")
 theme_override_font_sizes/font_size = 28
 text = "license description "
 
@@ -383,6 +411,7 @@ offset_right = 943.0
 offset_bottom = -466.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_sojg4")
 theme_override_font_sizes/font_size = 32
 text = "close settings"
 

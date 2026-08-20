@@ -2,8 +2,11 @@
 
 [ext_resource type="Script" uid="uid://de1p6twb0ph2t" path="res://Scenes & Scripts/Game Scenes/game_end_screen.gd" id="1_gc2gg"]
 [ext_resource type="Texture2D" uid="uid://0x7yqayr8alk" path="res://Assets/CGs/BG_Ending.png" id="2_nya7o"]
+[ext_resource type="FontFile" uid="uid://c0fss6t1fq1md" path="res://Assets/FishFonts/Freckle_Face/FreckleFace-Regular.ttf" id="3_4qmns"]
+[ext_resource type="FontFile" uid="uid://b5u7o2egl3j1f" path="res://Assets/FishFonts/National_Park/NationalPark-VariableFont_wght.ttf" id="4_8b6fo"]
+[ext_resource type="FontFile" uid="uid://cuauodtrqsmwe" path="res://Assets/FishFonts/Viga/Viga-Regular.ttf" id="5_vwooc"]
 
-[node name="GameEndScreen" type="Control" unique_id=2012399081 node_paths=PackedStringArray("end_text")]
+[node name="GameEndScreen" type="Control" unique_id=2012399081]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -11,7 +14,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_gc2gg")
-end_text = NodePath("Label")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1491099701]
 layout_mode = 1
@@ -28,21 +30,6 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_nya7o")
 
-[node name="Label" type="Label" parent="." unique_id=428364242]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -279.5
-offset_top = 172.0
-offset_right = 279.5
-offset_bottom = 271.0
-grow_horizontal = 2
-theme_override_font_sizes/font_size = 72
-text = "GAME END TEXT"
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [node name="Button" type="Button" parent="." unique_id=163605764]
 layout_mode = 1
 anchors_preset = 7
@@ -58,5 +45,71 @@ grow_horizontal = 2
 grow_vertical = 0
 theme_override_font_sizes/font_size = 28
 text = "Return to main menu"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1185428096]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -175.0
+offset_top = -120.0
+offset_right = 175.0
+offset_bottom = 120.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 8
+
+[node name="EndingHeader" type="Label" parent="VBoxContainer" unique_id=428364242]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_4qmns")
+theme_override_font_sizes/font_size = 72
+text = "END TITLE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Subtitle1" type="Label" parent="VBoxContainer" unique_id=844090351]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("4_8b6fo")
+theme_override_font_sizes/font_size = 28
+text = "Subtitle 1"
+horizontal_alignment = 1
+
+[node name="Subtitle2" type="Label" parent="VBoxContainer" unique_id=1925370799]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("4_8b6fo")
+theme_override_font_sizes/font_size = 28
+text = "Subtitle 2"
+horizontal_alignment = 1
+
+[node name="Subtitle3" type="Label" parent="VBoxContainer" unique_id=1035897983]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("4_8b6fo")
+theme_override_font_sizes/font_size = 28
+text = "Subtitle 3"
+horizontal_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=1642394405]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 24.0
+offset_right = 169.0
+offset_bottom = 96.0
+
+[node name="EndingLabel" type="Label" parent="VBoxContainer2" unique_id=47188168]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_vwooc")
+theme_override_font_sizes/font_size = 32
+text = "Ending 0/3"
+
+[node name="EndingTitle" type="Label" parent="VBoxContainer2" unique_id=290717542]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_vwooc")
+theme_override_font_sizes/font_size = 32
+text = "'Ending Title'"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

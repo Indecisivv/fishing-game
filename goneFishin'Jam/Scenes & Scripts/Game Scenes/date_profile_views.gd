@@ -1,13 +1,15 @@
 extends Control
 
-@onready var label_name: Label = $Label_Name
-@onready var label_job: Label = $Label_Job
-@onready var label_bio: Label = $Label_Bio
-@onready var animation_player: AnimationPlayer = $AnimationPlayer
-@onready var button_heart : TextureButton = $Button_Heart
-@onready var button_back  : TextureButton = $Button_Back
+@onready var label_name : Label = $Label_Name
+@onready var label_job  : Label = $Label_Job
+@onready var label_bio  : Label = $ScrollContainer/Label_Bio
 
-var btn_tween : Tween
+@onready var animation_player : AnimationPlayer   = $AnimationPlayer
+@onready var button_heart     : TextureButton     = $Button_Heart
+@onready var button_back      : TextureButton     = $Button_Back
+@onready var match_sound      : AudioStreamPlayer = $Button_Heart/MatchSound
+
+var btn_tween         : Tween
 var current_animation : String
 
 signal ada_pressed
@@ -26,6 +28,7 @@ func _on_button_heart_pressed() -> void:
 			emit_signal('soccoro_pressed')
 		"lineboil_khanh":
 			emit_signal('khanh_pressed')
+	match_sound.play()
 
 # who up tweening it and by it i mean haha my fucking buttons hahahaha
 func _on_button_heart_exited() -> void:

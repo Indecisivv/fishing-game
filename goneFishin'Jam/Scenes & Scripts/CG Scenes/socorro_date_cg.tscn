@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://bpxmgifh1ojj1"]
+
+[ext_resource type="Texture2D" uid="uid://b37nv2xb0fjjq" path="res://Assets/CGs/Dating CG_Socorro.jpg" id="1_77q88"]
+[ext_resource type="Script" uid="uid://brjre5istqxjm" path="res://Scenes & Scripts/CG Scenes/socorro_date_cg.gd" id="1_i8rkq"]
+[ext_resource type="Texture2D" uid="uid://bbk0rtbq3iw40" path="res://Assets/CGs/Dating CG_Socorro_02.jpg" id="2_i8rkq"]
+
+[sub_resource type="Animation" id="Animation_0mcfx"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_77q88")]
+}
+
+[sub_resource type="Animation" id="Animation_xqdeo"]
+resource_name = "lineboil"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("1_77q88"), ExtResource("2_i8rkq")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_jvwws"]
+_data = {
+&"RESET": SubResource("Animation_0mcfx"),
+&"lineboil": SubResource("Animation_xqdeo")
+}
+
+[node name="socorro_date_cg" type="CanvasLayer" unique_id=1924464219]
+script = ExtResource("1_i8rkq")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2055384150]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_77q88")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=196755595]
+libraries/ = SubResource("AnimationLibrary_jvwws")
+autoplay = &"lineboil"

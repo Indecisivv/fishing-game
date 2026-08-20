@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cp0epwig8old5"]
 
-[ext_resource type="Script" uid="uid://diukow5ou7hf8" path="res://Scenes & Scripts/quit_confirm.gd" id="1_jgdf4"]
+[ext_resource type="Script" uid="uid://diukow5ou7hf8" path="res://Scenes & Scripts/Game Scenes/quit_confirm.gd" id="1_jgdf4"]
 [ext_resource type="FontFile" uid="uid://b5u7o2egl3j1f" path="res://Assets/FishFonts/National_Park/NationalPark-VariableFont_wght.ttf" id="1_kv1m7"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jgdf4"]

@@ -3,14 +3,16 @@ extends Control
 @export var buttons : Array[TextureButton]
 @export var phone   : Control
 
-@onready var ui_features          : Control         = $"Phone/UI Features"
-@onready var date_choices_view    : Control         = $Phone/DateChoicesView
-@onready var date_profile_view    : Control         = $Phone/DateProfileView
+@onready var ui_features          : Control = $"Phone/UI Features"
+@onready var date_choices_view    : Control = $Phone/DateChoicesView
+@onready var date_profile_view    : Control = $Phone/DateProfileView
+@onready var label_3_online       : Label   = $Phone/DateChoicesView/Label_3Online
 
 @export var texture_loading_screen: TextureRect
 @export var timer: Timer
 @export var jingle: AudioStreamPlayer
 @export var loading_screen_boiler: AnimationPlayer
+
 
 signal date_selected
 signal all_chars_dated
@@ -67,7 +69,6 @@ func reset_phone() -> void:
 
 # Handles the tweening for the loading screen
 func loading_screen() -> void:
-	print("hey")
 	var tween := create_tween()
 	tween.set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_OUT)
 	tween.tween_property(texture_loading_screen, "modulate:a", 1, 1.4)
@@ -123,3 +124,6 @@ func check_buttons() -> void:
 func reset_screen() -> void:
 	date_choices_view.show()
 	date_profile_view.hide()
+
+func set_people_online(num:int) -> void:
+	label_3_online.text = "● " + str(num) + " online"

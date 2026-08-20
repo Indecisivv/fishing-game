@@ -38,6 +38,7 @@
 [ext_resource type="Texture2D" uid="uid://cykdq5xknrx63" path="res://Assets/CGs/People Near You Profile_Ada_02.png" id="29_fk4pa"]
 [ext_resource type="Texture2D" uid="uid://bm6lhkxtxy365" path="res://Assets/CGs/People Near You Profile_Khanh_02.png" id="30_wtv5n"]
 [ext_resource type="Texture2D" uid="uid://deaext6dogjc4" path="res://Assets/CGs/People Near You Profile_Socorro_02.png" id="31_22ce1"]
+[ext_resource type="AudioStream" uid="uid://dq2mccohgjpum" path="res://Assets/SFX/SFX_Match.wav" id="39_fk4pa"]
 
 [sub_resource type="Animation" id="Animation_7oxxn"]
 length = 2.0
@@ -755,7 +756,7 @@ offset_bottom = 218.57819
 text = "people  near you"
 label_settings = SubResource("LabelSettings_n6ov8")
 
-[node name="Label__3Online" type="Label" parent="Phone/DateChoicesView" unique_id=894720809]
+[node name="Label_3Online" type="Label" parent="Phone/DateChoicesView" unique_id=894720809]
 layout_mode = 0
 offset_left = 424.95728
 offset_top = 163.03442
@@ -804,13 +805,18 @@ text = "Job
 "
 label_settings = SubResource("LabelSettings_smp7l")
 
-[node name="Label_Bio" type="Label" parent="Phone/DateProfileView" unique_id=1243809126]
+[node name="ScrollContainer" type="ScrollContainer" parent="Phone/DateProfileView" unique_id=806222809]
 layout_mode = 0
-offset_left = -261.9422
-offset_top = 323.80994
-offset_right = 218.0578
-offset_bottom = 510.80994
-text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus arcu et velit hendrerit, nec scelerisque nunc condimentum. Vivamus sed congue erat. "
+offset_left = -261.0
+offset_top = 323.0
+offset_right = 219.0
+offset_bottom = 510.0
+
+[node name="Label_Bio" type="Label" parent="Phone/DateProfileView/ScrollContainer" unique_id=1243809126]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 2
+text = "Sample text"
 label_settings = SubResource("LabelSettings_m0rwl")
 autowrap_mode = 2
 
@@ -834,6 +840,9 @@ offset_bottom = 160.00012
 pivot_offset = Vector2(73, 73)
 texture_normal = ExtResource("14_0s012")
 
+[node name="MatchSound" type="AudioStreamPlayer" parent="Phone/DateProfileView/Button_Heart" unique_id=705535522]
+stream = ExtResource("39_fk4pa")
+
 [node name="Button_Back" type="TextureButton" parent="Phone/DateProfileView" unique_id=153465761]
 z_index = 2
 layout_mode = 0
@@ -845,9 +854,6 @@ pivot_offset = Vector2(75, 75)
 texture_normal = ExtResource("15_53mxd")
 
 [connection signal="tween_finished" from="." to="." method="loading_screen"]
-[connection signal="mouse_entered" from="Phone/UI Features/Button_AppLogo" to="Phone/UI Features/Button_AppLogo" method="_on_btn_entered"]
-[connection signal="mouse_exited" from="Phone/UI Features/Button_AppLogo" to="Phone/UI Features/Button_AppLogo" method="_on_btn_exited"]
-[connection signal="pressed" from="Phone/UI Features/Button_AppLogo" to="." method="_on_return_to_menu"]
 [connection signal="mouse_entered" from="Phone/UI Features/Button_Settings" to="Phone/UI Features/Button_Settings" method="_on_btn_entered"]
 [connection signal="mouse_exited" from="Phone/UI Features/Button_Settings" to="Phone/UI Features/Button_Settings" method="_on_btn_exited"]
 [connection signal="pressed" from="Phone/UI Features/Button_Settings" to="." method="_on_open_settings"]

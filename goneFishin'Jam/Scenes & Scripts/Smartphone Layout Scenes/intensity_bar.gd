@@ -1,12 +1,12 @@
 extends Control
 
 @export var progress_bars : Array[ProgressBar] # This contains references to the progress bar nodes.
-@export var fill_speed : int 				   # This decides how fast the progress bars fill up.
+@export var fill_speed    : int 			   # This decides how fast the progress bars fill up.
 
 # These fields are for handling the progress bars.
-var index : int = -1
+var index     : int = -1
 var direction : int = 1
-var tween : Tween
+var tween     : Tween
 
 # I call the methods in _physics_process() to avoid any calculation bugs. Not sure if it does anything,
 # but I figure it's good practice.

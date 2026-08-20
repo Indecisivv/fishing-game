@@ -1,7 +1,7 @@
 extends TextureButton
 
-@onready var btn_line_boiler       : AnimationPlayer = $"../BtnLineBoiler"
-@onready var date_profile_view     : Control         = $"../../DateProfileView"
+@onready var btn_line_boiler   : AnimationPlayer = $"../BtnLineBoiler"
+@onready var date_profile_view : Control         = $"../../DateProfileView"
 
 var btn_tween : Tween
 
@@ -21,6 +21,9 @@ func _on_btn_ada_pressed() -> void:
 	
 	self.get_parent().hide()
 	date_profile_view.set_profile("lineboil_ada")
+	date_profile_view.set_text(CharacterLibrary.ada.char_name + ", " + CharacterLibrary.ada.age,
+							   CharacterLibrary.ada.job,
+							   CharacterLibrary.ada.bio)
 	date_profile_view.show()
 	
 

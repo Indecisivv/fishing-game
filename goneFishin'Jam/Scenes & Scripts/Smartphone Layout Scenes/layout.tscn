@@ -119,16 +119,16 @@ offset_top = 878.0
 offset_right = 1223.0
 offset_bottom = 1035.0
 
-[node name="DialogicNode_ChoiceButton3" type="Button" parent="BasePhone/Choices" unique_id=71428002]
+[node name="DialogicNode_ChoiceButton" type="Button" parent="BasePhone/Choices" unique_id=1359706807]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_styles/normal = SubResource("StyleBoxFlat_r54jk")
 theme_override_styles/focus = SubResource("StyleBoxFlat_wk6hd")
 disabled = true
-text = "Button C"
+text = "A little bit of everything"
 script = ExtResource("11_psllm")
-choice_index = 3
+choice_index = 1
 
 [node name="DialogicNode_ChoiceButton2" type="Button" parent="BasePhone/Choices" unique_id=1444969707]
 layout_mode = 2
@@ -141,16 +141,16 @@ text = "Nothing in particular"
 script = ExtResource("11_psllm")
 choice_index = 2
 
-[node name="DialogicNode_ChoiceButton" type="Button" parent="BasePhone/Choices" unique_id=1359706807]
+[node name="DialogicNode_ChoiceButton3" type="Button" parent="BasePhone/Choices" unique_id=71428002]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_styles/normal = SubResource("StyleBoxFlat_r54jk")
 theme_override_styles/focus = SubResource("StyleBoxFlat_wk6hd")
 disabled = true
-text = "A little bit of everything"
+text = "Button C"
 script = ExtResource("11_psllm")
-choice_index = 1
+choice_index = 3
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=713303192]
 offset_left = 680.0
@@ -161,9 +161,9 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_kj5ye")
 
 [connection signal="finished_revealing_text" from="BasePhone/Scroll/MessageList/DialogText" to="." method="_on_dialog_text_finished_revealing_text"]
 [connection signal="started_revealing_text" from="BasePhone/Scroll/MessageList/DialogText" to="." method="_on_dialog_text_started_revealing_text"]
-[connection signal="focus_entered" from="BasePhone/Choices/DialogicNode_ChoiceButton3" to="BasePhone/Choices/DialogicNode_ChoiceButton3" method="_on_focus_entered"]
-[connection signal="focus_exited" from="BasePhone/Choices/DialogicNode_ChoiceButton3" to="BasePhone/Choices/DialogicNode_ChoiceButton3" method="_on_focus_exited"]
-[connection signal="focus_entered" from="BasePhone/Choices/DialogicNode_ChoiceButton2" to="BasePhone/Choices/DialogicNode_ChoiceButton2" method="_on_focus_entered"]
-[connection signal="focus_exited" from="BasePhone/Choices/DialogicNode_ChoiceButton2" to="BasePhone/Choices/DialogicNode_ChoiceButton2" method="_on_focus_exited"]
 [connection signal="focus_entered" from="BasePhone/Choices/DialogicNode_ChoiceButton" to="BasePhone/Choices/DialogicNode_ChoiceButton" method="_on_focus_entered"]
 [connection signal="focus_exited" from="BasePhone/Choices/DialogicNode_ChoiceButton" to="BasePhone/Choices/DialogicNode_ChoiceButton" method="_on_focus_exited"]
+[connection signal="focus_entered" from="BasePhone/Choices/DialogicNode_ChoiceButton2" to="BasePhone/Choices/DialogicNode_ChoiceButton2" method="_on_focus_entered"]
+[connection signal="focus_exited" from="BasePhone/Choices/DialogicNode_ChoiceButton2" to="BasePhone/Choices/DialogicNode_ChoiceButton2" method="_on_focus_exited"]
+[connection signal="focus_entered" from="BasePhone/Choices/DialogicNode_ChoiceButton3" to="BasePhone/Choices/DialogicNode_ChoiceButton3" method="_on_focus_entered"]
+[connection signal="focus_exited" from="BasePhone/Choices/DialogicNode_ChoiceButton3" to="BasePhone/Choices/DialogicNode_ChoiceButton3" method="_on_focus_exited"]

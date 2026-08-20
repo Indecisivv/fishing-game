@@ -21,6 +21,9 @@ func _on_btn_khanh_pressed() -> void:
 	
 	self.get_parent().hide()
 	date_profile_view.set_profile("lineboil_khanh")
+	date_profile_view.set_text(CharacterLibrary.khanh.char_name + ", " + CharacterLibrary.khanh.age,
+							   CharacterLibrary.khanh.job,
+							   CharacterLibrary.khanh.bio)
 	date_profile_view.show()
 
 func _on_btn_khanh_exited() -> void:

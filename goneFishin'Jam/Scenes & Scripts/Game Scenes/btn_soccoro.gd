@@ -21,6 +21,9 @@ func _on_btn_soccoro_pressed() -> void:
 	
 	self.get_parent().hide()
 	date_profile_view.set_profile("lineboil_soccoro")
+	date_profile_view.set_text(CharacterLibrary.soccoro.char_name + ", " + CharacterLibrary.soccoro.age,
+							   CharacterLibrary.soccoro.job,
+							   CharacterLibrary.soccoro.bio)
 	date_profile_view.show()
 
 func _on_btn_soccoro_exited() -> void:

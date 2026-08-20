@@ -2,6 +2,9 @@
 
 [ext_resource type="Script" uid="uid://p6xurxhehbwg" path="res://Scenes & Scripts/Game Scenes/date_end.gd" id="1_eyl03"]
 [ext_resource type="Texture2D" uid="uid://dsehv58cy4f6b" path="res://Assets/CGs/BG_dinner_1.png" id="2_rbv0t"]
+[ext_resource type="AudioStream" uid="uid://3k0dnlhqpmyd" path="res://Assets/SFX/SFX_Unmatch.wav" id="3_ene0n"]
+[ext_resource type="FontFile" uid="uid://c0fss6t1fq1md" path="res://Assets/FishFonts/Freckle_Face/FreckleFace-Regular.ttf" id="3_ygo2s"]
+[ext_resource type="FontFile" uid="uid://cuauodtrqsmwe" path="res://Assets/FishFonts/Viga/Viga-Regular.ttf" id="4_5tiex"]
 
 [node name="DateEnd" type="Control" unique_id=64780911]
 layout_mode = 3
@@ -27,23 +30,6 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_rbv0t")
 
-[node name="EndText" type="Label" parent="." unique_id=583819261]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -156.0
-offset_top = -218.0
-offset_right = 156.0
-offset_bottom = -151.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_font_sizes/font_size = 48
-text = "Date success!"
-horizontal_alignment = 1
-
 [node name="Retry" type="Button" parent="." unique_id=843440041]
 layout_mode = 0
 offset_left = 915.0
@@ -61,6 +47,39 @@ offset_right = 1077.0
 offset_bottom = 883.0
 theme_override_font_sizes/font_size = 32
 text = "MAIN MENU"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1648300782]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -215.5
+offset_top = -408.0
+offset_right = 215.5
+offset_bottom = -314.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 8
+
+[node name="EndText" type="Label" parent="VBoxContainer" unique_id=583819261]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("3_ygo2s")
+theme_override_font_sizes/font_size = 48
+text = "DATE_MEAL_NAME"
+horizontal_alignment = 1
+
+[node name="EndSubtitle" type="Label" parent="VBoxContainer" unique_id=1565993122]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("4_5tiex")
+theme_override_font_sizes/font_size = 28
+text = "The actual name of the meal"
+
+[node name="unmatch" type="AudioStreamPlayer" parent="." unique_id=1457673832]
+stream = ExtResource("3_ene0n")
 
 [connection signal="pressed" from="Retry" to="." method="on_retry_button_pressed"]
 [connection signal="pressed" from="MainMenu" to="." method="on_main_menu_button_pressed"]

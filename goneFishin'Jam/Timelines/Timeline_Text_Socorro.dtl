@@ -35,7 +35,7 @@ set {is_making_choice} = true
 	- No, more effort
 		set {is_making_choice} = false
 		Player: They're just green onions, I didn't realize it was super important, my bad.
-		Socorro: TThat is true! However, I personally feel that the source of your ingredients matters a lot. I promise if you try, you might fall in love.
+		Socorro: That is true! However, I personally feel that the source of your ingredients matters a lot. I promise if you try, you might fall in love.
 		[wait time="0.1" hide_text="false"]
 		set {is_making_choice} = true
 		- No thanks, shill
@@ -74,6 +74,9 @@ set {is_making_choice} = true
 			Player: I don’t usually go with a set list or plan, just whatever looks yummy... I think wandering is part of the appeal
 			Socorro: I know what you mean, the scents and colors are so pretty. Since we can not go tonight, how about we hang out at a diner? On me, of course.
 			# SUCCESS
+			set {is_sdate_success} = true
+			set {is_date_success} = true
+			jump Timeline_Date_Socorro/
 - Where everyone else does
 	set {is_making_choice} = false
 	Player: The store, isn't that where everyone shops?
@@ -143,6 +146,9 @@ set {is_making_choice} = true
 			Player: Vegetables and fruits, I sometimes look at the flowers but I don't usually buy... maybe I will buy some next time
 			Socorro: I would love to talk to you about flowers if you would be willing to discuss over some food at the diner? A flower hang out! On me, of course.
 			# SUCCESS
+			set {is_sdate_success} = true
+			set {is_date_success} = true
+			jump Timeline_Date_Socorro/
 - Farmers’ market
 	set {is_making_choice} = false
 	Player: Oh, at the farmers’ market... I prefer fresh ingredients. The grocery store is also too bright for me.
@@ -170,6 +176,9 @@ set {is_making_choice} = true
 			Player: Well, I like calmer activities that require focus. Especially if they can be done in pairs... Any type of activity too. I have a few I enjoy already, like puzzles.
 			Socorro: I enjoy focus based activities too! I think if we hang out, we could learn to enjoy each other's current past times. We could start today even... Diner and a puzzle!
 			# SUCCESS
+			set {is_sdate_success} = true
+			set {is_date_success} = true
+			jump Timeline_Date_Socorro/
 	- Not there...
 		set {is_making_choice} = false
 		Player: That sounds like it'd be nice, but not really a date location so maybe somewhere else.
@@ -191,6 +200,9 @@ set {is_making_choice} = true
 			Player: Slow? That sounds alright, perfect even... I would like to hang out!
 			Socorro: I am so glad we are on the same page, I was worried! Thank you for not pointing out my typo by the way... I was embarrassed so I appreciate it... How about we go to the Diner tonight?
 			# SUCCESS
+			set {is_sdate_success} = true
+			set {is_date_success} = true
+			jump Timeline_Date_Socorro/
 	- I’d love that.
 		set {is_making_choice} = false
 		Player: I'd really enjoy that... you could tell me about your favorite things to grow and what products you really think are worth it... Anything else you like about gardening too if that’s okay...
@@ -202,14 +214,23 @@ set {is_making_choice} = true
 			Player: I am looking to date sooner than later but... With how cute you are... Well, as dating is our end goal then I can be patient.
 			Socorro: Ah, well, that is what I am looking for... Eventually... You might be moving a little fast for me, but let us meet and discuss tonight at the diner. On me, of course.
 			# SUCCESS
+			set {is_sdate_success} = true
+			set {is_date_success} = true
+			jump Timeline_Date_Socorro/
 		- Not what I had in mind
 			set {is_making_choice} = false
 			Player: Slow is not exactly what I had in mind but as long as you’re comfortable, we can move at whatever pace feels natural.
 			Socorro: I understand but I appreciate the patience. This sound good to me. Are you free tonight? We could have dinner together at the diner... On me.
 			# SUCCESS
+			set {is_sdate_success} = true
+			set {is_date_success} = true
+			jump Timeline_Date_Socorro/
 		- Sounds perfect
 			set {is_making_choice} = false
 			Player: That sounds perfect actually... I would love to be friends with you first. That kind of romance feels better. I would like to hang out with you soon if possible though!
 			Socorro: Oh, great! Yes! Well, I am actually free tonight! I would love to keep chatting with you since we seem so alike. Let us go to the Diner tonight, it is my treat!
 			# SUCCESS
+			set {is_sdate_success} = true
+			set {is_date_success} = true
+			jump Timeline_Date_Socorro/
 [signal arg="scene_end"]

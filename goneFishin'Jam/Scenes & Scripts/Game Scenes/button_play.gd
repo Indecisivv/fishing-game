@@ -2,6 +2,7 @@ extends TextureButton
 
 @onready var click_sound: AudioStreamPlayer = $"../Button Sounds/ClickSound"
 @onready var hover_sound: AudioStreamPlayer = $"../Button Sounds/HoverSound"
+@onready var play_sound: AudioStreamPlayer = $"../Button Sounds/PlaySound"
 
 var tween: Tween
 
@@ -16,6 +17,9 @@ func _on_mouse_exited() -> void:
 	reset_tween()
 	tween.set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_ELASTIC)
 	tween.tween_property(self, "scale", Vector2.ONE, 0.4)
+
+func _on_play_pressed() -> void:
+	play_sound.play()
 
 func _on_pressed() -> void:
 	click_sound.play()

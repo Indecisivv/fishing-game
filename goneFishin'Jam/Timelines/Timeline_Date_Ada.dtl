@@ -1,18 +1,19 @@
 [style name="VisualNovelStyle"]
 audio Musicly "res://Assets/Music/M_Date_ada.ogg" [volume="-5.0" bus="Music"]
-[background arg="res://Assets/CGs/Dating CG_Ada.jpg" fade="1.5" wait="true"]
+[background scene="res://Scenes & Scripts/CG Scenes/ada_date_cg.tscn" fade="1.5" wait="true"]
 Narrator: You and Ada head out to the hottest club in town!
 Narrator: They're fun and prettier than in their photos. Not a single lie about them being the life of the party was told.
 Ada: Wooo! I love this song! Let's dance until we drop! You better keep up okay? I want to party all night!
 Narrator: The energy they carry is electric. While the sparkle of their dress and the body glitter isn’t the only thing that keeps your eyes on them all night, they certainly do help.
 Narrator: They clearly feel the spark since they dance close to you all night. You both dance, you twirl them, their dress catching the light.
 Ada: Two cosmos please! You’ll looove the Cosmos here, they’re so good!
-Narrator: he handed you the drink once they arrived, clinking their glass against yours.
+Narrator: She handed you the drink once they arrived, clinking their glass against yours.
 audio "res://Assets/SFX/SFX_GlassClink.wav" [bus="Audio"]
 Narrator: You pretend to drink as much as they do, watching them down pretty sunset colored drinks all night, waiting patiently until they reach their limit.
 Narrator: Once they’re ready to go home, probably a little more drunk than they usually let themselves get, you are quick to offer a ride. They giggle roughly.
 Ada: You are sooo sweet…
 Narrator: And you simply reply that you were more than happy to take care of them.
+audio Musicly - [fade="1.5" volume="-5.0" bus="Music"]
 [background arg="res://Assets/CGs/BG_Ending.png" fade="1.5" wait="true"]
 Narrator: They accept and you get them to your car with ease… The ride back is quiet, with Ada falling asleep in your seat.
 Narrator: You carry them inside, under the cover of darkness.
@@ -22,5 +23,9 @@ Narrator: Your knife cuts into flesh with no struggle, thanks to the alcohol. Yo
 Narrator: When it was time, you threw your prepared ingredients into a frying pan, waiting for the aromatics to start filling the kitchen. You add the octopus ink, letting it simmer and blanching the octopus so you could add it once the sauce was reduced Perfect.
 Narrator: Poor Ada, bright and soft Ada. The Octopus Aquakin who shone like a bright flame, smothered too soon… But at least you got a delicious dinner out of them, right?
 audio "res://Assets/SFX/SFX_Cooking_Ada.wav" [bus="Audio"]
+[wait time="25.0"]
 [background arg="res://Assets/CGs/BG_dinner_1.png" fade="3.5" wait="true"]
+set {is_fdate_success} = true
+set {is_date_success} = true
+[signal arg="scene_end"]
 [end_timeline]
