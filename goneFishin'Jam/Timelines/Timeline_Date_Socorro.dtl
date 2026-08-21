@@ -1,11 +1,11 @@
 [style name="VisualNovelStyle"]
 [signal arg="date_start"]
 [background arg="res://Assets/CGs/BG_Ending.png" fade="1.5" wait="true"]
-audio Musicly "res://Assets/Music/M_Date_socorro.ogg" [volume="-25.0" bus="Music" sync="Musicly"]
+audio Musicly "res://Assets/Music/M_Date_socorro.ogg" [volume="-20.0" bus="Music" sync="Musicly"]
 Narrator: [lspeed = 0.05] The dinner that the Dogfish had chosen was small and quaint, clean and lit by lowlights. #id:7a
 Narrator: [lspeed = 0.05] It was a reflection of them from what you learned from your text exchange. #id:7b
 Narrator: [lspeed = 0.05] However... #id:7c
-audio Musicly "res://Assets/Music/M_Date_socorro.ogg" [volume="-10.0" bus="Music" sync="Musicly"]
+audio Musicly "res://Assets/Music/M_Date_socorro.ogg" [volume="0.0" bus="Music" sync="Musicly"]
 [background scene="res://Scenes & Scripts/CG Scenes/socorro_date_cg.tscn" fade="1.5" wait="true"]
 Narrator: [lspeed = 0.05] Despite their claims that this was a hangout, they show up with a bouquet in hand. #id:7d
 Socorro: [lspeed = 0.05] I know we said it was meant to not be a date… especially because I asked- but... #id:7e
@@ -49,5 +49,7 @@ audio "res://Assets/SFX/SFX_Cooking_Socorro.wav" [bus="Audio"]
 [background arg="res://Assets/CGs/Ending Food CG_Socorro.jpg" fade="3.5" wait="true"]
 set {is_tdate_success} = true
 set {is_date_success} = true
+[clear time="1.0"]
+[background fade="0.0"]
 [signal arg="scene_end"]
 [end_timeline]

@@ -1,9 +1,9 @@
 [style name="VisualNovelStyle"]
 [signal arg="date_start"]
 [background arg="res://Assets/CGs/BG_Ending.png" fade="1.5" wait="true"]
-audio Musicly "res://Assets/Music/M_Date_ada.ogg" [fade="2.0" volume="-40.0" bus="Music" sync="Musicly"]
+audio Musicly "res://Assets/Music/M_Date_ada.ogg" [fade="2.0" volume="-20.0" bus="Music" sync="Musicly"]
 Narrator: [lspeed = 0.05]You and Ada head out to the hottest club in town! #id:3d
-audio Musicly "res://Assets/Music/M_Date_ada.ogg" [fade="2.0" volume="-25.0" bus="Music" sync="Musicly"]
+audio Musicly "res://Assets/Music/M_Date_ada.ogg" [fade="2.0" volume="0.0" bus="Music" sync="Musicly"]
 [background scene="res://Scenes & Scripts/CG Scenes/ada_date_cg.tscn" fade="1.5" wait="true"]
 Narrator: [lspeed = 0.05]They're fun and prettier than in their photos. Not a single lie about them being the life of the party was told. #id:3e
 Ada: [lspeed = 0.05]Wooo! #id:3f
@@ -40,5 +40,7 @@ audio "res://Assets/SFX/SFX_Cooking_Ada.wav" [bus="Audio"]
 [background arg="res://Assets/CGs/Ending Food CG_Ada.jpg" fade="3.5" wait="true"]
 set {is_fdate_success} = true
 set {is_date_success} = true
+[background fade="0.0"]
+[clear time="1.0"]
 [signal arg="scene_end"]
 [end_timeline]

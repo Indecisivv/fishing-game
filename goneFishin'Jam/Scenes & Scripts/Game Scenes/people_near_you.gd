@@ -132,6 +132,8 @@ func reset_screen() -> void:
 	ui_features.show()
 	date_profile_view.hide()
 	match_screen.hide()
+	button_app_logo.modulate = Color("ffffff")
+	button_app_logo.disabled = false
 
 func set_people_online(num:int) -> void:
-	label_3_online.text = "● " + str(num) + " online"
+	label_3_online.text = str(num) + " online"

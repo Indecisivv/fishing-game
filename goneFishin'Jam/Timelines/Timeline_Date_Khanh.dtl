@@ -1,9 +1,9 @@
 [style name="VisualNovelStyle"]
 [signal arg="date_start"]
-audio Musicly "res://Assets/Music/M_Date_khanh.ogg" [fade="2.0" volume="-30.0" bus="Music" sync="Musicly"]
+audio Musicly "res://Assets/Music/M_Date_khanh.ogg" [fade="2.0" volume="-20.0" bus="Music" sync="Musicly"]
 [background arg="res://Assets/CGs/BG_Ending.png" fade="1.5" wait="true"]
 Narrator: [lspeed = 0.05] Unlike the tall handsome Lionfish you expected... #id:59
-audio Musicly "res://Assets/Music/M_Date_khanh.ogg" [fade="2.0" volume="-15.0" bus="Music" sync="Musicly"]
+audio Musicly "res://Assets/Music/M_Date_khanh.ogg" [fade="2.0" volume="0.0" bus="Music" sync="Musicly"]
 [background scene="res://Scenes & Scripts/CG Scenes/khanh_date_cg.tscn" arg="res://" fade="1.5" wait="true"]
 Narrator: [lspeed = 0.05] The real Khanh turned out to be… A Catfish! #id:5a
 Narrator: [lspeed = 0.05] It’s a good thing you are a kind and understanding soul, isn’t it? #id:5b
@@ -45,5 +45,7 @@ audio "res://Assets/SFX/SFX_Cooking_Khanh.wav" [bus="Audio"]
 [background arg="res://Assets/CGs/Ending Food CG_Khanh.jpg" fade="3.5" wait="true"]
 set {is_sdate_success} = true
 set {is_date_success} = true
+[clear time="1.0"]
+[background fade="0.0"]
 [signal arg="scene_end"]
 [end_timeline]

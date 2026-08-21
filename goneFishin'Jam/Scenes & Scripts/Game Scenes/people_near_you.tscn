@@ -54,6 +54,7 @@
 [ext_resource type="Texture2D" uid="uid://dy2071upbnpd4" path="res://Assets/CGs/Its A Match_Socorro.png" id="45_r8mvj"]
 [ext_resource type="Texture2D" uid="uid://cgvhdbrvwajvt" path="res://Assets/CGs/Its A Match_Socorro_02.png" id="46_vs1ln"]
 [ext_resource type="Texture2D" uid="uid://myoqfmossu7d" path="res://Assets/Buttons/UI_Matching_Send a Message_02.png" id="49_tewg5"]
+[ext_resource type="Texture2D" uid="uid://c36v2f66mqmva" path="res://Assets/Buttons/Tutorial_Label.png" id="55_f4rt7"]
 
 [sub_resource type="Animation" id="Animation_7oxxn"]
 length = 2.0
@@ -843,7 +844,7 @@ offset_top = 163.03442
 offset_right = 551.9573
 offset_bottom = 205.03442
 theme_override_fonts/font = ExtResource("24_ea7u8")
-text = "● 3 online"
+text = "3 online"
 label_settings = SubResource("LabelSettings_tn7bg")
 
 [node name="BtnLineBoiler" type="AnimationPlayer" parent="Phone/DateChoicesView" unique_id=1385143518]
@@ -951,6 +952,10 @@ offset_top = 106.0
 offset_right = 593.8013
 offset_bottom = 560.0
 texture = ExtResource("40_22ce1")
+
+[node name="TutorialLabel" type="Sprite2D" parent="Phone/MatchScreen" unique_id=533246121]
+position = Vector2(-137.69507, 402.9812)
+texture = ExtResource("55_f4rt7")
 
 [node name="Label_Name" type="Label" parent="Phone/MatchScreen" unique_id=2020651778]
 z_index = 1
