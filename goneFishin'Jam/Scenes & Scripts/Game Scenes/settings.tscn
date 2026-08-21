@@ -75,6 +75,7 @@ script = ExtResource("1_0h3cg")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=426794815]
 layer = 2
+visible = false
 
 [node name="TextureRect5" type="TextureRect" parent="CanvasLayer" unique_id=2065549585]
 modulate = Color(1, 1, 1, 0.45882353)
