@@ -1,0 +1,259 @@
+keys,en
+Text/18e/text,"Hello. I'm Khanh, I'm a manager at an advertisement and printing company. I'll let you ask the first question since I'm sure there's a lot you want to know about me. 
+
+Khanh Cá Trê Head Advertising Manager Team A, B, C"
+Choice/18f/text,Stock photo?
+Choice/18f/disabled_text,
+Text/190/text,Is your profile picture a stock photo?
+Text/191/text,"No! That's me! And I wouldn't say much about anyone else's profile picture since yours isn't your face. 
+
+Khanh Cá Trê, Head Advertising Manager Team A, B, C"
+Choice/192/text,It’s me though
+Choice/192/disabled_text,
+Text/193/text,"It may not be my face but at least it's me, right? I don't have a watermark"
+Text/194/text,"It is me! You sure are coming off strong and not in a good way. Anyways, why did you match with me? 
+
+Khanh Cá Trê. Head Advertising Manager Team A, B, C"
+Choice/195/text,Curious photo
+Choice/195/disabled_text,
+Text/196/text,"I just wanted to ask about the profile picture, I think you're the only stock image I've seen"
+Text/197/text,You're too intensely rude for me. Not that I think your interest was real. Goodbye.
+Text/198/text,"Khanh Cá Trê Head Advertising Manager Team A, B, C"
+Choice/199/text,Interesting bio
+Choice/199/disabled_text,
+Text/19a/text,I found your bio interesting despite not knowing what you look like
+Text/19b/text,"I think it's good you don't prioritize appearances but I don't like your energy. Goobye. 
+
+Khanh Cá Trê, Head Advertising Manager Team A, B, C"
+Choice/19c/text,Go with the flow
+Choice/19c/disabled_text,
+Text/19d/text,I just say yes to everyone..
+Text/19e/text,"You have no interest in me and I've lost interest in you or your red gloves anymore. Goodbye.  
+
+Khanh Cá Trê, Head Advertising Manager Team A, B, C."
+Choice/19f/text,"That was rude, sorry"
+Choice/19f/disabled_text,
+Text/1a0/text,"Sorry, you’re right, that was rude. I shouldn’t have said that. whoever you may be though, i still want to get to know you"
+Text/1a1/text,"I accept your apology, I probably shouldn't have snapped either..."
+Text/1a2/text,"Well, how do you feel about secret identities? You must like them right? Khanh Cá Trê Head Advertising Manager Team A, B, C"
+Choice/1a3/text,Hate them
+Choice/1a3/disabled_text,
+Text/1a4/text,"I hate them, especially in comics."
+Text/1a5/text,I think someone who is brave would show who they are so they can be held accountable when their actions accidentally hurt others
+Text/1a6/text,"Big talk for someone who won't even show their own face. I don't like hard headed hypocrites. Goodbye. 
+
+Khanh Cá Trê Head"
+Text/1a7/text,"Advertising Manager Team A, B, C"
+Choice/1a8/text,Love them
+Choice/1a8/disabled_text,
+Text/1a9/text,They're cool! Like Fishman! Everyone who hides has their own reason right?
+Text/1aa/text,Right! You seem cool... Do you want to go to a comic shop together? Today! But promise you won't be shocked...
+Text/1ab/text,"Khanh Cá Trê Head Advertising Manager Team A, B, C"
+Choice/1ac/text,They’re meh
+Choice/1ac/disabled_text,
+Text/1ad/text,I don't feel strongly about them... Why hide? That's like... meh
+Text/1ae/text,"That's disappointing. Based on your profile I thought you'd understand... Goodbye. 
+
+Khanh Cá Trê, Head Advertising Manager Team A, B, C"
+Choice/1af/text,Noticeable
+Choice/1af/disabled_text,
+Text/1b0/text,Well... I can just tell...
+Text/1b1/text,Why did you match if you didn't think my picture was me? I matched with you because your hobbies seemed interesting even without knowing what you look like...
+Text/1b2/text,"Khanh Cá Trê Head Advertising ManagerTeam A, B, C"
+Choice/1b3/text,Seeking honesty
+Choice/1b3/disabled_text,
+Text/1b4/text,I was hoping you'd tell the truth and we could get to know each other based on our interest.
+Text/1b5/text,"Well sorry to 'disappoint' but I don't want to get to know someone like you anyway. Goodbye 
+
+Khanh Cá Trê, Head Advertising Manager Team A, B, C"
+Choice/1b6/text,Interesting bio
+Choice/1b6/disabled_text,
+Text/1b7/text,Your bio was interesting enough for me to ignore my suspicion
+Text/1b8/text,"I'm glad you don't base yourself on appearances but you clearly don't trust me, so I can't trust you. Goodbye."
+Text/1b9/text,"Khanh Cá Trê Head Advertising Manager Team A, B, C"
+Choice/1ba/text,Go with the flow
+Choice/1ba/disabled_text,
+Text/1bb/text,I just say yes to everyone honestly...
+Text/1bc/text,"I don't understand your lack of energy but I will stop wasting mine. Goodbye. 
+
+Khanh Cá Trê, Head Advertising Manager Team A, B, C"
+Choice/1bd/text,About your job
+Choice/1bd/disabled_text,
+Text/1be/text,What kind of advertising do you do?
+Text/1bf/text,"We focus on the creating and selling of various types of... comics and other printed products. 
+
+Khanh Cá Trê, Head Advertising Manager Team A, B, C"
+Choice/1c0/text,Sooo a comic shop
+Choice/1c0/disabled_text,
+Text/1c1/text,So like a comic shop? You could just say that!
+Text/1c2/text,"It's not quite like that! I work in an office! Have you ever worked in an office? 
+
+Khanh Cá Trê Head"
+Text/1c3/text,"Advertising ManagerTeam A, B, C"
+Choice/1c4/text,It is though?
+Choice/1c4/disabled_text,
+Text/1c5/text,"Shop Managers also have offices, also, I may have not but at least I don't very obviously lie about it"
+Text/1c6/text,"There is no need to be so aggressive, you don't have to keep talking to me you know?"
+Text/1c7/text,"I think I will leave first. Goodbye. 
+
+Khanh Cá Trê, Head Advertising Manager Team A, B, C"
+Choice/1c8/text,"Unintentional, sorry"
+Choice/1c8/disabled_text,
+Text/1c9/text,"No, it was just the closest thing I could associate with the description, my apologies. I wasn't trying to insult you."
+Text/1ca/text,"I understand, well, it's not like I am offended. I fr think comic shops bring a lot of value to our communities!"
+Text/1cb/text,Let me show you around our city's best one tonight
+Text/1cc/text,"Khanh Cá Trê Head Advertising Manager Team A, B, C"
+Choice/1cd/text,I have.
+Choice/1cd/disabled_text,
+Text/1ce/text,"Yes... I am an office worker, I just think what you're describing sounds like a comic shop..."
+Text/1cf/text,You sure are close minded.
+Text/1d0/text,"I don't think I could trust you enough to meet with you, goodbye. 
+
+Khanh Cá Trê, Head Advertising Manager Team A, B, C"
+Choice/1d1/text,Impressive
+Choice/1d1/disabled_text,
+Text/1d2/text,"Oh, that's so interesting. You have an impressive role. What is your favorite product you advertise for?"
+Text/1d3/text,I think I am a particular fan of... Fishman...
+Text/1d4/text,I think the art in that series can be appreciated by anyone.
+Text/1d5/text,"Have you heard of it? 
+
+Khanh Cá Trê, Head Advertising Manager Team A, B, C"
+Choice/1d6/text,Too old sadly
+Choice/1d6/disabled_text,
+Text/1d7/text,"No, I don't really consume comics or things of that nature. I feel like someone my age makes me too old now..."
+Text/1d8/text,You're never too old! Meet up with me at the comic shop!
+Text/1d9/text,"I will prove to you that you can still enjoy them... oh but, don't be too surprised by what you see..."
+Text/1da/text,"Khanh Cá Trê, Head Advertising Manager Team A, B, C"
+Choice/1db/text,Yes!
+Choice/1db/disabled_text,
+Text/1dc/text,"I have, I enjoy reading comics a lot. I have another favorite but I love talking about Fishman too!"
+Text/1dd/text,How much do you know about the series?
+Text/1de/text,More than you'd think! Let's meet up and talk about it at the local comic shop... I have something to tell you anyway...
+Text/1df/text,"Khanh Cá Trê, Hed Advertising Manager Team A, B, C"
+Choice/1e0/text,What is it?
+Choice/1e0/disabled_text,
+Text/1e1/text,No... is it like a kids book? Nothing wrong with that but I never had a chance to get into it...
+Text/1e2/text,"It's not really just for children, let's meet so I can show you the truth. We’ll have a lot of fun. Just don’t get too shocked okay? 
+
+Khanh Cá Trê, Head Advertising Manager Team A, B, C"
+Choice/1e3/text,Not impressed
+Choice/1e3/disabled_text,
+Text/1e4/text,"Oh, so a regular office worker... Ok. I work as a chef"
+Text/1e5/text,"Well, yes I suppose... A chef, that's interesting!"
+Text/1e6/text,"Have you worked in any of the restaurants that have had a Fishman collab? 
+
+Khanh Cá Trê, Head Advertising Manager Team A, B, C"
+Choice/1e7/text,Embarrassing idea
+Choice/1e7/disabled_text,
+Text/1e8/text,"No, my restaurant is high end, we wouldn't host such collaborations. It'd be a little embarrassing."
+Text/1e9/text,"It seems that you and I aren't going to be a good match, especially if you think that way."
+Text/1ea/text,"I'm going to end it here, Goodbye.  
+
+Khanh Cá Trê, Head Advertising Manager Team A, B, C"
+Choice/1eb/text,Should I?
+Choice/1eb/disabled_text,
+Text/1ec/text,"No, but that sounds like something I should considered doing sometime, do you think it would get good attention?"
+Text/1ed/text,"I think it can be a great source of good publicity, if we meet at the comic shop, I can help you decide exactly what to aim for!"
+Text/1ee/text,"Oh... but I have to warn you, don't be surprised okay? 
+
+Khan Cá Trê, Head Advrtising Manager Team A, B, C"
+Choice/1ef/text,Never
+Choice/1ef/disabled_text,
+Text/1f0/text,I don't think I'd do a collaboration like that honestly... Sorry...
+Text/1f1/text,"Well, it's your restaurant... But I don’t think I am your man. I think you should find someone else, goodbye."
+Text/1f2/text,"Khanh Cá Trê, Head Advertising Manager Team A, B, C"
+Choice/1f3/text,Not really
+Choice/1f3/disabled_text,
+Text/1f4/text,"Um, I don't really have any.."
+Text/1f5/text,FR?!
+Text/1f6/text,"I thought you'd have at least one since we matched, but well, what do you do?"
+Text/1f7/text,"Khanh Cá Trê, Head Advertising Manager Team A, B, C"
+Choice/1f8/text,Model peer?
+Choice/1f8/disabled_text,
+Text/1f9/text,"I'm a model, that's why I matched with you"
+Text/1fa/text,"I assumed you might be too and thought we could like, network"
+Text/1fb/text,AND get to know each other!
+Text/1fc/text,"Oh, well, about that, as you can see, I am an office worker! It says so in my bio, did you not read it?"
+Text/1fd/text,"Khanh Cá Trê, Head Advertising Manager Team A, B, C"
+Choice/1fe/text,No tbh
+Choice/1fe/disabled_text,
+Text/1ff/text,Not really! Sorry I got super distracted by how good looking you are!
+Text/200/text,"Oh, you clearly place importance on appearance..."
+Text/201/text,"Sorry I don't think this will work, I will end this conversation now."
+Text/202/text,"Goodbye! 
+
+Khanh Cá Trê, Head Advertising Manager Team A, B, C"
+Choice/203/text,Too excited
+Choice/203/disabled_text,
+Text/204/text,"Oh you're right. Sorry, I got excited by the possibility that we might share careers that I skipped it."
+Text/205/text,I understand
+Text/206/text,"but I am a little too nervous to continue this conversation now, sorry and goodbye."
+Text/207/text,Khanh Cá Trê Head Advertising Manager
+Text/208/text,"Team A, B, C"
+Choice/209/text,"Yes, but..."
+Choice/209/disabled_text,
+Text/20a/text,Yea but the watermark? I thought you were roleplaying or something...
+Text/20b/text,I am not.
+Text/20c/text,"Uh, sorry. I will end this conversation now."
+Text/20d/text,"Goodbye 
+
+Khanh Cá Trê, Head Advertising Manager Team A, B, C"
+Choice/20e/text,"Sorry, nerves"
+Choice/20e/disabled_text,
+Text/20f/text,"Sorry, I am not always the best at conversations and your biography was impressive so I was not expecting a match."
+Text/210/text,"I have a typical kitchen job, not very interesting."
+Text/211/text,"Don't put yourself down, I definitely understand being nervous or self concious..."
+Text/212/text,trust me.
+Text/213/text,Do you think someone has to be impressive to meet someone...?
+Text/214/text,"Khanh Cá Trê, Head Advertising Manager Team A, B, C"
+Choice/215/text,It helps
+Choice/215/disabled_text,
+Text/216/text,"I think it definitely helps, isn't it natural for people to want someone impressive?"
+Text/217/text,That's why I get nervous...
+Text/218/text,"Oh, well if you feel that way then I don't think we will work out..."
+Text/219/text,Sorry... I will end this conversation now.
+Text/21a/text,"Goodbye 
+
+Khanh Cá Trê, Head Advertising Manager Team A, B,"
+Choice/21b/text,No!
+Choice/21b/disabled_text,
+Text/21c/text,"No, that's why I am still trying despite the fact that I am not showing my face..."
+Text/21d/text,That's great... I... I want to live up to that! Let's meet up at the local comic shop and we can talk some more about it...
+Text/21e/text,"Just don't be too shocked! 
+
+Khanh Cá Trê, Head Advertising Manager Team A, B, C"
+Choice/21f/text,Of course
+Choice/21f/disabled_text,
+Text/220/text,"Yes, I don't expect many matches because of it, but you surely don't relate to that like you say"
+Text/221/text,"Oh, well I don't think you should feel that bad about yourself... but now I feel like I will disappoint you."
+Text/222/text,"I should end this. Goodbye 
+
+Khanh Cá Trê, Head Advertising Manager Team A, B, C"
+Choice/223/text,Pretty man
+Choice/223/disabled_text,
+Text/224/text,You're pretty... Isn't that what matters? I work as a
+Text/225/text,Fisherman... or something like that
+Text/226/text,...Or something like that? That doesn't seem very honest or like you care much...
+Text/227/text,"Do you not know what you do? 
+
+Khanh Cá Trê, Head Advertising Manager Team A, B, C"
+Choice/228/text,Liars together
+Choice/228/disabled_text,
+Text/229/text,"Well, we're both not being honest right? What does it matter what I do?"
+Text/22a/text,"This conversation is off putting, you shouldn't mess with people like this, goodbye."
+Choice/22b/text,You wouldn’t get it
+Choice/22b/disabled_text,
+Text/22c/text,"I didn't mean to come off that way, my job title is just sort of unstable."
+Text/22d/text,That was just embarrassing to say. You're so cool you probably don't understand
+Text/22e/text,Don't be embarrassed... Your job being unstable isn't your fault...
+Text/22f/text,"Sorry, now I am too nervous I will disappoint you. Goodbye."
+Text/230/text,"Khanh Cá Trê, Head Advertising Manager Team A, B, C"
+Choice/231/text,Nevermind.
+Choice/231/disabled_text,
+Text/232/text,"Yea, I just looked at your profile again and I saw the watermark so I lost interest to be honest..."
+Text/233/text,That's not even you. Bummer.
+Text/234/text,Yes it is!
+Text/235/text,"But well, that doesn't leave much room for more conversation, does it? I will end it now."
+Text/236/text,"Goodbye. 
+
+Khanh Cá Trê, Head Advertising Manager Team A, B, C"

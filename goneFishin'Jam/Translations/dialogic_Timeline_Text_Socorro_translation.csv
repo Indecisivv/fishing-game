@@ -1,0 +1,159 @@
+keys,en
+Text/237/text,Hello. I am Socorro. I saw your pictures and think your gloves are very nice.
+Text/238/text,May I ask where you got those green onions?
+Choice/239/text,Thank you beautiful
+Choice/239/disabled_text,
+Text/23a/text,"Wow, thanks! I think your eyes are beautiful!"
+Text/23b/text,"Oh, thank you... That is very kind of you. You did not answer about your green onions, does that mean do you not want to answer? If so, that is alright!"
+Choice/23c/text,"The store, why?"
+Choice/23c/disabled_text,
+Text/23d/text,"Oh, sorry! I got them from the grocery store near me. Why? Did you want to go shopping with me?"
+Text/23e/text,"No. I apologize, I am sure you are great to shop with, that is just not what I meant. Are you normally this forward?"
+Choice/23f/text,No time to waste.
+Choice/23f/disabled_text,
+Text/240/text,"I think there is no time to waste, I fell in love with your eyes and would like to get to know you."
+Text/241/text,"I am sorry, you are obviously looking for someone who is more ready to move to the next step than me. I don't think we fit each other. I will unmatch with you now."
+Choice/242/text,"Sorry, but..."
+Choice/242/disabled_text,
+Text/243/text,"Sorry if I came on too strong, but this app is for dating right?"
+Text/244/text,I suppose you are right but everyone will have different speeds they are comfortable with no? I think you and I aren't compatible. I will unmatch with you now.
+Choice/245/text,"Not usually, but..."
+Choice/245/disabled_text,
+Text/246/text,"Not usually, I typically prefer slower romance. But I really want to go on a date today."
+Text/247/text,"I understand but I do not think I am the right person for you if that's what you're looking for! Sorry, I will unmatch you now."
+Choice/248/text,"No, more effort"
+Choice/248/disabled_text,
+Text/249/text,"They're just green onions, I didn't realize it was super important, my bad."
+Text/24a/text,"That is true! However, I personally feel that the source of your ingredients matters a lot. I promise if you try, you might fall in love."
+Choice/24b/text,"No thanks, shill"
+Choice/24b/disabled_text,
+Text/24c/text,"I think I am good, even though I am sure your produce is great. Are you trying to sell on the app? Or is that your only interest?"
+Text/24d/text,"I apologize, I clearly did not pick the right topic... And you seem quite unkind. I do not think I want to continue this conversation however, so I will unmatch you now."
+Choice/24e/text,Maybe sometime
+Choice/24e/disabled_text,
+Text/24f/text,I don't really think it matters much? I have never met someone who cares so much before
+Text/250/text,"It is my life's work, I apologize for being strange... I do not want to continue. I will unmatch you now."
+Choice/251/text,Persuaded too easily
+Choice/251/disabled_text,
+Text/252/text,"Hm, maybe you have a point? But I can't tell if that is because I am easy to persuade and not because it actually matters... Maybe I will try... Or not"
+Text/253/text,I am glad you are willing to give them a try but I think the way we see things is too different. I will unmatch now.
+Choice/254/text,Oh sorry!
+Choice/254/disabled_text,
+Text/255/text,"Oh, sorry. That must've seen impolite... I was just distracted. I got farmers’ market, I prefer it over the fluorescence of the grocery store."
+Text/256/text,Oh! I do too! What a happy coincidence huh? What do you usually shop for?
+Choice/257/text,I go to haggle
+Choice/257/disabled_text,
+Text/258/text,Whatever I need at the moment. I like that you can haggle with the vendors unlike the grocery store
+Text/259/text,"Oh! You know, local farmers can not really compete with chain grocery stores. Haggling them is not the best practice... I do not think we could even be friends. I will unmatch with you now."
+Choice/25a/text,Anything but produce
+Choice/25a/disabled_text,
+Text/25b/text,Things like bread or other cooked goods. I don't like buying dirty vegetables... I have to wash them
+Text/25c/text,"You understand that grocery vegetables are also dirty... You should be washing them too- Ah, I do not think we are compatible. I will unmatch with you now."
+Choice/25d/text,Anything yummy
+Choice/25d/disabled_text,
+Text/25e/text,"I don’t usually go with a set list or plan, just whatever looks yummy... I think wandering is part of the appeal"
+Text/25f/text,"I know what you mean, the scents and colors are so pretty. Since we can not go tonight, how about we hang out at a diner? On me, of course."
+Choice/260/text,Where everyone else does
+Choice/260/disabled_text,
+Text/261/text,"The store, isn't that where everyone shops?"
+Text/262/text,"Well, not everyone! I personally sell my veggies at the farmers’ market. Have you ever been?"
+Choice/263/text,Overpriced honestly
+Choice/263/disabled_text,
+Text/264/text,Yea but it's overpriced. Do you give freebies to your dates? I could take you out for some free produce.
+Text/265/text,"If I gift someone something, it is usually flowers... Are you saying you only want to get free stuff?"
+Choice/266/text,Market focused
+Choice/266/disabled_text,
+Text/267/text,"Well, we really haven't talked about anything else and you seem cute but at this point it feels like I know more about the market than you"
+Text/268/text,"I am sorry, you clearly feel like this conversation was a waste of time and I am starting to feel the same. I will unmatch with you now."
+Choice/269/text,As a bonus
+Choice/269/disabled_text,
+Text/26a/text,Maybe not 'only' but wouldn't you consider it a bonus if I offered something high quality for free?
+Text/26b/text,"The only high quality thing I am after is good company, but I do not think you can provide that. I will unmatch you now."
+Choice/26c/text,"Sorry, got excited"
+Choice/26c/disabled_text,
+Text/26d/text,"Sorry if that offended you, I was enthused by the idea of free produce and came off rudely."
+Text/26e/text,Thank you for apologizing but you have mostly come off as rude. I think it would be best if I unmatch with you now.
+Choice/26f/text,No plans to
+Choice/26f/disabled_text,
+Text/270/text,"No, it's too early in the morning, I don’t like that... and I don't like sweat honestly."
+Text/271/text,"Ah, not an early riser? Not everyone is. I personally love being awake early! When you say you don't like sweat however, do you mean yourself or others?"
+Choice/272/text,Anyone
+Choice/272/disabled_text,
+Text/273/text,"Anyone! I don't want to be around people who stink, it's gross!"
+Text/274/text,Some of have jobs that cause a lot of sweat... that doesn't make them gross... I do not think this will go anywhere... I will unmatch with you now.
+Choice/275/text,Both
+Choice/275/disabled_text,
+Text/276/text,"Both, the idea of my partner being sweaty is unappealing, even if they shower I will smell them first..."
+Text/277/text,I think our lifestyles will make us incompatible... I will unmatch with you now.
+Choice/278/text,I avoid it
+Choice/278/disabled_text,
+Text/279/text,I avoid sweating and I don't think people who are sweaty are gross but...
+Text/27a/text,You'd rather avoid them? I understand but I don't think we will mesh well. My job requires it. I will unmatch with you now.
+Choice/27b/text,"Oh, yes"
+Choice/27b/disabled_text,
+Text/27c/text,"Yes, a few times. I guess you're right then, it just didn't come to mind."
+Text/27d/text,"That is alright, it is not the first thought everyone has. It is probably mine because I am a vendor, haha🤣. What do you normally buy when you stop by?"
+Choice/27e/text,What I need
+Choice/27e/disabled_text,
+Text/27f/text,What I need to buy? What kind of question is that? Do you not have another topic?
+Text/280/text,"I apologize, but you do not have to be so hostile. I do not think this conversation will go anywhere. I will unmatch with you now."
+Choice/281/text,I have a vendor
+Choice/281/disabled_text,
+Text/282/text,"The usual things, produce mostly. I already have a vendor though for when it's not the grocery store... So I'm alright"
+Text/283/text,"I must have come off like a sales pitch... Maybe I am not ready for this, I apologize. I will unmatch with you now."
+Choice/284/text,Lots of things!
+Choice/284/disabled_text,
+Text/285/text,"Vegetables and fruits, I sometimes look at the flowers but I don't usually buy... maybe I will buy some next time"
+Text/286/text,"I would love to talk to you about flowers if you would be willing to discuss over some food at the diner? A flower hang out! On me, of course."
+Choice/287/text,Farmers’ market
+Choice/287/disabled_text,
+Text/288/text,"Oh, at the farmers’ market... I prefer fresh ingredients. The grocery store is also too bright for me."
+Text/289/text,"Oh, wonderful! Not that there is anything wrong with the grocery store but I love the farmers’ market. I vend there actually... Maybe you could stop by my stall if you ever need fresh veggies or fruit!"
+Choice/28a/text,At your job?
+Choice/28a/disabled_text,
+Text/28b/text,"If I meet with you, I rather it not be at our job. Don't you have somewhere more interesting we could go?"
+Text/28c/text,"Sorry if that wasn't the right suggestion, but I thought you could learn about my job while we got to know each other... What do you find interesting to do?"
+Choice/28d/text,Figure it out
+Choice/28d/disabled_text,
+Text/28e/text,"I don't know but I'm tired of dinner and a movie, can you get creative please? Surely you can figure something out, right?"
+Text/28f/text,I do not think I want to get creative enough for you... It will be best if we did not continue this conversation it seems. I will unmatch with you now.
+Choice/290/text,Indoor events
+Choice/290/disabled_text,
+Text/291/text,"I prefer indoor events, away from the sun. It’s cooler indoors. I especially like watching sports. Most normal people have at least one sport they're into I think"
+Text/292/text,"Indoors and away from the sun? Oh... I apologize, but I do not think we will have fun together. That sounds like the opposite of what I would enjoy. I will unmatch with you now."
+Choice/293/text,Focus activities
+Choice/293/disabled_text,
+Text/294/text,"Well, I like calmer activities that require focus. Especially if they can be done in pairs... Any type of activity too. I have a few I enjoy already, like puzzles."
+Text/295/text,"I enjoy focus based activities too! I think if we hang out, we could learn to enjoy each other's current past times. We could start today even... Diner and a puzzle!"
+Choice/296/text,Not there...
+Choice/296/disabled_text,
+Text/297/text,"That sounds like it'd be nice, but not really a date location so maybe somewhere else."
+Text/298/text,"Ah, right a date. I was hoping we could go slower... A haong out maybe?"
+Choice/299/text,Typo!
+Choice/299/disabled_text,
+Text/29a/text,LOL. 'haong'.
+Text/29b/text,...I do not think this will work out. I will unmatch with you now.
+Choice/29c/text,What does that mean?
+Choice/29c/disabled_text,
+Text/29d/text,What is 'haong?' I don’t recognize that word lol.
+Text/29e/text,"I meant... hang... Sorry, I have to go. I will unmatch with you now."
+Choice/29f/text,Yes please
+Choice/29f/disabled_text,
+Text/2a0/text,"Slow? That sounds alright, perfect even... I would like to hang out!"
+Text/2a1/text,"I am so glad we are on the same page, I was worried! Thank you for not pointing out my typo by the way... I was embarrassed so I appreciate it... How about we go to the Diner tonight?"
+Choice/2a2/text,I’d love that.
+Choice/2a2/disabled_text,
+Text/2a3/text,I'd really enjoy that... you could tell me about your favorite things to grow and what products you really think are worth it... Anything else you like about gardening too if that’s okay...
+Text/2a4/text,"Yes! Of course, I'd really enjoy that. We should plan our hang out soon... Is it okay it is a hang out first?"
+Choice/2a5/text,I can try
+Choice/2a5/disabled_text,
+Text/2a6/text,"I am looking to date sooner than later but... With how cute you are... Well, as dating is our end goal then I can be patient."
+Text/2a7/text,"Ah, well, that is what I am looking for... Eventually... You might be moving a little fast for me, but let us meet and discuss tonight at the diner. On me, of course."
+Choice/2a8/text,Not what I had in mind
+Choice/2a8/disabled_text,
+Text/2a9/text,"Slow is not exactly what I had in mind but as long as you’re comfortable, we can move at whatever pace feels natural."
+Text/2aa/text,I understand but I appreciate the patience. This sound good to me. Are you free tonight? We could have dinner together at the diner... On me.
+Choice/2ab/text,Sounds perfect
+Choice/2ab/disabled_text,
+Text/2ac/text,That sounds perfect actually... I would love to be friends with you first. That kind of romance feels better. I would like to hang out with you soon if possible though!
+Text/2ad/text,"Oh, great! Yes! Well, I am actually free tonight! I would love to keep chatting with you since we seem so alike. Let us go to the Diner tonight, it is my treat!"

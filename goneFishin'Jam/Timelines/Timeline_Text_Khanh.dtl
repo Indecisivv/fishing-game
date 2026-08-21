@@ -1,360 +1,362 @@
 [style name="SmartphoneStyle"]
+audio Musicly "res://Assets/Music/M_BGM.ogg" [volume="-10.0" sync="Musicly"]
 Khanh: Hello. I'm Khanh, I'm a manager at an advertisement and printing company. I'll let you ask the first question since I'm sure there's a lot you want to know about me. \
 \
-Khanh Cá Trê Head Advertising Manager Team A, B, C
+Khanh Cá Trê Head Advertising Manager Team A, B, C #id:18e
 [wait time="0.1" hide_text="false"]
 set {is_making_choice} = true
-- Stock photo?
+- Stock photo? #id:18f
 	set {is_making_choice} = false
-	Player: Is your profile picture a stock photo?
+	Player: Is your profile picture a stock photo? #id:190
 	Khanh: No! That's me! And I wouldn't say much about anyone else's profile picture since yours isn't your face. \
 	\
-	Khanh Cá Trê, Head Advertising Manager Team A, B, C
+	Khanh Cá Trê, Head Advertising Manager Team A, B, C #id:191
 	[wait time="0.1" hide_text="false"]
 	set {is_making_choice} = true
-	- It’s me though
+	- It’s me though #id:192
 		set {is_making_choice} = false
-		Player: It may not be my face but at least it's me, right? I don't have a watermark
+		Player: It may not be my face but at least it's me, right? I don't have a watermark #id:193
 		Khanh: It is me! You sure are coming off strong and not in a good way. Anyways, why did you match with me? \
 		\
-		Khanh Cá Trê. Head Advertising Manager Team A, B, C
+		Khanh Cá Trê. Head Advertising Manager Team A, B, C #id:194
 		[wait time="0.1" hide_text="false"]
 		set {is_making_choice} = true
-		- Curious photo
+		- Curious photo #id:195
 			set {is_making_choice} = false
-			Player: I just wanted to ask about the profile picture, I think you're the only stock image I've seen
-			Khanh: You're too intensely rude for me. Not that I think your interest was real. Goodbye.
-			Khanh: Khanh Cá Trê Head Advertising Manager Team A, B, C
+			Player: I just wanted to ask about the profile picture, I think you're the only stock image I've seen #id:196
+			Khanh: You're too intensely rude for me. Not that I think your interest was real. Goodbye. #id:197
+			Khanh: Khanh Cá Trê Head Advertising Manager Team A, B, C #id:198
 			# FAILURE
 			set {is_sdate_success} = false
 			set {is_date_success} = false
-		- Interesting bio
+		- Interesting bio #id:199
 			set {is_making_choice} = false
-			Player: I found your bio interesting despite not knowing what you look like
+			Player: I found your bio interesting despite not knowing what you look like #id:19a
 			Khanh: I think it's good you don't prioritize appearances but I don't like your energy. Goobye. \
 			\
-			Khanh Cá Trê, Head Advertising Manager Team A, B, C
+			Khanh Cá Trê, Head Advertising Manager Team A, B, C #id:19b
 			# FAILURE
 			set {is_sdate_success} = false
 			set {is_date_success} = false
-		- Go with the flow
+		- Go with the flow #id:19c
 			set {is_making_choice} = false
-			Player: I just say yes to everyone..
+			Player: I just say yes to everyone.. #id:19d
 			Khanh: You have no interest in me and I've lost interest in you or your red gloves anymore. Goodbye.  \
 			\
-			Khanh Cá Trê, Head Advertising Manager Team A, B, C.
+			Khanh Cá Trê, Head Advertising Manager Team A, B, C. #id:19e
 			# FAILURE
 			set {is_sdate_success} = false
 			set {is_date_success} = false
-	- That was rude, sorry
+	- That was rude, sorry #id:19f
 		set {is_making_choice} = false
-		Player: Sorry, you’re right, that was rude. I shouldn’t have said that. whoever you may be though, i still want to get to know you
-		Khanh: I accept your apology, I probably shouldn't have snapped either...
-		Khanh: Well, how do you feel about secret identities? You must like them right? Khanh Cá Trê Head Advertising Manager Team A, B, C
+		Player: Sorry, you’re right, that was rude. I shouldn’t have said that. whoever you may be though, i still want to get to know you #id:1a0
+		Khanh: I accept your apology, I probably shouldn't have snapped either... #id:1a1
+		Khanh: Well, how do you feel about secret identities? You must like them right? Khanh Cá Trê Head Advertising Manager Team A, B, C #id:1a2
 		[wait time="0.1" hide_text="false"]
 		set {is_making_choice} = true
-		- Hate them
+		- Hate them #id:1a3
 			set {is_making_choice} = false
-			Player: I hate them, especially in comics.
-			Player: I think someone who is brave would show who they are so they can be held accountable when their actions accidentally hurt others
+			Player: I hate them, especially in comics. #id:1a4
+			Player: I think someone who is brave would show who they are so they can be held accountable when their actions accidentally hurt others #id:1a5
 			Khanh: Big talk for someone who won't even show their own face. I don't like hard headed hypocrites. Goodbye. \
 			\
-			Khanh Cá Trê Head
-			Khanh: Advertising Manager Team A, B, C
+			Khanh Cá Trê Head #id:1a6
+			Khanh: Advertising Manager Team A, B, C #id:1a7
 			# FAILURE
 			set {is_sdate_success} = false
 			set {is_date_success} = false
-		- Love them
+		- Love them #id:1a8
 			set {is_making_choice} = false
-			Player: They're cool! Like Fishman! Everyone who hides has their own reason right?
-			Khanh: Right! You seem cool... Do you want to go to a comic shop together? Today! But promise you won't be shocked...
-			Khanh: Khanh Cá Trê Head Advertising Manager Team A, B, C
+			Player: They're cool! Like Fishman! Everyone who hides has their own reason right? #id:1a9
+			Khanh: Right! You seem cool... Do you want to go to a comic shop together? Today! But promise you won't be shocked... #id:1aa
+			Khanh: Khanh Cá Trê Head Advertising Manager Team A, B, C #id:1ab
 			# SUCCESS
 			jump Timeline_Date_Khanh/
-		- They’re meh
+		- They’re meh #id:1ac
 			set {is_making_choice} = false
-			Player: I don't feel strongly about them... Why hide? That's like... meh
+			Player: I don't feel strongly about them... Why hide? That's like... meh #id:1ad
 			Khanh: That's disappointing. Based on your profile I thought you'd understand... Goodbye. \
 			\
-			Khanh Cá Trê, Head Advertising Manager Team A, B, C
+			Khanh Cá Trê, Head Advertising Manager Team A, B, C #id:1ae
 			# FAILURE
 			set {is_sdate_success} = false
 			set {is_date_success} = false
-	- Noticeable
+	- Noticeable #id:1af
 		set {is_making_choice} = false
-		Player: Well... I can just tell...
-		Khanh: Why did you match if you didn't think my picture was me? I matched with you because your hobbies seemed interesting even without knowing what you look like...
-		Khanh: Khanh Cá Trê Head Advertising ManagerTeam A, B, C
+		Player: Well... I can just tell... #id:1b0
+		Khanh: Why did you match if you didn't think my picture was me? I matched with you because your hobbies seemed interesting even without knowing what you look like... #id:1b1
+		Khanh: Khanh Cá Trê Head Advertising ManagerTeam A, B, C #id:1b2
 		[wait time="0.1" hide_text="false"]
 		set {is_making_choice} = true
-		- Seeking honesty
+		- Seeking honesty #id:1b3
 			set {is_making_choice} = false
-			Player: I was hoping you'd tell the truth and we could get to know each other based on our interest.
+			Player: I was hoping you'd tell the truth and we could get to know each other based on our interest. #id:1b4
 			Khanh: Well sorry to 'disappoint' but I don't want to get to know someone like you anyway. Goodbye \
 			\
-			Khanh Cá Trê, Head Advertising Manager Team A, B, C
+			Khanh Cá Trê, Head Advertising Manager Team A, B, C #id:1b5
 			# FAILURE
 			set {is_sdate_success} = false
 			set {is_date_success} = false
-		- Interesting bio
+		- Interesting bio #id:1b6
 			set {is_making_choice} = false
-			Player: Your bio was interesting enough for me to ignore my suspicion
-			Khanh: I'm glad you don't base yourself on appearances but you clearly don't trust me, so I can't trust you. Goodbye.
-			Khanh: Khanh Cá Trê Head Advertising Manager Team A, B, C
+			Player: Your bio was interesting enough for me to ignore my suspicion #id:1b7
+			Khanh: I'm glad you don't base yourself on appearances but you clearly don't trust me, so I can't trust you. Goodbye. #id:1b8
+			Khanh: Khanh Cá Trê Head Advertising Manager Team A, B, C #id:1b9
 			# FAILURE
 			set {is_sdate_success} = false
 			set {is_date_success} = false
-		- Go with the flow
+		- Go with the flow #id:1ba
 			set {is_making_choice} = false
-			Player: I just say yes to everyone honestly...
+			Player: I just say yes to everyone honestly... #id:1bb
 			Khanh: I don't understand your lack of energy but I will stop wasting mine. Goodbye. \
 			\
-			Khanh Cá Trê, Head Advertising Manager Team A, B, C
+			Khanh Cá Trê, Head Advertising Manager Team A, B, C #id:1bc
 			# FAILURE
 			set {is_sdate_success} = false
 			set {is_date_success} = false
-- About your job
+- About your job #id:1bd
 	set {is_making_choice} = false
-	Player: What kind of advertising do you do?
+	Player: What kind of advertising do you do? #id:1be
 	Khanh: We focus on the creating and selling of various types of... comics and other printed products. \
 	\
-	Khanh Cá Trê, Head Advertising Manager Team A, B, C
+	Khanh Cá Trê, Head Advertising Manager Team A, B, C #id:1bf
 	[wait time="0.1" hide_text="false"]
 	set {is_making_choice} = true
-	- Sooo a comic shop
+	- Sooo a comic shop #id:1c0
 		set {is_making_choice} = false
-		Player: So like a comic shop? You could just say that!
+		Player: So like a comic shop? You could just say that! #id:1c1
 		Khanh: It's not quite like that! I work in an office! Have you ever worked in an office? \
 		\
-		Khanh Cá Trê Head
-		Khanh: Advertising ManagerTeam A, B, C
+		Khanh Cá Trê Head #id:1c2
+		Khanh: Advertising ManagerTeam A, B, C #id:1c3
 		[wait time="0.1" hide_text="false"]
 		set {is_making_choice} = true
-		- It is though?
+		- It is though? #id:1c4
 			set {is_making_choice} = false
-			Player: Shop Managers also have offices, also, I may have not but at least I don't very obviously lie about it
-			Khanh: There is no need to be so aggressive, you don't have to keep talking to me you know?
+			Player: Shop Managers also have offices, also, I may have not but at least I don't very obviously lie about it #id:1c5
+			Khanh: There is no need to be so aggressive, you don't have to keep talking to me you know? #id:1c6
 			Khanh: I think I will leave first. Goodbye. \
 			\
-			Khanh Cá Trê, Head Advertising Manager Team A, B, C
+			Khanh Cá Trê, Head Advertising Manager Team A, B, C #id:1c7
 			# FAILURE
 			set {is_sdate_success} = false
 			set {is_date_success} = false
-		- Unintentional, sorry
+		- Unintentional, sorry #id:1c8
 			set {is_making_choice} = false
-			Player: No, it was just the closest thing I could associate with the description, my apologies. I wasn't trying to insult you.
-			Khanh: I understand, well, it's not like I am offended. I fr think comic shops bring a lot of value to our communities!
-			Khanh: Let me show you around our city's best one tonight
-			Khanh: Khanh Cá Trê Head Advertising Manager Team A, B, C
+			Player: No, it was just the closest thing I could associate with the description, my apologies. I wasn't trying to insult you. #id:1c9
+			Khanh: I understand, well, it's not like I am offended. I fr think comic shops bring a lot of value to our communities! #id:1ca
+			Khanh: Let me show you around our city's best one tonight #id:1cb
+			Khanh: Khanh Cá Trê Head Advertising Manager Team A, B, C #id:1cc
 			# SUCCESS
 			jump Timeline_Date_Khanh/
-		- I have.
+		- I have. #id:1cd
 			set {is_making_choice} = false
-			Player: Yes... I am an office worker, I just think what you're describing sounds like a comic shop...
-			Khanh: You sure are close minded.
+			Player: Yes... I am an office worker, I just think what you're describing sounds like a comic shop... #id:1ce
+			Khanh: You sure are close minded. #id:1cf
 			Khanh: I don't think I could trust you enough to meet with you, goodbye. \
 			\
-			Khanh Cá Trê, Head Advertising Manager Team A, B, C
+			Khanh Cá Trê, Head Advertising Manager Team A, B, C #id:1d0
 			# FAILURE
 			set {is_sdate_success} = false
 			set {is_date_success} = false
-	- Impressive
+	- Impressive #id:1d1
 		set {is_making_choice} = false
-		Player: Oh, that's so interesting. You have an impressive role. What is your favorite product you advertise for?
-		Khanh: I think I am a particular fan of... Fishman...
-		Khanh: I think the art in that series can be appreciated by anyone.
+		Player: Oh, that's so interesting. You have an impressive role. What is your favorite product you advertise for? #id:1d2
+		Khanh: I think I am a particular fan of... Fishman... #id:1d3
+		Khanh: I think the art in that series can be appreciated by anyone. #id:1d4
 		Khanh: Have you heard of it? \
 		\
-		Khanh Cá Trê, Head Advertising Manager Team A, B, C
+		Khanh Cá Trê, Head Advertising Manager Team A, B, C #id:1d5
 		[wait time="0.1" hide_text="false"]
 		set {is_making_choice} = true
-		- Too old sadly
+		- Too old sadly #id:1d6
 			set {is_making_choice} = false
-			Player: No, I don't really consume comics or things of that nature. I feel like someone my age makes me too old now...
-			Khanh: You're never too old! Meet up with me at the comic shop!
-			Khanh: I will prove to you that you can still enjoy them... oh but, don't be too surprised by what you see...
-			Khanh: Khanh Cá Trê, Head Advertising Manager Team A, B, C
+			Player: No, I don't really consume comics or things of that nature. I feel like someone my age makes me too old now... #id:1d7
+			Khanh: You're never too old! Meet up with me at the comic shop! #id:1d8
+			Khanh: I will prove to you that you can still enjoy them... oh but, don't be too surprised by what you see... #id:1d9
+			Khanh: Khanh Cá Trê, Head Advertising Manager Team A, B, C #id:1da
 			# SUCCESS
 			jump Timeline_Date_Khanh/
-		- Yes!
+		- Yes! #id:1db
 			set {is_making_choice} = false
-			Player: I have, I enjoy reading comics a lot. I have another favorite but I love talking about Fishman too!
-			Player: How much do you know about the series?
-			Khanh: More than you'd think! Let's meet up and talk about it at the local comic shop... I have something to tell you anyway...
-			Khanh: Khanh Cá Trê, Hed Advertising Manager Team A, B, C
+			Player: I have, I enjoy reading comics a lot. I have another favorite but I love talking about Fishman too! #id:1dc
+			Player: How much do you know about the series? #id:1dd
+			Khanh: More than you'd think! Let's meet up and talk about it at the local comic shop... I have something to tell you anyway... #id:1de
+			Khanh: Khanh Cá Trê, Hed Advertising Manager Team A, B, C #id:1df
 			# SUCCESS
 			jump Timeline_Date_Khanh/
-		- What is it?
+		- What is it? #id:1e0
 			set {is_making_choice} = false
-			Player: No... is it like a kids book? Nothing wrong with that but I never had a chance to get into it...
+			Player: No... is it like a kids book? Nothing wrong with that but I never had a chance to get into it... #id:1e1
 			Khanh: It's not really just for children, let's meet so I can show you the truth. We’ll have a lot of fun. Just don’t get too shocked okay? \
 			\
-			Khanh Cá Trê, Head Advertising Manager Team A, B, C
+			Khanh Cá Trê, Head Advertising Manager Team A, B, C #id:1e2
 			# SUCCESS
 			jump Timeline_Date_Khanh/
-	- Not impressed
+	- Not impressed #id:1e3
 		set {is_making_choice} = false
-		Player: Oh, so a regular office worker... Ok. I work as a chef
-		Khanh: Well, yes I suppose... A chef, that's interesting!
+		Player: Oh, so a regular office worker... Ok. I work as a chef #id:1e4
+		Khanh: Well, yes I suppose... A chef, that's interesting! #id:1e5
 		Khanh: Have you worked in any of the restaurants that have had a Fishman collab? \
 		\
-		Khanh Cá Trê, Head Advertising Manager Team A, B, C
+		Khanh Cá Trê, Head Advertising Manager Team A, B, C #id:1e6
 		[wait time="0.1" hide_text="false"]
 		set {is_making_choice} = true
-		- Embarrassing idea
+		- Embarrassing idea #id:1e7
 			set {is_making_choice} = false
-			Player: No, my restaurant is high end, we wouldn't host such collaborations. It'd be a little embarrassing.
-			Khanh: It seems that you and I aren't going to be a good match, especially if you think that way.
+			Player: No, my restaurant is high end, we wouldn't host such collaborations. It'd be a little embarrassing. #id:1e8
+			Khanh: It seems that you and I aren't going to be a good match, especially if you think that way. #id:1e9
 			Khanh: I'm going to end it here, Goodbye.  \
 			\
-			Khanh Cá Trê, Head Advertising Manager Team A, B, C
+			Khanh Cá Trê, Head Advertising Manager Team A, B, C #id:1ea
 			# FAILURE
 			set {is_sdate_success} = false
 			set {is_date_success} = false
-		- Should I?
+		- Should I? #id:1eb
 			set {is_making_choice} = false
-			Player: No, but that sounds like something I should considered doing sometime, do you think it would get good attention?
-			Khanh: I think it can be a great source of good publicity, if we meet at the comic shop, I can help you decide exactly what to aim for!
+			Player: No, but that sounds like something I should considered doing sometime, do you think it would get good attention? #id:1ec
+			Khanh: I think it can be a great source of good publicity, if we meet at the comic shop, I can help you decide exactly what to aim for! #id:1ed
 			Khanh: Oh... but I have to warn you, don't be surprised okay? \
 			\
-			Khan Cá Trê, Head Advrtising Manager Team A, B, C
+			Khan Cá Trê, Head Advrtising Manager Team A, B, C #id:1ee
 			# SUCCEsS
 			jump Timeline_Date_Khanh/
-		- Never
+		- Never #id:1ef
 			set {is_making_choice} = false
-			Player: I don't think I'd do a collaboration like that honestly... Sorry...
-			Khanh: Well, it's your restaurant... But I don’t think I am your man. I think you should find someone else, goodbye.
-			Khanh: Khanh Cá Trê, Head Advertising Manager Team A, B, C
+			Player: I don't think I'd do a collaboration like that honestly... Sorry... #id:1f0
+			Khanh: Well, it's your restaurant... But I don’t think I am your man. I think you should find someone else, goodbye. #id:1f1
+			Khanh: Khanh Cá Trê, Head Advertising Manager Team A, B, C #id:1f2
 			# FAILURE
 			set {is_sdate_success} = false
 			set {is_date_success} = false
-- Not really
+- Not really #id:1f3
 	set {is_making_choice} = false
-	Player: Um, I don't really have any..
-	Khanh: FR?!
-	Khanh: I thought you'd have at least one since we matched, but well, what do you do?
-	Khanh: Khanh Cá Trê, Head Advertising Manager Team A, B, C
+	Player: Um, I don't really have any.. #id:1f4
+	Khanh: FR?! #id:1f5
+	Khanh: I thought you'd have at least one since we matched, but well, what do you do? #id:1f6
+	Khanh: Khanh Cá Trê, Head Advertising Manager Team A, B, C #id:1f7
 	[wait time="0.1" hide_text="false"]
 	set {is_making_choice} = true
-	- Model peer?
+	- Model peer? #id:1f8
 		set {is_making_choice} = false
-		Player: I'm a model, that's why I matched with you
-		Player: I assumed you might be too and thought we could like, network
-		Player: AND get to know each other!
-		Khanh: Oh, well, about that, as you can see, I am an office worker! It says so in my bio, did you not read it?
-		Khanh: Khanh Cá Trê, Head Advertising Manager Team A, B, C
+		Player: I'm a model, that's why I matched with you #id:1f9
+		Player: I assumed you might be too and thought we could like, network #id:1fa
+		Player: AND get to know each other! #id:1fb
+		Khanh: Oh, well, about that, as you can see, I am an office worker! It says so in my bio, did you not read it? #id:1fc
+		Khanh: Khanh Cá Trê, Head Advertising Manager Team A, B, C #id:1fd
 		[wait time="0.1" hide_text="false"]
 		set {is_making_choice} = true
-		- No tbh
+		- No tbh #id:1fe
 			set {is_making_choice} = false
-			Player: Not really! Sorry I got super distracted by how good looking you are!
-			Khanh: Oh, you clearly place importance on appearance...
-			Khanh: Sorry I don't think this will work, I will end this conversation now.
+			Player: Not really! Sorry I got super distracted by how good looking you are! #id:1ff
+			Khanh: Oh, you clearly place importance on appearance... #id:200
+			Khanh: Sorry I don't think this will work, I will end this conversation now. #id:201
 			Khanh: Goodbye! \
 			\
-			Khanh Cá Trê, Head Advertising Manager Team A, B, C
+			Khanh Cá Trê, Head Advertising Manager Team A, B, C #id:202
 			# FAILURE
 			set {is_sdate_success} = false
 			set {is_date_success} = false
-		- Too excited
+		- Too excited #id:203
 			set {is_making_choice} = false
-			Player: Oh you're right. Sorry, I got excited by the possibility that we might share careers that I skipped it.
-			Khanh: I understand
-			Khanh: but I am a little too nervous to continue this conversation now, sorry and goodbye.
-			Khanh: Khanh Cá Trê Head Advertising Manager
-			Khanh: Team A, B, C
+			Player: Oh you're right. Sorry, I got excited by the possibility that we might share careers that I skipped it. #id:204
+			Khanh: I understand #id:205
+			Khanh: but I am a little too nervous to continue this conversation now, sorry and goodbye. #id:206
+			Khanh: Khanh Cá Trê Head Advertising Manager #id:207
+			Khanh: Team A, B, C #id:208
 			# FAILURE
 			set {is_sdate_success} = false
 			set {is_date_success} = false
-		- Yes, but...
+		- Yes, but... #id:209
 			set {is_making_choice} = false
-			Player: Yea but the watermark? I thought you were roleplaying or something...
-			Khanh: I am not.
-			Khanh: Uh, sorry. I will end this conversation now.
+			Player: Yea but the watermark? I thought you were roleplaying or something... #id:20a
+			Khanh: I am not. #id:20b
+			Khanh: Uh, sorry. I will end this conversation now. #id:20c
 			Khanh: Goodbye \
 			\
-			Khanh Cá Trê, Head Advertising Manager Team A, B, C
+			Khanh Cá Trê, Head Advertising Manager Team A, B, C #id:20d
 			# FAILURE
 			set {is_sdate_success} = false
 			set {is_date_success} = false
-	- Sorry, nerves
+	- Sorry, nerves #id:20e
 		set {is_making_choice} = false
-		Player: Sorry, I am not always the best at conversations and your biography was impressive so I was not expecting a match.
-		Player: I have a typical kitchen job, not very interesting.
-		Khanh: Don't put yourself down, I definitely understand being nervous or self concious...
-		Khanh: trust me.
-		Khanh: Do you think someone has to be impressive to meet someone...?
-		Khanh: Khanh Cá Trê, Head Advertising Manager Team A, B, C
+		Player: Sorry, I am not always the best at conversations and your biography was impressive so I was not expecting a match. #id:20f
+		Player: I have a typical kitchen job, not very interesting. #id:210
+		Khanh: Don't put yourself down, I definitely understand being nervous or self concious... #id:211
+		Khanh: trust me. #id:212
+		Khanh: Do you think someone has to be impressive to meet someone...? #id:213
+		Khanh: Khanh Cá Trê, Head Advertising Manager Team A, B, C #id:214
 		[wait time="0.1" hide_text="false"]
 		set {is_making_choice} = true
-		- It helps
+		- It helps #id:215
 			set {is_making_choice} = false
-			Player: I think it definitely helps, isn't it natural for people to want someone impressive?
-			Player: That's why I get nervous...
-			Khanh: Oh, well if you feel that way then I don't think we will work out...
-			Khanh: Sorry... I will end this conversation now.
+			Player: I think it definitely helps, isn't it natural for people to want someone impressive? #id:216
+			Player: That's why I get nervous... #id:217
+			Khanh: Oh, well if you feel that way then I don't think we will work out... #id:218
+			Khanh: Sorry... I will end this conversation now. #id:219
 			Khanh: Goodbye \
 			\
-			Khanh Cá Trê, Head Advertising Manager Team A, B,
+			Khanh Cá Trê, Head Advertising Manager Team A, B, #id:21a
 			# FAILURE
 			set {is_sdate_success} = false
 			set {is_date_success} = false
-		- No!
+		- No! #id:21b
 			set {is_making_choice} = false
-			Player: No, that's why I am still trying despite the fact that I am not showing my face...
-			Khanh: That's great... I... I want to live up to that! Let's meet up at the local comic shop and we can talk some more about it...
+			Player: No, that's why I am still trying despite the fact that I am not showing my face... #id:21c
+			Khanh: That's great... I... I want to live up to that! Let's meet up at the local comic shop and we can talk some more about it... #id:21d
 			Khanh: Just don't be too shocked! \
 			\
-			Khanh Cá Trê, Head Advertising Manager Team A, B, C
+			Khanh Cá Trê, Head Advertising Manager Team A, B, C #id:21e
 			# SUCCESS
 			jump Timeline_Date_Khanh/
-		- Of course
+		- Of course #id:21f
 			set {is_making_choice} = false
-			Player: Yes, I don't expect many matches because of it, but you surely don't relate to that like you say
-			Khanh: Oh, well I don't think you should feel that bad about yourself... but now I feel like I will disappoint you.
+			Player: Yes, I don't expect many matches because of it, but you surely don't relate to that like you say #id:220
+			Khanh: Oh, well I don't think you should feel that bad about yourself... but now I feel like I will disappoint you. #id:221
 			Khanh: I should end this. Goodbye \
 			\
-			Khanh Cá Trê, Head Advertising Manager Team A, B, C
+			Khanh Cá Trê, Head Advertising Manager Team A, B, C #id:222
 			# FAILURE
 			set {is_sdate_success} = false
 			set {is_date_success} = false
-	- Pretty man
+	- Pretty man #id:223
 		set {is_making_choice} = false
-		Player: You're pretty... Isn't that what matters? I work as a
-		Player: Fisherman... or something like that
-		Khanh: ...Or something like that? That doesn't seem very honest or like you care much...
+		Player: You're pretty... Isn't that what matters? I work as a #id:224
+		Player: Fisherman... or something like that #id:225
+		Khanh: ...Or something like that? That doesn't seem very honest or like you care much... #id:226
 		Khanh: Do you not know what you do? \
 		\
-		Khanh Cá Trê, Head Advertising Manager Team A, B, C
+		Khanh Cá Trê, Head Advertising Manager Team A, B, C #id:227
 		[wait time="0.1" hide_text="false"]
 		set {is_making_choice} = true
-		- Liars together
+		- Liars together #id:228
 			set {is_making_choice} = false
-			Player: Well, we're both not being honest right? What does it matter what I do?
-			Khanh: This conversation is off putting, you shouldn't mess with people like this, goodbye.
+			Player: Well, we're both not being honest right? What does it matter what I do? #id:229
+			Khanh: This conversation is off putting, you shouldn't mess with people like this, goodbye. #id:22a
 			# FAILURE
 			set {is_sdate_success} = false
 			set {is_date_success} = false
-		- You wouldn’t get it
+		- You wouldn’t get it #id:22b
 			set {is_making_choice} = false
-			Player: I didn't mean to come off that way, my job title is just sort of unstable.
-			Player: That was just embarrassing to say. You're so cool you probably don't understand
-			Khanh: Don't be embarrassed... Your job being unstable isn't your fault...
-			Khanh: Sorry, now I am too nervous I will disappoint you. Goodbye.
-			Khanh: Khanh Cá Trê, Head Advertising Manager Team A, B, C
+			Player: I didn't mean to come off that way, my job title is just sort of unstable. #id:22c
+			Player: That was just embarrassing to say. You're so cool you probably don't understand #id:22d
+			Khanh: Don't be embarrassed... Your job being unstable isn't your fault... #id:22e
+			Khanh: Sorry, now I am too nervous I will disappoint you. Goodbye. #id:22f
+			Khanh: Khanh Cá Trê, Head Advertising Manager Team A, B, C #id:230
 			# FAILURE
 			set {is_sdate_success} = false
 			set {is_date_success} = false
-		- Nevermind.
+		- Nevermind. #id:231
 			set {is_making_choice} = false
-			Player: Yea, I just looked at your profile again and I saw the watermark so I lost interest to be honest...
-			Player: That's not even you. Bummer.
-			Khanh: Yes it is!
-			Khanh: But well, that doesn't leave much room for more conversation, does it? I will end it now.
+			Player: Yea, I just looked at your profile again and I saw the watermark so I lost interest to be honest... #id:232
+			Player: That's not even you. Bummer. #id:233
+			Khanh: Yes it is! #id:234
+			Khanh: But well, that doesn't leave much room for more conversation, does it? I will end it now. #id:235
 			Khanh: Goodbye. \
 			\
-			Khanh Cá Trê, Head Advertising Manager Team A, B, C
+			Khanh Cá Trê, Head Advertising Manager Team A, B, C #id:236
 			# FAILURE
 			set {is_sdate_success} = false
 			set {is_date_success} = false
+audio Musicly - [fade="0.5" sync="Musicly"]
 [signal arg="scene_end"]

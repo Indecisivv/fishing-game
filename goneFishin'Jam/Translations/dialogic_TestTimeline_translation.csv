@@ -1,0 +1,26 @@
+keys,en
+Text/11/text,Hiya!😘 Just got off work!
+Text/12/text,wassup sexy
+Text/13/text,Sorry to keep you waiting~
+Text/14/text,Being a shop owner is just soooo busy. Would totes make me dizzy😵‍💫
+Text/15/text,Well
+Text/16/text,"WOULD, if I wasn't such a natural at it~"
+Text/17/text,Surely I'm not disturbing your work hours?
+Text/18/text,Speaking of...
+Text/19/text,What do you do for work?
+Choice/1a/text,Correct Choice
+Choice/1a/disabled_text,
+Text/1b/text,i just picked a right choice
+Text/1c/text,correct
+Text/1d/text,yaaayyy
+Text/1e/text,
+Choice/1f/text,Wrong Choice
+Choice/1f/disabled_text,
+Text/20/text,i just picked a wrong choice
+Text/21/text,wrong choice
+Text/22/text,noooo
+Choice/23/text,Wrong Choice
+Choice/23/disabled_text,
+Text/24/text,I just picked a wrong choice
+Text/25/text,wrong choice
+Text/26/text,noooo

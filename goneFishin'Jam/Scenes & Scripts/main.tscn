@@ -11,7 +11,6 @@
 [ext_resource type="PackedScene" uid="uid://cp0epwig8old5" path="res://Scenes & Scripts/Game Scenes/quit_confirm.tscn" id="11_jrmb8"]
 
 [node name="Main" type="Node2D" unique_id=2069766624]
-visible = false
 script = ExtResource("1_yt7ni")
 num_total_chars = 3
 
@@ -55,8 +54,8 @@ visible = false
 [connection signal="return_to_menu" from="Gameplay Scenes/PeopleNearYou" to="." method="_on_return_to_menu_btn_pressed"]
 [connection signal="settings_opened" from="Gameplay Scenes/TextingStage" to="." method="_on_settings_entered"]
 [connection signal="settings_opened" from="Gameplay Scenes/DateTime" to="." method="_on_settings_entered"]
-[connection signal="on_retry" from="Gameplay Scenes/DateEnd" to="." method="_on_date_selected"]
-[connection signal="on_return_to_main_menu" from="Gameplay Scenes/DateEnd" to="." method="_on_return_to_main_menu"]
+[connection signal="on_return" from="Gameplay Scenes/DateEnd" to="." method="_on_return_to_phone_screen"]
+[connection signal="quit_game" from="Gameplay Scenes/GameEndScreen" to="." method="_on_quit_btn_pressed"]
 [connection signal="restart_game" from="Gameplay Scenes/GameEndScreen" to="." method="_on_game_restart"]
 [connection signal="credits_entered" from="Scenes/Main Menu" to="." method="_on_credits_entered"]
 [connection signal="game_started" from="Scenes/Main Menu" to="." method="_on_game_started"]

@@ -1,7 +1,7 @@
 {
 "@path": "res://addons/dialogic/Resources/character.gd",
 "@subpath": NodePath(""),
-&"_translation_id": "",
+&"_translation_id": "2b3",
 &"color": Color(1, 1, 1, 1),
 &"custom_info": {
 "prefix": "",
@@ -14,7 +14,7 @@
 "pitch_variance": 0.0,
 "skip_characters": 0.0,
 "sound_path": "res://Assets/Voice/BloopA1.wav",
-"volume_base": 0.0,
+"volume_base": 10.0,
 "volume_variance": 0.0
 },
 "Typing": {

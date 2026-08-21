@@ -101,6 +101,11 @@ func _on_date_selected() -> void:
 # This method transitions from the date to the date end screen.
 func _on_dialogic_signal(argument:String) -> void:
 	if argument == "scene_end":
+		Dialogic.end_timeline(true)
+	
+		if Dialogic.Styles.get_layout_node():
+			Dialogic.Styles.get_layout_node().queue_free()
+		
 		num_online -= 1
 		scn_people_near_you.set_people_online(num_online)
 		scn_people_near_you.disable_button()
@@ -136,7 +141,8 @@ func _on_return_to_main_menu() -> void:
 	scn_texting_stage.hide()
 	scn_settings.make_visible(false)
 	scn_people_near_you.hide()
-	scn_people_near_you.reset_screen()
+	scn_people_near_you.reset_phone()
+	scn_people_near_you.reset_loading_screen()
 	scn_date_time.hide()
 	scn_date_time.show_button(false)
 	scn_date_end.hide()
@@ -146,6 +152,17 @@ func _on_return_to_main_menu() -> void:
 		show_ending()
 	else:
 		scn_main_menu.show()
+
+func _on_return_to_phone_screen() -> void:
+	if (all_chars_dated):
+		_on_return_to_main_menu()
+		return
+	
+	FadeToBlackTransition.fade_to_black()
+	await FadeToBlackTransition.transition_finished
+	scn_date_end.hide()
+	scn_people_near_you.show()
+	scn_people_near_you.reset_screen()
 
 # This method sets the all_chars_dated bool to true so the code knows to show the ending CG when the
 # user returns to the menu.
@@ -170,27 +187,30 @@ func _on_game_close() -> void:
 # Method that shows the results of a date after it ends.
 func show_scn_date_end() -> void:
 	if on_date_ada && Dialogic.VAR.is_date_success:
-		scn_date_end.set_cg(scn_date_end.BG_DINNER_1)
-		scn_date_end.set_text('Ada-bong Pugita', 'Octopus Adobo')
+		scn_date_end.set_cg(true, "ada")
+		scn_date_end.play_music()
 	elif on_date_ada && !Dialogic.VAR.is_date_success:
-		scn_date_end.set_cg(scn_date_end.BG_DINNER_1)
-		scn_date_end.set_text(CharacterLibrary.ada.char_name + " has snapped the line...")
+		scn_date_end.set_cg(false)
+		scn_date_end.set_lose_text(CharacterLibrary.ada.char_name + " has snapped 
+		the line...")
 		scn_date_end.unmatch.play()
 	
 	if on_date_khanh && Dialogic.VAR.is_date_success:
-		scn_date_end.set_cg(scn_date_end.BG_DINNER_2)
-		scn_date_end.set_text('Cá Khanh Tộ', 'Vietnamese Braised Catfish')
+		scn_date_end.set_cg(true, "khanh")
+		scn_date_end.play_music()
 	elif on_date_khanh && !Dialogic.VAR.is_date_success:
-		scn_date_end.set_cg(scn_date_end.BG_DINNER_2)
-		scn_date_end.set_text(CharacterLibrary.khanh.char_name + " has snapped the line...")
+		scn_date_end.set_cg(false)
+		scn_date_end.set_lose_text(CharacterLibrary.khanh.char_name + " has snapped 
+		the line...")
 		scn_date_end.unmatch.play()
 	
 	if on_date_soccoro && Dialogic.VAR.is_date_success:
-		scn_date_end.set_cg(scn_date_end.BG_DINNER_3)
-		scn_date_end.set_text('Pan de Socorrazon', 'Small Shark Bread')
+		scn_date_end.set_cg(true, "socorro")
+		scn_date_end.play_music()
 	elif on_date_soccoro && !Dialogic.VAR.is_date_success:
-		scn_date_end.set_cg(scn_date_end.BG_DINNER_3)
-		scn_date_end.set_text(CharacterLibrary.soccoro.char_name + " has snapped the line...")
+		scn_date_end.set_cg(false)
+		scn_date_end.set_lose_text(CharacterLibrary.soccoro.char_name + " has snapped 
+		the line...")
 		scn_date_end.unmatch.play()
 	
 	scn_date_end.show()
@@ -208,34 +228,30 @@ func show_ending() -> void:
 			win_counter += 1
 	
 	if win_counter >= num_total_chars:
-		scn_game_end.set_end_text("Stockpiled!",
-								  "After a good time fishing, you're so full, it's a dream!",
-								  "You have so much leftover, you won't have to think",
-								  "of what to eat for a long time :)")
 		scn_game_end.set_end_label(3)
+		scn_game_end.set_end_text(3)
+		scn_game_end.set_cg("all_caught")
 	elif win_counter == 2:
-		scn_game_end.set_end_text("Just One More Bite!",
-								  "You've had enough to almost feel satisfied.",
-								  "Plus! This stock is enough for you to lay",
-								  "low for a while...")
 		scn_game_end.set_end_label(2)
+		scn_game_end.set_end_text(2)
+		scn_game_end.set_cg("one_more_bite")
 	elif win_counter == 1:
-		scn_game_end.set_end_text("Caught One!",
-								  "That was delicious but you're still starving...",
-								  "Maybe you'd have some better luck with normal fishing?",
-								  "This amount won't last very long...")
 		scn_game_end.set_end_label(1)
+		scn_game_end.set_end_text(1)
+		scn_game_end.set_cg("one_caught")
 	elif win_counter == 0:
-		scn_game_end.set_end_text("No Pull!",
-								  "Not a single catch? You're starving!",
-								  "You might want to stick to regular fish...",
-								  "The supermarket will save you!")
 		scn_game_end.set_end_label(0)
-	
+		scn_game_end.set_end_text(0)
+		scn_game_end.set_cg("no_pull")
+		
+	scn_game_end.play_music()
 	scn_game_end.show()
 
 # Resets all variables and scenes in the game
 func restart_game() -> void:
+	FadeToBlackTransition.fade_to_black()
+	await FadeToBlackTransition.transition_finished
+	
 	scn_main_menu.show()
 	scn_people_near_you.hide()
 	scn_texting_stage.hide()
@@ -244,7 +260,8 @@ func restart_game() -> void:
 	scn_date_end.hide()
 	scn_game_end.hide()
 	
-	num_online = num_total_chars + 1
+	num_online = num_total_chars
+	scn_people_near_you.set_people_online(num_online)
 	win_counter = 0
 	all_chars_dated = false
 	for i in wins.size():

@@ -104,7 +104,6 @@ func set_speed(delay_per_character:float) -> void:
 	else:
 		active_speed = delay_per_character
 
-
 ## Reveals one additional character.
 func continue_reveal() -> void:
 	if visible_characters <= get_total_character_count():

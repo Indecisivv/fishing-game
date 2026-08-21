@@ -35,10 +35,15 @@
 [ext_resource type="Texture2D" uid="uid://b54aeb7hpwykr" path="res://Assets/CGs/People Near You Profile_Ada.png" id="22_0v1d4"]
 [ext_resource type="Texture2D" uid="uid://blb7y5n88wpfr" path="res://Assets/CGs/People Near You Profile_Khanh.png" id="23_x6b15"]
 [ext_resource type="Texture2D" uid="uid://c5mugyh6aerua" path="res://Assets/CGs/People Near You Profile_Socorro.png" id="24_36yh4"]
+[ext_resource type="FontFile" uid="uid://b5u7o2egl3j1f" path="res://Assets/FishFonts/National_Park/NationalPark-VariableFont_wght.ttf" id="24_ea7u8"]
 [ext_resource type="Texture2D" uid="uid://cykdq5xknrx63" path="res://Assets/CGs/People Near You Profile_Ada_02.png" id="29_fk4pa"]
 [ext_resource type="Texture2D" uid="uid://bm6lhkxtxy365" path="res://Assets/CGs/People Near You Profile_Khanh_02.png" id="30_wtv5n"]
 [ext_resource type="Texture2D" uid="uid://deaext6dogjc4" path="res://Assets/CGs/People Near You Profile_Socorro_02.png" id="31_22ce1"]
+[ext_resource type="Texture2D" uid="uid://yrcrvi3y7bew" path="res://Assets/Buttons/Edit Button_01.png" id="36_3hre5"]
+[ext_resource type="Texture2D" uid="uid://dyocr0p5kc4qf" path="res://Assets/Buttons/Edit Button_02.png" id="37_frdxy"]
+[ext_resource type="Texture2D" uid="uid://c4y7afo7n2h8y" path="res://Assets/CGs/Dating Profile_MC.png" id="38_jg2mk"]
 [ext_resource type="AudioStream" uid="uid://dq2mccohgjpum" path="res://Assets/SFX/SFX_Match.wav" id="39_fk4pa"]
+[ext_resource type="Texture2D" uid="uid://4mu1ckrca8ek" path="res://Assets/CGs/Dating Profile_MC_02.png" id="39_tewg5"]
 [ext_resource type="Texture2D" uid="uid://bv7q1f6cmnoyp" path="res://Assets/CGs/Its A Match_Ada.png" id="40_22ce1"]
 [ext_resource type="Script" uid="uid://b0onvkaovox8g" path="res://Scenes & Scripts/Game Scenes/match_screen.gd" id="40_vs1ln"]
 [ext_resource type="Texture2D" uid="uid://b6uvtbslghgxw" path="res://Assets/Buttons/UI_Matching_Send a Message.png" id="41_vgm63"]
@@ -48,6 +53,7 @@
 [ext_resource type="Texture2D" uid="uid://lxft6vrk526e" path="res://Assets/CGs/Its A Match_Khanh_02.png" id="44_vs3vt"]
 [ext_resource type="Texture2D" uid="uid://dy2071upbnpd4" path="res://Assets/CGs/Its A Match_Socorro.png" id="45_r8mvj"]
 [ext_resource type="Texture2D" uid="uid://cgvhdbrvwajvt" path="res://Assets/CGs/Its A Match_Socorro_02.png" id="46_vs1ln"]
+[ext_resource type="Texture2D" uid="uid://myoqfmossu7d" path="res://Assets/Buttons/UI_Matching_Send a Message_02.png" id="49_tewg5"]
 
 [sub_resource type="Animation" id="Animation_7oxxn"]
 length = 2.0
@@ -364,7 +370,7 @@ length = 2.0
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
-tracks/0/enabled = false
+tracks/0/enabled = true
 tracks/0/path = NodePath("DateProfileView/Button_Back:texture_normal")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
@@ -376,7 +382,7 @@ tracks/0/keys = {
 }
 tracks/1/type = "value"
 tracks/1/imported = false
-tracks/1/enabled = false
+tracks/1/enabled = true
 tracks/1/path = NodePath("DateProfileView/Button_Heart:texture_normal")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
@@ -405,7 +411,7 @@ length = 2.0
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
-tracks/0/enabled = false
+tracks/0/enabled = true
 tracks/0/path = NodePath("DateProfileView/Button_Back:texture_normal")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
@@ -417,7 +423,7 @@ tracks/0/keys = {
 }
 tracks/1/type = "value"
 tracks/1/imported = false
-tracks/1/enabled = false
+tracks/1/enabled = true
 tracks/1/path = NodePath("DateProfileView/Button_Heart:texture_normal")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
@@ -446,7 +452,7 @@ length = 2.0
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
-tracks/0/enabled = false
+tracks/0/enabled = true
 tracks/0/path = NodePath("DateProfileView/Button_Back:texture_normal")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
@@ -458,7 +464,7 @@ tracks/0/keys = {
 }
 tracks/1/type = "value"
 tracks/1/imported = false
-tracks/1/enabled = false
+tracks/1/enabled = true
 tracks/1/path = NodePath("DateProfileView/Button_Heart:texture_normal")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
@@ -466,7 +472,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("14_0s012"), ExtResource("17_ic68m")]
+"values": [ExtResource("36_3hre5"), ExtResource("37_frdxy")]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -478,7 +484,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("10_m5o14"), ExtResource("15_mjxxk")]
+"values": [ExtResource("38_jg2mk"), ExtResource("39_tewg5")]
 }
 
 [sub_resource type="Animation" id="Animation_ey8pi"]
@@ -487,7 +493,7 @@ length = 2.0
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
-tracks/0/enabled = false
+tracks/0/enabled = true
 tracks/0/path = NodePath("DateProfileView/Button_Back:texture_normal")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
@@ -499,7 +505,7 @@ tracks/0/keys = {
 }
 tracks/1/type = "value"
 tracks/1/imported = false
-tracks/1/enabled = false
+tracks/1/enabled = true
 tracks/1/path = NodePath("DateProfileView/Button_Heart:texture_normal")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
@@ -577,6 +583,18 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [ExtResource("40_22ce1"), ExtResource("42_vgm63")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TextureButton:texture_normal")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("41_vgm63"), ExtResource("49_tewg5")]
 }
 
 [sub_resource type="Animation" id="Animation_rme2w"]
@@ -824,6 +842,7 @@ offset_left = 424.95728
 offset_top = 163.03442
 offset_right = 551.9573
 offset_bottom = 205.03442
+theme_override_fonts/font = ExtResource("24_ea7u8")
 text = "● 3 online"
 label_settings = SubResource("LabelSettings_tn7bg")
 
@@ -873,6 +892,7 @@ offset_left = -261.0
 offset_top = 323.0
 offset_right = 219.0
 offset_bottom = 510.0
+vertical_scroll_mode = 3
 
 [node name="Label_Bio" type="Label" parent="Phone/DateProfileView/ScrollContainer" unique_id=1243809126]
 layout_mode = 2

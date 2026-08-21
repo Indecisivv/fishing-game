@@ -13,7 +13,7 @@ config_version=5
 config/name="Gone Fishin' Jam"
 run/main_scene="uid://2ohq8yurtaoa"
 config/features=PackedStringArray("4.7", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="uid://cwwudb00a8ls8"
 
 [audio]
 
@@ -101,6 +101,17 @@ layout/end_behaviour=0
 audio/type_sound_bus="Master"
 text/input_action="dialogic_default_action"
 text/autocolor_names=false
+translation/enabled=true
+translation/original_locale="en"
+translation/file_mode=1
+translation/translation_folder="res://Translations"
+translation/save_mode=0
+translation/add_separator=false
+translation/intern/save_mode=0
+translation/intern/file_mode=1
+translation/intern/translation_folder="res://Translations"
+translation/id_counter=693
+translation/locales=[]
 
 [display]
 
@@ -129,6 +140,7 @@ folder_colors={
 "res://Scenes & Scripts/": "green",
 "res://Styles/": "blue",
 "res://Timelines/": "purple",
+"res://Translations/": "pink",
 "res://addons/": "red"
 }
 
@@ -153,3 +165,4 @@ dialogic_default_action={
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true

@@ -28,15 +28,20 @@
 [ext_resource type="Texture2D" uid="uid://hvbeg1pqwe1h" path="res://Assets/Buttons/Credits_Button_2.png" id="19_4vn5f"]
 [ext_resource type="Texture2D" uid="uid://ckf2q3qkbefrw" path="res://Assets/CGs/Menu Background_Phone_02.png" id="21_ejx7w"]
 [ext_resource type="Texture2D" uid="uid://bdd7j3lerrlpx" path="res://Assets/Buttons/Credit Icon_indecisiv.png" id="21_ruwaw"]
+[ext_resource type="Script" uid="uid://dockprv17ce7m" path="res://Scenes & Scripts/Game Scenes/button_indecisiv.gd" id="22_5ak3m"]
 [ext_resource type="Script" uid="uid://dqt40mctpv24g" path="res://Scenes & Scripts/Game Scenes/button_play.gd" id="22_cf8nl"]
 [ext_resource type="Texture2D" uid="uid://bqjoac7j5ixcx" path="res://Assets/Buttons/Credit Icon_Penny.png" id="22_wchwx"]
 [ext_resource type="Texture2D" uid="uid://d4eacbcm51hj5" path="res://Assets/Buttons/Credit Icon_Krak7en.png" id="23_4snso"]
 [ext_resource type="Texture2D" uid="uid://5jy011sgggg7" path="res://Assets/Buttons/Credit Icon_mewrionette.png" id="24_gy317"]
 [ext_resource type="Texture2D" uid="uid://c8ktetir5ehy1" path="res://Assets/Buttons/Button_NoText_2.png" id="24_prr8j"]
+[ext_resource type="Script" uid="uid://dicrqonxu3h01" path="res://Scenes & Scripts/Game Scenes/button_cdtlnc.gd" id="24_upvan"]
+[ext_resource type="Script" uid="uid://bfjyt4urlo8w5" path="res://Scenes & Scripts/Game Scenes/button_krak_7_en.gd" id="26_2eon1"]
 [ext_resource type="Texture2D" uid="uid://f6nij05sexv7" path="res://Assets/Buttons/Credit Icon_mewrionette_2.png" id="27_5ak3m"]
+[ext_resource type="Script" uid="uid://xud0bjd83plg" path="res://Scenes & Scripts/Game Scenes/button_mewrionette.gd" id="28_7y4ll"]
 [ext_resource type="Texture2D" uid="uid://c2eqfty5selyx" path="res://Assets/Buttons/Credit Icon_indecisiv_2.png" id="33_upvan"]
 [ext_resource type="Texture2D" uid="uid://cxgfrqqewlwvq" path="res://Assets/Buttons/Credit Icon_Penny_2.png" id="34_2eon1"]
 [ext_resource type="Texture2D" uid="uid://y1etpt7y2fn4" path="res://Assets/Buttons/Credit Icon_Krak7en_2.png" id="35_7y4ll"]
+[ext_resource type="FontFile" uid="uid://c0fss6t1fq1md" path="res://Assets/FishFonts/Freckle_Face/FreckleFace-Regular.ttf" id="42_upvan"]
 
 [sub_resource type="Animation" id="Animation_ejx7w"]
 length = 2.0
@@ -299,10 +304,11 @@ offset_bottom = 1095.0
 texture = ExtResource("2_u61xc")
 
 [node name="Texture_Phone" type="TextureRect" parent="Textures" unique_id=756768789]
-offset_left = 52.0
-offset_top = 601.0
-offset_right = 689.0
-offset_bottom = 1113.0
+offset_left = 53.000008
+offset_top = 561.0
+offset_right = 690.0
+offset_bottom = 1073.0
+rotation = 0.13264503
 texture = ExtResource("4_4fmd5")
 
 [node name="Texture_Logo" type="TextureRect" parent="Textures" unique_id=1268156488]
@@ -377,40 +383,62 @@ bus = &"Audio"
 stream = ExtResource("18_prr8j")
 
 [node name="Button_indecisiv" type="TextureButton" parent="Buttons" unique_id=1920251542]
-offset_left = 203.0
-offset_top = 919.00006
-offset_right = 503.0
-offset_bottom = 1219.0
-scale = Vector2(0.6, 0.6)
+offset_left = 37.000008
+offset_top = 834.0
+offset_right = 337.0
+offset_bottom = 1134.0
+scale = Vector2(0.37902564, 0.37902564)
+pivot_offset = Vector2(150, 150)
 texture_normal = ExtResource("21_ruwaw")
+script = ExtResource("22_5ak3m")
 
 [node name="Button_cdtlnc" type="TextureButton" parent="Buttons" unique_id=455785822]
-offset_left = 151.0
-offset_top = 757.0
-offset_right = 451.0
-offset_bottom = 1057.0
-scale = Vector2(0.6, 0.6)
+offset_left = 98.99999
+offset_top = 712.00006
+offset_right = 399.0
+offset_bottom = 1012.0001
+scale = Vector2(0.37902564, 0.37902564)
+pivot_offset = Vector2(150, 150)
 texture_normal = ExtResource("22_wchwx")
+script = ExtResource("24_upvan")
 
 [node name="Button_krak7en" type="TextureButton" parent="Buttons" unique_id=1013564524]
-offset_left = 384.0
-offset_top = 878.0
-offset_right = 684.0
-offset_bottom = 1178.0
-scale = Vector2(0.6, 0.6)
+offset_left = 194.99998
+offset_top = 813.0
+offset_right = 495.0
+offset_bottom = 1113.0
+scale = Vector2(0.37902564, 0.37902564)
+pivot_offset = Vector2(150, 150)
 texture_normal = ExtResource("23_4snso")
+script = ExtResource("26_2eon1")
 
 [node name="Button_mewrionette" type="TextureButton" parent="Buttons" unique_id=116330282]
-offset_left = 328.0
-offset_top = 717.00006
-offset_right = 628.0
-offset_bottom = 1017.00006
-scale = Vector2(0.6, 0.6)
+offset_left = 264.99997
+offset_top = 698.00006
+offset_right = 565.0
+offset_bottom = 998.00006
+scale = Vector2(0.37902564, 0.37902564)
+pivot_offset = Vector2(150, 150)
 texture_normal = ExtResource("24_gy317")
+script = ExtResource("28_7y4ll")
 
 [node name="Lineboil" type="AnimationPlayer" parent="." unique_id=1166985579]
 libraries/ = SubResource("AnimationLibrary_cf8nl")
 autoplay = &"RESET"
+
+[node name="LinkButton" type="LinkButton" parent="." unique_id=1694386181]
+layout_mode = 0
+offset_left = 104.99999
+offset_top = 758.0
+offset_right = 487.0
+offset_bottom = 818.0
+rotation = -0.11170107
+theme_override_colors/font_color = Color(0.00031909047, 5.1914045e-05, 0, 1)
+theme_override_fonts/font = ExtResource("42_upvan")
+theme_override_font_sizes/font_size = 34
+text = "Gone Fishing Game Jam II"
+underline = 1
+uri = "https://itch.io/jam/gone-fishing-game-jam-ii"
 
 [connection signal="mouse_entered" from="Buttons/Button_Play" to="Buttons/Button_Play" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Buttons/Button_Play" to="Buttons/Button_Play" method="_on_mouse_exited"]
@@ -428,3 +456,15 @@ autoplay = &"RESET"
 [connection signal="mouse_exited" from="Buttons/Button_Quit" to="Buttons/Button_Quit" method="_on_mouse_exited"]
 [connection signal="pressed" from="Buttons/Button_Quit" to="." method="_on_quit_button_pressed"]
 [connection signal="pressed" from="Buttons/Button_Quit" to="Buttons/Button_Quit" method="_on_pressed"]
+[connection signal="mouse_entered" from="Buttons/Button_indecisiv" to="Buttons/Button_indecisiv" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Buttons/Button_indecisiv" to="Buttons/Button_indecisiv" method="_on_mouse_exited"]
+[connection signal="pressed" from="Buttons/Button_indecisiv" to="Buttons/Button_indecisiv" method="_on_pressed"]
+[connection signal="mouse_entered" from="Buttons/Button_cdtlnc" to="Buttons/Button_cdtlnc" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Buttons/Button_cdtlnc" to="Buttons/Button_cdtlnc" method="_on_mouse_exited"]
+[connection signal="pressed" from="Buttons/Button_cdtlnc" to="Buttons/Button_cdtlnc" method="_on_pressed"]
+[connection signal="mouse_entered" from="Buttons/Button_krak7en" to="Buttons/Button_krak7en" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Buttons/Button_krak7en" to="Buttons/Button_krak7en" method="_on_mouse_exited"]
+[connection signal="pressed" from="Buttons/Button_krak7en" to="Buttons/Button_krak7en" method="_on_pressed"]
+[connection signal="mouse_entered" from="Buttons/Button_mewrionette" to="Buttons/Button_mewrionette" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Buttons/Button_mewrionette" to="Buttons/Button_mewrionette" method="_on_mouse_exited"]
+[connection signal="pressed" from="Buttons/Button_mewrionette" to="Buttons/Button_mewrionette" method="_on_pressed"]

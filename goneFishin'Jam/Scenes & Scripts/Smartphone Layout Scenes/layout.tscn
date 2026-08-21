@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://drhfq6rmdeuri" path="res://addons/dialogic/Modules/Text/node_dialog_text.gd" id="2_tupbf"]
 [ext_resource type="PackedScene" uid="uid://o6c5soab566p" path="res://Scenes & Scripts/Smartphone Layout Scenes/intensity_bar.tscn" id="4_o0gdq"]
 [ext_resource type="StyleBox" uid="uid://bxp2gyc1o2mbo" path="res://Styles/StyleBoxPlayer.tres" id="7_nutsx"]
+[ext_resource type="AudioStream" uid="uid://qrtl4pjqaha3" path="res://Assets/SFX/SFX_TextMessage.wav" id="7_r54jk"]
 [ext_resource type="FontFile" uid="uid://b5u7o2egl3j1f" path="res://Assets/FishFonts/National_Park/NationalPark-VariableFont_wght.ttf" id="10_nutsx"]
 [ext_resource type="Script" uid="uid://bldt7xlfum7ov" path="res://addons/dialogic/Modules/Choice/node_choice_button.gd" id="11_psllm"]
 
@@ -85,11 +86,13 @@ offset_left = 689.0
 offset_top = 337.0
 offset_right = 1223.0
 offset_bottom = 865.0
+vertical_scroll_mode = 3
 
 [node name="MessageList" type="VBoxContainer" parent="BasePhone/Scroll" unique_id=2059940853]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 10
+theme_override_constants/separation = 8
 
 [node name="DialogText" type="RichTextLabel" parent="BasePhone/Scroll/MessageList" unique_id=1307364371 node_paths=PackedStringArray("textbox_root")]
 custom_minimum_size = Vector2(200, 0)
@@ -118,28 +121,7 @@ offset_left = 688.0
 offset_top = 878.0
 offset_right = 1223.0
 offset_bottom = 1035.0
-
-[node name="DialogicNode_ChoiceButton" type="Button" parent="BasePhone/Choices" unique_id=1359706807]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-theme_override_styles/normal = SubResource("StyleBoxFlat_r54jk")
-theme_override_styles/focus = SubResource("StyleBoxFlat_wk6hd")
-disabled = true
-text = "A little bit of everything"
-script = ExtResource("11_psllm")
-choice_index = 1
-
-[node name="DialogicNode_ChoiceButton2" type="Button" parent="BasePhone/Choices" unique_id=1444969707]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-theme_override_styles/normal = SubResource("StyleBoxFlat_r54jk")
-theme_override_styles/focus = SubResource("StyleBoxFlat_wk6hd")
-disabled = true
-text = "Nothing in particular"
-script = ExtResource("11_psllm")
-choice_index = 2
+pivot_offset = Vector2(267, 78)
 
 [node name="DialogicNode_ChoiceButton3" type="Button" parent="BasePhone/Choices" unique_id=71428002]
 layout_mode = 2
@@ -152,6 +134,28 @@ text = "Button C"
 script = ExtResource("11_psllm")
 choice_index = 3
 
+[node name="DialogicNode_ChoiceButton2" type="Button" parent="BasePhone/Choices" unique_id=1444969707]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_r54jk")
+theme_override_styles/focus = SubResource("StyleBoxFlat_wk6hd")
+disabled = true
+text = "Nothing in particular"
+script = ExtResource("11_psllm")
+choice_index = 2
+
+[node name="DialogicNode_ChoiceButton" type="Button" parent="BasePhone/Choices" unique_id=1359706807]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_r54jk")
+theme_override_styles/focus = SubResource("StyleBoxFlat_wk6hd")
+disabled = true
+text = "A little bit of everything"
+script = ExtResource("11_psllm")
+choice_index = 1
+
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=713303192]
 offset_left = 680.0
 offset_top = 870.0
@@ -159,11 +163,15 @@ offset_right = 1229.0
 offset_bottom = 1043.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_kj5ye")
 
+[node name="TextMsg" type="AudioStreamPlayer" parent="." unique_id=5052934]
+stream = ExtResource("7_r54jk")
+volume_db = -5.0
+
 [connection signal="finished_revealing_text" from="BasePhone/Scroll/MessageList/DialogText" to="." method="_on_dialog_text_finished_revealing_text"]
 [connection signal="started_revealing_text" from="BasePhone/Scroll/MessageList/DialogText" to="." method="_on_dialog_text_started_revealing_text"]
-[connection signal="focus_entered" from="BasePhone/Choices/DialogicNode_ChoiceButton" to="BasePhone/Choices/DialogicNode_ChoiceButton" method="_on_focus_entered"]
-[connection signal="focus_exited" from="BasePhone/Choices/DialogicNode_ChoiceButton" to="BasePhone/Choices/DialogicNode_ChoiceButton" method="_on_focus_exited"]
-[connection signal="focus_entered" from="BasePhone/Choices/DialogicNode_ChoiceButton2" to="BasePhone/Choices/DialogicNode_ChoiceButton2" method="_on_focus_entered"]
-[connection signal="focus_exited" from="BasePhone/Choices/DialogicNode_ChoiceButton2" to="BasePhone/Choices/DialogicNode_ChoiceButton2" method="_on_focus_exited"]
 [connection signal="focus_entered" from="BasePhone/Choices/DialogicNode_ChoiceButton3" to="BasePhone/Choices/DialogicNode_ChoiceButton3" method="_on_focus_entered"]
 [connection signal="focus_exited" from="BasePhone/Choices/DialogicNode_ChoiceButton3" to="BasePhone/Choices/DialogicNode_ChoiceButton3" method="_on_focus_exited"]
+[connection signal="focus_entered" from="BasePhone/Choices/DialogicNode_ChoiceButton2" to="BasePhone/Choices/DialogicNode_ChoiceButton2" method="_on_focus_entered"]
+[connection signal="focus_exited" from="BasePhone/Choices/DialogicNode_ChoiceButton2" to="BasePhone/Choices/DialogicNode_ChoiceButton2" method="_on_focus_exited"]
+[connection signal="focus_entered" from="BasePhone/Choices/DialogicNode_ChoiceButton" to="BasePhone/Choices/DialogicNode_ChoiceButton" method="_on_focus_entered"]
+[connection signal="focus_exited" from="BasePhone/Choices/DialogicNode_ChoiceButton" to="BasePhone/Choices/DialogicNode_ChoiceButton" method="_on_focus_exited"]

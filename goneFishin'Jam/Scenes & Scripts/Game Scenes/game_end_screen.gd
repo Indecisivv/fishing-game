@@ -1,21 +1,61 @@
 extends Control
 
-@onready var ending_header : Label = $VBoxContainer/EndingHeader
-@onready var subtitle_1    : Label = $VBoxContainer/Subtitle1
-@onready var subtitle_2    : Label = $VBoxContainer/Subtitle2
-@onready var subtitle_3    : Label = $VBoxContainer/Subtitle3
+@onready var all_caught_text    : Control = $AllCaughtText
+@onready var one_more_bite_text : Control = $OneMoreBiteText
+@onready var one_caught_text    : Control = $OneCaughtText
+@onready var no_pull_text       : Control = $NoPullText
 
-@onready var ending_label : Label = $VBoxContainer2/EndingLabel
-@onready var ending_title : Label = $VBoxContainer2/EndingTitle
+@onready var ending_label : Label = $EndingLabel
+@onready var ending_title : Label = $EndingTitle
+
+@onready var animation_player : AnimationPlayer   = $AnimationPlayer
+@onready var ending_music     : AudioStreamPlayer = $EndingMusic
 
 
 signal restart_game
+signal quit_game
 
-func set_end_text(header:String, subtitle1:String, subtitle2:String, subtitle3:String) -> void:
-	ending_header.text = header
-	subtitle_1.text    = subtitle1
-	subtitle_2.text    = subtitle2
-	subtitle_3.text    = subtitle3
+func _on_btn_cast_again_pressed() -> void:
+	no_pull_text.hide()
+	one_caught_text.hide()
+	one_more_bite_text.hide()
+	all_caught_text.hide()
+	ending_music.stop()
+	emit_signal('restart_game')
+
+func _on_btn_quit_pressed() -> void:
+	ending_music.stop()
+	emit_signal('quit_game')
+
+func set_cg(anim_name:String) -> void:
+	animation_player.play(anim_name)
+
+func play_music() -> void:
+	ending_music.volume_db = -20.444
+	ending_music.play()
+
+func set_end_text(num:int) -> void:
+	match num:
+		0:
+			no_pull_text.show()
+			one_caught_text.hide()
+			one_more_bite_text.hide()
+			all_caught_text.hide()
+		1:
+			no_pull_text.hide()
+			one_caught_text.show()
+			one_more_bite_text.hide()
+			all_caught_text.hide()
+		2:
+			no_pull_text.hide()
+			one_caught_text.hide()
+			one_more_bite_text.show()
+			all_caught_text.hide()
+		3:
+			no_pull_text.hide()
+			one_caught_text.hide()
+			one_more_bite_text.hide()
+			all_caught_text.show()
 
 func set_end_label(num:int) -> void:
 	ending_label.text = "Ending " + str(num) + "/3"
@@ -29,6 +69,3 @@ func set_end_label(num:int) -> void:
 			ending_title.text = "Room for Dessert"
 		3:
 			ending_title.text = "Greed from the Bible"
-
-func _on_button_pressed() -> void:
-	emit_signal('restart_game')

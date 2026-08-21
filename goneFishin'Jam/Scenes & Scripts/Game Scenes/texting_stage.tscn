@@ -5,22 +5,20 @@
 [ext_resource type="Texture2D" uid="uid://br2qskk8sppbk" path="res://Assets/CGs/Dating App_Background.png" id="3_fwxhm"]
 [ext_resource type="FontFile" uid="uid://cuauodtrqsmwe" path="res://Assets/FishFonts/Viga/Viga-Regular.ttf" id="3_kstlk"]
 [ext_resource type="Texture2D" uid="uid://caq3ohsdgxevv" path="res://Assets/CGs/Phone_BG_01.png" id="4_hntrj"]
-[ext_resource type="Texture2D" uid="uid://cjxnxqoy531mv" path="res://Assets/CGs/Dating Icon_Ada_V2.jpg" id="5_3sdto"]
 [ext_resource type="Texture2D" uid="uid://c67ur14ar0n5u" path="res://Assets/CGs/Dating Icon_Ada.png" id="5_6xlox"]
 [ext_resource type="Texture2D" uid="uid://bt5kmce0gi8tr" path="res://Assets/Buttons/Settings Button_02.png" id="5_hntrj"]
 [ext_resource type="Texture2D" uid="uid://c4f7y0j0dlck5" path="res://Assets/CGs/Dating Icon_Ada_V2.png" id="6_3x2ol"]
-[ext_resource type="Texture2D" uid="uid://dp7rwvw504riq" path="res://Assets/CGs/Dating Icon_Khanh.jpg" id="6_kstlk"]
 [ext_resource type="Texture2D" uid="uid://dyn377irshqrr" path="res://Assets/Buttons/Settings Button_01.png" id="6_ocqkl"]
 [ext_resource type="Texture2D" uid="uid://b0f8y76m7stop" path="res://Assets/Buttons/Home_DatingApp_Button_02.png" id="7_ee45f"]
-[ext_resource type="Texture2D" uid="uid://bd75o4kr6o13l" path="res://Assets/CGs/Dating Icon_Khanh_V2.jpg" id="7_musq8"]
+[ext_resource type="Texture2D" uid="uid://6cun5ejkhs0v" path="res://Assets/CGs/Dating Icon_Khanh.png" id="7_kstlk"]
 [ext_resource type="Texture2D" uid="uid://clgusrunt1jaj" path="res://Assets/Buttons/Home_DatingApp_Button.png" id="8_6fb11"]
-[ext_resource type="Texture2D" uid="uid://bq0hjdax30skw" path="res://Assets/CGs/Dating Icon_Socorro.jpg" id="8_6xlox"]
-[ext_resource type="Texture2D" uid="uid://cwu5kg0hlmh13" path="res://Assets/CGs/Dating Icon_Socorro_V2.jpg" id="9_3x2ol"]
+[ext_resource type="Texture2D" uid="uid://dtx8hfp1h5oji" path="res://Assets/CGs/Dating Icon_Khanh_V2.png" id="8_musq8"]
+[ext_resource type="Texture2D" uid="uid://b2gen350lxj1" path="res://Assets/CGs/Dating Icon_Socorro.png" id="9_6xlox"]
 [ext_resource type="Texture2D" uid="uid://dn5he0jfyu1ut" path="res://Assets/CGs/Phone_BG_02.png" id="9_ocqkl"]
+[ext_resource type="Texture2D" uid="uid://cnxbjd2t254f5" path="res://Assets/CGs/Dating Icon_Socorro_V2.png" id="10_3x2ol"]
 [ext_resource type="Texture2D" uid="uid://o80l84qq0uhx" path="res://Assets/CGs/Phone_IntensityBar_Border.png" id="10_nx3au"]
 [ext_resource type="Texture2D" uid="uid://xy3mfrot7myt" path="res://Assets/CGs/Phone_IntensityBar_Border_02.png" id="11_6fb11"]
 [ext_resource type="Texture2D" uid="uid://b770o530jiktm" path="res://Assets/Buttons/UI_Dating Logo_Mini Version.png" id="11_kstlk"]
-[ext_resource type="Texture2D" uid="uid://5m0sks5cc36e" path="res://Assets/CGs/Dating Icon_Ada.jpg" id="12_ee45f"]
 
 [sub_resource type="Animation" id="Animation_4oqih"]
 length = 2.0
@@ -51,7 +49,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("12_ee45f"), ExtResource("5_3sdto")]
+"values": [ExtResource("5_6xlox"), ExtResource("6_3x2ol")]
 }
 
 [sub_resource type="Animation" id="Animation_5p5kd"]
@@ -68,7 +66,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("6_kstlk"), ExtResource("7_musq8")]
+"values": [ExtResource("7_kstlk"), ExtResource("8_musq8")]
 }
 
 [sub_resource type="Animation" id="Animation_n5ivo"]
@@ -85,7 +83,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("8_6xlox"), ExtResource("9_3x2ol")]
+"values": [ExtResource("9_6xlox"), ExtResource("10_3x2ol")]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_oxb4s"]
@@ -277,7 +275,6 @@ offset_bottom = 1080.0
 texture = ExtResource("4_hntrj")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=232407825]
-visible = false
 z_index = 1
 layout_mode = 0
 offset_left = 483.0

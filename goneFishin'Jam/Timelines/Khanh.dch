@@ -1,11 +1,11 @@
 {
 "@path": "res://addons/dialogic/Resources/character.gd",
 "@subpath": NodePath(""),
-&"_translation_id": "",
+&"_translation_id": "2b4",
 &"color": Color(1, 1, 1, 1),
 &"custom_info": {
 "prefix": "",
-"sound_mood_default": "talking",
+"sound_mood_default": "Talking",
 "sound_moods": {
 "Talking": {
 "mode": 0,
@@ -13,8 +13,8 @@
 "pitch_base": 1.0,
 "pitch_variance": 0.0,
 "skip_characters": 0.0,
-"sound_path": "res://Assets/Voice/BloopC1.wav",
-"volume_base": 0.0,
+"sound_path": "res://Assets/Voice/BloopB3.wav",
+"volume_base": 5.0,
 "volume_variance": 0.0
 }
 },

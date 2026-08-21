@@ -128,7 +128,7 @@ func _on_focus_exited() -> void:
 
 func set_button_tween(scale:Vector2) -> void:
 	reset_tween()
-	tween.set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_QUAD)
+	tween.set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_ELASTIC)
 	tween.tween_property(self, "scale", scale, 0.4)
 
 func reset_tween() -> void:

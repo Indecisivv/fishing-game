@@ -1,6 +1,8 @@
 @tool
 extends DialogicLayoutBase
 
+@onready var text_msg: AudioStreamPlayer = $TextMsg
+
 # This scene acts as a "style" template for Dialogic. To make it work, make an empty style template in the
 # dialogic tab, replace the layer with a custom preset, then select this scene.
 
@@ -109,6 +111,7 @@ func add_message(text:String, size:Vector2, speaker_name:String, time:String) ->
 		stylebox.bg_color = Color("b6310c")
 		message.add_theme_stylebox_override("normal", stylebox)
 		message.size_flags_horizontal = Control.SIZE_SHRINK_BEGIN
+		text_msg.play()
 		
 	await get_tree().process_frame
 	

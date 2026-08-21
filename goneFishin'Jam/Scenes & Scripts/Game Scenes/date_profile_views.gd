@@ -15,7 +15,7 @@ var current_animation : String
 
 func _on_button_heart_entered() -> void:
 	set_tween(button_heart, Vector2(1.1, 1.1))
-	animation_player.get_animation(current_animation).track_set_enabled(1, true)
+	animation_player.get_animation(current_animation).track_set_enabled(1, false)
 	
 func _on_button_heart_pressed() -> void:
 	match current_animation:
@@ -36,15 +36,15 @@ func _on_button_heart_pressed() -> void:
 # who up tweening it and by it i mean haha my fucking buttons hahahaha
 func _on_button_heart_exited() -> void:
 	set_tween(button_heart, Vector2.ONE)
-	animation_player.get_animation(current_animation).track_set_enabled(1, false)
+	animation_player.get_animation(current_animation).track_set_enabled(1, true)
 
 func _on_button_back_entered() -> void:
 	set_tween(button_back, Vector2(1.1, 1.1))
-	animation_player.get_animation(current_animation).track_set_enabled(0, true)
+	animation_player.get_animation(current_animation).track_set_enabled(0, false)
 
 func _on_button_back_exited() -> void:
 	set_tween(button_back, Vector2.ONE)
-	animation_player.get_animation(current_animation).track_set_enabled(0, false)
+	animation_player.get_animation(current_animation).track_set_enabled(0, true)
 
 func set_profile(animation:String) -> void:
 	current_animation = animation

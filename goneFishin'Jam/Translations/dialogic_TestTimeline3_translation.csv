@@ -1,0 +1,12 @@
+keys,en
+Text/30/text,test timeline 3
+Text/31/text,test timeline 3
+Choice/32/text,correct
+Choice/32/disabled_text,
+Text/33/text,test
+Choice/34/text,wrong
+Choice/34/disabled_text,
+Text/35/text,timeline
+Choice/36/text,wrong
+Choice/36/disabled_text,
+Text/37/text,three

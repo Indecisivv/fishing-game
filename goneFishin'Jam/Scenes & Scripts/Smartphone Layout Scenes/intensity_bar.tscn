@@ -105,38 +105,35 @@ fill_speed = 180
 
 [node name="ProgressBar" type="ProgressBar" parent="." unique_id=1458331131]
 layout_mode = 0
-offset_left = 30.0
-offset_top = 212.0
-offset_right = 172.3002
-offset_bottom = 314.81342
-rotation = 4.712389
+offset_left = 33.41507
+offset_top = 346.0
+offset_right = 139.0
+offset_bottom = 479.0
 theme_override_styles/background = SubResource("StyleBoxFlat_dk5jg")
 theme_override_styles/fill = SubResource("StyleBoxFlat_kdyed")
-fill_mode = 1
+fill_mode = 3
 show_percentage = false
 
 [node name="ProgressBar2" type="ProgressBar" parent="." unique_id=1375777005]
 layout_mode = 0
 offset_left = 33.0
-offset_top = 343.0
-offset_right = 164.36958
-offset_bottom = 444.21536
-rotation = 4.712389
+offset_top = 213.0
+offset_right = 135.0
+offset_bottom = 345.0
 theme_override_styles/background = SubResource("StyleBoxFlat_dk5jg")
 theme_override_styles/fill = SubResource("StyleBoxFlat_tsmqf")
-fill_mode = 1
+fill_mode = 3
 show_percentage = false
 
 [node name="ProgressBar3" type="ProgressBar" parent="." unique_id=751548182]
 layout_mode = 0
-offset_left = 33.0
-offset_top = 476.0
-offset_right = 163.64227
-offset_bottom = 578.7022
-rotation = 4.712389
+offset_left = 31.137205
+offset_top = 69.0
+offset_right = 132.0
+offset_bottom = 212.0
 theme_override_styles/background = SubResource("StyleBoxFlat_dk5jg")
 theme_override_styles/fill = SubResource("StyleBoxFlat_cfmxu")
-fill_mode = 1
+fill_mode = 3
 show_percentage = false
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=420575124]

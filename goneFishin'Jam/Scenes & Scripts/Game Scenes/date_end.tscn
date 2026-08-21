@@ -6,13 +6,91 @@
 [ext_resource type="FontFile" uid="uid://c0fss6t1fq1md" path="res://Assets/FishFonts/Freckle_Face/FreckleFace-Regular.ttf" id="3_ygo2s"]
 [ext_resource type="FontFile" uid="uid://cuauodtrqsmwe" path="res://Assets/FishFonts/Viga/Viga-Regular.ttf" id="4_5tiex"]
 [ext_resource type="Texture2D" uid="uid://c7kat4ib2nwjj" path="res://Assets/CGs/Ending Food CG_Ada_2.jpg" id="6_5tiex"]
+[ext_resource type="AudioStream" uid="uid://lugdwy4bqy4n" path="res://Assets/Music/M_Dinner.ogg" id="6_17378"]
+[ext_resource type="Texture2D" uid="uid://drdcns0eeiqdy" path="res://Assets/CGs/Ending Food CG_Khanh.jpg" id="7_jay2k"]
+[ext_resource type="Texture2D" uid="uid://by3r35c1sdfn1" path="res://Assets/CGs/Ending Food CG_Khanh_2.jpg" id="8_nmwd3"]
+[ext_resource type="Texture2D" uid="uid://da3frm01gr4or" path="res://Assets/CGs/Ending Food CG_Socorro.jpg" id="9_tytlr"]
+[ext_resource type="Texture2D" uid="uid://qgcotkmvktk" path="res://Assets/CGs/Ending Food CG_Socorro_2.jpg" id="10_usikj"]
+[ext_resource type="Texture2D" uid="uid://dxfctvifnildg" path="res://Assets/CGs/Game Background_Room_Erased.jpg" id="11_hmrpp"]
+[ext_resource type="Texture2D" uid="uid://br2qskk8sppbk" path="res://Assets/CGs/Dating App_Background.png" id="12_iievs"]
+[ext_resource type="Texture2D" uid="uid://dtliuatfsam0y" path="res://Assets/CGs/UI_Unmatching.png" id="18_fw0i3"]
+[ext_resource type="Texture2D" uid="uid://b6uvtbslghgxw" path="res://Assets/Buttons/UI_Matching_Send a Message.png" id="19_jxi6g"]
+[ext_resource type="Script" uid="uid://pfs6f4na66p" path="res://Scenes & Scripts/Game Scenes/return_button.gd" id="20_yhmq5"]
+[ext_resource type="Texture2D" uid="uid://dyn377irshqrr" path="res://Assets/Buttons/Settings Button_01.png" id="21_25apm"]
+[ext_resource type="Texture2D" uid="uid://v7cd3chyt445" path="res://Assets/CGs/UI_Unmatching_02.png" id="21_mxn8m"]
+[ext_resource type="Texture2D" uid="uid://bt5kmce0gi8tr" path="res://Assets/Buttons/Settings Button_02.png" id="22_mjkvu"]
+[ext_resource type="Texture2D" uid="uid://clgusrunt1jaj" path="res://Assets/Buttons/Home_DatingApp_Button.png" id="23_2ojed"]
+[ext_resource type="Texture2D" uid="uid://b0f8y76m7stop" path="res://Assets/Buttons/Home_DatingApp_Button_02.png" id="24_fk3yt"]
+[ext_resource type="Texture2D" uid="uid://caq3ohsdgxevv" path="res://Assets/CGs/Phone_BG_01.png" id="25_qqagr"]
+[ext_resource type="Texture2D" uid="uid://myoqfmossu7d" path="res://Assets/Buttons/UI_Matching_Send a Message_02.png" id="25_yhmq5"]
+[ext_resource type="Texture2D" uid="uid://dn5he0jfyu1ut" path="res://Assets/CGs/Phone_BG_02.png" id="26_yv4gg"]
+[ext_resource type="Texture2D" uid="uid://o80l84qq0uhx" path="res://Assets/CGs/Phone_IntensityBar_Border.png" id="27_bga4w"]
+[ext_resource type="Texture2D" uid="uid://xy3mfrot7myt" path="res://Assets/CGs/Phone_IntensityBar_Border_02.png" id="28_amtwt"]
+[ext_resource type="Texture2D" uid="uid://b770o530jiktm" path="res://Assets/Buttons/UI_Dating Logo_Mini Version.png" id="29_5vm15"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5tiex"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0t8sl"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hx6bl"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.22352941, 0.22352941, 0.22352941, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w705m"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(1, 1, 1, 0)
+draw_center = false
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
 
 [sub_resource type="Animation" id="Animation_0t8sl"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("CGRect:texture")
+tracks/0/path = NodePath("DateSuccess/CGRect:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -23,13 +101,13 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_5tiex"]
-resource_name = "lineboil"
+resource_name = "ada"
 length = 2.0
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("CGRect:texture")
+tracks/0/path = NodePath("DateSuccess/CGRect:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -39,10 +117,204 @@ tracks/0/keys = {
 "values": [ExtResource("2_ygo2s"), ExtResource("6_5tiex")]
 }
 
+[sub_resource type="Animation" id="Animation_ifx75"]
+resource_name = "khanh"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DateSuccess/CGRect:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("7_jay2k"), ExtResource("8_nmwd3")]
+}
+
+[sub_resource type="Animation" id="Animation_410ur"]
+resource_name = "socorro"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DateSuccess/CGRect:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("9_tytlr"), ExtResource("10_usikj")]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_0t8sl"]
 _data = {
 &"RESET": SubResource("Animation_0t8sl"),
-&"lineboil": SubResource("Animation_5tiex")
+&"ada": SubResource("Animation_5tiex"),
+&"khanh": SubResource("Animation_ifx75"),
+&"socorro": SubResource("Animation_410ur")
+}
+
+[sub_resource type="Animation" id="Animation_m4ej1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Texture_Phone:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("25_qqagr")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Texture_Bar:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("27_bga4w")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Texture_Unmatch_Icon:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("18_fw0i3")]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("UI Features/Button_Settings:texture_normal")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("21_25apm")]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("UI Features/Button_AppLogo:texture_normal")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("23_2ojed")]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("ReturnButton:texture_normal")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("19_jxi6g")]
+}
+
+[sub_resource type="Animation" id="Animation_fw0i3"]
+resource_name = "lineboil"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Texture_Phone:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("25_qqagr"), ExtResource("26_yv4gg")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Texture_Bar:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("27_bga4w"), ExtResource("28_amtwt")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Texture_Unmatch_Icon:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("18_fw0i3"), ExtResource("21_mxn8m")]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("UI Features/Button_Settings:texture_normal")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("21_25apm"), ExtResource("22_mjkvu")]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("UI Features/Button_AppLogo:texture_normal")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("23_2ojed"), ExtResource("24_fk3yt")]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("ReturnButton:texture_normal")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("19_jxi6g"), ExtResource("25_yhmq5")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_i6ujd"]
+_data = {
+&"RESET": SubResource("Animation_m4ej1"),
+&"lineboil": SubResource("Animation_fw0i3")
 }
 
 [node name="DateEnd" type="Control" unique_id=64780911]
@@ -54,75 +326,230 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_eyl03")
 
-[node name="CGRect" type="TextureRect" parent="." unique_id=120395961]
+[node name="DateSuccess" type="Control" parent="." unique_id=551599705]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CGRect" type="TextureRect" parent="DateSuccess" unique_id=120395961]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -197.0
-offset_top = -197.0
-offset_right = 197.0
-offset_bottom = 197.0
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 1900.0
+offset_bottom = 1060.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_ygo2s")
 
-[node name="Retry" type="Button" parent="." unique_id=843440041]
-layout_mode = 0
-offset_left = 915.0
-offset_top = 759.0
-offset_right = 1019.0
-offset_bottom = 812.0
+[node name="MainMenu" type="Button" parent="DateSuccess" unique_id=90968296]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1913.0
+offset_bottom = 1066.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_font_sizes/font_size = 32
-text = "RETRY"
+theme_override_styles/normal = SubResource("StyleBoxFlat_5tiex")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_0t8sl")
+theme_override_styles/hover = SubResource("StyleBoxFlat_hx6bl")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w705m")
 
-[node name="MainMenu" type="Button" parent="." unique_id=90968296]
-layout_mode = 0
-offset_left = 880.0
-offset_top = 830.0
-offset_right = 1077.0
-offset_bottom = 883.0
-theme_override_font_sizes/font_size = 32
-text = "MAIN MENU"
-
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1648300782]
+[node name="VBoxContainer" type="VBoxContainer" parent="DateSuccess" unique_id=1648300782]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -215.5
-offset_top = -408.0
-offset_right = 215.5
-offset_bottom = -314.0
+offset_left = 726.0
+offset_top = 80.0
+offset_right = 1157.0
+offset_bottom = 174.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 8
 
-[node name="EndText" type="Label" parent="VBoxContainer" unique_id=583819261]
+[node name="EndText" type="Label" parent="DateSuccess/VBoxContainer" unique_id=583819261]
+z_index = 5
 layout_mode = 2
 size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.84705883, 0.77254903, 0.6392157, 1)
 theme_override_fonts/font = ExtResource("3_ygo2s")
 theme_override_font_sizes/font_size = 48
-text = "DATE_MEAL_NAME"
+text = "You made..."
 horizontal_alignment = 1
 
-[node name="EndSubtitle" type="Label" parent="VBoxContainer" unique_id=1565993122]
+[node name="EndSubtitle" type="Label" parent="DateSuccess/VBoxContainer" unique_id=1565993122]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_fonts/font = ExtResource("4_5tiex")
 theme_override_font_sizes/font_size = 28
 text = "The actual name of the meal"
 
-[node name="unmatch" type="AudioStreamPlayer" parent="." unique_id=1457673832]
+[node name="unmatch" type="AudioStreamPlayer" parent="DateSuccess" unique_id=1457673832]
 stream = ExtResource("3_ene0n")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=2101036813]
+[node name="dish_bgm" type="AudioStreamPlayer" parent="DateSuccess" unique_id=1512349834]
+stream = ExtResource("6_17378")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="DateSuccess" unique_id=2101036813]
+root_node = NodePath("../..")
 libraries/ = SubResource("AnimationLibrary_0t8sl")
+
+[node name="DateFail" type="Control" parent="." unique_id=2034342946]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="FailText" type="Label" parent="DateFail" unique_id=781364339]
+z_index = 5
+layout_mode = 0
+offset_left = 638.0
+offset_top = 174.0
+offset_right = 1305.0
+offset_bottom = 307.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_5tiex")
+theme_override_font_sizes/font_size = 48
+text = "Ada  has snapped 
+the line..."
+horizontal_alignment = 1
+
+[node name="TextureBG" type="TextureRect" parent="DateFail" unique_id=178219864]
+z_index = -3
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1880.0
+offset_bottom = 1040.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("11_hmrpp")
+
+[node name="BasePhone" type="Control" parent="DateFail" unique_id=1651536453]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Texture_AppBG" type="TextureRect" parent="DateFail/BasePhone" unique_id=1626120501]
+layout_mode = 0
+offset_left = 657.0
+offset_right = 1264.0
+offset_bottom = 1080.0
+scale = Vector2(0.96902394, 1)
+texture = ExtResource("12_iievs")
+
+[node name="UI Features" type="Control" parent="DateFail" unique_id=588245507]
+anchors_preset = 0
+offset_left = 657.0
+offset_right = 697.0
+offset_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="DateFail/UI Features" unique_id=386382556]
+layout_mode = 0
+offset_left = 9.66333
+offset_top = 3.6034546
+offset_right = 589.1937
+offset_bottom = 117.699036
+color = Color(0.40392157, 0.047058824, 0.03529412, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="DateFail/UI Features" unique_id=147947940]
+z_index = 2
+layout_mode = 0
+offset_left = 11.687866
+offset_top = 118.43237
+offset_right = 589.13275
+offset_bottom = 121.657104
+color = Color(0, 0, 0, 1)
+
+[node name="TextureRect" type="TextureRect" parent="DateFail/UI Features" unique_id=631186271]
+layout_mode = 0
+offset_left = 221.44786
+offset_top = -6.770979
+offset_right = 359.44788
+offset_bottom = 130.22902
+texture = ExtResource("29_5vm15")
+
+[node name="Button_Settings" type="TextureButton" parent="DateFail/UI Features" unique_id=523967782]
+modulate = Color(0.38928655, 0.38928664, 0.38928658, 1)
+z_index = 3
+layout_mode = 0
+offset_left = 477.8739
+offset_top = 20.64653
+offset_right = 574.8739
+offset_bottom = 112.64653
+pivot_offset = Vector2(48, 46)
+texture_normal = ExtResource("21_25apm")
+
+[node name="Button_AppLogo" type="TextureButton" parent="DateFail/UI Features" unique_id=798717004]
+modulate = Color(0.38928655, 0.38928664, 0.38928658, 1)
+layout_mode = 0
+offset_left = 14.635
+offset_top = 17.739
+offset_right = 111.635
+offset_bottom = 109.739
+texture_normal = ExtResource("23_2ojed")
+
+[node name="Texture_Phone" type="TextureRect" parent="DateFail" unique_id=856369368]
+z_index = 1
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("25_qqagr")
+
+[node name="Texture_Bar" type="TextureRect" parent="DateFail" unique_id=1542111419]
+z_index = 1
+layout_mode = 0
+offset_left = 483.0
+offset_top = 549.0
+offset_right = 650.0
+offset_bottom = 1071.0
+texture = ExtResource("27_bga4w")
+
+[node name="Texture_Unmatch_Icon" type="TextureRect" parent="DateFail" unique_id=1712265029]
+layout_mode = 0
+offset_left = 682.0
+offset_top = 291.0
+offset_right = 1239.0
+offset_bottom = 848.0
+texture = ExtResource("18_fw0i3")
+
+[node name="ReturnButton" type="TextureButton" parent="DateFail" unique_id=1374156385]
+layout_mode = 0
+offset_left = 702.0
+offset_top = 834.0
+offset_right = 1205.0
+offset_bottom = 971.0
+pivot_offset = Vector2(251, 68)
+texture_normal = ExtResource("19_jxi6g")
+script = ExtResource("20_yhmq5")
+
+[node name="Label" type="Label" parent="DateFail/ReturnButton" unique_id=2135518999]
+layout_mode = 0
+offset_left = 145.0
+offset_top = 26.0
+offset_right = 352.0
+offset_bottom = 83.0
+theme_override_fonts/font = ExtResource("4_5tiex")
+theme_override_font_sizes/font_size = 42
+text = "Back"
+horizontal_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="DateFail" unique_id=1977120527]
+libraries/ = SubResource("AnimationLibrary_i6ujd")
 autoplay = &"lineboil"
 
-[connection signal="pressed" from="Retry" to="." method="on_retry_button_pressed"]
-[connection signal="pressed" from="MainMenu" to="." method="on_main_menu_button_pressed"]
+[connection signal="pressed" from="DateSuccess/MainMenu" to="." method="on_main_menu_button_pressed"]
+[connection signal="mouse_entered" from="DateFail/ReturnButton" to="DateFail/ReturnButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="DateFail/ReturnButton" to="DateFail/ReturnButton" method="_on_mouse_exited"]
+[connection signal="pressed" from="DateFail/ReturnButton" to="." method="on_main_menu_button_pressed"]

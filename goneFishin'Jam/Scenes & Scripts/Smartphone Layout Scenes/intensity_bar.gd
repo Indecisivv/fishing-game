@@ -8,6 +8,8 @@ var index     : int = -1
 var direction : int = 1
 var tween     : Tween
 
+var can_choose : bool = false
+
 # I call the methods in _physics_process() to avoid any calculation bugs. Not sure if it does anything,
 # but I figure it's good practice.
 func _physics_process(delta: float) -> void:
@@ -52,38 +54,49 @@ func select_dialogue_choice(delta:float) -> void:
 	
 	if not Dialogic.VAR.is_making_choice:
 		return
-	
+
 	# Selects a choice to be focused on based on the index's value
 	if Input.is_action_pressed("dialogic_default_action"):
-		match index: # This doesn't count as a nested if statement, right, Perry-sensei...?
+		match index:
 			0:
-				set_button_color(1, Color("50bbb9"))
-				set_button_color(2, Color("236463"))
-				set_button_color(3, Color("236463"))
-				Dialogic.Choices.focus_choice(1)
+				if can_choose:
+					set_button_color(1, Color("50bbb9"))
+					set_button_color(2, Color("236463"))
+					set_button_color(3, Color("236463"))
+					Dialogic.Choices.focus_choice(1)
 			1:
-				set_button_color(1, Color("236463"))
-				set_button_color(2, Color("50bbb9"))
-				set_button_color(3, Color("236463"))
-				Dialogic.Choices.focus_choice(2)
+				if can_choose:
+					set_button_color(1, Color("236463"))
+					set_button_color(2, Color("50bbb9"))
+					set_button_color(3, Color("236463"))
+					Dialogic.Choices.focus_choice(2)
 			2:
-				set_button_color(1, Color("236463"))
-				set_button_color(2, Color("236463"))
-				set_button_color(3, Color("50bbb9"))
-				Dialogic.Choices.focus_choice(3)
+				if can_choose:
+					set_button_color(1, Color("236463"))
+					set_button_color(2, Color("236463"))
+					set_button_color(3, Color("50bbb9"))
+					Dialogic.Choices.focus_choice(3)
 		
 		update_progress_bars(delta)
 	
+	if index > 0:
+		can_choose = true
+	
 	# Selects a choice to be... selected... based on the index's value
 	if Input.is_action_just_released("dialogic_default_action"):
-		match index: # This doesn't count as a nested if statement, right, Perry-sensei...?
+		if not can_choose:
+			reset_progress_bars()
+			return
+		
+		match index:
 			0:
 				Dialogic.Choices.select_choice(1)
 			1:
 				Dialogic.Choices.select_choice(2)
 			2:
 				Dialogic.Choices.select_choice(3)
-			
+		
+		can_choose = false
 		reset_progress_bars()
 
 func set_button_color(choice_index:int, color:Color) -> void:

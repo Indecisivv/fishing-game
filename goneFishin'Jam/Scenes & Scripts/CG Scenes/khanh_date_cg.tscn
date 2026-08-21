@@ -5,7 +5,6 @@
 [ext_resource type="Texture2D" uid="uid://c6jclj5i0s72n" path="res://Assets/CGs/Dating CG_Khanh_02.jpg" id="2_m2ati"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5wpen"]
-load_path = "res://.godot/imported/Dating CG_Khanh_03.jpg-7fdc0fbd1b77cac93865ab644fd60da5.ctex"
 
 [sub_resource type="Animation" id="Animation_g6v0l"]
 length = 0.001

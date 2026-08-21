@@ -45,6 +45,8 @@ func _on_btn_soccoro_pressed() -> void:
 	
 func _on_return_to_date_choices() -> void:
 	button_heart.modulate = Color("ffffff")
+	button_app_logo.modulate = Color("ffffff")
+	button_app_logo.disabled = false
 	reset_screen()
 
 func _on_return_to_menu() -> void:
@@ -126,8 +128,8 @@ func check_buttons() -> void:
 
 # Takes the player back to the date choices view from the date profile view
 func reset_screen() -> void:
-	reset_phone()
-	reset_loading_screen()
+	date_choices_view.show()
+	ui_features.show()
 	date_profile_view.hide()
 	match_screen.hide()
 

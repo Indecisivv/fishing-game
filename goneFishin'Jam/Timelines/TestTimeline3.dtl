@@ -1,20 +1,20 @@
-TestCharacter3: test timeline 3
-Player: test timeline 3
+TestCharacter3: test timeline 3 #id:30
+Player: test timeline 3 #id:31
 [wait time="0.1" hide_text="false"]
 set {is_making_choice} = true
-- correct
+- correct #id:32
 	set {is_making_choice} = false
-	TestCharacter3: test
+	TestCharacter3: test #id:33
 	set {is_tdate_success} = true
 	set {is_date_success} = true
-- wrong
+- wrong #id:34
 	set {is_making_choice} = false
-	TestCharacter3: timeline
+	TestCharacter3: timeline #id:35
 	set {is_tdate_success} = false
 	set {is_date_success} = false
-- wrong
+- wrong #id:36
 	set {is_making_choice} = false
-	TestCharacter3: three
+	TestCharacter3: three #id:37
 	set {is_tdate_success} = false
 	set {is_date_success} = false
 [signal arg="scene_end"]

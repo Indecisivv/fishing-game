@@ -2,6 +2,7 @@ extends TextureButton
 
 @onready var btn_line_boiler   : AnimationPlayer = $"../BtnLineBoiler"
 @onready var date_profile_view : Control         = $"../../DateProfileView"
+@onready var button_app_logo   : TextureButton   = $"../../UI Features/Button_AppLogo"
 
 var btn_tween : Tween
 
@@ -25,6 +26,8 @@ func _on_btn_ada_pressed() -> void:
 							   CharacterLibrary.ada.job,
 							   CharacterLibrary.ada.bio)
 	date_profile_view.show()
+	button_app_logo.modulate = Color("636363")
+	button_app_logo.disabled = true
 	
 
 func _on_btn_ada_exited() -> void:
