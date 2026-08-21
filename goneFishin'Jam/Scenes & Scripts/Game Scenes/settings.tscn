@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://bpdbtgij7y6x3"]
 
 [ext_resource type="Script" uid="uid://bynl1bl3haan3" path="res://Scenes & Scripts/Game Scenes/settings.gd" id="1_0h3cg"]
+[ext_resource type="Texture2D" uid="uid://c26ycxwnnp8w0" path="res://Assets/Buttons/UI_VN Box_Curved Version.png" id="2_3r7dt"]
 [ext_resource type="AudioStream" uid="uid://cn6ullfd8rt44" path="res://Assets/SFX/testAUDIO.wav" id="2_llxf6"]
 [ext_resource type="FontFile" uid="uid://cuauodtrqsmwe" path="res://Assets/FishFonts/Viga/Viga-Regular.ttf" id="2_sojg4"]
+[ext_resource type="Texture2D" uid="uid://b6uvtbslghgxw" path="res://Assets/Buttons/UI_Matching_Send a Message.png" id="3_tkmkc"]
 [ext_resource type="FontFile" uid="uid://b5u7o2egl3j1f" path="res://Assets/FishFonts/National_Park/NationalPark-VariableFont_wght.ttf" id="4_348px"]
 [ext_resource type="FontFile" uid="uid://c0fss6t1fq1md" path="res://Assets/FishFonts/Freckle_Face/FreckleFace-Regular.ttf" id="5_348px"]
 
@@ -11,7 +13,7 @@ content_margin_left = 20.0
 content_margin_top = 20.0
 content_margin_right = 20.0
 content_margin_bottom = 20.0
-bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0.7058824)
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ibcqv"]
 content_margin_left = 20.0
@@ -73,9 +75,60 @@ script = ExtResource("1_0h3cg")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=426794815]
 layer = 2
-visible = false
+
+[node name="TextureRect5" type="TextureRect" parent="CanvasLayer" unique_id=2065549585]
+modulate = Color(1, 1, 1, 0.45882353)
+z_index = -1
+offset_left = -15.0
+offset_top = 17.0
+offset_right = 1916.0
+offset_bottom = 1041.0
+texture = ExtResource("2_3r7dt")
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer" unique_id=1705298511]
+z_index = -1
+offset_left = 16.0
+offset_top = 34.0
+offset_right = 530.0
+offset_bottom = 171.0
+texture = ExtResource("3_tkmkc")
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer" unique_id=1638173598]
+z_index = -1
+offset_left = 44.0
+offset_top = 123.0
+offset_right = 547.0
+offset_bottom = 260.0
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("3_tkmkc")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=509455740]
+z_index = -1
+offset_left = 28.0
+offset_top = 915.0
+offset_right = 542.0
+offset_bottom = 1052.0
+texture = ExtResource("3_tkmkc")
+
+[node name="TextureRect4" type="TextureRect" parent="CanvasLayer" unique_id=1832621102]
+z_index = -1
+offset_left = 44.000004
+offset_top = 206.0
+offset_right = 547.0
+offset_bottom = 343.0
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("3_tkmkc")
+
+[node name="TextureRect6" type="TextureRect" parent="CanvasLayer" unique_id=1347144452]
+z_index = 1
+offset_left = 1443.0
+offset_top = -7.0
+offset_right = 1946.0
+offset_bottom = 130.0
+texture = ExtResource("3_tkmkc")
 
 [node name="BackgroundPanel" type="Panel" parent="CanvasLayer" unique_id=2013417446]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -103,22 +156,27 @@ layout_mode = 2
 theme_override_constants/separation = 12
 
 [node name="ButtonMainMenu" type="Button" parent="CanvasLayer/NavigationPanel/NavContainer" unique_id=1694722938]
+z_index = 2
 layout_mode = 2
 size_flags_vertical = 0
 theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
 theme_override_fonts/font = ExtResource("2_sojg4")
 theme_override_font_sizes/font_size = 50
 text = "Main Menu"
+flat = true
 
 [node name="ButtonSettings" type="Button" parent="CanvasLayer/NavigationPanel/NavContainer" unique_id=1851672459]
+z_index = 2
 layout_mode = 2
 size_flags_vertical = 0
 theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
 theme_override_fonts/font = ExtResource("2_sojg4")
 theme_override_font_sizes/font_size = 40
 text = "Settings"
+flat = true
 
 [node name="ButtonCredits" type="Button" parent="CanvasLayer/NavigationPanel/NavContainer" unique_id=413871767]
+z_index = 2
 layout_mode = 2
 size_flags_vertical = 0
 theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
@@ -126,8 +184,10 @@ theme_override_fonts/font = ExtResource("2_sojg4")
 theme_override_font_sizes/font_size = 40
 text = "Credits
 "
+flat = true
 
 [node name="ButtonMainQuit" type="Button" parent="CanvasLayer/NavigationPanel/NavContainer" unique_id=862888164]
+z_index = 2
 layout_mode = 2
 size_flags_vertical = 10
 theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
@@ -135,6 +195,7 @@ theme_override_fonts/font = ExtResource("2_sojg4")
 theme_override_font_sizes/font_size = 60
 text = "Quit
 "
+flat = true
 
 [node name="SettingsScreen" type="PanelContainer" parent="CanvasLayer" unique_id=132653074]
 visible = false
@@ -814,20 +875,22 @@ offset_bottom = 1041.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_e5nff")
 
 [node name="ButtonExit" type="Button" parent="CanvasLayer" unique_id=1562301336]
+z_index = 2
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 727.0
-offset_top = -519.0
-offset_right = 943.0
-offset_bottom = -466.0
+offset_left = 519.0
+offset_top = -528.0
+offset_right = 945.0
+offset_bottom = -450.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_sojg4")
 theme_override_font_sizes/font_size = 32
 text = "close settings"
+flat = true
 
 [node name="Button" type="Button" parent="." unique_id=2079727655]
 visible = false
