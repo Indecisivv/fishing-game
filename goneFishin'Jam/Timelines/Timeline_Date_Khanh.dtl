@@ -6,32 +6,44 @@ Narrator: Unlike the tall handsome Lionfish you expected...
 audio Musicly "res://Assets/Music/M_Date_khanh.ogg" [fade="2.0" volume="-15.0" bus="Music" sync="Musicly"]
 [background scene="res://Scenes & Scripts/CG Scenes/khanh_date_cg.tscn" arg="res://" fade="1.5" wait="true"]
 Narrator: The real Khanh turned out to be… A Catfish!
-Narrator: It’s a good thing you are a kind and understanding soul, isn’t it? He seemed nervous until you reassured him that you didn’t mind and would like to get to know him anyway.
+Narrator: It’s a good thing you are a kind and understanding soul, isn’t it?
+Narrator: He seemed nervous until you reassured him that you didn’t mind and would like to get to know him anyway.
 Narrator: You spend hours browsing the shelves of the shop and listening to him talk about his interest.
-Khanh: And that’s why I think Fishman is so impactful regardless of who you are! The drive to take abilities that make you inherently dangerous and use them to defend everyone, stepping out of the role you’ve been assigned by others and deciding who you want to be for the world.
+Khanh: And that’s why I think Fishman is so impactful regardless of who you are!
+Khanh: The drive to take abilities that make you inherently dangerous and use them to defend everyone, stepping out of the role you’ve been assigned by others and deciding who you want to be for the world.
 audio "res://Assets/SFX/SFX_PageFlip.wav" [bus="Audio"]
 Narrator: His eyes glimmer and his voice softens momentarily as he says the last bit of the monologue with a sheepish tone.
 Khanh: I want to be the kind of Aquakin that can do that some day…
-Narrator: I want to be the kind of Aquakin that can do that some day…
-Narrator: He wasn’t exactly rushing to go home with you at the end of the night… Until you mentioned on the way out that you had a copy of a limited edition Fishman exclusive that you had been looking to sell but needed to get appraised.
-Narrator: The little you had heard of his chatter had come in handy here. The silver Catfish excitedly declared he could help, and that if the copy was high enough quality he could buy it.
+Narrator: Thankfully he was so wrapped up in the excitement he didn’t realize how much you didn’t know… and how much you seemed to be zoning out and running your eyes over the scales of his head instead of digesting anything he said.
+Narrator: He wasn’t exactly rushing to go home with you at the end of the night…
+Narrator: Until you mentioned on the way out that you had a copy of a limited edition Fishman exclusive that you had been looking to sell but needed to get appraised.
+Narrator: The little you had heard of his chatter had come in handy here.
+Narrator: The silver Catfish excitedly declared he could help, and that if the copy was high enough quality he could buy it.
 Narrator: You softly smile and make an off hand comment about how maybe you should gift to him instead, to celebrate your first meeting.
-Khanh: Wow, really?! Well, if you’re really okay with me going over for it today, I’d be stoked! I have wanted this thing for so long. You’re the best date I’ve had ever, although you’re probably the only one.
+Khanh: Wow, really?!
+Khanh: Well, if you’re really okay with me going over for it today, I’d be stoked!
+Khanh: I have wanted this thing for so long.
+Khanh: You’re the best date I’ve had ever, although you’re probably the only one.
 audio Musicly - [volume="-5.0" bus="Music"]
 [background arg="res://Assets/CGs/BG_Ending.png" fade="1.5" wait="true"]
-Narrator: He complimented your cabin, seemingly undisturbed by the lack of decoration other than wall to wall aquariums. Like the great host you are, you offer him a drink.
+Narrator: He complimented your cabin, seemingly undisturbed by the lack of decoration other than wall to wall aquariums.
+Narrator: Like the great host you are, you offer him a drink.
 Khanh: Oh, yes please!
 Narrator: Maybe you aren’t actually a good host since you don’t have much else.
-Narrator: Clearly it doesn’t put him off however, he downs the water as if all the talking had left him desperate for a gulp. After he is done, you lead him towards your bedroom. You have him sit on your bed as you go to your closet to look for the comic that isn’t there.
+Narrator: Clearly it doesn’t put him off however, he downs the water as if all the talking had left him desperate for a gulp.
+Narrator: After he is done, you lead him towards your bedroom. You have him sit on your bed as you go to your closet to look for the comic that isn’t there.
 Narrator: When you turn around he’s out like a light- must’ve been tired.
-Narrator: You head to the kitchen, preparing the ingredients you need. Fish sauce, sugar, vegetable oil, a shallot, garlic, coconut soda, green onion and black pepper.
+Narrator: You head to the kitchen, preparing the ingredients you need.
+Narrator: Fish sauce, sugar, vegetable oil, a shallot, garlic, coconut soda, green onion and black pepper.
 Narrator: Your stomach was growling already. You must prepare the fish first so you turn to the one you brought home with you, knife hand.
-Narrator: Cutting into the flesh wasn’t very hard thankfully. Once the fish was marinating, you prepare the rest of the things you need in the claypot you purchased once long ago for this sort of occasion.
-Narrator: Poor Khan, kind and hopeful Khan. The Catfish who just needed time to learn to love himself, robbed of it… But at least you got a delicious dinner out of them, right?
+Narrator: Cutting into the flesh wasn’t very hard thankfully.
+Narrator: Once the fish was marinating, you prepare the rest of the things you need in the claypot you purchased once long ago for this sort of occasion.
+Narrator: Poor Khan, kind and hopeful Khan.
+Narrator: The Catfish who just needed time to learn to love himself, robbed of it… But at least you got a delicious dinner out of them, right?
 audio "res://Assets/SFX/SFX_Cooking_Khanh.wav" [bus="Audio"]
 [wait time="25.0"]
 [background arg="res://Assets/CGs/BG_dinner_2.png" fade="3.5" wait="true"]
-set {is_fdate_success} = true
+set {is_sdate_success} = true
 set {is_date_success} = true
 [signal arg="scene_end"]
 [end_timeline]

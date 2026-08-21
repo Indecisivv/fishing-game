@@ -1,10 +1,49 @@
 [gd_scene format=3 uid="uid://bppwvybe2yrlr"]
 
 [ext_resource type="Script" uid="uid://de1p6twb0ph2t" path="res://Scenes & Scripts/Game Scenes/game_end_screen.gd" id="1_gc2gg"]
-[ext_resource type="Texture2D" uid="uid://0x7yqayr8alk" path="res://Assets/CGs/BG_Ending.png" id="2_nya7o"]
+[ext_resource type="Texture2D" uid="uid://gjj8rdk2fktt" path="res://Assets/CGs/Dating CG_Ada.jpg" id="2_8b6fo"]
 [ext_resource type="FontFile" uid="uid://c0fss6t1fq1md" path="res://Assets/FishFonts/Freckle_Face/FreckleFace-Regular.ttf" id="3_4qmns"]
 [ext_resource type="FontFile" uid="uid://b5u7o2egl3j1f" path="res://Assets/FishFonts/National_Park/NationalPark-VariableFont_wght.ttf" id="4_8b6fo"]
 [ext_resource type="FontFile" uid="uid://cuauodtrqsmwe" path="res://Assets/FishFonts/Viga/Viga-Regular.ttf" id="5_vwooc"]
+[ext_resource type="Texture2D" uid="uid://bxqgaxfys4p7w" path="res://Assets/CGs/Dating CG_Ada_02.jpg" id="6_vwooc"]
+
+[sub_resource type="Animation" id="Animation_nxhb3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_8b6fo")]
+}
+
+[sub_resource type="Animation" id="Animation_cdrvu"]
+resource_name = "lineboil"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("2_8b6fo"), ExtResource("6_vwooc")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6p5is"]
+_data = {
+&"RESET": SubResource("Animation_nxhb3"),
+&"lineboil": SubResource("Animation_cdrvu")
+}
 
 [node name="GameEndScreen" type="Control" unique_id=2012399081]
 layout_mode = 3
@@ -28,7 +67,7 @@ offset_right = 245.0
 offset_bottom = 245.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_nya7o")
+texture = ExtResource("2_8b6fo")
 
 [node name="Button" type="Button" parent="." unique_id=163605764]
 layout_mode = 1
@@ -111,5 +150,15 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("5_vwooc")
 theme_override_font_sizes/font_size = 32
 text = "'Ending Title'"
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=200124767]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_8b6fo")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=905367754]
+libraries/ = SubResource("AnimationLibrary_6p5is")
+autoplay = &"lineboil"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -99,6 +99,8 @@ variables={
 glossary/default_case_sensitive=true
 layout/end_behaviour=0
 audio/type_sound_bus="Master"
+text/input_action="dialogic_default_action"
+text/autocolor_names=false
 
 [display]
 

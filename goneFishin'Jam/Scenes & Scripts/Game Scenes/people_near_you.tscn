@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c1k0kpy1bnjr4" path="res://Scenes & Scripts/Game Scenes/people_near_you.gd" id="1_2i6yc"]
 [ext_resource type="Texture2D" uid="uid://dia4dqoe5lh3d" path="res://Assets/CGs/Dating Profile_Ada.png" id="2_1weuw"]
-[ext_resource type="Texture2D" uid="uid://luldv4a5y5pw" path="res://Assets/CGs/Game Background_Room.jpg" id="2_ew7fw"]
+[ext_resource type="Texture2D" uid="uid://dxfctvifnildg" path="res://Assets/CGs/Game Background_Room_Erased.jpg" id="2_vcp38"]
 [ext_resource type="Texture2D" uid="uid://br2qskk8sppbk" path="res://Assets/CGs/Dating App_Background.png" id="4_eu4md"]
 [ext_resource type="Texture2D" uid="uid://caq3ohsdgxevv" path="res://Assets/CGs/Phone_BG_01.png" id="5_11hj3"]
 [ext_resource type="Texture2D" uid="uid://bnb8gadln6th5" path="res://Assets/Buttons/UI_Dating Logo_Lineless.png" id="6_p3ptu"]
@@ -564,7 +564,8 @@ font_size = 88
 font_color = Color(0.8156863, 0.24705882, 0.19607843, 1)
 
 [sub_resource type="Animation" id="Animation_jmh5d"]
-length = 0.001
+length = 2.0
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -572,10 +573,10 @@ tracks/0/path = NodePath("MatchIcon:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("40_22ce1")]
+"values": [ExtResource("40_22ce1"), ExtResource("42_vgm63")]
 }
 
 [sub_resource type="Animation" id="Animation_rme2w"]
@@ -657,7 +658,7 @@ z_index = -3
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
-texture = ExtResource("2_ew7fw")
+texture = ExtResource("2_vcp38")
 
 [node name="Phone" type="Control" parent="." unique_id=1550645492]
 anchors_preset = 0
@@ -712,6 +713,7 @@ libraries/ = SubResource("AnimationLibrary_3ppex")
 autoplay = &"RESET"
 
 [node name="UI Features" type="Control" parent="Phone" unique_id=160457986]
+visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -916,8 +918,10 @@ texture_normal = ExtResource("15_53mxd")
 [node name="MatchScreen" type="Control" parent="Phone" unique_id=1710712480]
 visible = false
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 4.4265137
+offset_top = 93.8371
+offset_right = 44.426514
+offset_bottom = 133.8371
 script = ExtResource("40_vs1ln")
 
 [node name="MatchIcon" type="TextureRect" parent="Phone/MatchScreen" unique_id=994052508]
@@ -964,6 +968,7 @@ horizontal_alignment = 1
 
 [node name="MatchIconLineboiler" type="AnimationPlayer" parent="Phone/MatchScreen" unique_id=495289179]
 libraries/ = SubResource("AnimationLibrary_vs3vt")
+autoplay = &"RESET"
 
 [connection signal="tween_finished" from="." to="." method="loading_screen"]
 [connection signal="mouse_entered" from="Phone/UI Features/Button_AppLogo" to="Phone/UI Features/Button_AppLogo" method="_on_btn_entered"]

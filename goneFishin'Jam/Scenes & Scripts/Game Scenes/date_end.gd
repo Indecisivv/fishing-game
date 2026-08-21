@@ -8,9 +8,9 @@ extends Control
 signal on_retry
 signal on_return_to_main_menu
 
-const BG_DINNER_1 = preload("uid://dsehv58cy4f6b")
-const BG_DINNER_2 = preload("uid://774pdj57xal0")
-const BG_DINNER_3 = preload("uid://373c7gm6chbv")
+const BG_DINNER_1 = preload("uid://tnfg1so6udsf")
+const BG_DINNER_2 = preload("uid://drdcns0eeiqdy")
+const BG_DINNER_3 = preload("uid://da3frm01gr4or")
 
 # Changes the CG
 func set_cg(cg:CompressedTexture2D) -> void:

@@ -41,8 +41,6 @@ set {is_making_choice} = true
 			Ada: We should dance together!💃💃💃
 			Ada: Let's decide on where to go! TONITE!
 			# SUCCESS
-			set {is_fdate_success} = true
-			set {is_date_success} = true
 			jump Timeline_Date_Ada/
 		- Nothing in particular
 			set {is_making_choice} = false
@@ -53,8 +51,6 @@ set {is_making_choice} = true
 			Ada: You can always get a strong opinion as you explore
 			Ada: So let's explore 🗺🗺 tonite!
 			# SUCCESS
-			set {is_fdate_success} = true
-			set {is_date_success} = true
 			jump Timeline_Date_Ada/
 		- Classical
 			set {is_making_choice} = false
@@ -63,8 +59,6 @@ set {is_making_choice} = true
 			Ada: Welll, I hope you're open to learning to 💕LOVE💕 something new!
 			Ada: Let's show you what you're missing tonite!🌟
 			# SUCCESS
-			set {is_fdate_success} = true
-			set {is_date_success} = true
 			jump Timeline_Date_Ada/
 	- Undecided
 		set {is_making_choice} = false
@@ -84,8 +78,6 @@ set {is_making_choice} = true
 			Ada: How about one tonite?
 			Ada: arty time!🥂
 			# SUCCESS
-			set {is_fdate_success} = true
-			set {is_date_success} = true
 			jump Timeline_Date_Ada/
 		- Go out Sometimes
 			set {is_making_choice} = false
@@ -129,8 +121,6 @@ set {is_making_choice} = true
 			Ada: You should tell me more about it!
 			Ada: Tonite!!
 			# SUCCESS
-			set {is_fdate_success} = true
-			set {is_date_success} = true
 			jump Timeline_Date_Ada/
 		- Here and there
 			set {is_making_choice} = false
@@ -182,8 +172,6 @@ set {is_making_choice} = true
 			Ada: Let's meet up!
 			Ada: Tonite!!!
 			# SUCCESS
-			set {is_fdate_success} = true
-			set {is_date_success} = true
 			jump Timeline_Date_Ada/
 		- Walks around town
 			set {is_making_choice} = false
@@ -304,8 +292,6 @@ set {is_making_choice} = true
 			Ada: Well, you need to get your motivation to thrive in the work place, but at least we could have a blast together!
 			Ada: Let's meet tonite!
 			# SUCCESS
-			set {is_fdate_success} = true
-			set {is_date_success} = true
 			jump Timeline_Date_Ada/
 		- Chatty Party
 			set {is_making_choice} = false

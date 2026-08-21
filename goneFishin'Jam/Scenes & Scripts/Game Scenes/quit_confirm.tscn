@@ -2,13 +2,15 @@
 
 [ext_resource type="Script" uid="uid://diukow5ou7hf8" path="res://Scenes & Scripts/Game Scenes/quit_confirm.gd" id="1_jgdf4"]
 [ext_resource type="FontFile" uid="uid://b5u7o2egl3j1f" path="res://Assets/FishFonts/National_Park/NationalPark-VariableFont_wght.ttf" id="1_kv1m7"]
+[ext_resource type="FontFile" uid="uid://c0fss6t1fq1md" path="res://Assets/FishFonts/Freckle_Face/FreckleFace-Regular.ttf" id="2_57bbq"]
+[ext_resource type="Texture2D" uid="uid://b6uvtbslghgxw" path="res://Assets/Buttons/UI_Matching_Send a Message.png" id="4_iwti3"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jgdf4"]
 content_margin_left = 5.0
 content_margin_top = 5.0
 content_margin_right = 5.0
 content_margin_bottom = 5.0
-bg_color = Color(0.1, 0.1, 0.1, 0.6)
+bg_color = Color(1, 1, 1, 0)
 corner_radius_top_left = 3
 corner_radius_top_right = 3
 corner_radius_bottom_right = 3
@@ -37,6 +39,13 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=258494112]
+offset_left = 712.0
+offset_top = 454.0
+offset_right = 1215.0
+offset_bottom = 688.0
+texture = ExtResource("4_iwti3")
+
 [node name="PanelContainer" type="PanelContainer" parent="CanvasLayer" unique_id=1744011155]
 anchors_preset = 8
 anchor_left = 0.5
@@ -52,8 +61,11 @@ grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_jgdf4")
 
 [node name="Label" type="Label" parent="CanvasLayer/PanelContainer" unique_id=427683079]
+z_index = 2
 layout_mode = 2
-theme_override_fonts/font = ExtResource("1_kv1m7")
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("2_57bbq")
+theme_override_font_sizes/font_size = 32
 text = "Are you sure you want to quit?"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -65,15 +77,21 @@ size_flags_vertical = 8
 theme_override_constants/separation = 11
 
 [node name="ButtonQuit" type="Button" parent="CanvasLayer/PanelContainer/HBoxContainer" unique_id=1357634332]
+z_index = 2
 layout_mode = 2
 size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
 theme_override_fonts/font = ExtResource("1_kv1m7")
+theme_override_font_sizes/font_size = 28
 text = "Quit"
 
 [node name="ButtonCancel" type="Button" parent="CanvasLayer/PanelContainer/HBoxContainer" unique_id=753086125]
+z_index = 2
 layout_mode = 2
 size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
 theme_override_fonts/font = ExtResource("1_kv1m7")
+theme_override_font_sizes/font_size = 28
 text = "Don't Quit"
 
 [connection signal="pressed" from="CanvasLayer/PanelContainer/HBoxContainer/ButtonQuit" to="." method="on_quit"]

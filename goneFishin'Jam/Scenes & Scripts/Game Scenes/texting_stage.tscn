@@ -1,12 +1,14 @@
 [gd_scene format=3 uid="uid://rib6qm1aode3"]
 
 [ext_resource type="Script" uid="uid://digx18pdjgrjb" path="res://Scenes & Scripts/Game Scenes/texting_stage.gd" id="1_j8llc"]
-[ext_resource type="Texture2D" uid="uid://luldv4a5y5pw" path="res://Assets/CGs/Game Background_Room.jpg" id="2_g7opb"]
+[ext_resource type="Texture2D" uid="uid://dxfctvifnildg" path="res://Assets/CGs/Game Background_Room_Erased.jpg" id="2_6xlox"]
 [ext_resource type="Texture2D" uid="uid://br2qskk8sppbk" path="res://Assets/CGs/Dating App_Background.png" id="3_fwxhm"]
 [ext_resource type="FontFile" uid="uid://cuauodtrqsmwe" path="res://Assets/FishFonts/Viga/Viga-Regular.ttf" id="3_kstlk"]
 [ext_resource type="Texture2D" uid="uid://caq3ohsdgxevv" path="res://Assets/CGs/Phone_BG_01.png" id="4_hntrj"]
 [ext_resource type="Texture2D" uid="uid://cjxnxqoy531mv" path="res://Assets/CGs/Dating Icon_Ada_V2.jpg" id="5_3sdto"]
+[ext_resource type="Texture2D" uid="uid://c67ur14ar0n5u" path="res://Assets/CGs/Dating Icon_Ada.png" id="5_6xlox"]
 [ext_resource type="Texture2D" uid="uid://bt5kmce0gi8tr" path="res://Assets/Buttons/Settings Button_02.png" id="5_hntrj"]
+[ext_resource type="Texture2D" uid="uid://c4f7y0j0dlck5" path="res://Assets/CGs/Dating Icon_Ada_V2.png" id="6_3x2ol"]
 [ext_resource type="Texture2D" uid="uid://dp7rwvw504riq" path="res://Assets/CGs/Dating Icon_Khanh.jpg" id="6_kstlk"]
 [ext_resource type="Texture2D" uid="uid://dyn377irshqrr" path="res://Assets/Buttons/Settings Button_01.png" id="6_ocqkl"]
 [ext_resource type="Texture2D" uid="uid://b0f8y76m7stop" path="res://Assets/Buttons/Home_DatingApp_Button_02.png" id="7_ee45f"]
@@ -21,7 +23,7 @@
 [ext_resource type="Texture2D" uid="uid://5m0sks5cc36e" path="res://Assets/CGs/Dating Icon_Ada.jpg" id="12_ee45f"]
 
 [sub_resource type="Animation" id="Animation_4oqih"]
-length = 0.001
+length = 2.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -29,10 +31,10 @@ tracks/0/path = NodePath("TextureIcon:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("12_ee45f")]
+"values": [ExtResource("5_6xlox"), ExtResource("6_3x2ol")]
 }
 
 [sub_resource type="Animation" id="Animation_2omkp"]
@@ -222,7 +224,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_g7opb")
+texture = ExtResource("2_6xlox")
 
 [node name="BasePhone" type="Control" parent="." unique_id=1294091971]
 anchors_preset = 0
@@ -257,7 +259,7 @@ offset_top = 128.0
 offset_right = 1378.0
 offset_bottom = 628.0
 scale = Vector2(0.32, 0.32)
-texture = ExtResource("12_ee45f")
+texture = ExtResource("5_6xlox")
 
 [node name="IconLineboil" type="AnimationPlayer" parent="BasePhone" unique_id=458515171]
 libraries/ = SubResource("AnimationLibrary_oxb4s")

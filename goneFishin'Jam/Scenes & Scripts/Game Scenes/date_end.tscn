@@ -1,10 +1,49 @@
 [gd_scene format=3 uid="uid://dxgnjgw3v1eh"]
 
 [ext_resource type="Script" uid="uid://p6xurxhehbwg" path="res://Scenes & Scripts/Game Scenes/date_end.gd" id="1_eyl03"]
-[ext_resource type="Texture2D" uid="uid://dsehv58cy4f6b" path="res://Assets/CGs/BG_dinner_1.png" id="2_rbv0t"]
+[ext_resource type="Texture2D" uid="uid://tnfg1so6udsf" path="res://Assets/CGs/Ending Food CG_Ada.jpg" id="2_ygo2s"]
 [ext_resource type="AudioStream" uid="uid://3k0dnlhqpmyd" path="res://Assets/SFX/SFX_Unmatch.wav" id="3_ene0n"]
 [ext_resource type="FontFile" uid="uid://c0fss6t1fq1md" path="res://Assets/FishFonts/Freckle_Face/FreckleFace-Regular.ttf" id="3_ygo2s"]
 [ext_resource type="FontFile" uid="uid://cuauodtrqsmwe" path="res://Assets/FishFonts/Viga/Viga-Regular.ttf" id="4_5tiex"]
+[ext_resource type="Texture2D" uid="uid://c7kat4ib2nwjj" path="res://Assets/CGs/Ending Food CG_Ada_2.jpg" id="6_5tiex"]
+
+[sub_resource type="Animation" id="Animation_0t8sl"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CGRect:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_ygo2s")]
+}
+
+[sub_resource type="Animation" id="Animation_5tiex"]
+resource_name = "lineboil"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CGRect:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("2_ygo2s"), ExtResource("6_5tiex")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0t8sl"]
+_data = {
+&"RESET": SubResource("Animation_0t8sl"),
+&"lineboil": SubResource("Animation_5tiex")
+}
 
 [node name="DateEnd" type="Control" unique_id=64780911]
 layout_mode = 3
@@ -28,7 +67,7 @@ offset_right = 197.0
 offset_bottom = 197.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_rbv0t")
+texture = ExtResource("2_ygo2s")
 
 [node name="Retry" type="Button" parent="." unique_id=843440041]
 layout_mode = 0
@@ -80,6 +119,10 @@ text = "The actual name of the meal"
 
 [node name="unmatch" type="AudioStreamPlayer" parent="." unique_id=1457673832]
 stream = ExtResource("3_ene0n")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=2101036813]
+libraries/ = SubResource("AnimationLibrary_0t8sl")
+autoplay = &"lineboil"
 
 [connection signal="pressed" from="Retry" to="." method="on_retry_button_pressed"]
 [connection signal="pressed" from="MainMenu" to="." method="on_main_menu_button_pressed"]
