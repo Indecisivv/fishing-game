@@ -566,7 +566,7 @@ length = 2.0
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
-tracks/0/enabled = true
+tracks/0/enabled = false
 tracks/0/path = NodePath("MatchIcon:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
@@ -583,10 +583,10 @@ tracks/1/path = NodePath("TextureButton:texture_normal")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("41_vgm63"), ExtResource("49_tewg5")]
+"values": [ExtResource("41_vgm63")]
 }
 
 [sub_resource type="Animation" id="Animation_rme2w"]
@@ -646,6 +646,44 @@ _data = {
 &"ada_icon": SubResource("Animation_rme2w"),
 &"khanh_icon": SubResource("Animation_r8mvj"),
 &"socorro_icon": SubResource("Animation_vcp38")
+}
+
+[sub_resource type="Animation" id="Animation_8q2d1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../TextureButton:texture_normal")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("41_vgm63")]
+}
+
+[sub_resource type="Animation" id="Animation_bx1ah"]
+resource_name = "button"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../TextureButton:texture_normal")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("41_vgm63"), ExtResource("49_tewg5")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hxp4q"]
+_data = {
+&"RESET": SubResource("Animation_8q2d1"),
+&"button": SubResource("Animation_bx1ah")
 }
 
 [node name="PeopleNearYou" type="Control" unique_id=1980871945 node_paths=PackedStringArray("buttons", "phone", "texture_loading_screen", "jingle", "loading_screen_boiler")]
@@ -1027,7 +1065,11 @@ horizontal_alignment = 1
 
 [node name="MatchIconLineboiler" type="AnimationPlayer" parent="Phone/MatchScreen" unique_id=495289179]
 libraries/ = SubResource("AnimationLibrary_vs3vt")
-autoplay = &"RESET"
+
+[node name="ButtonLineboiler" type="AnimationPlayer" parent="Phone/MatchScreen" unique_id=1948688533]
+root_node = NodePath("../MatchIconLineboiler")
+libraries/ = SubResource("AnimationLibrary_hxp4q")
+autoplay = &"button"
 
 [connection signal="tween_finished" from="." to="." method="loading_screen"]
 [connection signal="mouse_entered" from="Phone/UI Features/Button_AppLogo" to="Phone/UI Features/Button_AppLogo" method="_on_btn_entered"]

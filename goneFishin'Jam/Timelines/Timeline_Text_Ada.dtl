@@ -77,7 +77,7 @@ set {is_making_choice} = true
 			Ada: Wow!! #id:d4
 			Ada: That's totes sooo cool 😎😎. #id:d5
 			Ada: How about one tonite? #id:d6
-			Ada: arty time!🥂 #id:d7
+			Ada: Party time!🥂 #id:d7
 			# SUCCESS
 			jump Timeline_Date_Ada/
 		- Go out Sometimes #id:d8
@@ -151,7 +151,7 @@ set {is_making_choice} = true
 	Player: I work at a grocery store, it's just to carry me until I can start my forever career soon. #id:105
 	Ada: I've been there!🤝 #id:106
 	Ada: It can totally feel hard to start but once you do, you better grind #id:107
-	Ada: ill you're at the top! #id:108
+	Ada: Untill you're at the top! #id:108
 	Ada: Hopefully you start soon... #id:109
 	Ada: What's your dream career? #id:10a
 	[wait time="0.1" hide_text="false"]

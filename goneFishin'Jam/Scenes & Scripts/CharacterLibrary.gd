@@ -8,11 +8,11 @@ I'm the big 28 now, I'm looking for my forever so we can build our future- NOW. 
 If you believe in love at first sight and think we could feel the spark on the first date, let's match and get planning xoxo""")
 
 var khanh   : CharacterClass = CharacterClass.new("Khanh", "25", "He/Him",
-"""I am Khanh., a Lionfish Aquakin. Be open minded and not a prick and we can probably get along just fine. I am into fitness and work.
+"""I am Khanh, a Lionfish Aquakin. Be open minded and not a prick and we can probably get along just fine. I am into fitness and work.
 
 I am a bit of a foodie and like to visit nice places. Not much more to say, if you would like to get to know me below the surface, message me.""")
 
 var soccoro : CharacterClass = CharacterClass.new("Soccoro", "29", "She/Her",
-"""My name is Socorro. I am an Dogfish Aquakin. I love gardening! Growing delicious food and beautiful flowers feels like magic. I enjoy the sun,long conversations, and soft scents. 
+"""My name is Socorro. I am a Dogfish Aquakin. I love gardening! Growing delicious food and beautiful flowers feels like magic. I enjoy the sun, long conversations, and soft scents. 
 
 This is my first time looking for a relationship so I am a little nervous, I would appreciate some patience.""")

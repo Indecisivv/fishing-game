@@ -1,18 +1,18 @@
 [style name="VisualNovelStyle"]
+audio Musicly - [fade="1.5" volume="-5.0" bus="Music"]
 [signal arg="date_start"]
 [background arg="res://Assets/CGs/BG_Ending.png" fade="1.5" wait="true"]
-audio Musicly "res://Assets/Music/M_Date_socorro.ogg" [volume="-20.0" bus="Music" sync="Musicly"]
 Narrator: [lspeed = 0.05] The dinner that the Dogfish had chosen was small and quaint, clean and lit by lowlights. #id:7a
 Narrator: [lspeed = 0.05] It was a reflection of them from what you learned from your text exchange. #id:7b
 Narrator: [lspeed = 0.05] However... #id:7c
-audio Musicly "res://Assets/Music/M_Date_socorro.ogg" [volume="0.0" bus="Music" sync="Musicly"]
+audio Musicly "res://Assets/Music/M_Date_socorro.ogg" [fade="2.0" volume="-11.0" bus="Music" sync="Musicly"]
 [background scene="res://Scenes & Scripts/CG Scenes/socorro_date_cg.tscn" fade="1.5" wait="true"]
 Narrator: [lspeed = 0.05] Despite their claims that this was a hangout, they show up with a bouquet in hand. #id:7d
 Socorro: [lspeed = 0.05] I know we said it was meant to not be a date… especially because I asked- but... #id:7e
 Socorro: [lspeed = 0.05] I thought I’d bring you these anyway! #id:7f
 Socorro: [lspeed = 0.05] I hope it’s alright… I grew them myself! Do you know flower language…? #id:80
 Narrator: [lspeed = 0.05] Her voice was nervous and she had a distinct stutter. What a cute woman. #id:81
-audio "res://Assets/SFX/SFX_ForkPlate.wav" [volume="-3.0" bus="Audio"]
+audio "res://Assets/SFX/SFX_ForkPlate.wav" [volume="-9.0" bus="Audio"]
 Narrator: [lspeed = 0.05] The food at the diner was mediocre, but you complimented it enthusiastically with a smile. #id:82
 Narrator: [lspeed = 0.05] Thankfully Socorro came with an appetite from her job and didn’t seem to take notice she had eaten way more than her half, allowing you to get away with not partaking much. #id:83
 Narrator: [lspeed = 0.05] You spend a long time chatting, learning all about what plants grow best in what weather and how she had just started bee keeping. #id:84
@@ -39,17 +39,16 @@ Narrator: [lspeed = 0.05] The recipe you planned took a lot of preparation and i
 Narrator: [lspeed = 0.05] Since it called for beans and a salsa, you had done that in advance. All you needed now was to cook and shred the shark. #id:97
 Narrator: [lspeed = 0.05] You open the door that you were keeping the shark in, making sure it was ready. #id:98
 Narrator: [lspeed = 0.05] Soft snoring came from the room. #id:99
-Narrator: [lspeed = 0.05] You knife sliced in and you mourned that the clean up would have you replacing furniture, it would be worth it however. #id:9a
+Narrator: [lspeed = 0.05] Your knife sliced in and you mourned that the clean up would have you replacing furniture, it would be worth it however. #id:9a
+audio "res://Assets/SFX/SFX_Cooking_Socorro.wav" [bus="Audio"]
 Narrator: [lspeed = 0.05] Once it was ready, you placed the fish, onion, garlic, epazote, and salt into a pan with water before covering it with a lid. #id:9b
 Narrator: [lspeed = 0.05] After it was ready and shredded, all it took was a few more steps before you could stack tortillas and fillings, dousing them with a generous amount of salsa. #id:9c
 Narrator: [lspeed = 0.05] Poor Socorro, sweet, innocent, helpful…. Her first relationship ending in her death? #id:9d
 Narrator: [lspeed = 0.05] Talk about bad luck, but at least you got a delicious meal out of her, right? #id:9e
-audio "res://Assets/SFX/SFX_Cooking_Socorro.wav" [bus="Audio"]
 set {is_tdate_success} = true
 set {is_date_success} = true
-[wait time="25.0"]
-[background arg="res://Assets/CGs/Ending Food CG_Socorro.jpg" fade="3.5" wait="true"]
+[wait time="10.0"]
 [clear time="1.0"]
-[background fade="0.0"]
+[background arg="res://Assets/CGs/BG_Ending.png" fade="0.0"]
 [signal arg="scene_end"]
 [end_timeline]

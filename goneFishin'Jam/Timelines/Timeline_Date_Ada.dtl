@@ -1,10 +1,10 @@
 [style name="VisualNovelStyle"]
+audio Musicly - [fade="1.5" volume="-5.0" bus="Music"]
 [signal arg="date_start"]
 [background arg="res://Assets/CGs/BG_Ending.png" fade="1.5" wait="true"]
-audio Musicly "res://Assets/Music/M_Date_ada.ogg" [fade="2.0" volume="-20.0" bus="Music" sync="Musicly"]
 Narrator: [lspeed = 0.05]You and Ada head out to the hottest club in town! #id:3d
-audio Musicly "res://Assets/Music/M_Date_ada.ogg" [fade="2.0" volume="0.0" bus="Music" sync="Musicly"]
 [background scene="res://Scenes & Scripts/CG Scenes/ada_date_cg.tscn" fade="1.5" wait="true"]
+audio Musicly "res://Assets/Music/M_Date_ada.ogg" [fade="2.0" volume="-13.1" bus="Music" sync="Musicly"]
 Narrator: [lspeed = 0.05]They're fun and prettier than in their photos. Not a single lie about them being the life of the party was told. #id:3e
 Ada: [lspeed = 0.05]Wooo! #id:3f
 Ada: [lspeed = 0.05]I love this song! #id:40
@@ -16,7 +16,7 @@ Narrator: [lspeed = 0.05]They clearly feel the spark since they dance close to y
 Narrator: [lspeed = 0.05]You both dance, you twirl them, their dress catching the light. #id:46
 Ada: [lspeed = 0.05]Two cosmos please! #id:47
 Ada: [lspeed = 0.05]You’ll looove the Cosmos here, they’re so good! #id:48
-Narrator: [lspeed = 0.05]She handed you the drink once they arrived, clinking their glass against yours. #id:49
+Narrator: [lspeed = 0.05]They handed you the drink once they arrived, clinking their glass against yours. #id:49
 audio "res://Assets/SFX/SFX_GlassClink.wav" [bus="Audio"]
 Narrator: [lspeed = 0.05]You pretend to drink as much as they do, watching them down pretty sunset colored drinks all night, waiting patiently until they reach their limit. #id:4a
 Narrator: [lspeed = 0.05]Once they’re ready to go home, probably a little more drunk than they usually let themselves get, you are quick to offer a ride. They giggle roughly. #id:4b
@@ -30,17 +30,16 @@ Narrator: [lspeed = 0.05]You were hungry. #id:50
 Narrator: [lspeed = 0.05]You pull out soy sauce, vinegar, onion, garlic, ginger, oyster sauce, bay leaves and various seasonings. Everything you needed except the main ingredient… #id:51
 Narrator: [lspeed = 0.05]You glance over at the octopus then at the clock. The marinade for this dish took a while so you should do it now. #id:52
 Narrator: [lspeed = 0.05]Your knife cuts into flesh with no struggle, thanks to the alcohol. #id:53
+audio "res://Assets/SFX/SFX_Cooking_Ada.wav" [bus="Audio"]
 Narrator: [lspeed = 0.05]You let the meat sit while you get everything else ready so the flavor really soaks into the flesh. You moved around the kitchen, chopping, washing rice. #id:54
 Narrator: [lspeed = 0.05]When it was time, you threw your prepared ingredients into a frying pan, waiting for the aromatics to start filling the kitchen. #id:55
-Narrator: [lspeed = 0.05]You add the octopus ink, letting it simmer and blanching the octopus so you could add it once the sauce was reduced Perfect. #id:56
+Narrator: [lspeed = 0.05]You add the octopus ink, letting it simmer and blanching the octopus so you could add it once the sauce was reduced. Perfect. #id:56
 Narrator: [lspeed = 0.05]Poor Ada, bright and soft Ada. #id:57
 Narrator: [lspeed = 0.05]The Octopus Aquakin who shone like a bright flame, smothered too soon… But at least you got a delicious dinner out of them, right? #id:58
-audio "res://Assets/SFX/SFX_Cooking_Ada.wav" [bus="Audio"]
 set {is_fdate_success} = true
 set {is_date_success} = true
-[wait time="25.0"]
-[background arg="res://Assets/CGs/Ending Food CG_Ada.jpg" fade="3.5" wait="true"]
-[background fade="0.0"]
+[wait time="10.0"]
+[background arg="res://Assets/CGs/BG_Ending.png" fade="0.0"]
 [clear time="1.0"]
 [signal arg="scene_end"]
 [end_timeline]
