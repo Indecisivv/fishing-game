@@ -45,10 +45,10 @@ Narrator: [lspeed = 0.05] After it was ready and shredded, all it took was a few
 Narrator: [lspeed = 0.05] Poor Socorro, sweet, innocent, helpful…. Her first relationship ending in her death? #id:9d
 Narrator: [lspeed = 0.05] Talk about bad luck, but at least you got a delicious meal out of her, right? #id:9e
 audio "res://Assets/SFX/SFX_Cooking_Socorro.wav" [bus="Audio"]
-[wait time="25.0"]
-[background arg="res://Assets/CGs/Ending Food CG_Socorro.jpg" fade="3.5" wait="true"]
 set {is_tdate_success} = true
 set {is_date_success} = true
+[wait time="25.0"]
+[background arg="res://Assets/CGs/Ending Food CG_Socorro.jpg" fade="3.5" wait="true"]
 [clear time="1.0"]
 [background fade="0.0"]
 [signal arg="scene_end"]

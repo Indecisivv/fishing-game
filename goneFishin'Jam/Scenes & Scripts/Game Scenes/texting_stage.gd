@@ -31,8 +31,7 @@ func _on_btn_exited() -> void:
 func load_timeline(timeline:String) -> void:
 	if Dialogic.current_timeline:
 		Dialogic.end_timeline(true)
-		
-	Dialogic.clear()
+
 	Dialogic.start(timeline)
 
 func set_contact(_name:String, anim:String) -> void:

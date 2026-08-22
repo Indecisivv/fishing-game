@@ -41,8 +41,7 @@ signal settings_entered
 func _ready() -> void:
 	Dialogic.signal_event.connect(_on_dialogic_signal)
 	wins.resize(num_total_chars)
-	num_online = num_total_chars + 1
-	print("On Start, Win Counter: " + str(win_counter))
+	num_online = num_total_chars
 
 func _on_settings_entered() -> void:
 	emit_signal('settings_entered')
@@ -62,6 +61,8 @@ func _on_game_started() -> void:
 	await FadeToBlackTransition.transition_finished
 	scn_main_menu.hide()
 	scn_people_near_you.show()
+	scn_people_near_you.audio_stream_player.volume_db = -20.444
+	scn_people_near_you.audio_stream_player.play()
 	scn_people_near_you.enter_phone()
 
 # This method transitions from the dating app to the date. It loads a different timeline depending
@@ -92,7 +93,8 @@ func _on_date_selected() -> void:
 			on_date_khanh = false
 			
 			scn_texting_stage.set_contact("Socorro Tiburon", "socorro_icon")
-		
+	
+	scn_people_near_you.audio_stream_player.stop()
 	scn_people_near_you.hide()
 	scn_date_end.hide()
 	scn_texting_stage.show()
@@ -116,8 +118,6 @@ func _on_dialogic_signal(argument:String) -> void:
 		scn_date_time.hide()
 		
 		show_scn_date_end()
-		
-		print("On Scene End, Win Counter: " + str(win_counter))
 	
 	if argument == "date_start":
 		scn_texting_stage.hide()
@@ -213,19 +213,25 @@ func show_scn_date_end() -> void:
 		the line...")
 		scn_date_end.unmatch.play()
 	
+	print ("is_fdate_success: " + str(Dialogic.VAR.is_fdate_success))
+	print ("is_sdate_success: " + str(Dialogic.VAR.is_sdate_success))
+	print ("is_tdate_success: " + str(Dialogic.VAR.is_tdate_success))
 	scn_date_end.show()
 
 # This method presents the player with the corresponding ending depending on how many characters they
 # successfully wooed.
 func show_ending() -> void:
 	wins[0] = Dialogic.VAR.is_fdate_success
+	print ("Wins Array: " + str(wins[0]) + " | is_fdate_success: " + str(Dialogic.VAR.is_fdate_success))
 	wins[1] = Dialogic.VAR.is_sdate_success
+	print ("Wins Array: " + str(wins[1]) + " | is_sdate_success: " + str(Dialogic.VAR.is_sdate_success))
 	wins[2] = Dialogic.VAR.is_tdate_success
+	print ("Wins Array: " + str(wins[2]) + " | is_tdate_success: " + str(Dialogic.VAR.is_tdate_success))
 	
 	for i in wins.size():
 		if wins[i]:
-			print(str(wins[i]) + ", Win Counter: " + str(win_counter))
 			win_counter += 1
+		print(str(wins[i]) + ", Win Counter: " + str(win_counter))
 	
 	if win_counter >= num_total_chars:
 		scn_game_end.set_end_label(3)
@@ -249,6 +255,15 @@ func show_ending() -> void:
 
 # Resets all variables and scenes in the game
 func restart_game() -> void:
+	if Dialogic.current_timeline:
+		Dialogic.current_timeline.clean()
+	
+	Dialogic.end_timeline(true)
+	
+	if Dialogic.Styles.get_layout_node():
+		Dialogic.Styles.get_layout_node().queue_free()
+	Dialogic.paused = false
+	
 	FadeToBlackTransition.fade_to_black()
 	await FadeToBlackTransition.transition_finished
 	
@@ -263,6 +278,7 @@ func restart_game() -> void:
 	num_online = num_total_chars
 	scn_people_near_you.set_people_online(num_online)
 	win_counter = 0
+	print("On Restart: " + str(win_counter))
 	all_chars_dated = false
 	for i in wins.size():
 		wins[i] = false

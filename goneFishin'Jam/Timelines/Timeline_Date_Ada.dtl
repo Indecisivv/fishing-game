@@ -36,10 +36,10 @@ Narrator: [lspeed = 0.05]You add the octopus ink, letting it simmer and blanchin
 Narrator: [lspeed = 0.05]Poor Ada, bright and soft Ada. #id:57
 Narrator: [lspeed = 0.05]The Octopus Aquakin who shone like a bright flame, smothered too soon… But at least you got a delicious dinner out of them, right? #id:58
 audio "res://Assets/SFX/SFX_Cooking_Ada.wav" [bus="Audio"]
-[wait time="25.0"]
-[background arg="res://Assets/CGs/Ending Food CG_Ada.jpg" fade="3.5" wait="true"]
 set {is_fdate_success} = true
 set {is_date_success} = true
+[wait time="25.0"]
+[background arg="res://Assets/CGs/Ending Food CG_Ada.jpg" fade="3.5" wait="true"]
 [background fade="0.0"]
 [clear time="1.0"]
 [signal arg="scene_end"]

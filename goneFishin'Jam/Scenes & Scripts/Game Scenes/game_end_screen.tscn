@@ -569,6 +569,7 @@ horizontal_alignment = 1
 
 [node name="EndingMusic" type="AudioStreamPlayer" parent="." unique_id=1556486046]
 stream = SubResource("AudioStreamOggVorbis_w0kyi")
+bus = &"Music"
 
 [connection signal="mouse_entered" from="CastAgain" to="CastAgain" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="CastAgain" to="CastAgain" method="_on_mouse_exited"]

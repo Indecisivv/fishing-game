@@ -15,6 +15,8 @@ extends Control
 @export var texture_loading_screen: TextureRect
 @export var jingle: AudioStreamPlayer
 @export var loading_screen_boiler: AnimationPlayer
+@onready var audio_stream_player: AudioStreamPlayer = $AudioStreamPlayer
+
 
 signal date_selected
 signal all_chars_dated

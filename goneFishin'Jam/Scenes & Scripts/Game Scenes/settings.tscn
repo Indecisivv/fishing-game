@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://bpdbtgij7y6x3"]
 
 [ext_resource type="Script" uid="uid://bynl1bl3haan3" path="res://Scenes & Scripts/Game Scenes/settings.gd" id="1_0h3cg"]
-[ext_resource type="Texture2D" uid="uid://c26ycxwnnp8w0" path="res://Assets/Buttons/UI_VN Box_Curved Version.png" id="2_3r7dt"]
 [ext_resource type="AudioStream" uid="uid://cn6ullfd8rt44" path="res://Assets/SFX/testAUDIO.wav" id="2_llxf6"]
 [ext_resource type="FontFile" uid="uid://cuauodtrqsmwe" path="res://Assets/FishFonts/Viga/Viga-Regular.ttf" id="2_sojg4"]
 [ext_resource type="Texture2D" uid="uid://b6uvtbslghgxw" path="res://Assets/Buttons/UI_Matching_Send a Message.png" id="3_tkmkc"]
@@ -75,16 +74,14 @@ script = ExtResource("1_0h3cg")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=426794815]
 layer = 2
-visible = false
 
-[node name="TextureRect5" type="TextureRect" parent="CanvasLayer" unique_id=2065549585]
-modulate = Color(1, 1, 1, 0.45882353)
-z_index = -1
-offset_left = -15.0
-offset_top = 17.0
-offset_right = 1916.0
-offset_bottom = 1041.0
-texture = ExtResource("2_3r7dt")
+[node name="BackgroundPanel" type="Panel" parent="CanvasLayer" unique_id=2013417446]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="TextureRect2" type="TextureRect" parent="CanvasLayer" unique_id=1705298511]
 z_index = -1
@@ -127,14 +124,6 @@ offset_top = -7.0
 offset_right = 1946.0
 offset_bottom = 130.0
 texture = ExtResource("3_tkmkc")
-
-[node name="BackgroundPanel" type="Panel" parent="CanvasLayer" unique_id=2013417446]
-visible = false
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
 
 [node name="NavigationPanel" type="PanelContainer" parent="CanvasLayer" unique_id=1085788913]
 anchors_preset = 8
@@ -199,7 +188,6 @@ text = "Quit
 flat = true
 
 [node name="SettingsScreen" type="PanelContainer" parent="CanvasLayer" unique_id=132653074]
-visible = false
 offset_left = 518.0
 offset_top = 40.0
 offset_right = 1885.0
@@ -310,6 +298,7 @@ popup/item_2/text = "Filipino"
 popup/item_2/id = 2
 
 [node name="CreditsScreen" type="PanelContainer" parent="CanvasLayer" unique_id=1154685088]
+visible = false
 offset_left = 518.0
 offset_top = 40.0
 offset_right = 1885.0

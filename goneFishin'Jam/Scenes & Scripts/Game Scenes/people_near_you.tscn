@@ -31,7 +31,6 @@
 [ext_resource type="Texture2D" uid="uid://bi761ql8dhuve" path="res://Assets/Buttons/Back Button_02.png" id="16_ey8pi"]
 [ext_resource type="Texture2D" uid="uid://blosx8jwc8mxu" path="res://Assets/Buttons/Heart Button_02.png" id="17_ic68m"]
 [ext_resource type="Script" uid="uid://c0dfixbkh0k0g" path="res://Scenes & Scripts/Game Scenes/date_profile_views.gd" id="18_53mxd"]
-[ext_resource type="FontFile" uid="uid://37vndl7guwyk" path="res://Assets/FishFonts/National_Park/static/NationalPark-Bold.ttf" id="19_ow1qx"]
 [ext_resource type="Texture2D" uid="uid://b54aeb7hpwykr" path="res://Assets/CGs/People Near You Profile_Ada.png" id="22_0v1d4"]
 [ext_resource type="Texture2D" uid="uid://blb7y5n88wpfr" path="res://Assets/CGs/People Near You Profile_Khanh.png" id="23_x6b15"]
 [ext_resource type="Texture2D" uid="uid://c5mugyh6aerua" path="res://Assets/CGs/People Near You Profile_Socorro.png" id="24_36yh4"]
@@ -50,11 +49,15 @@
 [ext_resource type="Texture2D" uid="uid://beropdlmx4n3h" path="res://Assets/CGs/Its A Match_Ada_02.png" id="42_vgm63"]
 [ext_resource type="Texture2D" uid="uid://dl5h6j776lwgu" path="res://Assets/CGs/Its A Match_Khanh.png" id="43_rme2w"]
 [ext_resource type="Script" uid="uid://bte0lki0m3qar" path="res://Scenes & Scripts/Game Scenes/texture_button.gd" id="43_vcp38"]
+[ext_resource type="Texture2D" uid="uid://dcjge0yxmdy26" path="res://Assets/Buttons/Socorro_Intensity.png" id="44_s8hud"]
 [ext_resource type="Texture2D" uid="uid://lxft6vrk526e" path="res://Assets/CGs/Its A Match_Khanh_02.png" id="44_vs3vt"]
+[ext_resource type="Texture2D" uid="uid://dmtqrnb7ix02u" path="res://Assets/Buttons/BioBackdrop.png" id="45_gcn17"]
 [ext_resource type="Texture2D" uid="uid://dy2071upbnpd4" path="res://Assets/CGs/Its A Match_Socorro.png" id="45_r8mvj"]
+[ext_resource type="FontFile" uid="uid://dquhqgpebn61s" path="res://Assets/FishFonts/National_Park/static/NationalPark-SemiBold.ttf" id="46_s8hud"]
 [ext_resource type="Texture2D" uid="uid://cgvhdbrvwajvt" path="res://Assets/CGs/Its A Match_Socorro_02.png" id="46_vs1ln"]
 [ext_resource type="Texture2D" uid="uid://myoqfmossu7d" path="res://Assets/Buttons/UI_Matching_Send a Message_02.png" id="49_tewg5"]
 [ext_resource type="Texture2D" uid="uid://c36v2f66mqmva" path="res://Assets/Buttons/Tutorial_Label.png" id="55_f4rt7"]
+[ext_resource type="AudioStream" uid="uid://c00ka3t14fote" path="res://Assets/Music/M_BGM.ogg" id="56_p6bet"]
 
 [sub_resource type="Animation" id="Animation_7oxxn"]
 length = 2.0
@@ -547,20 +550,6 @@ font = SubResource("FontVariation_rme2w")
 font_size = 88
 font_color = Color(0.8156863, 0.24705882, 0.19607843, 1)
 
-[sub_resource type="FontVariation" id="FontVariation_vs3vt"]
-base_font = ExtResource("8_pc0yv")
-spacing_glyph = -3
-
-[sub_resource type="LabelSettings" id="LabelSettings_smp7l"]
-font = SubResource("FontVariation_vs3vt")
-font_size = 70
-font_color = Color(0, 0, 0, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_m0rwl"]
-font = ExtResource("19_ow1qx")
-font_size = 24
-font_color = Color(0, 0, 0, 1)
-
 [sub_resource type="FontVariation" id="FontVariation_r8mvj"]
 base_font = ExtResource("8_pc0yv")
 spacing_glyph = -3
@@ -672,6 +661,11 @@ texture_loading_screen = NodePath("Phone/Texture_LoadingScreen")
 jingle = NodePath("Phone/Texture_LoadingScreen/Jingle")
 loading_screen_boiler = NodePath("Phone/Texture_LoadingScreen/LoadingScreenBoiler")
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1441476989]
+stream = ExtResource("56_p6bet")
+bus = &"Music"
+parameters/looping = true
+
 [node name="Texture_BG" type="TextureRect" parent="." unique_id=135938329]
 z_index = -3
 layout_mode = 0
@@ -681,9 +675,9 @@ texture = ExtResource("2_vcp38")
 
 [node name="Phone" type="Control" parent="." unique_id=1550645492]
 anchors_preset = 0
-offset_left = -737.0
+offset_left = -736.99994
 offset_top = 1117.0
-offset_right = -697.0
+offset_right = -696.99994
 offset_bottom = 1157.0
 rotation = -0.3926991
 
@@ -853,7 +847,6 @@ libraries/ = SubResource("AnimationLibrary_i0j33")
 autoplay = &"lineboil"
 
 [node name="DateProfileView" type="Control" parent="Phone" unique_id=285696428]
-visible = false
 anchors_preset = 0
 offset_left = 326.65555
 offset_top = 533.6255
@@ -866,41 +859,78 @@ root_node = NodePath("../..")
 libraries/ = SubResource("AnimationLibrary_c8y64")
 autoplay = &"RESET"
 
-[node name="Label_Name" type="Label" parent="Phone/DateProfileView" unique_id=652097053]
-z_index = 1
+[node name="VBoxContainer" type="VBoxContainer" parent="Phone/DateProfileView" unique_id=387516761]
 layout_mode = 0
-offset_left = -263.03693
-offset_top = 156.78351
-offset_right = 111.96307
-offset_bottom = 397.7835
-text = "Name, 25"
+offset_left = -275.0067
+offset_top = 152.35692
+offset_right = 268.9933
+offset_bottom = 535.35693
+theme_override_constants/separation = -24
+
+[node name="Label_Name" type="Label" parent="Phone/DateProfileView/VBoxContainer" unique_id=652097053]
+z_index = 1
+layout_mode = 2
+text = "Socorro, 29"
 label_settings = SubResource("LabelSettings_p3ptu")
 
-[node name="Label_Job" type="Label" parent="Phone/DateProfileView" unique_id=663028319]
+[node name="HBoxContainer" type="HBoxContainer" parent="Phone/DateProfileView/VBoxContainer" unique_id=954535498]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 87
+
+[node name="Label_Job" type="Label" parent="Phone/DateProfileView/VBoxContainer/HBoxContainer" unique_id=663028319]
 z_index = 2
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_pc0yv")
+theme_override_font_sizes/font_size = 24
+text = "she/her"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Phone/DateProfileView/VBoxContainer/HBoxContainer" unique_id=928537572]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+
+[node name="Label_Looking For" type="Label" parent="Phone/DateProfileView/VBoxContainer/HBoxContainer/HBoxContainer" unique_id=1274387703]
+z_index = 2
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_pc0yv")
+theme_override_font_sizes/font_size = 24
+text = "looking for:"
+
+[node name="Texture_Intensity" type="TextureRect" parent="Phone/DateProfileView/VBoxContainer/HBoxContainer/HBoxContainer" unique_id=458414596]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+texture = ExtResource("44_s8hud")
+
+[node name="TextureRect" type="TextureRect" parent="Phone/DateProfileView" unique_id=288270219]
 layout_mode = 0
-offset_left = -259.7744
-offset_top = 239.85986
-offset_right = -138.77441
-offset_bottom = 446.85986
-text = "Job
-"
-label_settings = SubResource("LabelSettings_smp7l")
+offset_left = -277.53455
+offset_top = 296.3505
+offset_right = 266.46545
+offset_bottom = 545.35046
+scale = Vector2(0.94773924, 0.94773924)
+texture = ExtResource("45_gcn17")
 
 [node name="ScrollContainer" type="ScrollContainer" parent="Phone/DateProfileView" unique_id=806222809]
 layout_mode = 0
-offset_left = -261.0
-offset_top = 323.0
-offset_right = 219.0
-offset_bottom = 510.0
+offset_left = -224.97034
+offset_top = 329.29358
+offset_right = 191.66614
+offset_bottom = 483.63745
 vertical_scroll_mode = 3
 
 [node name="Label_Bio" type="Label" parent="Phone/DateProfileView/ScrollContainer" unique_id=1243809126]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 2
-text = "Sample text"
-label_settings = SubResource("LabelSettings_m0rwl")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("46_s8hud")
+theme_override_font_sizes/font_size = 22
+text = "Sample Text"
 autowrap_mode = 2
 
 [node name="Texture_Profile" type="TextureRect" parent="Phone/DateProfileView" unique_id=343541438]

@@ -19,6 +19,7 @@
 [ext_resource type="Texture2D" uid="uid://o80l84qq0uhx" path="res://Assets/CGs/Phone_IntensityBar_Border.png" id="10_nx3au"]
 [ext_resource type="Texture2D" uid="uid://xy3mfrot7myt" path="res://Assets/CGs/Phone_IntensityBar_Border_02.png" id="11_6fb11"]
 [ext_resource type="Texture2D" uid="uid://b770o530jiktm" path="res://Assets/Buttons/UI_Dating Logo_Mini Version.png" id="11_kstlk"]
+[ext_resource type="Texture2D" uid="uid://c36v2f66mqmva" path="res://Assets/Buttons/Tutorial_Label.png" id="19_musq8"]
 
 [sub_resource type="Animation" id="Animation_4oqih"]
 length = 2.0
@@ -282,6 +283,11 @@ offset_top = 549.0
 offset_right = 650.0
 offset_bottom = 1071.0
 texture = ExtResource("10_nx3au")
+
+[node name="TutorialLabel" type="Sprite2D" parent="." unique_id=826432269]
+z_index = 1
+position = Vector2(529, 499)
+texture = ExtResource("19_musq8")
 
 [node name="UI Features" type="Control" parent="." unique_id=1492680768]
 anchors_preset = 0

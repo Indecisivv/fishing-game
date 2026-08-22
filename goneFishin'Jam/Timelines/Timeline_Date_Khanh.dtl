@@ -41,10 +41,10 @@ Narrator: [lspeed = 0.05] Once the fish was marinating, you prepare the rest of 
 Narrator: [lspeed = 0.05] Poor Khan, kind and hopeful Khan. #id:78
 Narrator: [lspeed = 0.05] The Catfish who just needed time to learn to love himself, robbed of it… But at least you got a delicious dinner out of them, right? #id:79
 audio "res://Assets/SFX/SFX_Cooking_Khanh.wav" [bus="Audio"]
-[wait time="25.0"]
-[background arg="res://Assets/CGs/Ending Food CG_Khanh.jpg" fade="3.5" wait="true"]
 set {is_sdate_success} = true
 set {is_date_success} = true
+[wait time="25.0"]
+[background arg="res://Assets/CGs/Ending Food CG_Khanh.jpg" fade="3.5" wait="true"]
 [clear time="1.0"]
 [background fade="0.0"]
 [signal arg="scene_end"]
