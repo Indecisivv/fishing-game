@@ -74,6 +74,7 @@ script = ExtResource("1_0h3cg")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=426794815]
 layer = 2
+visible = false
 
 [node name="BackgroundPanel" type="Panel" parent="CanvasLayer" unique_id=2013417446]
 visible = false

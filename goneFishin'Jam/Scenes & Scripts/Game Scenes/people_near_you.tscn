@@ -15,6 +15,7 @@
 [ext_resource type="FontFile" uid="uid://cuauodtrqsmwe" path="res://Assets/FishFonts/Viga/Viga-Regular.ttf" id="8_pc0yv"]
 [ext_resource type="Script" uid="uid://b6b1da15qusg2" path="res://Scenes & Scripts/Game Scenes/btn_ada.gd" id="9_i0j33"]
 [ext_resource type="Texture2D" uid="uid://dj8xnowoo8g3o" path="res://Assets/CGs/Dating Profile_Khanh.png" id="9_opqum"]
+[ext_resource type="Texture2D" uid="uid://bx8ami36eeoha" path="res://Assets/Buttons/MC Profile_Button.png" id="10_8q2d1"]
 [ext_resource type="Script" uid="uid://dkspty688bf2b" path="res://Scenes & Scripts/Game Scenes/button_settings.gd" id="10_ic68m"]
 [ext_resource type="Texture2D" uid="uid://cry21c65hlbai" path="res://Assets/CGs/Dating Profile_Socorro_NoFilter.png" id="10_m5o14"]
 [ext_resource type="Script" uid="uid://dv85bi025guaa" path="res://Scenes & Scripts/Game Scenes/btn_soccoro.gd" id="11_53cv8"]
@@ -27,6 +28,7 @@
 [ext_resource type="Texture2D" uid="uid://debfo6h3ic5sq" path="res://Assets/CGs/Dating Profile_Ada_02.png" id="14_53cv8"]
 [ext_resource type="Texture2D" uid="uid://cjmoslug0n577" path="res://Assets/Buttons/Back Button_01.png" id="15_53mxd"]
 [ext_resource type="Texture2D" uid="uid://bal882kv4q3d7" path="res://Assets/CGs/Dating Profile_Khanh_02.png" id="15_bfmnk"]
+[ext_resource type="Texture2D" uid="uid://nhr22hmtyxnq" path="res://Assets/Buttons/MC Profile_Button_02.png" id="15_bx1ah"]
 [ext_resource type="Texture2D" uid="uid://cj1htybnxjyqr" path="res://Assets/CGs/Dating Profile_Socorro_02_NoFilter.png" id="15_mjxxk"]
 [ext_resource type="Texture2D" uid="uid://bi761ql8dhuve" path="res://Assets/Buttons/Back Button_02.png" id="16_ey8pi"]
 [ext_resource type="Texture2D" uid="uid://blosx8jwc8mxu" path="res://Assets/Buttons/Heart Button_02.png" id="17_ic68m"]
@@ -110,7 +112,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("6_veqik"), ExtResource("12_ow1qx")]
+"values": [ExtResource("10_8q2d1"), ExtResource("15_bx1ah")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -755,7 +757,7 @@ offset_top = 16.892456
 offset_right = 111.65076
 offset_bottom = 108.892456
 pivot_offset = Vector2(48, 46)
-texture_normal = ExtResource("6_veqik")
+texture_normal = ExtResource("10_8q2d1")
 script = ExtResource("8_ey8pi")
 
 [node name="Button_Settings" type="TextureButton" parent="Phone/UI Features" unique_id=1181050141 node_paths=PackedStringArray("phone_line_boiler")]
@@ -847,6 +849,7 @@ libraries/ = SubResource("AnimationLibrary_i0j33")
 autoplay = &"lineboil"
 
 [node name="DateProfileView" type="Control" parent="Phone" unique_id=285696428]
+visible = false
 anchors_preset = 0
 offset_left = 326.65555
 offset_top = 533.6255
@@ -908,9 +911,9 @@ texture = ExtResource("44_s8hud")
 
 [node name="TextureRect" type="TextureRect" parent="Phone/DateProfileView" unique_id=288270219]
 layout_mode = 0
-offset_left = -277.53455
+offset_left = -297.33444
 offset_top = 296.3505
-offset_right = 266.46545
+offset_right = 283.0566
 offset_bottom = 545.35046
 scale = Vector2(0.94773924, 0.94773924)
 texture = ExtResource("45_gcn17")
@@ -984,6 +987,7 @@ offset_bottom = 560.0
 texture = ExtResource("40_22ce1")
 
 [node name="TutorialLabel" type="Sprite2D" parent="Phone/MatchScreen" unique_id=533246121]
+visible = false
 position = Vector2(-137.69507, 402.9812)
 texture = ExtResource("55_f4rt7")
 

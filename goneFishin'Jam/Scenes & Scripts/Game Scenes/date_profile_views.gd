@@ -1,8 +1,9 @@
 extends Control
 
-@onready var label_name : Label = $Label_Name
-@onready var label_job  : Label = $Label_Job
+@onready var label_name : Label = $VBoxContainer/Label_Name
+@onready var label_job  : Label = $VBoxContainer/HBoxContainer/Label_Job
 @onready var label_bio  : Label = $ScrollContainer/Label_Bio
+#Add texture intensity here to change
 
 @onready var animation_player : AnimationPlayer   = $AnimationPlayer
 @onready var button_heart     : TextureButton     = $Button_Heart

@@ -39,10 +39,6 @@ directories/dch_directory={
 "TestCharacter3": "res://Characters/TestCharacter3.dch"
 }
 directories/dtl_directory={
-"TestTextTimeline1": "res://Timelines/TestTimeline.dtl",
-"TestTextTimeline2": "res://Timelines/TestTimeline2.dtl",
-"TestTextTimeline3": "res://Timelines/TestTimeline3.dtl",
-"TextDateTimeline1": "res://Timelines/TextDateTimeline1.dtl",
 "Timeline_Date_Ada": "res://Timelines/Timeline_Date_Ada.dtl",
 "Timeline_Date_Khanh": "res://Timelines/Timeline_Date_Khanh.dtl",
 "Timeline_Date_Socorro": "res://Timelines/Timeline_Date_Socorro.dtl",
