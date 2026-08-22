@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://1wm4u7bh74dm"]
 
 [ext_resource type="Script" uid="uid://b2m506pwrdish" path="res://Scenes & Scripts/Game Scenes/date_time.gd" id="1_3fu76"]
-[ext_resource type="Texture2D" uid="uid://dxfctvifnildg" path="res://Assets/CGs/Game Background_Room_Erased.jpg" id="2_3fu76"]
+[ext_resource type="Texture2D" uid="uid://0x7yqayr8alk" path="res://Assets/CGs/BG_Ending.png" id="2_3fu76"]
 [ext_resource type="Texture2D" uid="uid://dyn377irshqrr" path="res://Assets/Buttons/Settings Button_01.png" id="2_3ggnu"]
 [ext_resource type="Texture2D" uid="uid://bt5kmce0gi8tr" path="res://Assets/Buttons/Settings Button_02.png" id="3_3fu76"]
 

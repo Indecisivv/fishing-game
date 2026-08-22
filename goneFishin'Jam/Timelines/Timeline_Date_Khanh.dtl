@@ -28,7 +28,7 @@ audio Musicly - [volume="-5.0" bus="Music"]
 [background arg="res://Assets/CGs/BG_Ending.png" fade="1.5" wait="true"]
 Narrator: [lspeed = 0.05] He complimented your cabin, seemingly undisturbed by the lack of decoration other than wall to wall aquariums. #id:6c
 Narrator: [lspeed = 0.05] Like the great host you are, you offer him a drink. #id:6d
-Khanh: Oh, yes please! #id:6e
+Khanh: [lspeed = 0.05] Oh, yes please! #id:6e
 Narrator: [lspeed = 0.05] Maybe you aren’t actually a good host since you don’t have much else. #id:6f
 Narrator: [lspeed = 0.05] Clearly it doesn’t put him off however, he downs the water as if all the talking had left him desperate for a gulp. #id:70
 Narrator: [lspeed = 0.05] After he is done, you lead him towards your bedroom. You have him sit on your bed as you go to your closet to look for the comic that isn’t there. #id:71
