@@ -53,7 +53,6 @@ grow_vertical = 2
 script = ExtResource("1_3fu76")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1156428102]
-modulate = Color(0.3553136, 0.35531354, 0.35531357, 1)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0

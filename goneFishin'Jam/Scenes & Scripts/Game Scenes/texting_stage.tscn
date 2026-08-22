@@ -9,9 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://bt5kmce0gi8tr" path="res://Assets/Buttons/Settings Button_02.png" id="5_hntrj"]
 [ext_resource type="Texture2D" uid="uid://c4f7y0j0dlck5" path="res://Assets/CGs/Dating Icon_Ada_V2.png" id="6_3x2ol"]
 [ext_resource type="Texture2D" uid="uid://dyn377irshqrr" path="res://Assets/Buttons/Settings Button_01.png" id="6_ocqkl"]
-[ext_resource type="Texture2D" uid="uid://b0f8y76m7stop" path="res://Assets/Buttons/Home_DatingApp_Button_02.png" id="7_ee45f"]
 [ext_resource type="Texture2D" uid="uid://6cun5ejkhs0v" path="res://Assets/CGs/Dating Icon_Khanh.png" id="7_kstlk"]
-[ext_resource type="Texture2D" uid="uid://clgusrunt1jaj" path="res://Assets/Buttons/Home_DatingApp_Button.png" id="8_6fb11"]
 [ext_resource type="Texture2D" uid="uid://dtx8hfp1h5oji" path="res://Assets/CGs/Dating Icon_Khanh_V2.png" id="8_musq8"]
 [ext_resource type="Texture2D" uid="uid://b2gen350lxj1" path="res://Assets/CGs/Dating Icon_Socorro.png" id="9_6xlox"]
 [ext_resource type="Texture2D" uid="uid://dn5he0jfyu1ut" path="res://Assets/CGs/Phone_BG_02.png" id="9_ocqkl"]
@@ -175,7 +173,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("8_6fb11"), ExtResource("7_ee45f")]
+"values": [ExtResource("13_4oqih"), ExtResource("14_2omkp")]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -334,10 +332,10 @@ texture_normal = ExtResource("6_ocqkl")
 
 [node name="Button_AppLogo" type="TextureButton" parent="UI Features" unique_id=1660958475]
 layout_mode = 0
-offset_left = 29.99999
-offset_top = 28.0
-offset_right = 120.99999
-offset_bottom = 105.0
+offset_left = 36.999992
+offset_top = 30.0
+offset_right = 128.0
+offset_bottom = 107.0
 texture_normal = ExtResource("13_4oqih")
 
 [connection signal="mouse_entered" from="UI Features/Button_Settings" to="." method="_on_btn_entered"]
