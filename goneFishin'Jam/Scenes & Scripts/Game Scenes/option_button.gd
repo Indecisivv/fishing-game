@@ -1,0 +1,11 @@
+extends OptionButton
+
+
+func _on_item_selected(index: int) -> void:
+	match index:
+		0:
+			TranslationServer.set_locale("en")
+		1:
+			TranslationServer.set_locale("es")
+		2:
+			pass

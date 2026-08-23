@@ -156,6 +156,20 @@ dialogic_default_action={
 ]
 }
 
+[internationalization]
+
+locale/translation_remaps={
+"res://Assets/Buttons/Credits_Button.png": PackedStringArray("res://Assets/Buttons/Spanish Version/Spanish Menu_Credits.png:es_MX"),
+"res://Assets/Buttons/Credits_Button_2.png": PackedStringArray("res://Assets/Buttons/Spanish Version/Spanish Menu_Credits_V2.png:es_MX"),
+"res://Assets/Buttons/Menu Button_01.png": PackedStringArray("res://Assets/Buttons/Spanish Version/Spanish Menu_Play.png:es_MX"),
+"res://Assets/Buttons/Menu Button_01_V2.png": PackedStringArray("res://Assets/Buttons/Spanish Version/Spanish Menu_Play_V2.png:es_MX"),
+"res://Assets/Buttons/Menu Button_03.png": PackedStringArray("res://Assets/Buttons/Spanish Version/Spanish Menu_Settings.png:es_MX"),
+"res://Assets/Buttons/Menu Button_03_V2.png": PackedStringArray("res://Assets/Buttons/Spanish Version/Spanish Menu_Settings_V2.png:es_MX"),
+"res://Assets/Buttons/Menu Button_05.png": PackedStringArray("res://Assets/Buttons/Spanish Version/Spanish Menu_Quit.png:es_MX"),
+"res://Assets/Buttons/Menu Button_05_V2.png": PackedStringArray("res://Assets/Buttons/Spanish Version/Spanish Menu_Quit_V2.png:es_MX")
+}
+locale/locale_filter_mode=1
+
 [physics]
 
 3d/physics_engine="Jolt Physics"

@@ -11,6 +11,7 @@
 [ext_resource type="Script" uid="uid://fvsnds0u1npk" path="res://Scenes & Scripts/Game Scenes/button_credits.gd" id="6_hecry"]
 [ext_resource type="Script" uid="uid://bhd47r6dk04u6" path="res://Scenes & Scripts/Game Scenes/button_quit.gd" id="7_c7khg"]
 [ext_resource type="Script" uid="uid://tnt2a7ekleh2" path="res://Scenes & Scripts/Game Scenes/button_close.gd" id="11_ghqn8"]
+[ext_resource type="Script" uid="uid://cmrurubo6kgtp" path="res://Scenes & Scripts/Game Scenes/option_button.gd" id="11_u6v6v"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sfvw0"]
 content_margin_left = 20.0
@@ -79,6 +80,7 @@ script = ExtResource("1_0h3cg")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=426794815]
 layer = 2
+visible = false
 
 [node name="BackgroundPanel" type="Panel" parent="CanvasLayer" unique_id=2013417446]
 anchors_preset = 15
@@ -325,6 +327,7 @@ popup/item_1/text = "Espanol"
 popup/item_1/id = 1
 popup/item_2/text = "Filipino"
 popup/item_2/id = 2
+script = ExtResource("11_u6v6v")
 
 [node name="CreditsScreen" type="PanelContainer" parent="CanvasLayer" unique_id=1154685088]
 visible = false
@@ -922,3 +925,4 @@ bus = &"Audio"
 [connection signal="value_changed" from="CanvasLayer/SettingsScreen/ScreenContainer/VolumeContainer/MusicContainer/HSlider" to="." method="_on_music_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/SettingsScreen/ScreenContainer/VolumeContainer/AudioContainer/HSlider" to="." method="_on_sound_value_changed"]
 [connection signal="pressed" from="CanvasLayer/SettingsScreen/ScreenContainer/VolumeContainer/AudioContainer/Button" to="." method="_on_test_sound_button_pressed"]
+[connection signal="item_selected" from="CanvasLayer/SettingsScreen/ScreenContainer/LanguageContainer/OptionButton" to="CanvasLayer/SettingsScreen/ScreenContainer/LanguageContainer/OptionButton" method="_on_item_selected"]
