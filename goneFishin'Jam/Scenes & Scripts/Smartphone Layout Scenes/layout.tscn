@@ -169,9 +169,9 @@ choice_index = 1
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=713303192]
 offset_left = 680.0
-offset_top = 870.0
+offset_top = 893.0
 offset_right = 1229.0
-offset_bottom = 1043.0
+offset_bottom = 1066.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_kj5ye")
 
 [node name="TextMsg" type="AudioStreamPlayer" parent="." unique_id=5052934]

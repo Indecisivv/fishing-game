@@ -84,6 +84,13 @@ func select_dialogue_choice(delta:float) -> void:
 	
 	# Selects a choice to be... selected... based on the index's value
 	if Input.is_action_just_released("dialogic_default_action"):
+		set_button_color(1, Color("236463"))
+		Dialogic.Choices.get_choice_button(1).focus_exited.emit()
+		set_button_color(2, Color("236463"))
+		Dialogic.Choices.get_choice_button(2).focus_exited.emit()
+		set_button_color(3, Color("236463"))
+		Dialogic.Choices.get_choice_button(3).focus_exited.emit()
+		
 		if not can_choose:
 			reset_progress_bars()
 			return
@@ -96,9 +103,6 @@ func select_dialogue_choice(delta:float) -> void:
 			2:
 				Dialogic.Choices.select_choice(3)
 		
-		Dialogic.Choices.get_choice_button(1).release_focus()
-		Dialogic.Choices.get_choice_button(2).release_focus()
-		Dialogic.Choices.get_choice_button(3).release_focus()
 		can_choose = false
 		reset_progress_bars()
 
