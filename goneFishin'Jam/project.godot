@@ -10,9 +10,9 @@ config_version=5
 
 [application]
 
-config/name="Fishin' For Love"
-config/description="\"In a city where some people have water creatures for heads, you hop on a dating app to fill the need you feel.\""
-config/version="1.3"
+config/name="Fishin For Love"
+config/description="In a city where some people have water creatures for heads, you hop on a dating app to fill the need you feel"
+config/version="1.4"
 run/main_scene="uid://2ohq8yurtaoa"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="uid://cwwudb00a8ls8"

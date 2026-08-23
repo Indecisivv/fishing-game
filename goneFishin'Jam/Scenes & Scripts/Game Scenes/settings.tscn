@@ -16,7 +16,7 @@
 [ext_resource type="Script" uid="uid://tnt2a7ekleh2" path="res://Scenes & Scripts/Game Scenes/button_close.gd" id="11_ghqn8"]
 [ext_resource type="Texture2D" uid="uid://c8rq4k77ktphw" path="res://Assets/CGs/Settings_Background.png" id="11_rg0cr"]
 [ext_resource type="Script" uid="uid://cmrurubo6kgtp" path="res://Scenes & Scripts/Game Scenes/option_button.gd" id="11_u6v6v"]
-[ext_resource type="Texture2D" uid="uid://c1ng1wwpcr8j3" path="res://Assets/CGs/Slider_16x16.png" id="13_rg0cr"]
+[ext_resource type="Texture2D" uid="uid://cdloqcx4o415w" path="res://Assets/Misc/Slider_Icon.png" id="14_775wm"]
 [ext_resource type="Texture2D" uid="uid://duw45xe20pv2w" path="res://Assets/CGs/Slider_Long.png" id="14_a805n"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a805n"]
@@ -132,6 +132,7 @@ script = ExtResource("1_0h3cg")
 layer = 2
 
 [node name="GameIconPng" type="Sprite2D" parent="CanvasLayer" unique_id=1698590469]
+visible = false
 z_index = 128
 position = Vector2(791.375, 215.53094)
 scale = Vector2(0.1561834, 0.15940645)
@@ -340,7 +341,7 @@ text = "MUSIC"
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
-theme_override_icons/grabber = ExtResource("13_rg0cr")
+theme_override_icons/grabber = ExtResource("14_775wm")
 theme_override_styles/slider = SubResource("StyleBoxTexture_6ptan")
 theme_override_styles/grabber_area = SubResource("StyleBoxTexture_hbqs8")
 theme_override_styles/grabber_area_highlight = SubResource("StyleBoxEmpty_3gxmw")
@@ -370,7 +371,8 @@ text = "AUDIO"
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
-theme_override_icons/grabber = ExtResource("13_rg0cr")
+theme_override_icons/grabber = ExtResource("14_775wm")
+theme_override_icons/grabber_highlight = ExtResource("14_775wm")
 theme_override_styles/slider = SubResource("StyleBoxTexture_775wm")
 theme_override_styles/grabber_area = SubResource("StyleBoxTexture_r50k8")
 max_value = 1.0
@@ -389,6 +391,7 @@ stream = ExtResource("2_llxf6")
 bus = &"Audio"
 
 [node name="LanguageContainer" type="VBoxContainer" parent="CanvasLayer/SettingsScreen/ScreenContainer" unique_id=218069520]
+visible = false
 layout_mode = 2
 
 [node name="Label" type="Label" parent="CanvasLayer/SettingsScreen/ScreenContainer/LanguageContainer" unique_id=1628456654]
