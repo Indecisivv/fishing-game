@@ -3,6 +3,9 @@ extends TextureButton
 @onready var btn_line_boiler   : AnimationPlayer = $"../BtnLineBoiler"
 @onready var date_profile_view : Control         = $"../../DateProfileView"
 @onready var button_app_logo: TextureButton = $"../../UI Features/Button_AppLogo"
+@onready var scroll_container: ScrollContainer = $"../../DateProfileView/ScrollContainer"
+
+const KHANH_INTENSITY = preload("uid://b3gx1jjyd7khi")
 
 var btn_tween : Tween
 
@@ -21,10 +24,12 @@ func _on_btn_khanh_pressed() -> void:
 		return
 	
 	self.get_parent().hide()
+	scroll_container.get_v_scroll_bar().value = scroll_container.get_v_scroll_bar().min_value
 	date_profile_view.set_profile("lineboil_khanh")
 	date_profile_view.set_text(CharacterLibrary.khanh.char_name + ", " + CharacterLibrary.khanh.age,
 							   CharacterLibrary.khanh.job,
 							   CharacterLibrary.khanh.bio)
+	date_profile_view.texture_intensity.texture = KHANH_INTENSITY
 	date_profile_view.show()
 	button_app_logo.modulate = Color("636363")
 	button_app_logo.disabled = true

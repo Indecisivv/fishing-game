@@ -138,11 +138,14 @@ func _on_return_to_main_menu() -> void:
 	FadeToBlackTransition.fade_to_black()
 	await FadeToBlackTransition.transition_finished
 	
+	scn_people_near_you.audio_stream_player.stop()
+	scn_main_menu.audio_player.play()
 	scn_texting_stage.hide()
 	scn_settings.make_visible(false)
 	scn_people_near_you.hide()
 	scn_people_near_you.reset_phone()
 	scn_people_near_you.reset_loading_screen()
+	scn_people_near_you.match_screen.hide()
 	scn_date_time.hide()
 	scn_date_time.show_button(false)
 	scn_date_end.hide()

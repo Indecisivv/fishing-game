@@ -3,6 +3,8 @@ extends Control
 @onready var label_name : Label = $VBoxContainer/Label_Name
 @onready var label_job  : Label = $VBoxContainer/HBoxContainer/Label_Job
 @onready var label_bio  : Label = $ScrollContainer/Label_Bio
+@onready var texture_intensity: TextureRect = $VBoxContainer/HBoxContainer/HBoxContainer/Texture_Intensity
+
 #TODO: Add texture intensity here to change
 
 @onready var animation_player : AnimationPlayer   = $AnimationPlayer

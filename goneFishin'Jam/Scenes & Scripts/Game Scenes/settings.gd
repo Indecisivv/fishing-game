@@ -6,27 +6,34 @@ extends Control
 @onready var settings_screen: PanelContainer = $CanvasLayer/SettingsScreen
 @onready var credits_screen: PanelContainer = $CanvasLayer/CreditsScreen
 
-@onready var button_credits: Button = $CanvasLayer/NavigationPanel/NavContainer/ButtonCredits
-@onready var button_settings: Button = $CanvasLayer/NavigationPanel/NavContainer/ButtonSettings
+@onready var button_main_menu: TextureButton = $CanvasLayer/NavigationPanel/NavContainer/ButtonMainMenu
+@onready var button_settings: TextureButton = $CanvasLayer/NavigationPanel/NavContainer/ButtonSettings
+@onready var button_credits: TextureButton = $CanvasLayer/NavigationPanel/NavContainer/ButtonCredits
+@onready var button_quit: TextureButton = $CanvasLayer/ButtonQuit
+
 
 signal can_unpause
 signal return_to_menu
 signal quit_game
 
-func _on_menu_button_pressed() -> void:
+func _on_close_pressed() -> void:
 	make_visible(false)
 	emit_signal('can_unpause')
 
 func _on_settings_pressed() -> void:
 	credits_screen.hide()
+	button_credits.modulate = Color("ffffff")
 	button_credits.disabled = false
 	settings_screen.show()
+	button_settings.modulate = Color("4e4e4e")
 	button_settings.disabled = true
 
 func _on_credits_pressed() -> void:
 	credits_screen.show()
+	button_credits.modulate = Color("4e4e4e")
 	button_credits.disabled = true
 	settings_screen.hide() 
+	button_settings.modulate = Color("ffffff")
 	button_settings.disabled = false
 
 func _on_return_to_menu() -> void:

@@ -5,6 +5,7 @@ extends TextureButton
 @onready var play_sound: AudioStreamPlayer = $"../Button Sounds/PlaySound"
 
 var tween: Tween
+var can_press : bool = true
 
 func _on_mouse_entered() -> void:
 	hover_sound.play()
@@ -19,7 +20,16 @@ func _on_mouse_exited() -> void:
 	tween.tween_property(self, "scale", Vector2.ONE, 0.4)
 
 func _on_play_pressed() -> void:
+	if !can_press:
+		return
+	
+	can_press = false
+	
 	play_sound.play()
+	
+	# Only play the sound after 5 seconds
+	await get_tree().create_timer(5).timeout
+	can_press = true
 
 func _on_pressed() -> void:
 	click_sound.play()

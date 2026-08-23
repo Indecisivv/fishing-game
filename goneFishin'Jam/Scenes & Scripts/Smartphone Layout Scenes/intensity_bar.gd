@@ -96,6 +96,9 @@ func select_dialogue_choice(delta:float) -> void:
 			2:
 				Dialogic.Choices.select_choice(3)
 		
+		Dialogic.Choices.get_choice_button(1).release_focus()
+		Dialogic.Choices.get_choice_button(2).release_focus()
+		Dialogic.Choices.get_choice_button(3).release_focus()
 		can_choose = false
 		reset_progress_bars()
 
