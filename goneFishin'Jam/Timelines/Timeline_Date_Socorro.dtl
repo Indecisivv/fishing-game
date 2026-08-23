@@ -7,7 +7,7 @@ Narrator: [lspeed = 0.05] It was a reflection of them from what you learned from
 Narrator: [lspeed = 0.05] However... #id:7c
 audio Musicly "res://Assets/Music/M_Date_socorro.ogg" [fade="2.0" volume="-11.0" bus="Music" sync="Musicly"]
 [background scene="res://Scenes & Scripts/CG Scenes/socorro_date_cg.tscn" fade="1.5" wait="true"]
-Narrator: [lspeed = 0.05] Despite their claims that this was a hangout, they show up with a bouquet in hand. #id:7d
+Narrator: [lspeed = 0.05] Despite their claims that this was a hangout, she show up with a bouquet in hand. #id:7d
 Socorro: [lspeed = 0.05] I know we said it was meant to not be a date… especially because I asked- but... #id:7e
 Socorro: [lspeed = 0.05] I thought I’d bring you these anyway! #id:7f
 Socorro: [lspeed = 0.05] I hope it’s alright… I grew them myself! Do you know flower language…? #id:80
@@ -43,7 +43,7 @@ Narrator: [lspeed = 0.05] Your knife sliced in and you mourned that the clean up
 audio "res://Assets/SFX/SFX_Cooking_Socorro.wav" [bus="Audio"]
 Narrator: [lspeed = 0.05] Once it was ready, you placed the fish, onion, garlic, epazote, and salt into a pan with water before covering it with a lid. #id:9b
 Narrator: [lspeed = 0.05] After it was ready and shredded, all it took was a few more steps before you could stack tortillas and fillings, dousing them with a generous amount of salsa. #id:9c
-Narrator: [lspeed = 0.05] Poor Socorro, sweet, innocent, helpful…. Her first relationship ending in her death? #id:9d
+Narrator: [lspeed = 0.05] Poor Socorro, innocent and helpful Socorro. Her first relationship ending in her death? #id:9d
 Narrator: [lspeed = 0.05] Talk about bad luck, but at least you got a delicious meal out of her, right? #id:9e
 set {is_tdate_success} = true
 set {is_date_success} = true
