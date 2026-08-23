@@ -84,6 +84,7 @@ func select_dialogue_choice(delta:float) -> void:
 	
 	# Selects a choice to be... selected... based on the index's value
 	if Input.is_action_just_released("dialogic_default_action"):
+		# This resets the button's highlights when the player stops scrolling.
 		set_button_color(1, Color("236463"))
 		Dialogic.Choices.get_choice_button(1).focus_exited.emit()
 		set_button_color(2, Color("236463"))
