@@ -60,22 +60,22 @@ func select_dialogue_choice(delta:float) -> void:
 		match index:
 			0:
 				if can_choose:
-					set_button_color(1, Color("50bbb9"))
+					set_button_color(3, Color("50bbb9"))
 					set_button_color(2, Color("236463"))
-					set_button_color(3, Color("236463"))
-					Dialogic.Choices.focus_choice(1)
+					set_button_color(1, Color("236463"))
+					Dialogic.Choices.focus_choice(3)
 			1:
 				if can_choose:
-					set_button_color(1, Color("236463"))
-					set_button_color(2, Color("50bbb9"))
 					set_button_color(3, Color("236463"))
+					set_button_color(2, Color("50bbb9"))
+					set_button_color(1, Color("236463"))
 					Dialogic.Choices.focus_choice(2)
 			2:
 				if can_choose:
-					set_button_color(1, Color("236463"))
+					set_button_color(3, Color("236463"))
 					set_button_color(2, Color("236463"))
-					set_button_color(3, Color("50bbb9"))
-					Dialogic.Choices.focus_choice(3)
+					set_button_color(1, Color("50bbb9"))
+					Dialogic.Choices.focus_choice(1)
 		
 		update_progress_bars(delta)
 	
@@ -98,11 +98,11 @@ func select_dialogue_choice(delta:float) -> void:
 		
 		match index:
 			0:
-				Dialogic.Choices.select_choice(1)
+				Dialogic.Choices.select_choice(3)
 			1:
 				Dialogic.Choices.select_choice(2)
 			2:
-				Dialogic.Choices.select_choice(3)
+				Dialogic.Choices.select_choice(1)
 		
 		can_choose = false
 		reset_progress_bars()
