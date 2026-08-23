@@ -915,7 +915,7 @@ label_settings = SubResource("LabelSettings_p3ptu")
 [node name="HBoxContainer" type="HBoxContainer" parent="Phone/DateProfileView/VBoxContainer" unique_id=954535498]
 layout_mode = 2
 size_flags_horizontal = 4
-theme_override_constants/separation = 87
+theme_override_constants/separation = 53
 
 [node name="Label_Job" type="Label" parent="Phone/DateProfileView/VBoxContainer/HBoxContainer" unique_id=663028319]
 z_index = 2
@@ -923,7 +923,7 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("8_pc0yv")
 theme_override_font_sizes/font_size = 24
-text = "she/her"
+text = "they/them"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Phone/DateProfileView/VBoxContainer/HBoxContainer" unique_id=928537572]
 layout_mode = 2
@@ -947,18 +947,18 @@ texture = ExtResource("44_s8hud")
 
 [node name="TextureRect" type="TextureRect" parent="Phone/DateProfileView" unique_id=288270219]
 layout_mode = 0
-offset_left = -297.33444
+offset_left = -302.51297
 offset_top = 296.3505
-offset_right = 283.0566
+offset_right = 283.3422
 offset_bottom = 545.35046
 scale = Vector2(0.94773924, 0.94773924)
 texture = ExtResource("45_gcn17")
 
 [node name="ScrollContainer" type="ScrollContainer" parent="Phone/DateProfileView" unique_id=806222809]
 layout_mode = 0
-offset_left = -224.97034
+offset_left = -257.06604
 offset_top = 329.29358
-offset_right = 191.66614
+offset_right = 209.81079
 offset_bottom = 483.63745
 vertical_scroll_mode = 3
 

@@ -20,11 +20,12 @@
 [ext_resource type="Texture2D" uid="uid://v7cd3chyt445" path="res://Assets/CGs/UI_Unmatching_02.png" id="21_mxn8m"]
 [ext_resource type="Texture2D" uid="uid://bt5kmce0gi8tr" path="res://Assets/Buttons/Settings Button_02.png" id="22_mjkvu"]
 [ext_resource type="Texture2D" uid="uid://clgusrunt1jaj" path="res://Assets/Buttons/Home_DatingApp_Button.png" id="23_2ojed"]
-[ext_resource type="Texture2D" uid="uid://b0f8y76m7stop" path="res://Assets/Buttons/Home_DatingApp_Button_02.png" id="24_fk3yt"]
 [ext_resource type="Texture2D" uid="uid://caq3ohsdgxevv" path="res://Assets/CGs/Phone_BG_01.png" id="25_qqagr"]
 [ext_resource type="Texture2D" uid="uid://myoqfmossu7d" path="res://Assets/Buttons/UI_Matching_Send a Message_02.png" id="25_yhmq5"]
+[ext_resource type="Texture2D" uid="uid://bx8ami36eeoha" path="res://Assets/Buttons/MC Profile_Button.png" id="26_0nwk8"]
 [ext_resource type="Texture2D" uid="uid://dn5he0jfyu1ut" path="res://Assets/CGs/Phone_BG_02.png" id="26_yv4gg"]
 [ext_resource type="Texture2D" uid="uid://o80l84qq0uhx" path="res://Assets/CGs/Phone_IntensityBar_Border.png" id="27_bga4w"]
+[ext_resource type="Texture2D" uid="uid://nhr22hmtyxnq" path="res://Assets/Buttons/MC Profile_Button_02.png" id="27_hmrpp"]
 [ext_resource type="Texture2D" uid="uid://xy3mfrot7myt" path="res://Assets/CGs/Phone_IntensityBar_Border_02.png" id="28_amtwt"]
 [ext_resource type="Texture2D" uid="uid://b770o530jiktm" path="res://Assets/Buttons/UI_Dating Logo_Mini Version.png" id="29_5vm15"]
 
@@ -296,7 +297,7 @@ tracks/4/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("23_2ojed"), ExtResource("24_fk3yt")]
+"values": [ExtResource("26_0nwk8"), ExtResource("27_hmrpp")]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
@@ -493,10 +494,10 @@ texture_normal = ExtResource("21_25apm")
 [node name="Button_AppLogo" type="TextureButton" parent="DateFail/UI Features" unique_id=798717004]
 modulate = Color(0.38928655, 0.38928664, 0.38928658, 1)
 layout_mode = 0
-offset_left = 14.635
-offset_top = 17.739
-offset_right = 111.635
-offset_bottom = 109.739
+offset_left = 36.635002
+offset_top = 29.739
+offset_right = 133.63501
+offset_bottom = 111.0
 texture_normal = ExtResource("23_2ojed")
 
 [node name="Texture_Phone" type="TextureRect" parent="DateFail" unique_id=856369368]

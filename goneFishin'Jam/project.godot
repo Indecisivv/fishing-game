@@ -33,7 +33,7 @@ CharacterLibrary="*uid://usyvxi2e3ij7"
 directories/dch_directory={
 "Ada": "res://Timelines/Ada.dch",
 "Khanh": "res://Timelines/Khanh.dch",
-"Narrator": "res://Narrator.dch",
+"Narrator": "res://Timelines/Narrator.dch",
 "Player": "res://Characters/Player.dch",
 "Socorro": "res://Timelines/Socorro.dch",
 "TestCharacter": "res://Characters/TestCharacter.dch",

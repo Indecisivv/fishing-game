@@ -46,7 +46,6 @@ set {is_making_choice} = true
 		- Nothing in particular #id:bf
 			set {is_making_choice} = false
 			Player: I love what everyone else loves, I'm not particular about what I listen to... #id:c0
-			Ada: Fun is important to me so I must know❗❗ #id:c1
 			Ada: I think knowing what you like is soooo important!!! #id:c2
 			Ada: but 🤚🤚!! #id:c3
 			Ada: You can always get a strong opinion as you explore #id:c4
