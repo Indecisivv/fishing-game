@@ -3,9 +3,9 @@ UI_SETTINGS_BUTTON,Settings,Opciones,,
 UI_CREDITS_BUTTON,Credits,Creditos ,,
 UI_MAIN_MENU_BUTTON,Main Menu,Menu,,
 UI_BACK_BUTTON,Back,Regreso,,
-UI_RETURNMENU_LABEL,Return to menu?,,,
-UI_CONFIRM_BUTTON,Confirm,,,
-UI_CANCEL_BUTTON,Cancel,,,
+UI_RETURNMENU_LABEL,Return to menu?,Regresar al Menu,,
+UI_CONFIRM_BUTTON,Confirm,Confirmar,,
+UI_CANCEL_BUTTON,Cancel,Cancelar,,
 UI_QUIT_BUTTON,Quit,Salir ,,
 UI_DONTQUIT_BUTTON,Don't Quit,No Salir,,
 UI_QUIT_LABEL,Are you sure you want to quit?,Segure que quiere salir?,,
@@ -55,9 +55,9 @@ ENDING_4C_LABEL,"You might want to stick to regular fish.
 The supermarket will save you.","Quiza quieras regresar a pezes regulares… 
 El super mercado te salvara!",,
 ENDING_END_LABEL,Ending ,Final ,,
-ENDING_REPLAY_LABEL,cast again,,,
+ENDING_REPLAY_LABEL,cast again,Lanzar de nuevo,,
 ENDING_QUIT_LABEL,quit,salir,,
-ENDING_YOUMADE_LABEL,you made...,,,
+ENDING_YOUMADE_LABEL,you made...,Cocinaste...,,
 CHAR_ADA_PRONOUNS,They/Them,Elle/Elles,,
 CHAR_ADA_DESC,"Heyy, I'm Ada! I’m Chic na Chic’s business owner! Yes, you heard that right, I'm our town's most popular clothing store’s owner!! Despite my busy schedule and booming business, I looove to party, dancing is my second calling so I make sure my work/life balance includes time to go out and socialize!
 
@@ -83,5 +83,5 @@ Es la primera vez que busco por una relación, así que estoy un poco nerviosa; 
 CHAR_MC_PRONOUNS,She/Her,Ella/Ellas,,
 CHAR_MC_DESC,"My name is Voraz, I'm a half Aquakin and I enjoy cooking. My main hobby is finding new dishes to try. I enjoy making sure my partners are always full. A good meal is always my main priority.","Hola ahi. Mi nombre es Voraz y me encanta cocinar. Mi pasatiempo principal es econtra platillos nuevos para pobrar. Me gusta asegurar me que mi pareja nunca tenga hambre.  Una buena comida siempre es mi prioridad.
 ",,
-UI_SNAPPED_LABEL,%v has snapped the line...,,,
-UI_LOOKINGFOR_LABEL,looking for ,,,
+UI_SNAPPED_LABEL, has snapped the line..., corto la linea...,,
+UI_LOOKINGFOR_LABEL,looking for ,buscando,,
