@@ -6,10 +6,10 @@ uid="uid://deqvrgs4ydsx5"
 
 [deps]
 
-files=["res://Translations/Fishin For Love TRANSLATIONS - UI.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - UI.es.translation"]
+files=["res://Translations/Fishin For Love TRANSLATIONS - UI.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - UI.es.translation", "res://Translations/Fishin For Love TRANSLATIONS - UI.fil.translation"]
 
 source_file="res://Translations/Fishin For Love TRANSLATIONS - UI.csv"
-dest_files=["res://Translations/Fishin For Love TRANSLATIONS - UI.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - UI.es.translation"]
+dest_files=["res://Translations/Fishin For Love TRANSLATIONS - UI.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - UI.es.translation", "res://Translations/Fishin For Love TRANSLATIONS - UI.fil.translation"]
 
 [params]
 
