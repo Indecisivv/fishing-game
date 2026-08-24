@@ -60,6 +60,7 @@ func _on_game_started() -> void:
 	FadeToBlackTransition.fade_to_black()
 	await FadeToBlackTransition.transition_finished
 	scn_main_menu.hide()
+	scn_people_near_you.set_people_online(num_online)
 	scn_people_near_you.show()
 	scn_people_near_you.audio_stream_player.volume_db = -20.444
 	scn_people_near_you.audio_stream_player.play()
@@ -139,7 +140,6 @@ func _on_return_to_main_menu() -> void:
 	await FadeToBlackTransition.transition_finished
 	
 	scn_people_near_you.audio_stream_player.stop()
-	scn_main_menu.audio_player.play()
 	scn_texting_stage.hide()
 	scn_settings.make_visible(false)
 	scn_people_near_you.hide()
@@ -154,6 +154,7 @@ func _on_return_to_main_menu() -> void:
 	if (all_chars_dated):
 		show_ending()
 	else:
+		scn_main_menu.audio_player.play()
 		scn_main_menu.show()
 
 func _on_return_to_phone_screen() -> void:
@@ -271,6 +272,7 @@ func restart_game() -> void:
 	FadeToBlackTransition.fade_to_black()
 	await FadeToBlackTransition.transition_finished
 	
+	scn_main_menu.audio_player.play()
 	scn_main_menu.show()
 	scn_people_near_you.hide()
 	scn_texting_stage.hide()
@@ -282,7 +284,6 @@ func restart_game() -> void:
 	num_online = num_total_chars
 	scn_people_near_you.set_people_online(num_online)
 	win_counter = 0
-	print("On Restart: " + str(win_counter))
 	all_chars_dated = false
 	for i in wins.size():
 		wins[i] = false
