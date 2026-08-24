@@ -169,6 +169,7 @@ locale/translation_remaps={
 "res://Assets/Buttons/Menu Button_05_V2.png": PackedStringArray("res://Assets/Buttons/Spanish Version/Spanish Menu_Quit_V2.png:es_MX")
 }
 locale/translations=PackedStringArray("res://Translations/Fishin For Love TRANSLATIONS - UI.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - UI.es.translation", "res://Translations/Fishin For Love TRANSLATIONS - Ada_Date.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Ada_Date.es.translation", "res://Translations/Fishin For Love TRANSLATIONS - Ada_Text.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Ada_Text.es.translation", "res://Translations/Fishin For Love TRANSLATIONS - Khanh_Date.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Khanh_Date.es.translation", "res://Translations/Fishin For Love TRANSLATIONS - Khanh_Text.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Khanh_Text.es.translation", "res://Translations/Fishin For Love TRANSLATIONS - Socorro_Date.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Socorro_Date.es.translation", "res://Translations/Fishin For Love TRANSLATIONS - Socorro_Text.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Socorro_Text.es.translation")
+locale/translations_pot_files=PackedStringArray("res://Scenes & Scripts/character.gd")
 locale/locale_filter_mode=1
 
 [physics]
