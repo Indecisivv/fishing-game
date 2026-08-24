@@ -5,7 +5,6 @@
 [ext_resource type="Texture2D" uid="uid://ddbnjvbekr0to" path="res://Assets/CGs/Tacklebox_1.png" id="2_u61xc"]
 [ext_resource type="Texture2D" uid="uid://dfl7tq7k0qotd" path="res://Assets/Buttons/Menu Button_01_V2.png" id="3_0j6dt"]
 [ext_resource type="Texture2D" uid="uid://dno0j31wepmmf" path="res://Assets/CGs/Tacklebox_2.png" id="3_8sg50"]
-[ext_resource type="Texture2D" uid="uid://d0x6ksvyiriu" path="res://Assets/CGs/Menu Background_Phone.png" id="4_4fmd5"]
 [ext_resource type="Texture2D" uid="uid://ckmy4ocv71nuo" path="res://Assets/CGs/Menu Background_Sand.jpg" id="5_7hcdm"]
 [ext_resource type="Script" uid="uid://dh550i7qwcg88" path="res://Scenes & Scripts/Game Scenes/background.gd" id="6_7hcdm"]
 [ext_resource type="Texture2D" uid="uid://dq8ec13o5e7qk" path="res://Assets/CGs/Menu Background_Seawave.png" id="6_tox2c"]
@@ -13,9 +12,8 @@
 [ext_resource type="Texture2D" uid="uid://bs8csr2t3vxwc" path="res://Assets/CGs/Menu Background_FishingRod.png" id="7_1eolb"]
 [ext_resource type="Script" uid="uid://nrh84jkogash" path="res://Scenes & Scripts/Game Scenes/foreground.gd" id="7_8sg50"]
 [ext_resource type="Texture2D" uid="uid://rqowbv8rbmiw" path="res://Assets/Buttons/Menu Button_03_V2.png" id="7_cf8nl"]
-[ext_resource type="Texture2D" uid="uid://h04w0lrwwwbc" path="res://Assets/Buttons/Menu Button_04.png" id="8_240te"]
 [ext_resource type="Script" uid="uid://d2f4iiohpht6x" path="res://Scenes & Scripts/Game Scenes/foreground_rod.gd" id="8_bedp1"]
-[ext_resource type="Texture2D" uid="uid://3uo0gervnams" path="res://Assets/Buttons/Menu Button_04_V2.png" id="9_skelg"]
+[ext_resource type="Texture2D" uid="uid://ckdcjrp6v6gkl" path="res://Assets/CGs/Menu Background_Phone_NEW_Full.png" id="9_5ak3m"]
 [ext_resource type="Texture2D" uid="uid://54sku0f6673d" path="res://Assets/CGs/Game Logo.png" id="10_27wo6"]
 [ext_resource type="Texture2D" uid="uid://cv8hl2t4jhylw" path="res://Assets/Buttons/Menu Button_05.png" id="10_n478d"]
 [ext_resource type="Texture2D" uid="uid://bbnsai0erw6e7" path="res://Assets/Buttons/Menu Button_05_V2.png" id="11_1cksy"]
@@ -26,7 +24,6 @@
 [ext_resource type="AudioStream" uid="uid://u5wkj8nkps2c" path="res://Assets/SFX/SFX_ReelIn.wav" id="18_prr8j"]
 [ext_resource type="Texture2D" uid="uid://hvbeg1pqwe1h" path="res://Assets/Buttons/Credits_Button_2.png" id="19_4vn5f"]
 [ext_resource type="Texture2D" uid="uid://cd6jm2erulvqm" path="res://Assets/Buttons/Credit Icon_indecisiv_New.png" id="20_2eon1"]
-[ext_resource type="Texture2D" uid="uid://ckf2q3qkbefrw" path="res://Assets/CGs/Menu Background_Phone_02.png" id="21_ejx7w"]
 [ext_resource type="Script" uid="uid://dockprv17ce7m" path="res://Scenes & Scripts/Game Scenes/button_indecisiv.gd" id="22_5ak3m"]
 [ext_resource type="Texture2D" uid="uid://dhj1g4i37qnuu" path="res://Assets/Buttons/Credit Icon_Penny_New.png" id="22_7y4ll"]
 [ext_resource type="Script" uid="uid://dqt40mctpv24g" path="res://Scenes & Scripts/Game Scenes/button_play.gd" id="22_cf8nl"]
@@ -39,6 +36,8 @@
 [ext_resource type="Texture2D" uid="uid://b2dqxy5gea02d" path="res://Assets/Buttons/UI_Game Jam Credits Button.png" id="28_bnsml"]
 [ext_resource type="Script" uid="uid://cm7c1bjc0s25u" path="res://Scenes & Scripts/Game Scenes/button_jam_link.gd" id="29_qbhp5"]
 [ext_resource type="Texture2D" uid="uid://b1fpc26u5cgcp" path="res://Assets/Buttons/Credit Icon_mewrionette__New_2.png" id="32_ohwlh"]
+[ext_resource type="Texture2D" uid="uid://dvlar32coofed" path="res://Assets/Buttons/UI_Game Jam Credits Button_2.png" id="33_upvan"]
+[ext_resource type="Texture2D" uid="uid://b03usejw5jq3r" path="res://Assets/CGs/Menu Background_Phone_NEW_Full_2.png" id="37_2eon1"]
 [ext_resource type="Texture2D" uid="uid://ddos7jxis5cx4" path="res://Assets/Buttons/Credit Icon_indecisiv_New_2.png" id="38_mi60v"]
 [ext_resource type="Texture2D" uid="uid://sj35m5ur1pku" path="res://Assets/Buttons/Credit Icon_Penny__New_2.png" id="39_glxf5"]
 [ext_resource type="Texture2D" uid="uid://b48ohk236od04" path="res://Assets/Buttons/Credit Icon_Krak7en__New_2.png" id="40_evni1"]
@@ -128,7 +127,7 @@ tracks/5/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("4_4fmd5"), ExtResource("21_ejx7w")]
+"values": [ExtResource("9_5ak3m"), ExtResource("37_2eon1")]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
@@ -190,88 +189,22 @@ tracks/10/keys = {
 "update": 1,
 "values": [ExtResource("26_g0n43"), ExtResource("32_ohwlh")]
 }
-
-[sub_resource type="Animation" id="Animation_x1uqn"]
-resource_name = "line boil"
-length = 2.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Buttons/Button_Play:texture_normal")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Buttons/Button_JamLink:texture_normal")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("2_1eolb"), ExtResource("3_0j6dt")]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Buttons/Button_Settings:texture_normal")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [ExtResource("6_x1uqn"), ExtResource("7_cf8nl")]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Buttons/Button_Credits:texture_normal")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [ExtResource("8_240te"), ExtResource("9_skelg")]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Buttons/Button_Quit:texture_normal")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [ExtResource("10_n478d"), ExtResource("11_1cksy")]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("Textures/Texture_Tacklebox:texture")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [ExtResource("2_u61xc"), ExtResource("3_8sg50")]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("Textures/Texture_Phone:texture")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [ExtResource("4_4fmd5"), ExtResource("21_ejx7w")]
+"values": [ExtResource("28_bnsml"), ExtResource("33_upvan")]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_cf8nl"]
 _data = {
-&"RESET": SubResource("Animation_ejx7w"),
-&"line boil": SubResource("Animation_x1uqn")
+&"RESET": SubResource("Animation_ejx7w")
 }
 
 [node name="Main Menu" type="Control" unique_id=833144508]
@@ -316,12 +249,12 @@ offset_bottom = 1095.0
 texture = ExtResource("2_u61xc")
 
 [node name="Texture_Phone" type="TextureRect" parent="Textures" unique_id=756768789]
-offset_left = 53.000008
-offset_top = 561.0
-offset_right = 690.0
-offset_bottom = 1073.0
+offset_left = 9.000008
+offset_top = 489.0
+offset_right = 646.0
+offset_bottom = 1324.0
 rotation = 0.13264503
-texture = ExtResource("4_4fmd5")
+texture = ExtResource("9_5ak3m")
 
 [node name="Texture_Logo" type="TextureRect" parent="Textures" unique_id=1268156488]
 offset_left = 34.0
@@ -395,50 +328,52 @@ bus = &"Audio"
 stream = ExtResource("18_prr8j")
 
 [node name="Button_indecisiv" type="TextureButton" parent="Buttons" unique_id=1920251542]
-offset_left = 37.000008
-offset_top = 834.0
-offset_right = 337.0
-offset_bottom = 1134.0
-scale = Vector2(0.37902564, 0.37902564)
+offset_left = -6.9999924
+offset_top = 762.0
+offset_right = 293.0
+offset_bottom = 1062.0
+scale = Vector2(0.45, 0.45)
 pivot_offset = Vector2(150, 150)
 texture_normal = ExtResource("20_2eon1")
 script = ExtResource("22_5ak3m")
 
 [node name="Button_cdtlnc" type="TextureButton" parent="Buttons" unique_id=455785822]
-offset_left = 98.99999
-offset_top = 712.00006
-offset_right = 399.0
-offset_bottom = 1012.0001
-scale = Vector2(0.37902564, 0.37902564)
+offset_left = 54.999992
+offset_top = 640.0
+offset_right = 355.0
+offset_bottom = 940.00006
+scale = Vector2(0.45, 0.45)
 pivot_offset = Vector2(150, 150)
 texture_normal = ExtResource("22_7y4ll")
 script = ExtResource("24_upvan")
 
 [node name="Button_krak7en" type="TextureButton" parent="Buttons" unique_id=1013564524]
-offset_left = 194.99998
-offset_top = 813.0
-offset_right = 495.0
-offset_bottom = 1113.0
-scale = Vector2(0.37902564, 0.37902564)
+offset_left = 151.0
+offset_top = 741.0
+offset_right = 451.0
+offset_bottom = 1041.0
+scale = Vector2(0.45, 0.45)
 pivot_offset = Vector2(150, 150)
 texture_normal = ExtResource("24_fo8vs")
 script = ExtResource("26_2eon1")
 
 [node name="Button_mewrionette" type="TextureButton" parent="Buttons" unique_id=116330282]
-offset_left = 264.99997
-offset_top = 698.00006
-offset_right = 565.0
-offset_bottom = 998.00006
-scale = Vector2(0.37902564, 0.37902564)
+offset_left = 220.99997
+offset_top = 626.0
+offset_right = 521.0
+offset_bottom = 926.0
+scale = Vector2(0.45, 0.45)
 pivot_offset = Vector2(150, 150)
 texture_normal = ExtResource("26_g0n43")
 script = ExtResource("28_7y4ll")
 
 [node name="Button_JamLink" type="TextureButton" parent="Buttons" unique_id=971842374]
-offset_left = 494.0
-offset_top = 676.0
-offset_right = 997.0
-offset_bottom = 813.0
+offset_left = 84.99993
+offset_top = 971.99994
+offset_right = 587.99994
+offset_bottom = 1109.0
+rotation = -0.101955414
+scale = Vector2(0.8, 0.8)
 texture_normal = ExtResource("28_bnsml")
 script = ExtResource("29_qbhp5")
 

@@ -1,14 +1,17 @@
 [gd_scene format=3 uid="uid://bpdbtgij7y6x3"]
 
 [ext_resource type="Script" uid="uid://bynl1bl3haan3" path="res://Scenes & Scripts/Game Scenes/settings.gd" id="1_0h3cg"]
+[ext_resource type="AudioStream" uid="uid://bsdyx2gheqjxb" path="res://Assets/SFX/SFX_ButtonHover.wav" id="2_7iu5c"]
 [ext_resource type="Texture2D" uid="uid://4rvcn5kcrwqd" path="res://Assets/CGs/Game Icon_PNG.png" id="2_a805n"]
 [ext_resource type="Texture2D" uid="uid://cwbwyiueyujrc" path="res://Assets/CGs/Settings_Background_Sidebar.png" id="2_ghqn8"]
 [ext_resource type="AudioStream" uid="uid://cn6ullfd8rt44" path="res://Assets/SFX/testAUDIO.wav" id="2_llxf6"]
 [ext_resource type="FontFile" uid="uid://cuauodtrqsmwe" path="res://Assets/FishFonts/Viga/Viga-Regular.ttf" id="2_sojg4"]
 [ext_resource type="Script" uid="uid://d006d3k3cgqm5" path="res://Scenes & Scripts/Game Scenes/button_main_menu.gd" id="3_3xy2v"]
 [ext_resource type="Texture2D" uid="uid://d3axd6g05k5jt" path="res://Assets/CGs/Settings_Background_Sidebar_2.png" id="3_rjxyg"]
+[ext_resource type="AudioStream" uid="uid://bqhwjppvi24h2" path="res://Assets/SFX/SFX_ButtonClick.wav" id="3_t1rwn"]
 [ext_resource type="Texture2D" uid="uid://b6uvtbslghgxw" path="res://Assets/Buttons/UI_Matching_Send a Message.png" id="3_tkmkc"]
 [ext_resource type="FontFile" uid="uid://b5u7o2egl3j1f" path="res://Assets/FishFonts/National_Park/NationalPark-VariableFont_wght.ttf" id="4_348px"]
+[ext_resource type="AudioStream" uid="uid://3k0dnlhqpmyd" path="res://Assets/SFX/SFX_Unmatch.wav" id="4_t1rwn"]
 [ext_resource type="Script" uid="uid://b4qsam8kc77pu" path="res://Scenes & Scripts/Game Scenes/button_in_settings_menu.gd" id="5_3xy2v"]
 [ext_resource type="FontFile" uid="uid://c0fss6t1fq1md" path="res://Assets/FishFonts/Freckle_Face/FreckleFace-Regular.ttf" id="5_348px"]
 [ext_resource type="Script" uid="uid://fvsnds0u1npk" path="res://Scenes & Scripts/Game Scenes/button_credits.gd" id="6_hecry"]
@@ -122,9 +125,6 @@ texture = ExtResource("20_y8h5k")
 texture_margin_left = 25.0
 
 [sub_resource type="Theme" id="Theme_7iu5c"]
-VScrollBar/styles/grabber = null
-VScrollBar/styles/grabber_highlight = null
-VScrollBar/styles/grabber_pressed = null
 VScrollBar/styles/scroll = SubResource("StyleBoxTexture_b42j2")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sojg4"]
@@ -149,8 +149,24 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_0h3cg")
 
+[node name="HoverSound" type="AudioStreamPlayer" parent="." unique_id=1167654148]
+stream = ExtResource("2_7iu5c")
+volume_db = -31.0
+bus = &"Audio"
+
+[node name="PlaySound" type="AudioStreamPlayer" parent="." unique_id=492008700]
+stream = ExtResource("3_t1rwn")
+volume_db = -13.888
+bus = &"Audio"
+
+[node name="QuitSound" type="AudioStreamPlayer" parent="." unique_id=1018625299]
+stream = ExtResource("4_t1rwn")
+volume_db = -5.166
+bus = &"Audio"
+
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=426794815]
 layer = 2
+visible = false
 
 [node name="GameIconPng" type="Sprite2D" parent="CanvasLayer" unique_id=1698590469]
 visible = false
@@ -320,7 +336,6 @@ offset_bottom = 1041.0
 texture = ExtResource("11_rg0cr")
 
 [node name="SettingsScreen" type="PanelContainer" parent="CanvasLayer" unique_id=132653074]
-visible = false
 offset_left = 539.0
 offset_top = 71.0
 offset_right = 1862.0
@@ -445,6 +460,7 @@ popup/item_2/id = 2
 script = ExtResource("11_u6v6v")
 
 [node name="CreditsScreen" type="PanelContainer" parent="CanvasLayer" unique_id=1154685088]
+visible = false
 custom_maximum_size = Vector2(-1, 950)
 offset_left = 544.0
 offset_top = 58.0
@@ -1107,15 +1123,19 @@ bus = &"Audio"
 [connection signal="mouse_entered" from="CanvasLayer/NavigationPanel/NavContainer/ButtonMainMenu" to="CanvasLayer/NavigationPanel/NavContainer/ButtonMainMenu" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="CanvasLayer/NavigationPanel/NavContainer/ButtonMainMenu" to="CanvasLayer/NavigationPanel/NavContainer/ButtonMainMenu" method="_on_mouse_exited"]
 [connection signal="pressed" from="CanvasLayer/NavigationPanel/NavContainer/ButtonMainMenu" to="." method="_on_return_to_menu"]
+[connection signal="pressed" from="CanvasLayer/NavigationPanel/NavContainer/ButtonMainMenu" to="CanvasLayer/NavigationPanel/NavContainer/ButtonMainMenu" method="_on_pressed"]
 [connection signal="mouse_entered" from="CanvasLayer/NavigationPanel/NavContainer/ButtonSettings" to="CanvasLayer/NavigationPanel/NavContainer/ButtonSettings" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="CanvasLayer/NavigationPanel/NavContainer/ButtonSettings" to="CanvasLayer/NavigationPanel/NavContainer/ButtonSettings" method="_on_mouse_exited"]
 [connection signal="pressed" from="CanvasLayer/NavigationPanel/NavContainer/ButtonSettings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="CanvasLayer/NavigationPanel/NavContainer/ButtonSettings" to="CanvasLayer/NavigationPanel/NavContainer/ButtonSettings" method="_on_pressed"]
 [connection signal="mouse_entered" from="CanvasLayer/NavigationPanel/NavContainer/ButtonCredits" to="CanvasLayer/NavigationPanel/NavContainer/ButtonCredits" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="CanvasLayer/NavigationPanel/NavContainer/ButtonCredits" to="CanvasLayer/NavigationPanel/NavContainer/ButtonCredits" method="_on_mouse_exited"]
 [connection signal="pressed" from="CanvasLayer/NavigationPanel/NavContainer/ButtonCredits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="CanvasLayer/NavigationPanel/NavContainer/ButtonCredits" to="CanvasLayer/NavigationPanel/NavContainer/ButtonCredits" method="_on_pressed"]
 [connection signal="mouse_entered" from="CanvasLayer/NavigationPanel/NavContainer/ButtonClose" to="CanvasLayer/NavigationPanel/NavContainer/ButtonClose" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="CanvasLayer/NavigationPanel/NavContainer/ButtonClose" to="CanvasLayer/NavigationPanel/NavContainer/ButtonClose" method="_on_mouse_exited"]
 [connection signal="pressed" from="CanvasLayer/NavigationPanel/NavContainer/ButtonClose" to="." method="_on_close_pressed"]
+[connection signal="pressed" from="CanvasLayer/NavigationPanel/NavContainer/ButtonClose" to="CanvasLayer/NavigationPanel/NavContainer/ButtonClose" method="_on_pressed"]
 [connection signal="mouse_entered" from="CanvasLayer/ButtonQuit" to="CanvasLayer/ButtonQuit" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="CanvasLayer/ButtonQuit" to="CanvasLayer/ButtonQuit" method="_on_mouse_exited"]
 [connection signal="pressed" from="CanvasLayer/ButtonQuit" to="." method="_on_quit_game"]

@@ -61,3 +61,7 @@ func make_visible(visible:bool) -> void:
 		self.hide()
 	
 	canvas_layer.visible = visible
+
+
+func _on_button_main_menu_pressed() -> void:
+	pass # Replace with function body.
