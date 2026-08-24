@@ -33,10 +33,10 @@ func set_text(is_quit:bool) -> void:
 	is_quitting = is_quit
 	
 	if is_quit:
-		label.text = "Are you sure you want to quit?"
-		button_quit.text = "Quit"
-		button_cancel.text = "Don't Quit"
+		label.text = tr("UI_QUIT_LABEL")
+		button_quit.text = tr("UI_QUIT_BUTTON")
+		button_cancel.text = tr("UI_DONTQUIT_BUTTON")
 	else:
-		label.text = "Return to menu?"
-		button_quit.text = "Confirm"
-		button_cancel.text = "Cancel"
+		label.text = tr("UI_RETURNMENU_LABEL")
+		button_quit.text = tr("UI_CONFIRM_BUTTON")
+		button_cancel.text = tr("UI_CANCEL_BUTTON")

@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://deqvrgs4ydsx5"
+
+[deps]
+
+files=["res://Translations/Fishin For Love TRANSLATIONS - UI.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - UI.es.translation"]
+
+source_file="res://Translations/Fishin For Love TRANSLATIONS - UI.csv"
+dest_files=["res://Translations/Fishin For Love TRANSLATIONS - UI.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - UI.es.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

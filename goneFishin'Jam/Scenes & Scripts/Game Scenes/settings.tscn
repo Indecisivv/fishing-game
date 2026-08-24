@@ -18,6 +18,7 @@
 [ext_resource type="Script" uid="uid://cmrurubo6kgtp" path="res://Scenes & Scripts/Game Scenes/option_button.gd" id="11_u6v6v"]
 [ext_resource type="Texture2D" uid="uid://cdloqcx4o415w" path="res://Assets/Misc/Slider_Icon.png" id="14_775wm"]
 [ext_resource type="Texture2D" uid="uid://duw45xe20pv2w" path="res://Assets/CGs/Slider_Long.png" id="14_a805n"]
+[ext_resource type="Texture2D" uid="uid://bjnfhdtxne4lh" path="res://Assets/Misc/Slider_Long.png" id="16_775wm"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a805n"]
 content_margin_left = 0.0
@@ -80,10 +81,11 @@ texture_margin_top = 16.0
 modulate_color = Color(0.46229059, 0.46229059, 0.46229059, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hbqs8"]
-texture = ExtResource("14_a805n")
+texture = ExtResource("16_775wm")
 texture_margin_top = 16.0
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3gxmw"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_musq8"]
+bg_color = Color(0.9372549, 0.9137255, 0.8666667, 0.6431373)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_775wm"]
 texture = ExtResource("14_a805n")
@@ -91,8 +93,11 @@ texture_margin_top = 16.0
 modulate_color = Color(0.4627451, 0.4627451, 0.4627451, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r50k8"]
-texture = ExtResource("14_a805n")
+texture = ExtResource("16_775wm")
 texture_margin_top = 16.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6xlox"]
+bg_color = Color(0.9372549, 0.9137255, 0.8666667, 0.6431373)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e5nff"]
 content_margin_left = 20.0
@@ -130,6 +135,7 @@ script = ExtResource("1_0h3cg")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=426794815]
 layer = 2
+visible = false
 
 [node name="GameIconPng" type="Sprite2D" parent="CanvasLayer" unique_id=1698590469]
 visible = false
@@ -212,7 +218,7 @@ offset_right = 437.0
 offset_bottom = 114.25017
 theme_override_fonts/font = ExtResource("2_sojg4")
 theme_override_font_sizes/font_size = 67
-text = "Main Menu"
+text = "UI_MAIN_MENU_BUTTON"
 
 [node name="ButtonSettings" type="TextureButton" parent="CanvasLayer/NavigationPanel/NavContainer" unique_id=1377051116]
 layout_mode = 2
@@ -228,7 +234,7 @@ offset_right = 437.0
 offset_bottom = 123.0
 theme_override_fonts/font = ExtResource("2_sojg4")
 theme_override_font_sizes/font_size = 48
-text = "Settings"
+text = "UI_SETTINGS_BUTTON"
 horizontal_alignment = 1
 
 [node name="ButtonCredits" type="TextureButton" parent="CanvasLayer/NavigationPanel/NavContainer" unique_id=1549088735]
@@ -245,7 +251,7 @@ offset_right = 437.0
 offset_bottom = 110.0
 theme_override_fonts/font = ExtResource("2_sojg4")
 theme_override_font_sizes/font_size = 48
-text = "Credits"
+text = "UI_CREDITS_BUTTON"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -263,7 +269,7 @@ offset_right = 461.0
 offset_bottom = 104.0
 theme_override_fonts/font = ExtResource("2_sojg4")
 theme_override_font_sizes/font_size = 64
-text = "Back"
+text = "UI_BACK_BUTTON"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -286,7 +292,7 @@ offset_right = 437.0
 offset_bottom = 107.0
 theme_override_fonts/font = ExtResource("2_sojg4")
 theme_override_font_sizes/font_size = 72
-text = "Quit"
+text = "UI_QUIT_BUTTON"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -319,7 +325,7 @@ size_flags_vertical = 0
 theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
 theme_override_fonts/font = ExtResource("5_348px")
 theme_override_font_sizes/font_size = 48
-text = "SETTINGS"
+text = "UI_SETTINGS_BUTTON"
 
 [node name="VolumeContainer" type="VBoxContainer" parent="CanvasLayer/SettingsScreen/ScreenContainer" unique_id=1782134729]
 layout_mode = 2
@@ -335,16 +341,17 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
 theme_override_fonts/font = ExtResource("5_348px")
 theme_override_font_sizes/font_size = 36
-text = "MUSIC"
+text = "UI_MUSIC_LABEL"
 
 [node name="HSlider" type="HSlider" parent="CanvasLayer/SettingsScreen/ScreenContainer/VolumeContainer/MusicContainer" unique_id=514609659]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
 theme_override_icons/grabber = ExtResource("14_775wm")
+theme_override_icons/grabber_highlight = ExtResource("14_775wm")
 theme_override_styles/slider = SubResource("StyleBoxTexture_6ptan")
 theme_override_styles/grabber_area = SubResource("StyleBoxTexture_hbqs8")
-theme_override_styles/grabber_area_highlight = SubResource("StyleBoxEmpty_3gxmw")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_musq8")
 max_value = 1.0
 step = 0.01
 value = 0.74
@@ -365,7 +372,7 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
 theme_override_fonts/font = ExtResource("5_348px")
 theme_override_font_sizes/font_size = 36
-text = "AUDIO"
+text = "UI_AUDIO_LABEL"
 
 [node name="HSlider" type="HSlider" parent="CanvasLayer/SettingsScreen/ScreenContainer/VolumeContainer/AudioContainer" unique_id=591187407]
 layout_mode = 2
@@ -375,6 +382,7 @@ theme_override_icons/grabber = ExtResource("14_775wm")
 theme_override_icons/grabber_highlight = ExtResource("14_775wm")
 theme_override_styles/slider = SubResource("StyleBoxTexture_775wm")
 theme_override_styles/grabber_area = SubResource("StyleBoxTexture_r50k8")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_6xlox")
 max_value = 1.0
 step = 0.01
 value = 0.78
@@ -384,14 +392,13 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
 theme_override_fonts/font = ExtResource("4_348px")
 theme_override_font_sizes/font_size = 24
-text = "Test Sound"
+text = "UI_TEST_SOUND_BUTTON"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer/SettingsScreen/ScreenContainer/VolumeContainer/AudioContainer/Button" unique_id=1964780123]
 stream = ExtResource("2_llxf6")
 bus = &"Audio"
 
 [node name="LanguageContainer" type="VBoxContainer" parent="CanvasLayer/SettingsScreen/ScreenContainer" unique_id=218069520]
-visible = false
 layout_mode = 2
 
 [node name="Label" type="Label" parent="CanvasLayer/SettingsScreen/ScreenContainer/LanguageContainer" unique_id=1628456654]
@@ -399,7 +406,7 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
 theme_override_fonts/font = ExtResource("5_348px")
 theme_override_font_sizes/font_size = 46
-text = "LANGUAGE"
+text = "UI_LANGUAGE_LABEL"
 horizontal_alignment = 1
 
 [node name="OptionButton" type="OptionButton" parent="CanvasLayer/SettingsScreen/ScreenContainer/LanguageContainer" unique_id=2066446078]
@@ -407,7 +414,7 @@ layout_mode = 2
 size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
 theme_override_fonts/font = ExtResource("4_348px")
-theme_override_font_sizes/font_size = 41
+theme_override_font_sizes/font_size = 48
 selected = 0
 item_count = 3
 popup/item_0/text = "English"
@@ -423,7 +430,7 @@ visible = false
 offset_left = 518.0
 offset_top = 40.0
 offset_right = 1885.0
-offset_bottom = 1041.0
+offset_bottom = 1042.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_e5nff")
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer/CreditsScreen" unique_id=1502401342]
@@ -441,7 +448,7 @@ size_flags_vertical = 0
 theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
 theme_override_fonts/font = ExtResource("5_348px")
 theme_override_font_sizes/font_size = 48
-text = "CREDITS"
+text = "UI_CREDITS_BUTTON"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2" unique_id=771798036]
 layout_mode = 2
@@ -463,7 +470,7 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
 theme_override_fonts/font = ExtResource("2_sojg4")
 theme_override_font_sizes/font_size = 28
-text = "WRITER"
+text = "UI_WRITER_LABEL"
 
 [node name="LinkButton" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer/Writer" unique_id=993128541]
 layout_mode = 2
@@ -483,7 +490,7 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
 theme_override_fonts/font = ExtResource("2_sojg4")
 theme_override_font_sizes/font_size = 28
-text = "CODER"
+text = "UI_CODER_LABEL"
 
 [node name="LinkButton" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer/Coder" unique_id=358384834]
 layout_mode = 2
@@ -512,7 +519,7 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
 theme_override_fonts/font = ExtResource("2_sojg4")
 theme_override_font_sizes/font_size = 28
-text = "ARTIST"
+text = "UI_ARTIST_LABEL"
 
 [node name="LinkButton" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer/Artist" unique_id=795035315]
 layout_mode = 2
@@ -541,7 +548,7 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
 theme_override_fonts/font = ExtResource("2_sojg4")
 theme_override_font_sizes/font_size = 28
-text = "AUDIO"
+text = "UI_AUDIO_LABEL"
 
 [node name="LinkButton" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer/Audio Designer" unique_id=1401400379]
 layout_mode = 2
@@ -564,14 +571,14 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
 theme_override_fonts/font = ExtResource("5_348px")
 theme_override_font_sizes/font_size = 48
-text = "SOUNDS"
+text = "UI_SOUNDS_LABEL"
 
 [node name="Label2" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer" unique_id=1142309863]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
 theme_override_fonts/font = ExtResource("4_348px")
 theme_override_font_sizes/font_size = 28
-text = "sourced from freesound.org and dova-s.jp"
+text = "UI_SOUNDSBLURB_LABEL"
 
 [node name="Names" type="HBoxContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer" unique_id=356961695]
 layout_mode = 2
@@ -911,14 +918,14 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
 theme_override_fonts/font = ExtResource("5_348px")
 theme_override_font_sizes/font_size = 48
-text = "BACKGROUNDS"
+text = "UI_BACKGROUNDS_LABEL"
 
 [node name="Label2" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds2/VBoxContainer" unique_id=907562047]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
 theme_override_fonts/font = ExtResource("4_348px")
 theme_override_font_sizes/font_size = 28
-text = "sourced from unsplash.com"
+text = "UI_BACKGROUNDSBLURB_LABEL"
 
 [node name="Names" type="HBoxContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds2/VBoxContainer" unique_id=1014560218]
 layout_mode = 2
@@ -945,7 +952,7 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
 theme_override_fonts/font = ExtResource("5_348px")
 theme_override_font_sizes/font_size = 48
-text = "LICENSE "
+text = "UI_LISCENSE_LABEL"
 
 [node name="Label2" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/License/VBoxContainer" unique_id=748521327]
 visible = false
@@ -953,7 +960,7 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
 theme_override_fonts/font = ExtResource("4_348px")
 theme_override_font_sizes/font_size = 28
-text = "links to liscense and software used"
+text = "UI_LISCENSEBLURB_LABEL"
 
 [node name="Writer" type="HBoxContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/License/VBoxContainer" unique_id=2123920329]
 layout_mode = 2

@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://ltwos3nm0ep2"
+
+[deps]
+
+files=["res://Translations/Fishin For Love TRANSLATIONS - Khanh_Date.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Khanh_Date.es.translation"]
+
+source_file="res://Translations/Fishin For Love TRANSLATIONS - Khanh_Date.csv"
+dest_files=["res://Translations/Fishin For Love TRANSLATIONS - Khanh_Date.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Khanh_Date.es.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

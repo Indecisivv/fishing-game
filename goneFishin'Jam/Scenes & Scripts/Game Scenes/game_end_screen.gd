@@ -58,14 +58,14 @@ func set_end_text(num:int) -> void:
 			all_caught_text.show()
 
 func set_end_label(num:int) -> void:
-	ending_label.text = "Ending " + str(num) + "/3"
+	ending_label.text = tr("ENDING_END_LABEL") + str(num) + "/3"
 	
 	match num:
 		0:
-			ending_title.text = "Starving"
+			ending_title.text = tr("ENDING_STARVING_LABEL")
 		1:
-			ending_title.text = "Unsatisfied"
+			ending_title.text = tr("ENDING_STARVING_LABEL")
 		2:
-			ending_title.text = "Room for Dessert"
+			ending_title.text = tr("ENDING_ROOM_LABEL")
 		3:
-			ending_title.text = "Greed from the Bible"
+			ending_title.text =tr("ENDING_GREED_LABEL")

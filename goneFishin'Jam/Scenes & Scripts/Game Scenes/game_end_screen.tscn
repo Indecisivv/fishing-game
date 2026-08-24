@@ -170,7 +170,7 @@ grow_vertical = 2
 theme_override_colors/font_color = Color(0.76862746, 0.60784316, 0.43529412, 1)
 theme_override_fonts/font = ExtResource("3_4qmns")
 theme_override_font_sizes/font_size = 152
-text = "ALL CAUGHT!"
+text = "ENDING_1_LABEL"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -191,7 +191,7 @@ size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0.12941177, 0.12156863, 0.1254902, 1)
 theme_override_fonts/font = ExtResource("4_acq8x")
 theme_override_font_sizes/font_size = 52
-text = "After a good time fishing..."
+text = "ENDING_1A_LABEL"
 horizontal_alignment = 1
 
 [node name="Subtitle2" type="Label" parent="AllCaughtText" unique_id=2106615383]
@@ -211,7 +211,7 @@ size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0.12941177, 0.12156863, 0.1254902, 1)
 theme_override_fonts/font = ExtResource("5_ngdgt")
 theme_override_font_sizes/font_size = 42
-text = "You're so full, it's a dream. "
+text = "ENDING_1B_LABEL"
 horizontal_alignment = 1
 
 [node name="Subtitle3" type="Label" parent="AllCaughtText" unique_id=1838801841]
@@ -231,8 +231,7 @@ size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0.12941177, 0.12156863, 0.1254902, 1)
 theme_override_fonts/font = ExtResource("6_w0kyi")
 theme_override_font_sizes/font_size = 28
-text = "You have so much leftover, you won't have to think 
-of what to eat for a long time. :)"
+text = "ENDING_1C_LABEL"
 horizontal_alignment = 1
 
 [node name="OneMoreBiteText" type="Control" parent="." unique_id=1760392839]
@@ -257,7 +256,7 @@ grow_vertical = 2
 theme_override_colors/font_color = Color(0.76862746, 0.60784316, 0.43529412, 1)
 theme_override_fonts/font = ExtResource("3_4qmns")
 theme_override_font_sizes/font_size = 122
-text = "JUST ONE MORE BITE!"
+text = "ENDING_2_LABEL"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -278,7 +277,7 @@ size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0.12941177, 0.12156863, 0.1254902, 1)
 theme_override_fonts/font = ExtResource("4_acq8x")
 theme_override_font_sizes/font_size = 52
-text = "You've had enough..."
+text = "ENDING_2A_LABEL"
 horizontal_alignment = 1
 
 [node name="Subtitle2" type="Label" parent="OneMoreBiteText" unique_id=155113072]
@@ -298,7 +297,7 @@ size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0.12941177, 0.12156863, 0.1254902, 1)
 theme_override_fonts/font = ExtResource("5_ngdgt")
 theme_override_font_sizes/font_size = 42
-text = "...to almost feel satisfied."
+text = "ENDING_2B_LABEL"
 horizontal_alignment = 1
 
 [node name="Subtitle3" type="Label" parent="OneMoreBiteText" unique_id=31697053]
@@ -318,8 +317,7 @@ size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0.12941177, 0.12156863, 0.1254902, 1)
 theme_override_fonts/font = ExtResource("6_w0kyi")
 theme_override_font_sizes/font_size = 28
-text = "This stock is enough for you to
-lay low for a while..."
+text = "ENDING_2C_LABEL"
 horizontal_alignment = 1
 
 [node name="OneCaughtText" type="Control" parent="." unique_id=1237639649]
@@ -344,7 +342,7 @@ grow_vertical = 2
 theme_override_colors/font_color = Color(0.76862746, 0.60784316, 0.43529412, 1)
 theme_override_fonts/font = ExtResource("3_4qmns")
 theme_override_font_sizes/font_size = 132
-text = "CAUGHT ONE!"
+text = "ENDING_3_LABEL"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -365,7 +363,7 @@ size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0.12941177, 0.12156863, 0.1254902, 1)
 theme_override_fonts/font = ExtResource("4_acq8x")
 theme_override_font_sizes/font_size = 52
-text = "That was delicious..."
+text = "ENDING_3A_LABEL"
 horizontal_alignment = 1
 
 [node name="Subtitle2" type="Label" parent="OneCaughtText" unique_id=17513473]
@@ -385,7 +383,7 @@ size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0.12941177, 0.12156863, 0.1254902, 1)
 theme_override_fonts/font = ExtResource("5_ngdgt")
 theme_override_font_sizes/font_size = 42
-text = "...but you're still hungry."
+text = "ENDING_3B_LABEL"
 horizontal_alignment = 1
 
 [node name="Subtitle3" type="Label" parent="OneCaughtText" unique_id=1873046159]
@@ -405,8 +403,7 @@ size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0.12941177, 0.12156863, 0.1254902, 1)
 theme_override_fonts/font = ExtResource("6_w0kyi")
 theme_override_font_sizes/font_size = 28
-text = "Maybe you'd have better luck fishing normally.
-This amount won't last very long..."
+text = "ENDING_3C_LABEL"
 horizontal_alignment = 1
 
 [node name="NoPullText" type="Control" parent="." unique_id=1679286492]
@@ -431,7 +428,7 @@ grow_vertical = 2
 theme_override_colors/font_color = Color(0.76862746, 0.60784316, 0.43529412, 1)
 theme_override_fonts/font = ExtResource("3_4qmns")
 theme_override_font_sizes/font_size = 152
-text = "NO PULL!"
+text = "ENDING_4_LABEL"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -452,7 +449,7 @@ size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0.12941177, 0.12156863, 0.1254902, 1)
 theme_override_fonts/font = ExtResource("4_acq8x")
 theme_override_font_sizes/font_size = 52
-text = "Not a single catch?"
+text = "ENDING_4A_LABEL"
 horizontal_alignment = 1
 
 [node name="Subtitle2" type="Label" parent="NoPullText" unique_id=1925370799]
@@ -472,7 +469,7 @@ size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0.12941177, 0.12156863, 0.1254902, 1)
 theme_override_fonts/font = ExtResource("5_ngdgt")
 theme_override_font_sizes/font_size = 42
-text = "You're starving."
+text = "ENDING_4B_LABEL"
 horizontal_alignment = 1
 
 [node name="Subtitle3" type="Label" parent="NoPullText" unique_id=1035897983]
@@ -492,8 +489,7 @@ size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0.12941177, 0.12156863, 0.1254902, 1)
 theme_override_fonts/font = ExtResource("6_w0kyi")
 theme_override_font_sizes/font_size = 28
-text = "You might want to stick to regular fish.
-The supermarket will save you."
+text = "ENDING_4C_LABEL"
 horizontal_alignment = 1
 
 [node name="EndingLabel" type="Label" parent="." unique_id=47188168]
@@ -543,7 +539,7 @@ offset_bottom = 132.0
 theme_override_colors/font_color = Color(0.8666667, 0.7372549, 0.6431373, 1)
 theme_override_fonts/font = ExtResource("3_4qmns")
 theme_override_font_sizes/font_size = 72
-text = "cast again"
+text = "ENDING_REPLAY_LABEL"
 
 [node name="Quit" type="TextureButton" parent="." unique_id=736054747]
 layout_mode = 0
@@ -564,7 +560,7 @@ offset_bottom = 132.0
 theme_override_colors/font_color = Color(0.8666667, 0.7372549, 0.6431373, 1)
 theme_override_fonts/font = ExtResource("3_4qmns")
 theme_override_font_sizes/font_size = 72
-text = "quit"
+text = "ENDING_QUIT_LABEL"
 horizontal_alignment = 1
 
 [node name="EndingMusic" type="AudioStreamPlayer" parent="." unique_id=1556486046]

@@ -194,8 +194,8 @@ func show_scn_date_end() -> void:
 		scn_date_end.play_music()
 	elif on_date_ada && !Dialogic.VAR.is_date_success:
 		scn_date_end.set_cg(false)
-		scn_date_end.set_lose_text(CharacterLibrary.ada.char_name + " has snapped 
-		the line...")
+		#TODO: implement langauge strings
+		scn_date_end.set_lose_text(CharacterLibrary.ada.char_name + tr("UI_SNAPPED_LABEL"))
 		scn_date_end.unmatch.play()
 	
 	if on_date_khanh && Dialogic.VAR.is_date_success:
@@ -203,8 +203,8 @@ func show_scn_date_end() -> void:
 		scn_date_end.play_music()
 	elif on_date_khanh && !Dialogic.VAR.is_date_success:
 		scn_date_end.set_cg(false)
-		scn_date_end.set_lose_text(CharacterLibrary.khanh.char_name + " has snapped 
-		the line...")
+		#TODO: implement langauge strings
+		scn_date_end.set_lose_text(CharacterLibrary.khanh.char_name + tr("UI_SNAPPED_LABEL"))
 		scn_date_end.unmatch.play()
 	
 	if on_date_soccoro && Dialogic.VAR.is_date_success:
@@ -212,8 +212,9 @@ func show_scn_date_end() -> void:
 		scn_date_end.play_music()
 	elif on_date_soccoro && !Dialogic.VAR.is_date_success:
 		scn_date_end.set_cg(false)
-		scn_date_end.set_lose_text(CharacterLibrary.soccoro.char_name + " has snapped 
-		the line...")
+		#if en
+		#TODO: implement langauge strings
+		scn_date_end.set_lose_text(CharacterLibrary.soccoro.char_name + tr("UI_SNAPPED_LABEL"))
 		scn_date_end.unmatch.play()
 	
 	print ("is_fdate_success: " + str(Dialogic.VAR.is_fdate_success))

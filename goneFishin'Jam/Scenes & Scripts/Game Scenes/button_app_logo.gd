@@ -25,8 +25,8 @@ func _on_btn_pressed() -> void:
 	date_choices_view.hide()
 	date_profile_view.set_profile("lineboil_mc")
 	date_profile_view.set_text("Voraz" + ", " + "25",
-							   "She/Her",
-							   "My name is Voraz, I'm a half Aquakin and I enjoy cooking. My main hobby is finding new dishes to try. I enjoy making sure my partners are always full. A good meal is always my main priority.")
+							   tr("CHAR_MC_PRONOUNS"),
+							   tr("CHAR_MC_DESC"))
 	date_profile_view.show()
 
 func _on_btn_exited() -> void:

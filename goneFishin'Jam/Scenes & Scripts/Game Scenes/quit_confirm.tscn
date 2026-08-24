@@ -66,7 +66,7 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
 theme_override_fonts/font = ExtResource("2_57bbq")
 theme_override_font_sizes/font_size = 32
-text = "Are you sure you want to quit?"
+text = "UI_QUIT_LABEL"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -83,7 +83,7 @@ size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
 theme_override_fonts/font = ExtResource("1_kv1m7")
 theme_override_font_sizes/font_size = 28
-text = "Quit"
+text = "UI_QUIT_BUTTON"
 
 [node name="ButtonCancel" type="Button" parent="CanvasLayer/PanelContainer/HBoxContainer" unique_id=753086125]
 z_index = 2
@@ -92,7 +92,7 @@ size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
 theme_override_fonts/font = ExtResource("1_kv1m7")
 theme_override_font_sizes/font_size = 28
-text = "Don't Quit"
+text = "UI_DONTQUIT_BUTTON"
 
 [connection signal="pressed" from="CanvasLayer/PanelContainer/HBoxContainer/ButtonQuit" to="." method="on_quit"]
 [connection signal="pressed" from="CanvasLayer/PanelContainer/HBoxContainer/ButtonCancel" to="." method="on_cancel"]

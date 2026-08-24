@@ -866,7 +866,7 @@ offset_left = 54.78064
 offset_top = 152.57819
 offset_right = 481.7807
 offset_bottom = 218.57819
-text = "people  near you"
+text = "UI_NEARYOU_LABEL"
 label_settings = SubResource("LabelSettings_n6ov8")
 
 [node name="Label_3Online" type="Label" parent="Phone/DateChoicesView" unique_id=894720809]
@@ -876,7 +876,7 @@ offset_top = 163.03442
 offset_right = 551.9573
 offset_bottom = 205.03442
 theme_override_fonts/font = ExtResource("24_ea7u8")
-text = "3 online"
+text = "UI_ONLINE_LABEL"
 label_settings = SubResource("LabelSettings_tn7bg")
 
 [node name="BtnLineBoiler" type="AnimationPlayer" parent="Phone/DateChoicesView" unique_id=1385143518]
@@ -937,7 +937,7 @@ size_flags_horizontal = 0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("8_pc0yv")
 theme_override_font_sizes/font_size = 24
-text = "looking for:"
+text = "UI_LOOKINGFOR_LABEL"
 
 [node name="Texture_Intensity" type="TextureRect" parent="Phone/DateProfileView/VBoxContainer/HBoxContainer/HBoxContainer" unique_id=458414596]
 layout_mode = 2
@@ -1035,7 +1035,7 @@ offset_top = 499.0
 offset_right = 523.8013
 offset_bottom = 618.0
 size_flags_horizontal = 4
-text = "it's a match!"
+text = "UI_MATCH_LABEL"
 label_settings = SubResource("LabelSettings_vs1ln")
 
 [node name="TextureButton" type="TextureButton" parent="Phone/MatchScreen" unique_id=2110321604]
@@ -1058,7 +1058,7 @@ offset_bottom = 93.0
 theme_override_colors/font_color = Color(0.89492244, 0.89492244, 0.8949224, 1)
 theme_override_fonts/font = ExtResource("8_pc0yv")
 theme_override_font_sizes/font_size = 52
-text = "send a message"
+text = "UI_MESSAGE_LABEL"
 horizontal_alignment = 1
 
 [node name="MatchIconLineboiler" type="AnimationPlayer" parent="Phone/MatchScreen" unique_id=495289179]
