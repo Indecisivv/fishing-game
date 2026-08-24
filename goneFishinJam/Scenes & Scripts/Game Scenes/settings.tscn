@@ -135,7 +135,6 @@ script = ExtResource("1_0h3cg")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=426794815]
 layer = 2
-visible = false
 
 [node name="GameIconPng" type="Sprite2D" parent="CanvasLayer" unique_id=1698590469]
 visible = false
@@ -400,6 +399,7 @@ bus = &"Audio"
 
 [node name="LanguageContainer" type="VBoxContainer" parent="CanvasLayer/SettingsScreen/ScreenContainer" unique_id=218069520]
 layout_mode = 2
+theme_override_constants/separation = 22
 
 [node name="Label" type="Label" parent="CanvasLayer/SettingsScreen/ScreenContainer/LanguageContainer" unique_id=1628456654]
 layout_mode = 2
@@ -414,7 +414,7 @@ layout_mode = 2
 size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
 theme_override_fonts/font = ExtResource("4_348px")
-theme_override_font_sizes/font_size = 48
+theme_override_font_sizes/font_size = 43
 selected = 0
 item_count = 3
 popup/item_0/text = "English"

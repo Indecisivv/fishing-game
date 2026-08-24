@@ -118,6 +118,8 @@ window/size/viewport_height=1080
 window/size/window_width_override=1366
 window/size/window_height_override=768
 window/stretch/mode="canvas_items"
+mouse_cursor/custom_image="uid://ds78h6rpuwvxo"
+mouse_cursor/custom_image_hotspot=Vector2(20, 6)
 
 [dotnet]
 
