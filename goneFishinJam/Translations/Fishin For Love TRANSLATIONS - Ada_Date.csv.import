@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://cbcolvvaydlre"
+
+[deps]
+
+files=["res://Translations/Fishin For Love TRANSLATIONS - Ada_Date.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Ada_Date.es.translation"]
+
+source_file="res://Translations/Fishin For Love TRANSLATIONS - Ada_Date.csv"
+dest_files=["res://Translations/Fishin For Love TRANSLATIONS - Ada_Date.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Ada_Date.es.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

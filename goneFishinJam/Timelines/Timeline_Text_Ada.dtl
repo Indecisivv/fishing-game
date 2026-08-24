@@ -1,0 +1,381 @@
+[style name="SmartphoneStyle"]
+audio Musicly "res://Assets/Music/M_BGM.ogg" [volume="-10.0" sync="Musicly"]
+Ada: Hiya!😘 Just got off work! #id:9f
+Ada: Sorry to keep you waiting~ #id:a0
+Ada: Being a shop owner is just soooo busy. Would totes make me dizzy😵‍💫 #id:a1
+Ada: Well #id:a2
+Ada: WOULD, if I wasn't such a natural at it~ #id:a3
+Ada: Hopefully I'm not disturbing your work hours! #id:a4
+Ada: Speaking of... #id:a5
+Ada: What do you do for work? #id:a6
+[wait time="0.1" hide_text="false"]
+set {is_making_choice} = true
+- A chef #id:a7
+	set {is_making_choice} = false
+	Player: I'm the owner and chef at our town's fanciest restaurant, I make good money and it makes me an excellent cook. #id:a8
+	Player: I'd love to make you something. #id:a9
+	Ada: Wow, wow, wow! #id:aa
+	Ada: I looove that! #id:ab
+	Ada: And I love that place! 🥰🥰 #id:ac
+	Ada: Two business owners?! We could like totally be the faces of this town! #id:ad
+	Ada: The food in your picture DOES look yummy. #id:ae
+	Ada: Speaking of which, why can't I see your face? #id:af
+	[wait time="0.1" hide_text="false"]
+	set {is_making_choice} = true
+	- Not flattering #id:b0
+		set {is_making_choice} = false
+		Player: All my pictures are of me at the club so they're not exactly flattering #id:b1
+		Player: But I love to socialize in my free time. #id:b2
+		Player: I need to go out and take better pictures, wanna come with? #id:b3
+		Ada: That's okay. I'll see you on our dream date!💕 #id:b4
+		Ada: Cus that's what that plan sounds like to me!! #id:b5
+		Ada: It's time to partay!!!🥳🥳 #id:b6
+		Ada: Got any fave tunes to dance to? #id:b7
+		[wait time="0.1" hide_text="false"]
+		set {is_making_choice} = true
+		- Anything! #id:b8
+			set {is_making_choice} = false
+			Player: I love anything that makes me feel it in my bones. #id:b9
+			Player: I need to be able to dance to the beat! #id:ba
+			Ada: OMG!!💕💕 #id:bb
+			Ada: Me too! #id:bc
+			Ada: We should dance together!💃💃💃 #id:bd
+			Ada: Let's decide on where to go! TONITE! #id:be
+			# SUCCESS
+			jump Timeline_Date_Ada/
+		- Nothing in particular #id:bf
+			set {is_making_choice} = false
+			Player: I love what everyone else loves, I'm not particular about what I listen to... #id:c0
+			Ada: I think knowing what you like is soooo important!!! #id:c2
+			Ada: but 🤚🤚!! #id:c3
+			Ada: You can always get a strong opinion as you explore #id:c4
+			Ada: So let's explore 🗺🗺 tonite! #id:c5
+			# SUCCESS
+			jump Timeline_Date_Ada/
+		- Classical #id:c6
+			set {is_making_choice} = false
+			Player: I love slow classical... Melodic soft music is the best... #id:c7
+			Ada: Oh! #id:c8
+			Ada: Welll, I hope you're open to learning to 💕LOVE💕 something new! #id:c9
+			Ada: Let's show you what you're missing tonite!🌟 #id:ca
+			# SUCCESS
+			jump Timeline_Date_Ada/
+	- Undecided #id:cb
+		set {is_making_choice} = false
+		Player: I haven't been able to decide which my selfies to put up but you're right, I should. #id:cc
+		Player: I will do that soon #id:cd
+		Ada: Now is always better than soon or later! #id:ce
+		Ada: You should totally get to it! ⏰⏰⏰ #id:cf
+		Ada: After that tell me, what do you do for fun?! #id:d0
+		Ada: Fun is important to me so I must know❗❗ #id:d1
+		[wait time="0.1" hide_text="false"]
+		set {is_making_choice} = true
+		- Full Adventures #id:d2
+			set {is_making_choice} = false
+			Player: I love going on adventures, I'm a thrill seeker, especially if I can do it in a group! #id:d3
+			Ada: Wow!! #id:d4
+			Ada: That's totes sooo cool 😎😎. #id:d5
+			Ada: How about one tonite? #id:d6
+			Ada: Party time!🥂 #id:d7
+			# SUCCESS
+			jump Timeline_Date_Ada/
+		- Go out Sometimes #id:d8
+			set {is_making_choice} = false
+			Player: I go out once in a while, usually wherever my friends decide #id:d9
+			Player: I couldn't do it every day though, I don't have the energy... #id:da
+			Ada: Oh! #id:db
+			Ada: You might have missed it but I love going out every night! #id:dc
+			Ada: You’re not the one for me!🥀 #id:dd
+			Ada: Sea ya~! #id:de
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+		- Homebody #id:df
+			set {is_making_choice} = false
+			Player: My social battery is kind of shit tbh, so I'm more of a homebody. #id:e0
+			Player: I prefer to do things that keep me inside, away from people... Maybe we could do that together? #id:e1
+			Ada: Oh #id:e2
+			Ada: That sounds very... chill🧊. #id:e3
+			Ada: You might have missed it but I don't really do... that. #id:e4
+			Ada: You’re not the one for me! 🥀🥀 #id:e5
+			Ada: Sea Ya! #id:e6
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+	- I’m shy #id:e7
+		set {is_making_choice} = false
+		Player: I don't want strangers to look at me... #id:e8
+		Player: I'm shy. #id:e9
+		Player: What if they think I'm ugly...? #id:ea
+		Ada: Confidence is key!! 💪 #id:eb
+		Ada: No one can decide you're ugly except you! #id:ec
+		Ada: How often do you go out? With you being shy... #id:ed
+		[wait time="0.1" hide_text="false"]
+		set {is_making_choice} = true
+		- Skiing #id:ee
+			set {is_making_choice} = false
+			Player: I actually like skiing! #id:ef
+			Player: It can get intense but being out in the snow is so fun even when it gets risky. #id:f0
+			Ada: Woah!! #id:f1
+			Ada: Maybe you are shy but you sound so so cool! #id:f2
+			Ada: You should tell me more about it! #id:f3
+			Ada: Tonite!! #id:f4
+			# SUCCESS
+			jump Timeline_Date_Ada/
+		- Here and there #id:f5
+			set {is_making_choice} = false
+			Player: I go out here and there #id:f6
+			Player: To house parties or small gatherings #id:f7
+			Player: Definitely nothing more intense than that #id:f8
+			Ada: That's kinda cool... #id:f9
+			Ada: Not really my style tho #id:fa
+			Ada: kinda like you! #id:fb
+			Ada: You’re not the one for me.🥀 #id:fc
+			Ada: Sea ya! #id:fd
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+		- Not much... #id:fe
+			set {is_making_choice} = false
+			Player: Not much, I prefer to do as little as possible to not get my heart stressing... #id:ff
+			Ada: A chef that can't handle the heat🔥 of the kitchen? #id:100
+			Ada: That's so disappointing😒👎 #id:101
+			Ada: You’re not the one for me.🥀 #id:102
+			Ada: Sea ya! #id:103
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+- Grocery store #id:104
+	set {is_making_choice} = false
+	Player: I work at a grocery store, it's just to carry me until I can start my forever career soon. #id:105
+	Ada: I've been there!🤝 #id:106
+	Ada: It can totally feel hard to start but once you do, you better grind #id:107
+	Ada: Untill you're at the top! #id:108
+	Ada: Hopefully you start soon... #id:109
+	Ada: What's your dream career? #id:10a
+	[wait time="0.1" hide_text="false"]
+	set {is_making_choice} = true
+	- Business owner #id:10b
+		set {is_making_choice} = false
+		Player: I love working, I would like something that challenges me daily so that I feel like I always have something to overcome! #id:10c
+		Player: I'd love to start my own business #id:10d
+		Ada: Wow! #id:10e
+		Ada: Respect that 💯% #id:10f
+		Ada: You will totally get there, trust! #id:110
+		Ada: What do you do for fun when you're not preparing to be a big shot? 😎 #id:111
+		[wait time="0.1" hide_text="false"]
+		set {is_making_choice} = true
+		- Social events #id:112
+			set {is_making_choice} = false
+			Player: I like to go to social events, both for people looking to make connections and ones for fun! #id:113
+			Ada: Hey hey, you're totally like me! Once you're a boss, you're going far! #id:114
+			Ada: Let's meet up! #id:115
+			Ada: Tonite!!! #id:116
+			# SUCCESS
+			jump Timeline_Date_Ada/
+		- Walks around town #id:117
+			set {is_making_choice} = false
+			Player: I enjoy walking the town #id:118
+			Player: Spending time just taking things in and decompressing #id:119
+			Player: It is my favorite past time for sure #id:11a
+			Ada: We seem to have a similar drive but don't click anywhere else😩😭 #id:11b
+			Ada: You’re not the one for me! Sea ya! #id:11c
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+		- Relax at home #id:11d
+			set {is_making_choice} = false
+			Player: I stay home and relax #id:11e
+			Player: I think any time I'm not working, I take the opportunity to rest... #id:11f
+			Ada: You'll make a good business owner but I need someone who is also the life of the party!🎉 #id:120
+			Ada: You aren't the one for me! 🥀🥀 #id:121
+			Ada: Sea ya! #id:122
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+	- Anything #id:123
+		set {is_making_choice} = false
+		Player: Work is work, doesn't really matter if I'm the boss or the employee as long as I get paid #id:124
+		Ada: I guess,,, #id:125
+		Ada: Being so apathetic to your role doesn't seem like a career oriented move...🫤❓ #id:126
+		Ada: Well, what you do for fun? #id:127
+		Ada: Maybe your energy is directed elsewhere! #id:128
+		[wait time="0.1" hide_text="false"]
+		set {is_making_choice} = true
+		- Sports #id:129
+			set {is_making_choice} = false
+			Player: I love intense sports, things outside work must be wild and get my blood running! #id:12a
+			Ada: You seem fun outside of work, but I'd like someone that can totally ♊match♊ me in all aspects #id:12b
+			Ada: This isn't going to work! You’re not the one for me!🥀 #id:12c
+			Ada: Sea ya! #id:12d
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+		- Little of everything #id:12e
+			set {is_making_choice} = false
+			Player: A little big of everything I suppose... running... swimming #id:12f
+			Ada: You don't know yourself and I want someone like that to get to know me?? #id:130
+			Ada: I don’t even think you can. #id:131
+			Ada: You are not the one for me!🥀 #id:132
+			Ada: Sea ya! #id:133
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+		- Reading #id:134
+			set {is_making_choice} = false
+			Player: I mostly read and stay home, I prefer quiet spaces #id:135
+			Ada: LOVE someone with knowledge🤓!!! #id:136
+			Ada: But we don't seem to match anywhere🙁🙁 ! #id:137
+			Ada: You are not the one for me🥀, sea ya! #id:138
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+	- Not sure... #id:139
+		set {is_making_choice} = false
+		Player: I don't know, hopefully something where I don't have to speak to people often... #id:13a
+		Player: I would rather get to hide in the back and not be there for long #id:13b
+		Ada: You seem to not have a lot of confidence... #id:13c
+		Ada: What are your hobbies? #id:13d
+		Ada: You must do something for fun! #id:13e
+		[wait time="0.1" hide_text="false"]
+		set {is_making_choice} = true
+		- Thrill seeking #id:13f
+			set {is_making_choice} = false
+			Player: I enjoy amusement parks, I specifically travel to places with wild coasters! #id:140
+			Ada: That sounds so fun! #id:141
+			Ada: Not exactly my idea of a good time however, soz! #id:142
+			Ada: You're not the one for me.🥀 Sea Ya! #id:143
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+		- Running #id:144
+			set {is_making_choice} = false
+			Player: I like going on runs, it gets the blood running without too much other types of intensity #id:145
+			Ada: We both love to feel our blood pumping but not even in the same way. #id:146
+			Ada: We don't match at all. 🥀🥀 #id:147
+			Ada: You're not the one for me! Sea Ya! #id:148
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+		- I do but... #id:149
+			set {is_making_choice} = false
+			Player: I don't like going out... #id:14a
+			Player: My hobbies have big communities online and I'm still too scared to participate  in that honestly #id:14b
+			Ada: You clearly need a confidence boost... #id:14c
+			Ada: However, I'd prefer someone already stable. #id:14d
+			Ada: You are not the one for me!🥀 Sea Ya! #id:14e
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+- Unemployed #id:14f
+	set {is_making_choice} = false
+	Player: I'm unemployed... #id:150
+	Player: Not really looking for a job at the moment... It'll come when it comes. #id:151
+	Ada: Yikes! 😬 #id:152
+	Ada: That's not great mentality! #id:153
+	Ada: What do you do in your free time? 🤔 #id:154
+	Ada: I'm sure you have a lot of it! #id:155
+	[wait time="0.1" hide_text="false"]
+	set {is_making_choice} = true
+	- Party #id:156
+		set {is_making_choice} = false
+		Player: I love to party! #id:157
+		Player: I love being the center of attention and the life of the room #id:158
+		Ada: Well, we have that in common! #id:159
+		Ada: I love a good party! What's your favorite kind of party scene? #id:15a
+		[wait time="0.1" hide_text="false"]
+		set {is_making_choice} = true
+		- Loud Party #id:15b
+			set {is_making_choice} = false
+			Player: A loud party! Either music or chatting. #id:15c
+			Player: I enjoy when everyone can sing to the music and dance together! #id:15d
+			Ada: Well, you need to get your motivation to thrive in the work place, but at least we could have a blast together! #id:15e
+			Ada: Let's meet tonite! #id:15f
+			# SUCCESS
+			jump Timeline_Date_Ada/
+		- Chatty Party #id:160
+			set {is_making_choice} = false
+			Player: Something for chatting, like a dinner party where everyone can listen to me speak. #id:161
+			Player: Preferably it ends early too. #id:162
+			Ada: We both enjoy to socialize our vibes are too different. #id:163
+			Ada: You're not the one for me!🥀 #id:164
+			Ada: Sea ya! #id:165
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+		- Dj Booth #id:166
+			set {is_making_choice} = false
+			Player: I enjoy the party from the DJ booth so I don't have to dance! Everyone can listen to my tunes instead #id:167
+			Ada: The 🎧DJ🎶 carries the party but I need someone who can take me to the dance floor! What’s a party without some?! #id:168
+			Ada: You're not the one for me🥀, sea ya! #id:169
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+	- Relaxing vibes #id:16a
+		set {is_making_choice} = false
+		Player: I like going out once in a while, no parties or crowded spaces regularly thoug #id:16b
+		Ada: I love going out! We don't have the same taste though, what a shame... #id:16c
+		Ada: Well, what kind of music do you play at your party? #id:16d
+		[wait time="0.1" hide_text="false"]
+		set {is_making_choice} = true
+		- Something with rhythm #id:16e
+			set {is_making_choice} = false
+			Player: Something fun and with a good vibe but never loud enough that we can't sit and chat #id:16f
+			Ada: That sounds like a vibe but not like mine🫤🫤 #id:170
+			Ada: It's too bad. You're not the one for me!🥀 Sea ya! #id:171
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+		- Indie artists #id:172
+			set {is_making_choice} = false
+			Player: I like niche music most people don't know, I don’t let others choose, honestly. #id:173
+			Player: I love showing everyone good new music they've never heard of, nothing mainstream #id:174
+			Ada: That's interesting but if I can't put in a request, it doesn't sound like my space. #id:175
+			Ada: You're not the one for me!🥀 Sea ya! #id:176
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+		- Soft Vibes #id:177
+			set {is_making_choice} = false
+			Player: Soft music, I like relaxing vibes for my gatherings because then what everyone remembers is my stories! #id:178
+			Ada: I'm glad you've found your stage but I don't feel like watching a play at a party...🥱🥱 #id:179
+			Ada: You're not the one for me!🥀 Sea ya! #id:17a
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+	- Stay home #id:17b
+		set {is_making_choice} = false
+		Player: I like staying home and having fun indoors, I love a good board game! #id:17c
+		Ada: Board games are not my style unfortunately.. #id:17d
+		Ada: Although I dominate at Fishopoly when I do play of course! 💪🥇 #id:17e
+		Ada: What music do you listen to when at home? #id:17f
+		[wait time="0.1" hide_text="false"]
+		set {is_making_choice} = true
+		- To sing to #id:180
+			set {is_making_choice} = false
+			Player: I love loud music with a good beat, I adore singing to myself #id:181
+			Ada: It's great that we have the same music taste, but everything else doesn't sit right with me...🤔 #id:182
+			Ada: You're not the one for me🥀, sea ya! #id:183
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+		- Lo-fi #id:184
+			set {is_making_choice} = false
+			Player: Lo-fi music. I don't think music should be too loud... #id:185
+			Ada: We don't match at all, not even in what we listen to. #id:186
+			Ada: I don’t think we could have fun together, why did you😕? #id:187
+			Ada: You’re not the one for me!🥀 Sea ya! #id:188
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+		- No vocals #id:189
+			set {is_making_choice} = false
+			Player: Classical only. I think every other kind of music is scary... Too many strangers singing #id:18a
+			Ada: Scared of a singer? Timid as can be huh? I feel like if I got even a bit excited, I would definitely scare you off.. 🙊🙊 #id:18b
+			Ada: Not sure why you thought we would match… #id:18c
+			Ada: You're not the one for me!🥀 Sea ya! #id:18d
+			# FAILURE
+			set {is_fdate_success} = false
+			set {is_date_success} = false
+audio Musicly - [fade="0.5" sync="Musicly"]
+[signal arg="scene_end"]

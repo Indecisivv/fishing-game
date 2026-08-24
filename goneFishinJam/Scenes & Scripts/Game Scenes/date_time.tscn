@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://1wm4u7bh74dm"]
+
+[ext_resource type="Script" uid="uid://b2m506pwrdish" path="res://Scenes & Scripts/Game Scenes/date_time.gd" id="1_3fu76"]
+[ext_resource type="Texture2D" uid="uid://0x7yqayr8alk" path="res://Assets/CGs/BG_Ending.png" id="2_3fu76"]
+[ext_resource type="Texture2D" uid="uid://dyn377irshqrr" path="res://Assets/Buttons/Settings Button_01.png" id="2_3ggnu"]
+[ext_resource type="Texture2D" uid="uid://bt5kmce0gi8tr" path="res://Assets/Buttons/Settings Button_02.png" id="3_3fu76"]
+
+[sub_resource type="Animation" id="Animation_ipmqp"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture_normal")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_3ggnu")]
+}
+
+[sub_resource type="Animation" id="Animation_ujcil"]
+resource_name = "lineboil"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture_normal")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("2_3ggnu"), ExtResource("3_3fu76")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2gui1"]
+_data = {
+&"RESET": SubResource("Animation_ipmqp"),
+&"lineboil": SubResource("Animation_ujcil")
+}
+
+[node name="DateTime" type="Control" unique_id=644174744]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3fu76")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1156428102]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_3fu76")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1664828610]
+visible = false
+
+[node name="Settings" type="TextureButton" parent="CanvasLayer" unique_id=1521781786]
+offset_right = 40.0
+offset_bottom = 40.0
+pivot_offset = Vector2(46, 46)
+size_flags_vertical = 0
+texture_normal = ExtResource("2_3ggnu")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/Settings" unique_id=2116210282]
+libraries/ = SubResource("AnimationLibrary_2gui1")
+autoplay = &"lineboil"
+
+[connection signal="mouse_entered" from="CanvasLayer/Settings" to="." method="_on_btn_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/Settings" to="." method="_on_btn_exited"]
+[connection signal="pressed" from="CanvasLayer/Settings" to="." method="_on_btn_pressed"]

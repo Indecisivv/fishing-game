@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://3vfxjfatw1vk"]
+
+[ext_resource type="Script" uid="uid://dql1wf5jap3r2" path="res://Scenes & Scripts/CG Scenes/khanh_date_cg.gd" id="1_m2ati"]
+[ext_resource type="Texture2D" uid="uid://b78vf564c5687" path="res://Assets/CGs/Dating CG_Khanh.jpg" id="2_g6v0l"]
+[ext_resource type="Texture2D" uid="uid://c6jclj5i0s72n" path="res://Assets/CGs/Dating CG_Khanh_02.jpg" id="2_m2ati"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5wpen"]
+
+[sub_resource type="Animation" id="Animation_g6v0l"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [SubResource("CompressedTexture2D_5wpen")]
+}
+
+[sub_resource type="Animation" id="Animation_5wpen"]
+resource_name = "lineboil"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("2_g6v0l"), ExtResource("2_m2ati")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_42hjn"]
+_data = {
+&"RESET": SubResource("Animation_g6v0l"),
+&"lineboil": SubResource("Animation_5wpen")
+}
+
+[node name="KhanhDateCG" type="CanvasLayer" unique_id=1143371058]
+script = ExtResource("1_m2ati")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=294765824]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = SubResource("CompressedTexture2D_5wpen")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1521631715]
+libraries/ = SubResource("AnimationLibrary_42hjn")
+autoplay = &"lineboil"

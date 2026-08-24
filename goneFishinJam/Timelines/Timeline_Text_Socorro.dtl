@@ -1,0 +1,262 @@
+[style name="SmartphoneStyle"]
+audio Musicly "res://Assets/Music/M_BGM.ogg" [volume="-10.0" sync="Musicly"]
+Socorro: Hello. I am Socorro. I saw your pictures and think your gloves are very nice. #id:237
+Socorro: May I ask where you got those green onions? #id:238
+[wait time="0.1" hide_text="false"]
+set {is_making_choice} = true
+- Thank you beautiful #id:239
+	set {is_making_choice} = false
+	Player: Wow, thanks! I think your eyes are beautiful! #id:23a
+	Socorro: Oh, thank you... That is very kind of you. You did not answer about your green onions, does that mean do you not want to answer? If so, that is alright! #id:23b
+	[wait time="0.1" hide_text="false"]
+	set {is_making_choice} = true
+	- The store, why? #id:23c
+		set {is_making_choice} = false
+		Player: Oh, sorry! I got them from the grocery store near me. Why? Did you want to go shopping with me? #id:23d
+		Socorro: No. I apologize, I am sure you are great to shop with, that is just not what I meant. Are you normally this forward? #id:23e
+		[wait time="0.1" hide_text="false"]
+		set {is_making_choice} = true
+		- No time to waste. #id:23f
+			set {is_making_choice} = false
+			Player: I think there is no time to waste, I fell in love with your eyes and would like to get to know you. #id:240
+			Socorro: I am sorry, you are obviously looking for someone who is more ready to move to the next step than me. I don't think we fit each other. I will unmatch with you now. #id:241
+			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
+		- Sorry, but... #id:242
+			set {is_making_choice} = false
+			Player: Sorry if I came on too strong, but this app is for dating right? #id:243
+			Socorro: I suppose you are right but everyone will have different speeds they are comfortable with no? I think you and I aren't compatible. I will unmatch with you now. #id:244
+			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
+		- Not usually, but... #id:245
+			set {is_making_choice} = false
+			Player: Not usually, I typically prefer slower romance. But I really want to go on a date today. #id:246
+			Socorro: I understand but I do not think I am the right person for you if that's what you're looking for! Sorry, I will unmatch you now. #id:247
+			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
+	- No, more effort #id:248
+		set {is_making_choice} = false
+		Player: They're just green onions, I didn't realize it was super important, my bad. #id:249
+		Socorro: That is true! However, I personally feel that the source of your ingredients matters a lot. I promise if you try, you might fall in love. #id:24a
+		[wait time="0.1" hide_text="false"]
+		set {is_making_choice} = true
+		- No thanks, shill #id:24b
+			set {is_making_choice} = false
+			Player: I think I am good, even though I am sure your produce is great. Are you trying to sell on the app? Or is that your only interest? #id:24c
+			Socorro: I apologize, I clearly did not pick the right topic... And you seem quite unkind. I do not think I want to continue this conversation however, so I will unmatch you now. #id:24d
+			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
+		- Maybe sometime #id:24e
+			set {is_making_choice} = false
+			Player: I don't really think it matters much? I have never met someone who cares so much before #id:24f
+			Socorro: It is my life's work, I apologize for being strange... I do not want to continue. I will unmatch you now. #id:250
+			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
+		- Persuaded too easily #id:251
+			set {is_making_choice} = false
+			Player: Hm, maybe you have a point? But I can't tell if that is because I am easy to persuade and not because it actually matters... Maybe I will try... Or not #id:252
+			Socorro: I am glad you are willing to give them a try but I think the way we see things is too different. I will unmatch now. #id:253
+			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
+	- Oh sorry! #id:254
+		set {is_making_choice} = false
+		Player: Oh, sorry. That must've seen impolite... I was just distracted. I got farmers’ market, I prefer it over the fluorescence of the grocery store. #id:255
+		Socorro: Oh! I do too! What a happy coincidence huh? What do you usually shop for? #id:256
+		[wait time="0.1" hide_text="false"]
+		set {is_making_choice} = true
+		- I go to haggle #id:257
+			set {is_making_choice} = false
+			Player: Whatever I need at the moment. I like that you can haggle with the vendors unlike the grocery store #id:258
+			Socorro: Oh! You know, local farmers can not really compete with chain grocery stores. Haggling them is not the best practice... I do not think we could even be friends. I will unmatch with you now. #id:259
+			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
+		- Anything but produce #id:25a
+			set {is_making_choice} = false
+			Player: Things like bread or other cooked goods. I don't like buying dirty vegetables... I have to wash them #id:25b
+			Socorro: You understand that grocery vegetables are also dirty... You should be washing them too- Ah, I do not think we are compatible. I will unmatch with you now. #id:25c
+			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
+		- Anything yummy #id:25d
+			set {is_making_choice} = false
+			Player: I don’t usually go with a set list or plan, just whatever looks yummy... I think wandering is part of the appeal #id:25e
+			Socorro: I know what you mean, the scents and colors are so pretty. Since we can not go tonight, how about we hang out at a diner? On me, of course. #id:25f
+			# SUCCESS
+			jump Timeline_Date_Socorro/
+- Where everyone else does #id:260
+	set {is_making_choice} = false
+	Player: The store, isn't that where everyone shops? #id:261
+	Socorro: Well, not everyone! I personally sell my veggies at the farmers’ market. Have you ever been? #id:262
+	[wait time="0.1" hide_text="false"]
+	set {is_making_choice} = true
+	- Overpriced honestly #id:263
+		set {is_making_choice} = false
+		Player: Yea but it's overpriced. Do you give freebies to your dates? I could take you out for some free produce. #id:264
+		Socorro: If I gift someone something, it is usually flowers... Are you saying you only want to get free stuff? #id:265
+		[wait time="0.1" hide_text="false"]
+		set {is_making_choice} = true
+		- Market focused #id:266
+			set {is_making_choice} = false
+			Player: Well, we really haven't talked about anything else and you seem cute but at this point it feels like I know more about the market than you #id:267
+			Socorro: I am sorry, you clearly feel like this conversation was a waste of time and I am starting to feel the same. I will unmatch with you now. #id:268
+			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
+		- As a bonus #id:269
+			set {is_making_choice} = false
+			Player: Maybe not 'only' but wouldn't you consider it a bonus if I offered something high quality for free? #id:26a
+			Socorro: The only high quality thing I am after is good company, but I do not think you can provide that. I will unmatch you now. #id:26b
+			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
+		- Sorry, got excited #id:26c
+			set {is_making_choice} = false
+			Player: Sorry if that offended you, I was enthused by the idea of free produce and came off rudely. #id:26d
+			Socorro: Thank you for apologizing but you have mostly come off as rude. I think it would be best if I unmatch with you now. #id:26e
+			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
+	- No plans to #id:26f
+		set {is_making_choice} = false
+		Player: No, it's too early in the morning, I don’t like that... and I don't like sweat honestly. #id:270
+		Socorro: Ah, not an early riser? Not everyone is. I personally love being awake early! When you say you don't like sweat however, do you mean yourself or others? #id:271
+		[wait time="0.1" hide_text="false"]
+		set {is_making_choice} = true
+		- Anyone #id:272
+			set {is_making_choice} = false
+			Player: Anyone! I don't want to be around people who stink, it's gross! #id:273
+			Socorro: Some of have jobs that cause a lot of sweat... that doesn't make them gross... I do not think this will go anywhere... I will unmatch with you now. #id:274
+			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
+		- Both #id:275
+			set {is_making_choice} = false
+			Player: Both, the idea of my partner being sweaty is unappealing, even if they shower I will smell them first... #id:276
+			Socorro: I think our lifestyles will make us incompatible... I will unmatch with you now. #id:277
+			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
+		- I avoid it #id:278
+			set {is_making_choice} = false
+			Player: I avoid sweating and I don't think people who are sweaty are gross but... #id:279
+			Socorro: You'd rather avoid them? I understand but I don't think we will mesh well. My job requires it. I will unmatch with you now. #id:27a
+			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
+	- Oh, yes #id:27b
+		set {is_making_choice} = false
+		Player: Yes, a few times. I guess you're right then, it just didn't come to mind. #id:27c
+		Socorro: That is alright, it is not the first thought everyone has. It is probably mine because I am a vendor, haha🤣. What do you normally buy when you stop by? #id:27d
+		[wait time="0.1" hide_text="false"]
+		set {is_making_choice} = true
+		- What I need #id:27e
+			set {is_making_choice} = false
+			Player: What I need to buy? What kind of question is that? Do you not have another topic? #id:27f
+			Socorro: I apologize, but you do not have to be so hostile. I do not think this conversation will go anywhere. I will unmatch with you now. #id:280
+			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
+		- I have a vendor #id:281
+			set {is_making_choice} = false
+			Player: The usual things, produce mostly. I already have a vendor though for when it's not the grocery store... So I'm alright #id:282
+			Socorro: I must have come off like a sales pitch... Maybe I am not ready for this, I apologize. I will unmatch with you now. #id:283
+			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
+		- Lots of things! #id:284
+			set {is_making_choice} = false
+			Player: Vegetables and fruits, I sometimes look at the flowers but I don't usually buy... maybe I will buy some next time #id:285
+			Socorro: I would love to talk to you about flowers if you would be willing to discuss over some food at the diner? A flower hang out! On me, of course. #id:286
+			# SUCCESS
+			jump Timeline_Date_Socorro/
+- Farmers’ market #id:287
+	set {is_making_choice} = false
+	Player: Oh, at the farmers’ market... I prefer fresh ingredients. The grocery store is also too bright for me. #id:288
+	Socorro: Oh, wonderful! Not that there is anything wrong with the grocery store but I love the farmers’ market. I vend there actually... Maybe you could stop by my stall if you ever need fresh veggies or fruit! #id:289
+	[wait time="0.1" hide_text="false"]
+	set {is_making_choice} = true
+	- At your job? #id:28a
+		set {is_making_choice} = false
+		Player: If I meet with you, I rather it not be at our job. Don't you have somewhere more interesting we could go? #id:28b
+		Socorro: Sorry if that wasn't the right suggestion, but I thought you could learn about my job while we got to know each other... What do you find interesting to do? #id:28c
+		[wait time="0.1" hide_text="false"]
+		set {is_making_choice} = true
+		- Figure it out #id:28d
+			set {is_making_choice} = false
+			Player: I don't know but I'm tired of dinner and a movie, can you get creative please? Surely you can figure something out, right? #id:28e
+			Socorro: I do not think I want to get creative enough for you... It will be best if we did not continue this conversation it seems. I will unmatch with you now. #id:28f
+			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
+		- Indoor events #id:290
+			set {is_making_choice} = false
+			Player: I prefer indoor events, away from the sun. It’s cooler indoors. I especially like watching sports. Most normal people have at least one sport they're into I think #id:291
+			Socorro: Indoors and away from the sun? Oh... I apologize, but I do not think we will have fun together. That sounds like the opposite of what I would enjoy. I will unmatch with you now. #id:292
+			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
+		- Focus activities #id:293
+			set {is_making_choice} = false
+			Player: Well, I like calmer activities that require focus. Especially if they can be done in pairs... Any type of activity too. I have a few I enjoy already, like puzzles. #id:294
+			Socorro: I enjoy focus based activities too! I think if we hang out, we could learn to enjoy each other's current past times. We could start today even... Diner and a puzzle! #id:295
+			# SUCCESS
+			jump Timeline_Date_Socorro/
+	- Not there... #id:296
+		set {is_making_choice} = false
+		Player: That sounds like it'd be nice, but not really a date location so maybe somewhere else. #id:297
+		Socorro: Ah, right a date. I was hoping we could go slower... A haong out maybe? #id:298
+		[wait time="0.1" hide_text="false"]
+		set {is_making_choice} = true
+		- Typo! #id:299
+			set {is_making_choice} = false
+			Player: LOL. 'haong'. #id:29a
+			Socorro: ...I do not think this will work out. I will unmatch with you now. #id:29b
+			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
+		- What does that mean? #id:29c
+			set {is_making_choice} = false
+			Player: What is 'haong?' I don’t recognize that word lol. #id:29d
+			Socorro: I meant... hang... Sorry, I have to go. I will unmatch with you now. #id:29e
+			# FAILURE
+			set {is_tdate_success} = false
+			set {is_date_success} = false
+		- Yes please #id:29f
+			set {is_making_choice} = false
+			Player: Slow? That sounds alright, perfect even... I would like to hang out! #id:2a0
+			Socorro: I am so glad we are on the same page, I was worried! Thank you for not pointing out my typo by the way... I was embarrassed so I appreciate it... How about we go to the Diner tonight? #id:2a1
+			# SUCCESS
+			jump Timeline_Date_Socorro/
+	- I’d love that. #id:2a2
+		set {is_making_choice} = false
+		Player: I'd really enjoy that... you could tell me about your favorite things to grow and what products you really think are worth it... Anything else you like about gardening too if that’s okay... #id:2a3
+		Socorro: Yes! Of course, I'd really enjoy that. We should plan our hang out soon... Is it okay it is a hang out first? #id:2a4
+		[wait time="0.1" hide_text="false"]
+		set {is_making_choice} = true
+		- I can try #id:2a5
+			set {is_making_choice} = false
+			Player: I am looking to date sooner than later but... With how cute you are... Well, as dating is our end goal then I can be patient. #id:2a6
+			Socorro: Ah, well, that is what I am looking for... Eventually... You might be moving a little fast for me, but let us meet and discuss tonight at the diner. On me, of course. #id:2a7
+			# SUCCESS
+			jump Timeline_Date_Socorro/
+		- Not what I had in mind #id:2a8
+			set {is_making_choice} = false
+			Player: Slow is not exactly what I had in mind but as long as you’re comfortable, we can move at whatever pace feels natural. #id:2a9
+			Socorro: I understand but I appreciate the patience. This sound good to me. Are you free tonight? We could have dinner together at the diner... On me. #id:2aa
+			# SUCCESS
+			jump Timeline_Date_Socorro/
+		- Sounds perfect #id:2ab
+			set {is_making_choice} = false
+			Player: That sounds perfect actually... I would love to be friends with you first. That kind of romance feels better. I would like to hang out with you soon if possible though! #id:2ac
+			Socorro: Oh, great! Yes! Well, I am actually free tonight! I would love to keep chatting with you since we seem so alike. Let us go to the Diner tonight, it is my treat! #id:2ad
+			# SUCCESS
+			jump Timeline_Date_Socorro/
+audio Musicly - [fade="0.5" sync="Musicly"]
+[signal arg="scene_end"]

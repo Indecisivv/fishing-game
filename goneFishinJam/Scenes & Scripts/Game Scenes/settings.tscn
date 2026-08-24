@@ -1,0 +1,1024 @@
+[gd_scene format=3 uid="uid://bpdbtgij7y6x3"]
+
+[ext_resource type="Script" uid="uid://bynl1bl3haan3" path="res://Scenes & Scripts/Game Scenes/settings.gd" id="1_0h3cg"]
+[ext_resource type="Texture2D" uid="uid://4rvcn5kcrwqd" path="res://Assets/CGs/Game Icon_PNG.png" id="2_a805n"]
+[ext_resource type="Texture2D" uid="uid://cwbwyiueyujrc" path="res://Assets/CGs/Settings_Background_Sidebar.png" id="2_ghqn8"]
+[ext_resource type="AudioStream" uid="uid://cn6ullfd8rt44" path="res://Assets/SFX/testAUDIO.wav" id="2_llxf6"]
+[ext_resource type="FontFile" uid="uid://cuauodtrqsmwe" path="res://Assets/FishFonts/Viga/Viga-Regular.ttf" id="2_sojg4"]
+[ext_resource type="Script" uid="uid://d006d3k3cgqm5" path="res://Scenes & Scripts/Game Scenes/button_main_menu.gd" id="3_3xy2v"]
+[ext_resource type="Texture2D" uid="uid://d3axd6g05k5jt" path="res://Assets/CGs/Settings_Background_Sidebar_2.png" id="3_rjxyg"]
+[ext_resource type="Texture2D" uid="uid://b6uvtbslghgxw" path="res://Assets/Buttons/UI_Matching_Send a Message.png" id="3_tkmkc"]
+[ext_resource type="FontFile" uid="uid://b5u7o2egl3j1f" path="res://Assets/FishFonts/National_Park/NationalPark-VariableFont_wght.ttf" id="4_348px"]
+[ext_resource type="Script" uid="uid://b4qsam8kc77pu" path="res://Scenes & Scripts/Game Scenes/button_in_settings_menu.gd" id="5_3xy2v"]
+[ext_resource type="FontFile" uid="uid://c0fss6t1fq1md" path="res://Assets/FishFonts/Freckle_Face/FreckleFace-Regular.ttf" id="5_348px"]
+[ext_resource type="Script" uid="uid://fvsnds0u1npk" path="res://Scenes & Scripts/Game Scenes/button_credits.gd" id="6_hecry"]
+[ext_resource type="Script" uid="uid://bhd47r6dk04u6" path="res://Scenes & Scripts/Game Scenes/button_quit.gd" id="7_c7khg"]
+[ext_resource type="Script" uid="uid://tnt2a7ekleh2" path="res://Scenes & Scripts/Game Scenes/button_close.gd" id="11_ghqn8"]
+[ext_resource type="Texture2D" uid="uid://c8rq4k77ktphw" path="res://Assets/CGs/Settings_Background.png" id="11_rg0cr"]
+[ext_resource type="Script" uid="uid://cmrurubo6kgtp" path="res://Scenes & Scripts/Game Scenes/option_button.gd" id="11_u6v6v"]
+[ext_resource type="Texture2D" uid="uid://cdloqcx4o415w" path="res://Assets/Misc/Slider_Icon.png" id="14_775wm"]
+[ext_resource type="Texture2D" uid="uid://duw45xe20pv2w" path="res://Assets/CGs/Slider_Long.png" id="14_a805n"]
+[ext_resource type="Texture2D" uid="uid://bjnfhdtxne4lh" path="res://Assets/Misc/Slider_Long.png" id="16_775wm"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a805n"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_775wm"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sfvw0"]
+content_margin_left = 20.0
+content_margin_top = 20.0
+content_margin_right = 20.0
+content_margin_bottom = 20.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ibcqv"]
+content_margin_left = 20.0
+content_margin_top = 20.0
+content_margin_right = 20.0
+content_margin_bottom = 20.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_llxf6"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6ptan"]
+texture = ExtResource("14_a805n")
+texture_margin_top = 16.0
+modulate_color = Color(0.46229059, 0.46229059, 0.46229059, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hbqs8"]
+texture = ExtResource("16_775wm")
+texture_margin_top = 16.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_musq8"]
+bg_color = Color(0.9372549, 0.9137255, 0.8666667, 0.6431373)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_775wm"]
+texture = ExtResource("14_a805n")
+texture_margin_top = 16.0
+modulate_color = Color(0.4627451, 0.4627451, 0.4627451, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r50k8"]
+texture = ExtResource("16_775wm")
+texture_margin_top = 16.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6xlox"]
+bg_color = Color(0.9372549, 0.9137255, 0.8666667, 0.6431373)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e5nff"]
+content_margin_left = 20.0
+content_margin_top = 20.0
+content_margin_right = 20.0
+content_margin_bottom = 20.0
+bg_color = Color(0.1, 0.1, 0.1, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sojg4"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0.1, 0.1, 0.1, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[node name="Settings" type="Control" unique_id=1674674967]
+z_index = 4
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0h3cg")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=426794815]
+layer = 2
+visible = false
+
+[node name="GameIconPng" type="Sprite2D" parent="CanvasLayer" unique_id=1698590469]
+visible = false
+z_index = 128
+position = Vector2(791.375, 215.53094)
+scale = Vector2(0.1561834, 0.15940645)
+texture = ExtResource("2_a805n")
+
+[node name="BackgroundPanel" type="Panel" parent="CanvasLayer" unique_id=2013417446]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sidebar1" type="Panel" parent="CanvasLayer" unique_id=6623864]
+offset_left = 24.0
+offset_top = 40.0
+offset_right = 502.0
+offset_bottom = 928.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_a805n")
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Sidebar1" unique_id=38615898]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ghqn8")
+
+[node name="Sidebar2" type="Panel" parent="CanvasLayer" unique_id=341927846]
+offset_left = 24.0
+offset_top = 948.0
+offset_right = 502.0
+offset_bottom = 1041.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_775wm")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Sidebar2" unique_id=1305867766]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("3_rjxyg")
+
+[node name="NavigationPanel" type="PanelContainer" parent="CanvasLayer" unique_id=1085788913]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -967.0
+offset_top = -576.0
+offset_right = -424.0
+offset_bottom = 481.49976
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.8000003, 0.8000003)
+pivot_offset = Vector2(271, 500)
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_sfvw0")
+
+[node name="NavContainer" type="VBoxContainer" parent="CanvasLayer/NavigationPanel" unique_id=491653678]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_constants/separation = 12
+
+[node name="ButtonMainMenu" type="TextureButton" parent="CanvasLayer/NavigationPanel/NavContainer" unique_id=472639918]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+texture_normal = ExtResource("3_tkmkc")
+script = ExtResource("3_3xy2v")
+
+[node name="Label" type="Label" parent="CanvasLayer/NavigationPanel/NavContainer/ButtonMainMenu" unique_id=1969261535]
+layout_mode = 0
+offset_left = 82.0
+offset_top = 16.250172
+offset_right = 437.0
+offset_bottom = 114.25017
+theme_override_fonts/font = ExtResource("2_sojg4")
+theme_override_font_sizes/font_size = 67
+text = "UI_MAIN_MENU_BUTTON"
+
+[node name="ButtonSettings" type="TextureButton" parent="CanvasLayer/NavigationPanel/NavContainer" unique_id=1377051116]
+layout_mode = 2
+size_flags_horizontal = 0
+texture_normal = ExtResource("3_tkmkc")
+script = ExtResource("5_3xy2v")
+
+[node name="Label" type="Label" parent="CanvasLayer/NavigationPanel/NavContainer/ButtonSettings" unique_id=763951847]
+layout_mode = 0
+offset_left = 82.0
+offset_top = 25.0
+offset_right = 437.0
+offset_bottom = 123.0
+theme_override_fonts/font = ExtResource("2_sojg4")
+theme_override_font_sizes/font_size = 48
+text = "UI_SETTINGS_BUTTON"
+horizontal_alignment = 1
+
+[node name="ButtonCredits" type="TextureButton" parent="CanvasLayer/NavigationPanel/NavContainer" unique_id=1549088735]
+layout_mode = 2
+size_flags_horizontal = 0
+texture_normal = ExtResource("3_tkmkc")
+script = ExtResource("6_hecry")
+
+[node name="Label" type="Label" parent="CanvasLayer/NavigationPanel/NavContainer/ButtonCredits" unique_id=1977907472]
+layout_mode = 0
+offset_left = 82.0
+offset_top = 12.0
+offset_right = 437.0
+offset_bottom = 110.0
+theme_override_fonts/font = ExtResource("2_sojg4")
+theme_override_font_sizes/font_size = 48
+text = "UI_CREDITS_BUTTON"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonClose" type="TextureButton" parent="CanvasLayer/NavigationPanel/NavContainer" unique_id=1958823623]
+layout_mode = 2
+size_flags_vertical = 10
+texture_normal = ExtResource("3_tkmkc")
+script = ExtResource("11_ghqn8")
+
+[node name="Label" type="Label" parent="CanvasLayer/NavigationPanel/NavContainer/ButtonClose" unique_id=1894777390]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 17.0
+offset_right = 461.0
+offset_bottom = 104.0
+theme_override_fonts/font = ExtResource("2_sojg4")
+theme_override_font_sizes/font_size = 64
+text = "UI_BACK_BUTTON"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonQuit" type="TextureButton" parent="CanvasLayer" unique_id=567057855]
+offset_left = 11.000012
+offset_top = 924.99994
+offset_right = 514.0
+offset_bottom = 1062.0
+scale = Vector2(0.55999863, 0.55999863)
+pivot_offset = Vector2(251, 68)
+size_flags_vertical = 10
+texture_normal = ExtResource("3_tkmkc")
+script = ExtResource("7_c7khg")
+
+[node name="Label" type="Label" parent="CanvasLayer/ButtonQuit" unique_id=480273981]
+layout_mode = 0
+offset_left = 82.0
+offset_top = 9.0
+offset_right = 437.0
+offset_bottom = 107.0
+theme_override_fonts/font = ExtResource("2_sojg4")
+theme_override_font_sizes/font_size = 72
+text = "UI_QUIT_BUTTON"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1683668258]
+offset_left = 518.0
+offset_top = 40.0
+offset_right = 1885.0
+offset_bottom = 1041.0
+texture = ExtResource("11_rg0cr")
+
+[node name="SettingsScreen" type="PanelContainer" parent="CanvasLayer" unique_id=132653074]
+offset_left = 539.0
+offset_top = 71.0
+offset_right = 1862.0
+offset_bottom = 1010.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ibcqv")
+
+[node name="ScreenContainer" type="VBoxContainer" parent="CanvasLayer/SettingsScreen" unique_id=1495200417]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_constants/separation = 42
+
+[node name="TitleContainer" type="PanelContainer" parent="CanvasLayer/SettingsScreen/ScreenContainer" unique_id=1342486156]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_llxf6")
+
+[node name="Label" type="Label" parent="CanvasLayer/SettingsScreen/ScreenContainer/TitleContainer" unique_id=144858506]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("5_348px")
+theme_override_font_sizes/font_size = 48
+text = "UI_SETTINGS_BUTTON"
+
+[node name="VolumeContainer" type="VBoxContainer" parent="CanvasLayer/SettingsScreen/ScreenContainer" unique_id=1782134729]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 48
+
+[node name="MusicContainer" type="HBoxContainer" parent="CanvasLayer/SettingsScreen/ScreenContainer/VolumeContainer" unique_id=1800683168]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Label" type="Label" parent="CanvasLayer/SettingsScreen/ScreenContainer/VolumeContainer/MusicContainer" unique_id=1020704521]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("5_348px")
+theme_override_font_sizes/font_size = 36
+text = "UI_MUSIC_LABEL"
+
+[node name="HSlider" type="HSlider" parent="CanvasLayer/SettingsScreen/ScreenContainer/VolumeContainer/MusicContainer" unique_id=514609659]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+theme_override_icons/grabber = ExtResource("14_775wm")
+theme_override_icons/grabber_highlight = ExtResource("14_775wm")
+theme_override_styles/slider = SubResource("StyleBoxTexture_6ptan")
+theme_override_styles/grabber_area = SubResource("StyleBoxTexture_hbqs8")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_musq8")
+max_value = 1.0
+step = 0.01
+value = 0.74
+
+[node name="Button" type="Button" parent="CanvasLayer/SettingsScreen/ScreenContainer/VolumeContainer/MusicContainer" unique_id=526703664]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 24
+text = "                "
+
+[node name="AudioContainer" type="HBoxContainer" parent="CanvasLayer/SettingsScreen/ScreenContainer/VolumeContainer" unique_id=1933218414]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Label" type="Label" parent="CanvasLayer/SettingsScreen/ScreenContainer/VolumeContainer/AudioContainer" unique_id=2075426050]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("5_348px")
+theme_override_font_sizes/font_size = 36
+text = "UI_AUDIO_LABEL"
+
+[node name="HSlider" type="HSlider" parent="CanvasLayer/SettingsScreen/ScreenContainer/VolumeContainer/AudioContainer" unique_id=591187407]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+theme_override_icons/grabber = ExtResource("14_775wm")
+theme_override_icons/grabber_highlight = ExtResource("14_775wm")
+theme_override_styles/slider = SubResource("StyleBoxTexture_775wm")
+theme_override_styles/grabber_area = SubResource("StyleBoxTexture_r50k8")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_6xlox")
+max_value = 1.0
+step = 0.01
+value = 0.78
+
+[node name="Button" type="Button" parent="CanvasLayer/SettingsScreen/ScreenContainer/VolumeContainer/AudioContainer" unique_id=938992432]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 24
+text = "UI_TEST_SOUND_BUTTON"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer/SettingsScreen/ScreenContainer/VolumeContainer/AudioContainer/Button" unique_id=1964780123]
+stream = ExtResource("2_llxf6")
+bus = &"Audio"
+
+[node name="LanguageContainer" type="VBoxContainer" parent="CanvasLayer/SettingsScreen/ScreenContainer" unique_id=218069520]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/SettingsScreen/ScreenContainer/LanguageContainer" unique_id=1628456654]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("5_348px")
+theme_override_font_sizes/font_size = 46
+text = "UI_LANGUAGE_LABEL"
+horizontal_alignment = 1
+
+[node name="OptionButton" type="OptionButton" parent="CanvasLayer/SettingsScreen/ScreenContainer/LanguageContainer" unique_id=2066446078]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 48
+selected = 0
+item_count = 3
+popup/item_0/text = "English"
+popup/item_0/id = 0
+popup/item_1/text = "Espanol"
+popup/item_1/id = 1
+popup/item_2/text = "Filipino"
+popup/item_2/id = 2
+script = ExtResource("11_u6v6v")
+
+[node name="CreditsScreen" type="PanelContainer" parent="CanvasLayer" unique_id=1154685088]
+visible = false
+offset_left = 518.0
+offset_top = 40.0
+offset_right = 1885.0
+offset_bottom = 1042.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_e5nff")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer/CreditsScreen" unique_id=1502401342]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="TitleContainer" type="PanelContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2" unique_id=426374377]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_llxf6")
+
+[node name="Label" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/TitleContainer" unique_id=813793099]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("5_348px")
+theme_override_font_sizes/font_size = 48
+text = "UI_CREDITS_BUTTON"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2" unique_id=771798036]
+layout_mode = 2
+theme_override_constants/separation = 28
+
+[node name="Credits" type="PanelContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer" unique_id=280837760]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_sojg4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits" unique_id=596879921]
+layout_mode = 2
+
+[node name="Writer" type="HBoxContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer" unique_id=90580273]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Label" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer/Writer" unique_id=1741292582]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("2_sojg4")
+theme_override_font_sizes/font_size = 28
+text = "UI_WRITER_LABEL"
+
+[node name="LinkButton" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer/Writer" unique_id=993128541]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "Mewrionette"
+underline = 1
+uri = "https://mewrionette.itch.io/"
+
+[node name="Coder" type="HBoxContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer" unique_id=453795648]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Label" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer/Coder" unique_id=399961085]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("2_sojg4")
+theme_override_font_sizes/font_size = 28
+text = "UI_CODER_LABEL"
+
+[node name="LinkButton" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer/Coder" unique_id=358384834]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "cdtlnc"
+underline = 1
+uri = "https://itch.io/profile/cdtlnc"
+
+[node name="LinkButton2" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer/Coder" unique_id=1865771539]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "indecisiv"
+underline = 1
+uri = "https://indecisiv.itch.io/"
+
+[node name="Artist" type="HBoxContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer" unique_id=52971059]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Label" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer/Artist" unique_id=1904258106]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("2_sojg4")
+theme_override_font_sizes/font_size = 28
+text = "UI_ARTIST_LABEL"
+
+[node name="LinkButton" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer/Artist" unique_id=795035315]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "krak7en"
+underline = 1
+uri = "https://itch.io/profile/krak7en"
+
+[node name="LinkButton2" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer/Artist" unique_id=1554287673]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "Mewrionette"
+underline = 1
+uri = "https://mewrionette.itch.io/"
+
+[node name="Audio Designer" type="HBoxContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer" unique_id=1918681605]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Label" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer/Audio Designer" unique_id=1022830552]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("2_sojg4")
+theme_override_font_sizes/font_size = 28
+text = "UI_AUDIO_LABEL"
+
+[node name="LinkButton" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Credits/VBoxContainer/Audio Designer" unique_id=1401400379]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "indecisiv"
+underline = 1
+uri = "https://indecisiv.itch.io/"
+
+[node name="Sounds" type="PanelContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer" unique_id=1527923197]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_sojg4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds" unique_id=53844839]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer" unique_id=226822800]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("5_348px")
+theme_override_font_sizes/font_size = 48
+text = "UI_SOUNDS_LABEL"
+
+[node name="Label2" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer" unique_id=1142309863]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "UI_SOUNDSBLURB_LABEL"
+
+[node name="Names" type="HBoxContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer" unique_id=356961695]
+layout_mode = 2
+theme_override_constants/separation = 22
+
+[node name="LinkButton" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names" unique_id=1146760437]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "zazz.sound.design"
+underline = 1
+uri = "https://freesound.org/people/zazz.sound.design/"
+
+[node name="LinkButton2" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names" unique_id=70901476]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "Vrymaa"
+underline = 1
+uri = "https://freesound.org/people/Vrymaa/"
+
+[node name="LinkButton3" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names" unique_id=668182075]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "ゆうきわたる"
+underline = 1
+uri = "https://dova-s.jp/en/creator/detail/239"
+
+[node name="LinkButton4" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names" unique_id=1303204155]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "Masuo"
+underline = 1
+uri = "https://dova-s.jp/en/creator/detail/355"
+
+[node name="LinkButton5" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names" unique_id=685566201]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "Keido Honda"
+underline = 1
+uri = "https://dova-s.jp/en/creator/detail/136"
+
+[node name="LinkButton6" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names" unique_id=539479184]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "Aguila Jata"
+underline = 1
+uri = "https://dova-s.jp/en/creator/detail/425"
+
+[node name="LinkButton7" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names" unique_id=362757654]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "Tinymemory"
+underline = 1
+uri = "https://dova-s.jp/en/creator/detail/293"
+
+[node name="Names2" type="HBoxContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer" unique_id=1407912362]
+layout_mode = 2
+theme_override_constants/separation = 22
+
+[node name="LinkButton" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names2" unique_id=1810349694]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "T.Waraya"
+underline = 1
+uri = "https://dova-s.jp/en/creator/detail/3"
+
+[node name="LinkButton2" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names2" unique_id=1897666803]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "FLASH BEAT"
+underline = 1
+uri = "https://dova-s.jp/en/creator/detail/261"
+
+[node name="LinkButton3" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names2" unique_id=1912058979]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "えだまめ88"
+underline = 1
+uri = "https://dova-s.jp/en/creator/detail/351"
+
+[node name="LinkButton4" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names2" unique_id=191014678]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "Killersmurf96"
+underline = 1
+uri = "https://freesound.org/people/Killersmurf96/"
+
+[node name="LinkButton5" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names2" unique_id=1637427062]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "andre.nascimento"
+underline = 1
+uri = "https://freesound.org/people/andre.nascimento/"
+
+[node name="LinkButton6" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names2" unique_id=1104026794]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "RoyalRose"
+underline = 1
+uri = "https://freesound.org/people/RoyalRose/"
+
+[node name="LinkButton7" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names2" unique_id=7709114]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "Froey_"
+underline = 1
+uri = "https://freesound.org/people/Froey_/"
+
+[node name="Names3" type="HBoxContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer" unique_id=1673527137]
+layout_mode = 2
+theme_override_constants/separation = 22
+
+[node name="LinkButton" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names3" unique_id=957310979]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "Soughtaftersounds"
+underline = 1
+uri = "https://freesound.org/people/Soughtaftersounds/"
+
+[node name="LinkButton2" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names3" unique_id=279029559]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "et_graham"
+underline = 1
+uri = "https://freesound.org/people/et_graham/"
+
+[node name="LinkButton3" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names3" unique_id=1825046618]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "BranndyBottle"
+underline = 1
+uri = "https://freesound.org/people/BranndyBottle/"
+
+[node name="LinkButton4" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names3" unique_id=1733280059]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "Greencouch"
+underline = 1
+uri = "https://freesound.org/people/Greencouch/"
+
+[node name="LinkButton5" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names3" unique_id=2098971184]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "Christopherderp"
+underline = 1
+uri = "https://freesound.org/people/Christopherderp/"
+
+[node name="LinkButton6" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names3" unique_id=1081016584]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "hemogobblin"
+underline = 1
+uri = "https://freesound.org/people/hemogobblin/"
+
+[node name="LinkButton7" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names3" unique_id=2073322540]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "bolkmar"
+underline = 1
+uri = "https://freesound.org/people/bolkmar/"
+
+[node name="Names4" type="HBoxContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer" unique_id=1995525961]
+layout_mode = 2
+theme_override_constants/separation = 22
+
+[node name="LinkButton" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names4" unique_id=889148786]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "JanevdMerwe1995"
+underline = 1
+uri = "https://freesound.org/people/JanevdMerwe1995/"
+
+[node name="LinkButton2" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names4" unique_id=2040128782]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "Lextao"
+underline = 1
+uri = "https://freesound.org/people/Lextao/"
+
+[node name="LinkButton3" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names4" unique_id=1599674176]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "Angela102938"
+underline = 1
+uri = "https://freesound.org/people/Angela102938/"
+
+[node name="LinkButton4" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names4" unique_id=415992803]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "PaulOcone"
+underline = 1
+uri = "https://freesound.org/people/PaulOcone/"
+
+[node name="LinkButton5" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names4" unique_id=1902417071]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "levypeck"
+underline = 1
+uri = "https://freesound.org/people/levypeck/"
+
+[node name="LinkButton6" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names4" unique_id=1489830698]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "JoseAgudelo"
+underline = 1
+uri = "https://freesound.org/people/JoseAgudelo/"
+
+[node name="LinkButton7" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names4" unique_id=1089132795]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "Luisa_Sanchez"
+underline = 1
+uri = "https://freesound.org/people/Luisa_Sanchez/"
+
+[node name="Names5" type="HBoxContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer" unique_id=617399877]
+layout_mode = 2
+theme_override_constants/separation = 22
+
+[node name="LinkButton" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names5" unique_id=210188277]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "amthomas101"
+underline = 1
+uri = "https://freesound.org/people/amthomas101/"
+
+[node name="LinkButton2" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names5" unique_id=297866300]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "giddster"
+underline = 1
+uri = "https://freesound.org/people/Lextao/"
+
+[node name="LinkButton3" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names5" unique_id=1845630804]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "Amparo101"
+underline = 1
+uri = "https://freesound.org/people/Amparo101/"
+
+[node name="LinkButton4" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names5" unique_id=1497601316]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "Garuda1982"
+underline = 1
+uri = "https://freesound.org/people/Garuda1982/"
+
+[node name="LinkButton5" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names5" unique_id=743940407]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "Ironlink15"
+underline = 1
+uri = "https://freesound.org/people/Ironlink15/"
+
+[node name="LinkButton6" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds/VBoxContainer/Names5" unique_id=2114574442]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "CapsLok"
+underline = 1
+uri = "https://freesound.org/people/CapsLok/"
+
+[node name="Sounds2" type="PanelContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer" unique_id=429461111]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_sojg4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds2" unique_id=62867009]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds2/VBoxContainer" unique_id=2082618398]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("5_348px")
+theme_override_font_sizes/font_size = 48
+text = "UI_BACKGROUNDS_LABEL"
+
+[node name="Label2" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds2/VBoxContainer" unique_id=907562047]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "UI_BACKGROUNDSBLURB_LABEL"
+
+[node name="Names" type="HBoxContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds2/VBoxContainer" unique_id=1014560218]
+layout_mode = 2
+theme_override_constants/separation = 22
+
+[node name="LinkButton" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/Sounds2/VBoxContainer/Names" unique_id=1897611673]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "Nguyễn Hiệp"
+underline = 1
+uri = "https://unsplash.com/@hieptltb97"
+
+[node name="License" type="PanelContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer" unique_id=475893893]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_sojg4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/License" unique_id=1143879364]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/License/VBoxContainer" unique_id=826514274]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("5_348px")
+theme_override_font_sizes/font_size = 48
+text = "UI_LISCENSE_LABEL"
+
+[node name="Label2" type="Label" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/License/VBoxContainer" unique_id=748521327]
+visible = false
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "UI_LISCENSEBLURB_LABEL"
+
+[node name="Writer" type="HBoxContainer" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/License/VBoxContainer" unique_id=2123920329]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="LinkButton2" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/License/VBoxContainer/Writer" unique_id=504997386]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "Godot 4.0 License"
+underline = 1
+uri = "https://github.com/godotengine/godot/blob/master/LICENSE.txt"
+
+[node name="LinkButton3" type="LinkButton" parent="CanvasLayer/CreditsScreen/VBoxContainer2/VBoxContainer/License/VBoxContainer/Writer" unique_id=215359652]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.9137255, 0.8666667, 1)
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 28
+text = "dialogic"
+underline = 1
+uri = "https://github.com/dialogic-godot/dialogic/blob/main/LICENSE"
+
+[node name="GalleryScreen" type="PanelContainer" parent="CanvasLayer" unique_id=354880445]
+visible = false
+offset_left = 518.0
+offset_top = 40.0
+offset_right = 1885.0
+offset_bottom = 1041.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_e5nff")
+
+[node name="Button" type="Button" parent="." unique_id=2079727655]
+visible = false
+layout_mode = 0
+theme_override_fonts/font = ExtResource("4_348px")
+theme_override_font_sizes/font_size = 24
+text = "Test Sound"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Button" unique_id=987587741]
+stream = ExtResource("2_llxf6")
+bus = &"Audio"
+
+[connection signal="mouse_entered" from="CanvasLayer/NavigationPanel/NavContainer/ButtonMainMenu" to="CanvasLayer/NavigationPanel/NavContainer/ButtonMainMenu" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/NavigationPanel/NavContainer/ButtonMainMenu" to="CanvasLayer/NavigationPanel/NavContainer/ButtonMainMenu" method="_on_mouse_exited"]
+[connection signal="pressed" from="CanvasLayer/NavigationPanel/NavContainer/ButtonMainMenu" to="." method="_on_return_to_menu"]
+[connection signal="mouse_entered" from="CanvasLayer/NavigationPanel/NavContainer/ButtonSettings" to="CanvasLayer/NavigationPanel/NavContainer/ButtonSettings" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/NavigationPanel/NavContainer/ButtonSettings" to="CanvasLayer/NavigationPanel/NavContainer/ButtonSettings" method="_on_mouse_exited"]
+[connection signal="pressed" from="CanvasLayer/NavigationPanel/NavContainer/ButtonSettings" to="." method="_on_settings_pressed"]
+[connection signal="mouse_entered" from="CanvasLayer/NavigationPanel/NavContainer/ButtonCredits" to="CanvasLayer/NavigationPanel/NavContainer/ButtonCredits" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/NavigationPanel/NavContainer/ButtonCredits" to="CanvasLayer/NavigationPanel/NavContainer/ButtonCredits" method="_on_mouse_exited"]
+[connection signal="pressed" from="CanvasLayer/NavigationPanel/NavContainer/ButtonCredits" to="." method="_on_credits_pressed"]
+[connection signal="mouse_entered" from="CanvasLayer/NavigationPanel/NavContainer/ButtonClose" to="CanvasLayer/NavigationPanel/NavContainer/ButtonClose" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/NavigationPanel/NavContainer/ButtonClose" to="CanvasLayer/NavigationPanel/NavContainer/ButtonClose" method="_on_mouse_exited"]
+[connection signal="pressed" from="CanvasLayer/NavigationPanel/NavContainer/ButtonClose" to="." method="_on_close_pressed"]
+[connection signal="mouse_entered" from="CanvasLayer/ButtonQuit" to="CanvasLayer/ButtonQuit" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/ButtonQuit" to="CanvasLayer/ButtonQuit" method="_on_mouse_exited"]
+[connection signal="pressed" from="CanvasLayer/ButtonQuit" to="." method="_on_quit_game"]
+[connection signal="value_changed" from="CanvasLayer/SettingsScreen/ScreenContainer/VolumeContainer/MusicContainer/HSlider" to="." method="_on_music_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/SettingsScreen/ScreenContainer/VolumeContainer/AudioContainer/HSlider" to="." method="_on_sound_value_changed"]
+[connection signal="pressed" from="CanvasLayer/SettingsScreen/ScreenContainer/VolumeContainer/AudioContainer/Button" to="." method="_on_test_sound_button_pressed"]
+[connection signal="item_selected" from="CanvasLayer/SettingsScreen/ScreenContainer/LanguageContainer/OptionButton" to="CanvasLayer/SettingsScreen/ScreenContainer/LanguageContainer/OptionButton" method="_on_item_selected"]

@@ -1,0 +1,54 @@
+[style name="VisualNovelStyle"]
+audio Musicly - [fade="1.5" volume="-5.0" bus="Music"]
+[signal arg="date_start"]
+[background arg="res://Assets/CGs/BG_Ending.png" fade="1.5" wait="true"]
+Narrator: [lspeed = 0.05] The dinner that the Dogfish had chosen was small and quaint, clean and lit by lowlights. #id:7a
+Narrator: [lspeed = 0.05] It was a reflection of them from what you learned from your text exchange. #id:7b
+Narrator: [lspeed = 0.05] However... #id:7c
+audio Musicly "res://Assets/Music/M_Date_socorro.ogg" [fade="2.0" volume="-11.0" bus="Music" sync="Musicly"]
+[background scene="res://Scenes & Scripts/CG Scenes/socorro_date_cg.tscn" fade="1.5" wait="true"]
+Narrator: [lspeed = 0.05] Despite their claims that this was a hangout, she show up with a bouquet in hand. #id:7d
+Socorro: [lspeed = 0.05] I know we said it was meant to not be a date… especially because I asked- but... #id:7e
+Socorro: [lspeed = 0.05] I thought I’d bring you these anyway! #id:7f
+Socorro: [lspeed = 0.05] I hope it’s alright… I grew them myself! Do you know flower language…? #id:80
+Narrator: [lspeed = 0.05] Her voice was nervous and she had a distinct stutter. What a cute woman. #id:81
+audio "res://Assets/SFX/SFX_ForkPlate.wav" [volume="-9.0" bus="Audio"]
+Narrator: [lspeed = 0.05] The food at the diner was mediocre, but you complimented it enthusiastically with a smile. #id:82
+Narrator: [lspeed = 0.05] Thankfully Socorro came with an appetite from her job and didn’t seem to take notice she had eaten way more than her half, allowing you to get away with not partaking much. #id:83
+Narrator: [lspeed = 0.05] You spend a long time chatting, learning all about what plants grow best in what weather and how she had just started bee keeping. #id:84
+Socorro: [lspeed = 0.05] I think they like me honestly! #id:85
+Socorro: [lspeed = 0.05] I’ve read other bee keepers say they know their bees recognize them and I agree! #id:86
+Socorro: [lspeed = 0.05] It feels like they greet me when I come into the garden. #id:87
+Narrator: [lspeed = 0.05] You throw in a fact about bees mourning their keepers when they die. #id:88
+Narrator: [lspeed = 0.05] Socorro’s shoulders fall a little bit and she replies that she hopes she’ll be safe for a long time to not make them sad then. #id:89
+Narrator: [lspeed = 0.05] You smile at that. #id:8a
+Narrator: [lspeed = 0.05] Once it was time to head out, both of you talking about your next meeting. #id:8b
+Narrator: [lspeed = 0.05] You trip and fall, wincing as you try to stand. #id:8c
+Narrator: [lspeed = 0.05] It was clear you couldn’t get home alone, and Socorro, not willing to let her new friend struggle, offered to drive your car. #id:8d
+Narrator: [lspeed = 0.05] The ride was a lot of her checking on you and saying that she’d replace the flowers you fell on. #id:8e
+audio Musicly - [volume="-5.0" bus="Music"]
+[background arg="res://Assets/CGs/BG_Ending.png" fade="1.5" wait="true"]
+Narrator: [lspeed = 0.05] When you reached the cabin she asked if she could carry you in and you agreed. #id:8f
+Narrator: [lspeed = 0.05] She takes you through your front door and sets you on the couch, going through your freezer for ice after excusing herself. #id:90
+Narrator: [lspeed = 0.05] It was late and she didn’t seem to be planning to leave. #id:91
+Narrator: [lspeed = 0.05] That presumption was proven correct when she told you that she didn’t feel comfortable leaving you like this, at least for tonight. #id:92
+Narrator: [lspeed = 0.05] Apologetically, she asked if you’d be alright with her staying. #id:93
+Narrator: [lspeed = 0.05] Of course, that would be so helpful, how could you say no? Thankfully you had a spare bedroom. #id:94
+Narrator: [lspeed = 0.05] It was a little awkward of course, having to move silently in your own home once she was asleep. #id:95
+Narrator: [lspeed = 0.05] The recipe you planned took a lot of preparation and ingredients. #id:96
+Narrator: [lspeed = 0.05] Since it called for beans and a salsa, you had done that in advance. All you needed now was to cook and shred the shark. #id:97
+Narrator: [lspeed = 0.05] You open the door that you were keeping the shark in, making sure it was ready. #id:98
+Narrator: [lspeed = 0.05] Soft snoring came from the room. #id:99
+Narrator: [lspeed = 0.05] Your knife sliced in and you mourned that the clean up would have you replacing furniture, it would be worth it however. #id:9a
+audio "res://Assets/SFX/SFX_Cooking_Socorro.wav" [bus="Audio"]
+Narrator: [lspeed = 0.05] Once it was ready, you placed the fish, onion, garlic, epazote, and salt into a pan with water before covering it with a lid. #id:9b
+Narrator: [lspeed = 0.05] After it was ready and shredded, all it took was a few more steps before you could stack tortillas and fillings, dousing them with a generous amount of salsa. #id:9c
+Narrator: [lspeed = 0.05] Poor Socorro, innocent and helpful Socorro. Her first relationship ending in her death? #id:9d
+Narrator: [lspeed = 0.05] Talk about bad luck, but at least you got a delicious meal out of her, right? #id:9e
+set {is_tdate_success} = true
+set {is_date_success} = true
+[wait time="10.0"]
+[clear time="1.0"]
+[background arg="res://Assets/CGs/BG_Ending.png" fade="0.0"]
+[signal arg="scene_end"]
+[end_timeline]

@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://cje6p5g2dyn00"]
+
+[ext_resource type="Texture2D" uid="uid://gjj8rdk2fktt" path="res://Assets/CGs/Dating CG_Ada.jpg" id="1_3uj26"]
+[ext_resource type="Script" uid="uid://bgd1ojqmnqb2y" path="res://Scenes & Scripts/CG Scenes/ada_date_cg.gd" id="1_hghyg"]
+[ext_resource type="Texture2D" uid="uid://bxqgaxfys4p7w" path="res://Assets/CGs/Dating CG_Ada_02.jpg" id="2_hghyg"]
+
+[sub_resource type="Animation" id="Animation_nxhb3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_3uj26")]
+}
+
+[sub_resource type="Animation" id="Animation_cdrvu"]
+resource_name = "lineboil"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("1_3uj26"), ExtResource("2_hghyg")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_cdgqe"]
+_data = {
+&"RESET": SubResource("Animation_nxhb3"),
+&"lineboil": SubResource("Animation_cdrvu")
+}
+
+[node name="ada_date_cg" type="CanvasLayer" unique_id=293518306]
+script = ExtResource("1_hghyg")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=911837124]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_3uj26")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1398251456]
+libraries/ = SubResource("AnimationLibrary_cdgqe")
+autoplay = &"lineboil"
