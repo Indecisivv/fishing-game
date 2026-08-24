@@ -5,6 +5,8 @@ extends TextureButton
 @onready var date_choices_view: Control = $"../../DateChoicesView"
 @onready var button_heart: TextureButton = $"../../DateProfileView/Button_Heart"
 
+const MC_INTENSITY = preload("uid://dftt5dmm7umyp")
+
 var btn_tween : Tween
 var can_press : bool = false
 
@@ -27,6 +29,7 @@ func _on_btn_pressed() -> void:
 	date_profile_view.set_text("Voraz" + ", " + "25",
 							   tr("CHAR_MC_PRONOUNS"),
 							   tr("CHAR_MC_DESC"))
+	date_profile_view.texture_intensity.texture = MC_INTENSITY
 	date_profile_view.show()
 
 func _on_btn_exited() -> void:
