@@ -4,6 +4,7 @@ extends Control
 @onready var one_more_bite_text : Control = $OneMoreBiteText
 @onready var one_caught_text    : Control = $OneCaughtText
 @onready var no_pull_text       : Control = $NoPullText
+@onready var end_bg       : Control = $TextureRect
 
 @onready var ending_label : Label = $EndingLabel
 @onready var ending_title : Label = $EndingTitle
@@ -16,10 +17,11 @@ signal restart_game
 signal quit_game
 
 func _on_btn_cast_again_pressed() -> void:
-	no_pull_text.hide()
-	one_caught_text.hide()
-	one_more_bite_text.hide()
-	all_caught_text.hide()
+	#no_pull_text.hide()
+	#one_caught_text.hide()
+	#one_more_bite_text.hide()
+	#all_caught_text.hide()
+	#end_bg.hide()
 	ending_music.stop()
 	emit_signal('restart_game')
 
@@ -64,7 +66,7 @@ func set_end_label(num:int) -> void:
 		0:
 			ending_title.text = tr("ENDING_STARVING_LABEL")
 		1:
-			ending_title.text = tr("ENDING_STARVING_LABEL")
+			ending_title.text = tr("ENDING_UNSATISFIED_LABEL")
 		2:
 			ending_title.text = tr("ENDING_ROOM_LABEL")
 		3:

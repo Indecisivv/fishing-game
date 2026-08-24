@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://cv47uhkuntwia" path="res://Assets/CGs/Ending CG_All Caught_2.jpg" id="7_aalh3"]
 [ext_resource type="Texture2D" uid="uid://d22joyhsj83w" path="res://Assets/CGs/Ending CG_No Pull.jpg" id="8_gsssu"]
 [ext_resource type="Texture2D" uid="uid://bkkuqx5etwo7h" path="res://Assets/CGs/Ending CG_No Pull_2.jpg" id="9_m3br5"]
+[ext_resource type="Texture2D" uid="uid://0x7yqayr8alk" path="res://Assets/CGs/BG_Ending.png" id="10_aalh3"]
 [ext_resource type="Texture2D" uid="uid://dvnh6iwmoskm0" path="res://Assets/CGs/Ending CG_One Caught.jpg" id="10_moac4"]
 [ext_resource type="Texture2D" uid="uid://cisvyveoyjg0m" path="res://Assets/CGs/Ending CG_One Caught_2.jpg" id="11_n4ju6"]
 [ext_resource type="Texture2D" uid="uid://ca5ldt1ttkhal" path="res://Assets/CGs/Ending CG_One More Bite.jpg" id="12_c3tch"]
@@ -132,6 +133,12 @@ script = ExtResource("1_gc2gg")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=905367754]
 libraries/ = SubResource("AnimationLibrary_6p5is")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1042149372]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("10_aalh3")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1491099701]
 layout_mode = 1
