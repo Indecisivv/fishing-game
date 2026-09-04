@@ -6,10 +6,10 @@ uid="uid://b4rt04627yrd8"
 
 [deps]
 
-files=["res://Translations/Fishin For Love TRANSLATIONS - Khanh_Text.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Khanh_Text.es.translation"]
+files=["res://Translations/Fishin For Love TRANSLATIONS - Khanh_Text.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Khanh_Text.es.translation", "res://Translations/Fishin For Love TRANSLATIONS - Khanh_Text.zh_CN.translation"]
 
 source_file="res://Translations/Fishin For Love TRANSLATIONS - Khanh_Text.csv"
-dest_files=["res://Translations/Fishin For Love TRANSLATIONS - Khanh_Text.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Khanh_Text.es.translation"]
+dest_files=["res://Translations/Fishin For Love TRANSLATIONS - Khanh_Text.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Khanh_Text.es.translation", "res://Translations/Fishin For Love TRANSLATIONS - Khanh_Text.zh_CN.translation"]
 
 [params]
 

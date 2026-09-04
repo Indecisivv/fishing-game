@@ -26,14 +26,18 @@ func _on_btn_ada_pressed() -> void:
 	
 	self.get_parent().hide()
 	date_profile_view.set_profile("lineboil_ada")
-	date_profile_view.set_text(CharacterLibrary.ada.char_name + ", " + CharacterLibrary.ada.age,
-							   CharacterLibrary.ada.job,
-							   CharacterLibrary.ada.bio)
+	
+	date_profile_view.current_char_data = CharacterLibrary.ada
+	
+	date_profile_view.update_profile_text()
+	
+	#date_profile_view.set_text(CharacterLibrary.ada.char_name + ", " + CharacterLibrary.ada.age,
+	#						   tr("CHAR_ADA_PRONOUNS"),
+	#						   tr("CHAR_ADA_DESC"))
 	date_profile_view.texture_intensity.texture = ADA_INTENSITY
 	date_profile_view.show()
 	button_app_logo.modulate = Color("636363")
 	button_app_logo.disabled = true
-	
 
 func _on_btn_ada_exited() -> void:
 	if (self.disabled):

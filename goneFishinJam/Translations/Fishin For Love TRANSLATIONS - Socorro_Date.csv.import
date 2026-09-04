@@ -6,10 +6,10 @@ uid="uid://clbcp55r032co"
 
 [deps]
 
-files=["res://Translations/Fishin For Love TRANSLATIONS - Socorro_Date.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Socorro_Date.es.translation"]
+files=["res://Translations/Fishin For Love TRANSLATIONS - Socorro_Date.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Socorro_Date.es.translation", "res://Translations/Fishin For Love TRANSLATIONS - Socorro_Date.zh_CN.translation"]
 
 source_file="res://Translations/Fishin For Love TRANSLATIONS - Socorro_Date.csv"
-dest_files=["res://Translations/Fishin For Love TRANSLATIONS - Socorro_Date.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Socorro_Date.es.translation"]
+dest_files=["res://Translations/Fishin For Love TRANSLATIONS - Socorro_Date.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Socorro_Date.es.translation", "res://Translations/Fishin For Love TRANSLATIONS - Socorro_Date.zh_CN.translation"]
 
 [params]
 

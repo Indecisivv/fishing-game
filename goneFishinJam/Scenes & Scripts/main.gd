@@ -195,8 +195,8 @@ func show_scn_date_end() -> void:
 		scn_date_end.play_music()
 	elif on_date_ada && !Dialogic.VAR.is_date_success:
 		scn_date_end.set_cg(false)
-		#TODO: implement langauge strings
-		scn_date_end.set_lose_text(CharacterLibrary.ada.char_name + tr("UI_SNAPPED_LABEL"))
+		var localized_text = tr("UI_SNAPPED_LABEL").format({"name":"Ada"})
+		scn_date_end.set_lose_text(localized_text)
 		scn_date_end.unmatch.play()
 	
 	if on_date_khanh && Dialogic.VAR.is_date_success:
@@ -204,8 +204,9 @@ func show_scn_date_end() -> void:
 		scn_date_end.play_music()
 	elif on_date_khanh && !Dialogic.VAR.is_date_success:
 		scn_date_end.set_cg(false)
-		#TODO: implement langauge strings
-		scn_date_end.set_lose_text(CharacterLibrary.khanh.char_name + tr("UI_SNAPPED_LABEL"))
+		var localized_text = tr("UI_SNAPPED_LABEL").format({"name":"Khanh"})
+		scn_date_end.set_lose_text(localized_text)
+		#scn_date_end.set_lose_text(CharacterLibrary.khanh.char_name + tr("UI_SNAPPED_LABEL"))
 		scn_date_end.unmatch.play()
 	
 	if on_date_soccoro && Dialogic.VAR.is_date_success:
@@ -213,9 +214,8 @@ func show_scn_date_end() -> void:
 		scn_date_end.play_music()
 	elif on_date_soccoro && !Dialogic.VAR.is_date_success:
 		scn_date_end.set_cg(false)
-		#if en
-		#TODO: implement langauge strings
-		scn_date_end.set_lose_text(CharacterLibrary.soccoro.char_name + tr("UI_SNAPPED_LABEL"))
+		var localized_text = tr("UI_SNAPPED_LABEL").format({"name":"Socorro"})
+		scn_date_end.set_lose_text(localized_text)
 		scn_date_end.unmatch.play()
 	
 	print ("is_fdate_success: " + str(Dialogic.VAR.is_fdate_success))

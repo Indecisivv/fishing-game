@@ -1,259 +1,309 @@
 key,en,es,fil,zh_CN
 Text/18e/text,"Hello. I'm Khanh, I'm a manager at an advertisement and printing company. I'll let you ask the first question since I'm sure there's a lot you want to know about me. 
 
-Khanh Cá Trê Head Advertising Manager Team A, B, C","Hola. Soy Khanh, trabajo como manejador de una agencia de publicidad y publicacion. Te dejare hacer la primera pregunta porque estoy seguro que ay mucho que quieres saber de mi. Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,
-Choice/18f/text,Stock photo?,¿Imagen de stock?,,
+Khanh Cá Trê Head Advertising Manager Team A, B, C","Hola. Soy Khanh, trabajo como manejador de una agencia de publicidad y publicacion. Te dejare hacer la primera pregunta porque estoy seguro que ay mucho que quieres saber de mi. Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,"你好，我是Khanh，在一家广告与印刷公司担任经理。你应该有很多事想问我，就由你先提问吧。
+ 
+ Khanh Cá Trê｜A、B、C 组广告主管"
+Choice/18f/text,Stock photo?,¿Imagen de stock?,,网图？
 Choice/18f/disabled_text,,,,
-Text/190/text,Is your profile picture a stock photo?,¿La foto en tu perfil es una imagen de stock?,,
+Text/190/text,Is your profile picture a stock photo?,¿La foto en tu perfil es una imagen de stock?,,你的头像是网图吗？
 Text/191/text,"No! That's me! And I wouldn't say much about anyone else's profile picture since yours isn't your face. 
 
-Khanh Cá Trê, Head Advertising Manager Team A, B, C","¡No! ¡Soy yo! Y no diriar mucho sobre la foto de alguien mas si fuera tu, la tuya no es tu cara. Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,
-Choice/192/text,It’s me though,Aunque sea si soy yo,,
+Khanh Cá Trê, Head Advertising Manager Team A, B, C","¡No! ¡Soy yo! Y no diriar mucho sobre la foto de alguien mas si fuera tu, la tuya no es tu cara. Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,"不是！那就是我本人！再说，你自己的头像都没有露脸，还是别对别人的头像说三道四了吧。
+ 
+ Khanh Cá Trê｜A、B、C 组广告主管"
+Choice/192/text,It’s me though,Aunque sea si soy yo,,至少是我本人
 Choice/192/disabled_text,,,,
-Text/193/text,"It may not be my face but at least it's me, right? I don't have a watermark",¿No es mi cara pero al menos si soy you verdad? No tengo marca de agua,,
+Text/193/text,"It may not be my face but at least it's me, right? I don't have a watermark",¿No es mi cara pero al menos si soy you verdad? No tengo marca de agua,,虽然没露出我的脸，但至少头像里确实是我吧？而且上面又没有水印。
 Text/194/text,"It is me! You sure are coming off strong and not in a good way. Anyways, why did you match with me? 
 
-Khanh Cá Trê. Head Advertising Manager Team A, B, C","¡Si soy yo! Te oyes como un patan. ¿Como sea, por que hisiste match conmigo? Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,
-Choice/195/text,Curious photo,Foto curiosa,,
+Khanh Cá Trê. Head Advertising Manager Team A, B, C","¡Si soy yo! Te oyes como un patan. ¿Como sea, por que hisiste match conmigo? Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,"那就是我本人！你说话未免太咄咄逼人了，而且这种态度可不会给人留下好印象。你为什么还要右滑我？
+ 
+ Khanh Cá Trê｜A、B、C 组广告主管"
+Choice/195/text,Curious photo,Foto curiosa,,好奇头像
 Choice/195/disabled_text,,,,
-Text/196/text,"I just wanted to ask about the profile picture, I think you're the only stock image I've seen","Nadamas queria preguntar de la foto, creo que eres la unica imagen de stock que he visto",,
-Text/197/text,You're too intensely rude for me. Not that I think your interest was real. Goodbye.,Te faltan demaciados modales para mi. No que creo que tu interes fue real. Adios.,,
-Text/198/text,"Khanh Cá Trê Head Advertising Manager Team A, B, C","Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,
-Choice/199/text,Interesting bio,Tu acerca de mi,,
+Text/196/text,"I just wanted to ask about the profile picture, I think you're the only stock image I've seen","Nadamas queria preguntar de la foto, creo que eres la unica imagen de stock que he visto",,我只是想问问头像的事。你大概是我见过唯一一个拿图库照片当头像的人。
+Text/197/text,You're too intensely rude for me. Not that I think your interest was real. Goodbye.,Te faltan demaciados modales para mi. No que creo que tu interes fue real. Adios.,,你实在太没礼貌了。我也不觉得你是真的对我感兴趣。再见。
+Text/198/text,"Khanh Cá Trê Head Advertising Manager Team A, B, C","Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,Khanh Cá Trê｜A、B、C 组广告主管
+Choice/199/text,Interesting bio,Tu acerca de mi,,简介有趣
 Choice/199/disabled_text,,,,
-Text/19a/text,I found your bio interesting despite not knowing what you look like,Encontre tu perfil interesante al pesar de no saber como te miras,,
+Text/19a/text,I found your bio interesting despite not knowing what you look like,Encontre tu perfil interesante al pesar de no saber como te miras,,虽然不知道你长什么样，但我觉得你的简介挺有意思的。
 Text/19b/text,"I think it's good you don't prioritize appearances but I don't like your energy. Goobye. 
 
-Khanh Cá Trê, Head Advertising Manager Team A, B, C",Creo que es bueno que no le des prioridad a la belleza de alguien pero no me gusta tu energia. Adios.,,
-Choice/19c/text,Go with the flow,Voy con la corriente,,
+Khanh Cá Trê, Head Advertising Manager Team A, B, C",Creo que es bueno que no le des prioridad a la belleza de alguien pero no me gusta tu energia. Adios.,,"不看重外貌很好，但我不喜欢你的态度。再见。
+ 
+ Khanh Cá Trê｜A、B、C 组广告主管"
+Choice/19c/text,Go with the flow,Voy con la corriente,,随缘
 Choice/19c/disabled_text,,,,
-Text/19d/text,I just say yes to everyone..,Solo les digo si a todos..,,
+Text/19d/text,I just say yes to everyone..,Solo les digo si a todos..,,我基本对所有人都右滑...
 Text/19e/text,"You have no interest in me and I've lost interest in you or your red gloves anymore. Goodbye.  
 
-Khanh Cá Trê, Head Advertising Manager Team A, B, C.","No tienes interes en mi y yo perdi interes en ti o tus guantes rojos. Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C. Adios.",,
-Choice/19f/text,"That was rude, sorry",Eso fue grosero,,
+Khanh Cá Trê, Head Advertising Manager Team A, B, C.","No tienes interes en mi y yo perdi interes en ti o tus guantes rojos. Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C. Adios.",,"既然你根本不是真的对我感兴趣，那我对你和你的红手套也没兴趣了。再见。
+ 
+ Khanh Cá Trê｜A、B、C 组广告主管"
+Choice/19f/text,"That was rude, sorry",Eso fue grosero,,抱歉，我太失礼了
 Choice/19f/disabled_text,,,,
-Text/1a0/text,"Sorry, you’re right, that was rude. I shouldn’t have said that. whoever you may be though, i still want to get to know you","Tienes razon, perdon, eso fue grosero. No debi decir eso. Sin importar quien seas, te quiero conocer",,
-Text/1a1/text,"I accept your apology, I probably shouldn't have snapped either...","Acepto tu disculpa, no creo que me debi enfadar tanto tampoco...",,
-Text/1a2/text,"Well, how do you feel about secret identities? You must like them right? Khanh Cá Trê Head Advertising Manager Team A, B, C","¿Pues, como te sientes de la identidades secretas? ¿De seguro te gustan verdad? Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,
-Choice/1a3/text,Hate them,,,
+Text/1a0/text,"Sorry, you’re right, that was rude. I shouldn’t have said that. whoever you may be though, i still want to get to know you","Tienes razon, perdon, eso fue grosero. No debi decir eso. Sin importar quien seas, te quiero conocer",,对不起，你说得对。刚才那句话很失礼，我不该那么说。不管怎样，我还是想继续了解你。
+Text/1a1/text,"I accept your apology, I probably shouldn't have snapped either...","Acepto tu disculpa, no creo que me debi enfadar tanto tampoco...",,我接受你的道歉。我那样回你也不太好...
+Text/1a2/text,"Well, how do you feel about secret identities? You must like them right? Khanh Cá Trê Head Advertising Manager Team A, B, C","¿Pues, como te sientes de la identidades secretas? ¿De seguro te gustan verdad? Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,那么，你对隐藏真实身份这件事怎么看？你应该会喜欢吧？
+Choice/1a3/text,Hate them,,,讨厌
 Choice/1a3/disabled_text,,Las odio,,
-Text/1a4/text,"I hate them, especially in comics.","Las odio, especialmente en cómics.",,
-Text/1a5/text,I think someone who is brave would show who they are so they can be held accountable when their actions accidentally hurt others,Creo que alguien que es valiente le enseñaria al mundo quien es para que lo puedan mantener responsable cuando sus aciones accidentalmente dañen a otras personas,,
+Text/1a4/text,"I hate them, especially in comics.","Las odio, especialmente en cómics.",,我很讨厌这种设定，特别是在漫画作品里。
+Text/1a5/text,I think someone who is brave would show who they are so they can be held accountable when their actions accidentally hurt others,Creo que alguien que es valiente le enseñaria al mundo quien es para que lo puedan mantener responsable cuando sus aciones accidentalmente dañen a otras personas,,我觉得真正勇敢的人应该公开身份。这样即使自己的行为无意间伤害了别人，也能承担相应的责任。
 Text/1a6/text,"Big talk for someone who won't even show their own face. I don't like hard headed hypocrites. Goodbye. 
 
-Khanh Cá Trê Head",Mucha bravada de alguien que ni enseña su propia cara. No me gustan los hipocritas. Adios. Khanh Cá Trê,,
-Text/1a7/text,"Advertising Manager Team A, B, C","Manejador Principal de Publicidad Equipos A, B, C",,
-Choice/1a8/text,Love them,Las amo,,
+Khanh Cá Trê Head",Mucha bravada de alguien que ni enseña su propia cara. No me gustan los hipocritas. Adios. Khanh Cá Trê,,"自己连脸都不露，还说这种大话。我不喜欢固执又双标的人。再见。
+ 
+ Khanh Cá Trê"
+Text/1a7/text,"Advertising Manager Team A, B, C","Manejador Principal de Publicidad Equipos A, B, C",,A、B、C组广告主管
+Choice/1a8/text,Love them,Las amo,,喜欢
 Choice/1a8/disabled_text,,,,
-Text/1a9/text,They're cool! Like Fishman! Everyone who hides has their own reason right?,¡Son muy padre! ¡Como el hombre pez! ¿Todos los que se esconden tienen una razon verdad?,,
-Text/1aa/text,Right! You seem cool... Do you want to go to a comic shop together? Today! But promise you won't be shocked...,Exacto! Me estas cayendo muy bien... ¿Quieres ir a una tienda de comics juntos? ¡Hoy! Pero promete que no estaras sorprendida...,,
-Text/1ab/text,"Khanh Cá Trê Head Advertising Manager Team A, B, C","Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,
-Choice/1ac/text,They’re meh,Ni mas o menos,,
+Text/1a9/text,They're cool! Like Fishman! Everyone who hides has their own reason right?,¡Son muy padre! ¡Como el hombre pez! ¿Todos los que se esconden tienen una razon verdad?,,很酷啊！就像《鱼侠》一样！每个人选择隐藏身份，肯定都有自己的理由，对吧？
+Text/1aa/text,Right! You seem cool... Do you want to go to a comic shop together? Today! But promise you won't be shocked...,Exacto! Me estas cayendo muy bien... ¿Quieres ir a una tienda de comics juntos? ¡Hoy! Pero promete que no estaras sorprendida...,,没错！感觉你挺不错的...今天要不要一起去漫画店？不过你得先答应我，见到我的时候可别太惊讶...
+Text/1ab/text,"Khanh Cá Trê Head Advertising Manager Team A, B, C","Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,Khanh Cá Trê｜A、B、C 组广告主管
+Choice/1ac/text,They’re meh,Ni mas o menos,,一般
 Choice/1ac/disabled_text,,,,
-Text/1ad/text,I don't feel strongly about them... Why hide? That's like... meh,Me dan igual... ¿Por que esconderte? Eso es... eh,,
+Text/1ad/text,I don't feel strongly about them... Why hide? That's like... meh,Me dan igual... ¿Por que esconderte? Eso es... eh,,我对这种设定没什么特别的感觉...为什么非要隐藏身份？就..挺没劲的。
 Text/1ae/text,"That's disappointing. Based on your profile I thought you'd understand... Goodbye. 
 
-Khanh Cá Trê, Head Advertising Manager Team A, B, C","Que decepción. Basado en tu perfil pense que entenderias... Adios. Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,
-Choice/1af/text,Noticeable,Notable,,
+Khanh Cá Trê, Head Advertising Manager Team A, B, C","Que decepción. Basado en tu perfil pense que entenderias... Adios. Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,"真让人失望。看了你的个人资料，我还以为你会理解呢...再见。
+ 
+ Khanh Cá Trê｜A、B、C 组广告主管"
+Choice/1af/text,Noticeable,Notable,,太明显了
 Choice/1af/disabled_text,,,,
-Text/1b0/text,Well... I can just tell...,Pues... Nadamas se nota...,,
-Text/1b1/text,Why did you match if you didn't think my picture was me? I matched with you because your hobbies seemed interesting even without knowing what you look like...,¿Por que hisiste match conmigo? Yo lo hice porque tus aficiones me interesaron aunque no podia ver tu rostro...,,
-Text/1b2/text,"Khanh Cá Trê Head Advertising ManagerTeam A, B, C","Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,
-Choice/1b3/text,Seeking honesty,Buscando honestidad,,
+Text/1b0/text,Well... I can just tell...,Pues... Nadamas se nota...,,这个嘛...很明显吧...
+Text/1b1/text,Why did you match if you didn't think my picture was me? I matched with you because your hobbies seemed interesting even without knowing what you look like...,¿Por que hisiste match conmigo? Yo lo hice porque tus aficiones me interesaron aunque no podia ver tu rostro...,,既然你不觉得头像里的人是我，为什么还要和我配对？我之所以会右滑你，是因为你的兴趣爱好看起来很有意思，你的长相无关...
+Text/1b2/text,"Khanh Cá Trê Head Advertising ManagerTeam A, B, C","Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,Khanh Cá Trê｜A、B、C 组广告主管
+Choice/1b3/text,Seeking honesty,Buscando honestidad,,想听真话
 Choice/1b3/disabled_text,,,,
-Text/1b4/text,I was hoping you'd tell the truth and we could get to know each other based on our interest.,Tenia la esperanza de que dijieras la verdad y nos podriamos concer basado en nuestros intereses,,
+Text/1b4/text,I was hoping you'd tell the truth and we could get to know each other based on our interest.,Tenia la esperanza de que dijieras la verdad y nos podriamos concer basado en nuestros intereses,,我只是希望你能说实话，然后我们可以从共同的兴趣聊起，慢慢了解彼此。
 Text/1b5/text,"Well sorry to 'disappoint' but I don't want to get to know someone like you anyway. Goodbye 
 
-Khanh Cá Trê, Head Advertising Manager Team A, B, C","Pues perdon por 'decepcionar' pero igual no quiero concerce a alguien como tu. Adios Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,
-Choice/1b6/text,Interesting bio,Acerca de mi interestante,,
+Khanh Cá Trê, Head Advertising Manager Team A, B, C","Pues perdon por 'decepcionar' pero igual no quiero concerce a alguien como tu. Adios Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,"那还真是抱歉让你“失望”了。不过我本来也不想认识你这种人。再见。
+ 
+ Khanh Cá Trê｜A、B、C 组广告主管"
+Choice/1b6/text,Interesting bio,Acerca de mi interestante,,简介有趣
 Choice/1b6/disabled_text,,,,
-Text/1b7/text,Your bio was interesting enough for me to ignore my suspicion,Tu cerca de mi era suficientemente interesante para ignorar mis sospechas,,
-Text/1b8/text,"I'm glad you don't base yourself on appearances but you clearly don't trust me, so I can't trust you. Goodbye.","Estoy contento de que no te basas en aparencias pero claramente no confias en mi, y entonces no puedo confiar en ti. Adios.",,
-Text/1b9/text,"Khanh Cá Trê Head Advertising Manager Team A, B, C","Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,
-Choice/1ba/text,Go with the flow,,,
-Choice/1ba/disabled_text,,Les digo que si a todos,,
-Text/1bb/text,I just say yes to everyone honestly...,En verdad les digo que si a todos…,,
+Text/1b7/text,Your bio was interesting enough for me to ignore my suspicion,Tu cerca de mi era suficientemente interesante para ignorar mis sospechas,,你的简介实在很有趣，所以我决定暂时不去管那些疑点。
+Text/1b8/text,"I'm glad you don't base yourself on appearances but you clearly don't trust me, so I can't trust you. Goodbye.","Estoy contento de que no te basas en aparencias pero claramente no confias en mi, y entonces no puedo confiar en ti. Adios.",,我很欣赏你不以貌取人，但你显然并不信任我。既然这样，我也没法信任你。再见。
+Text/1b9/text,"Khanh Cá Trê Head Advertising Manager Team A, B, C","Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,Khanh Cá Trê｜A、B、C 组广告主管
+Choice/1ba/text,Go with the flow,,,随缘
+Choice/1ba/disabled_text,,Les digo que si a todos,,我来者不拒
+Text/1bb/text,I just say yes to everyone honestly...,En verdad les digo que si a todos…,,说实话，我基本对所有人都会右滑...
 Text/1bc/text,"I don't understand your lack of energy but I will stop wasting mine. Goodbye. 
 
-Khanh Cá Trê, Head Advertising Manager Team A, B, C","No entiendo tu falta de energia pero no voy a seguir gastando la mia. Adios. Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,
-Choice/1bd/text,About your job,De tu trabajo,,
+Khanh Cá Trê, Head Advertising Manager Team A, B, C","No entiendo tu falta de energia pero no voy a seguir gastando la mia. Adios. Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,"我不明白你为什么表现得这么敷衍，不过我也不想再浪费自己的精力了。再见。
+ 
+ Khanh Cá Trê｜A、B、C 组广告主管"
+Choice/1bd/text,About your job,De tu trabajo,,聊聊工作
 Choice/1bd/disabled_text,,,,
-Text/1be/text,What kind of advertising do you do?,¿En que tipo de publicidad trabajas?,,
+Text/1be/text,What kind of advertising do you do?,¿En que tipo de publicidad trabajas?,,你具体是做哪类广告的？
 Text/1bf/text,"We focus on the creating and selling of various types of... comics and other printed products. 
 
-Khanh Cá Trê, Head Advertising Manager Team A, B, C","Nos enfocamos en creando y vendiando diferentes typos de... comics y otros productos. Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,
-Choice/1c0/text,Sooo a comic shop,¿Tendia de comics?,,
+Khanh Cá Trê, Head Advertising Manager Team A, B, C","Nos enfocamos en creando y vendiando diferentes typos de... comics y otros productos. Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,"我们主要负责制作和销售各种...漫画，以及其他印刷产品。
+ 
+ Khanh Cá Trê｜A、B、C 组广告主管"
+Choice/1c0/text,Sooo a comic shop,¿Tendia de comics?,,所以，就是漫画店？
 Choice/1c0/disabled_text,,,,
-Text/1c1/text,So like a comic shop? You could just say that!,¿So like a comic shop? ¡Puedes decir eso!,,
+Text/1c1/text,So like a comic shop? You could just say that!,¿So like a comic shop? ¡Puedes decir eso!,,所以差不多就是漫画店？你直说不就好了！
 Text/1c2/text,"It's not quite like that! I work in an office! Have you ever worked in an office? 
 
-Khanh Cá Trê Head",¡No es asi! ¡Trabajo en una oficina! ¿Have you ever worked in an office? Khanh Cá Trê Head,,
-Text/1c3/text,"Advertising ManagerTeam A, B, C","Manejador Principal de Publicidad Equipos A, B, C",,
-Choice/1c4/text,It is though?,¿Negando?,,
+Khanh Cá Trê Head",¡No es asi! ¡Trabajo en una oficina! ¿Have you ever worked in an office? Khanh Cá Trê Head,,"才不是那样！我是在办公室上班的！你有过坐办公室的经历吗？
+ 
+ Khanh Cá Trê"
+Text/1c3/text,"Advertising ManagerTeam A, B, C","Manejador Principal de Publicidad Equipos A, B, C",,A、B、C组广告主管
+Choice/1c4/text,It is though?,¿Negando?,,不就是吗？
 Choice/1c4/disabled_text,,,,
-Text/1c5/text,"Shop Managers also have offices, also, I may have not but at least I don't very obviously lie about it","Los manejantes de tiendas tambien tienen oficinas, ademas, al a mejor no lo he echo pero almenos no miento tan obviamente sobre eso",,
-Text/1c6/text,"There is no need to be so aggressive, you don't have to keep talking to me you know?",No tienes por que ser tan agresiva. ¿No tienes que seguir hablando conmigo sabes?,,
+Text/1c5/text,"Shop Managers also have offices, also, I may have not but at least I don't very obviously lie about it","Los manejantes de tiendas tambien tienen oficinas, ademas, al a mejor no lo he echo pero almenos no miento tan obviamente sobre eso",,店长也有办公室啊。我的确没有相关经历，但至少，我不会为此编造如此显而易见的谎言。
+Text/1c6/text,"There is no need to be so aggressive, you don't have to keep talking to me you know?",No tienes por que ser tan agresiva. ¿No tienes que seguir hablando conmigo sabes?,,你没必要这么有攻击性。没人逼你继续和我聊天。
 Text/1c7/text,"I think I will leave first. Goodbye. 
 
-Khanh Cá Trê, Head Advertising Manager Team A, B, C","Creo que me ire you primero. Adios. Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,
-Choice/1c8/text,"Unintentional, sorry",No fue mi intencion,,
+Khanh Cá Trê, Head Advertising Manager Team A, B, C","Creo que me ire you primero. Adios. Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,"那就聊到这里吧。再见。
+ 
+ Khanh Cá Trê｜A、B、C 组广告主管"
+Choice/1c8/text,"Unintentional, sorry",No fue mi intencion,,抱歉，无意冒犯
 Choice/1c8/disabled_text,,,,
-Text/1c9/text,"No, it was just the closest thing I could associate with the description, my apologies. I wasn't trying to insult you.","No. Fue la cosa mas sercana que pude asociar con la descripcion, perdon. No estaba tratando de insultarte.",,
-Text/1ca/text,"I understand, well, it's not like I am offended. I fr think comic shops bring a lot of value to our communities!","¡Ya entendi, bueno, no es que me ofendi. Enserio pienso que las tiendas de comix train mucho valor a nuestras comunidades!",,
-Text/1cb/text,Let me show you around our city's best one tonight,Deja te enseño la mejor que tenemos hoy,,
-Text/1cc/text,"Khanh Cá Trê Head Advertising Manager Team A, B, C","Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,
-Choice/1cd/text,I have.,Lo he echo.,,
+Text/1c9/text,"No, it was just the closest thing I could associate with the description, my apologies. I wasn't trying to insult you.","No. Fue la cosa mas sercana que pude asociar con la descripcion, perdon. No estaba tratando de insultarte.",,我只是听了你的描述以后，最先联想到了漫画店。抱歉，我没有嘲讽你的意思。
+Text/1ca/text,"I understand, well, it's not like I am offended. I fr think comic shops bring a lot of value to our communities!","¡Ya entendi, bueno, no es que me ofendi. Enserio pienso que las tiendas de comix train mucho valor a nuestras comunidades!",,我明白。其实我也没有真的被冒犯。说真的，我觉得漫画店对社区非常有价值！
+Text/1cb/text,Let me show you around our city's best one tonight,Deja te enseño la mejor que tenemos hoy,,今晚让我带你去逛逛城里最棒的那家漫画店吧。
+Text/1cc/text,"Khanh Cá Trê Head Advertising Manager Team A, B, C","Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,Khanh Cá Trê｜A、B、C 组广告主管
+Choice/1cd/text,I have.,Lo he echo.,,有
 Choice/1cd/disabled_text,,,,
-Text/1ce/text,"Yes... I am an office worker, I just think what you're describing sounds like a comic shop...","Si... Soy una trabajadora de oficina, nadamas creo que lo que describes suena como una tienda de comics...",,
-Text/1cf/text,You sure are close minded.,Eres muy obstinado.,,
+Text/1ce/text,"Yes... I am an office worker, I just think what you're describing sounds like a comic shop...","Si... Soy una trabajadora de oficina, nadamas creo que lo que describes suena como una tienda de comics...",,有啊...我就是办公室职员。我只是觉得你说的听起来像漫画店而已...
+Text/1cf/text,You sure are close minded.,Eres muy obstinado.,,你还真是死脑筋。
 Text/1d0/text,"I don't think I could trust you enough to meet with you, goodbye. 
 
-Khanh Cá Trê, Head Advertising Manager Team A, B, C","No creo que puedo confiar en ti suficientemente para concerte en person, adios. Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,
-Choice/1d1/text,Impressive,Impresionante,,
+Khanh Cá Trê, Head Advertising Manager Team A, B, C","No creo que puedo confiar en ti suficientemente para concerte en person, adios. Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,"我还没有信任你到愿意和你见面的地步。再见。
+ 
+ Khanh Cá Trê｜A、B、C 组广告主管"
+Choice/1d1/text,Impressive,Impresionante,,真厉害
 Choice/1d1/disabled_text,,,,
-Text/1d2/text,"Oh, that's so interesting. You have an impressive role. What is your favorite product you advertise for?","Oh, eso es muy interesante. Tienes un puesto muy impresionante. ¿Cual es tu producto favorito por que publicas?",,
-Text/1d3/text,I think I am a particular fan of... Fishman...,Creo que soy un particular aficionado de... El Hombre Pez...,,
-Text/1d4/text,I think the art in that series can be appreciated by anyone.,Pienso que la arte de esa serie puede ser apreciado por todos.,,
+Text/1d2/text,"Oh, that's so interesting. You have an impressive role. What is your favorite product you advertise for?","Oh, eso es muy interesante. Tienes un puesto muy impresionante. ¿Cual es tu producto favorito por que publicas?",,哦，听起来很有意思。你的职位也挺厉害的。你最喜欢为哪部作品做宣传？
+Text/1d3/text,I think I am a particular fan of... Fishman...,Creo que soy un particular aficionado de... El Hombre Pez...,,我尤其喜欢的...应该是《鱼侠》...
+Text/1d4/text,I think the art in that series can be appreciated by anyone.,Pienso que la arte de esa serie puede ser apreciado por todos.,,我觉得那部作品的画风，无论是谁都能欣赏得来。
 Text/1d5/text,"Have you heard of it? 
 
-Khanh Cá Trê, Head Advertising Manager Team A, B, C","¿Has oido hablar de el? Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,
-Choice/1d6/text,Too old sadly,Demaciado vieja,,
+Khanh Cá Trê, Head Advertising Manager Team A, B, C","¿Has oido hablar de el? Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,"你听说过它吗？
+ 
+ Khanh Cá Trê｜A、B、C 组广告主管"
+Choice/1d6/text,Too old sadly,Demaciado vieja,,我年纪大了
 Choice/1d6/disabled_text,,,,
-Text/1d7/text,"No, I don't really consume comics or things of that nature. I feel like someone my age makes me too old now...","No, en verdad no consumo comics or cosas de ese tipo. Siento como que algien de mi edad es demacido vieja para eso...",,
-Text/1d8/text,You're never too old! Meet up with me at the comic shop!,¡Nunca eres demaciado vieja! ¡Vamos juntos a la tienda de comics!,,
-Text/1d9/text,"I will prove to you that you can still enjoy them... oh but, don't be too surprised by what you see...","Te provare que todavia puedes disfrutarlas... Ah pero, no estes demacida sorprendida...",,
-Text/1da/text,"Khanh Cá Trê, Head Advertising Manager Team A, B, C","Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,
-Choice/1db/text,Yes!,¡Si!,,
+Text/1d7/text,"No, I don't really consume comics or things of that nature. I feel like someone my age makes me too old now...","No, en verdad no consumo comics or cosas de ese tipo. Siento como que algien de mi edad es demacido vieja para eso...",,没有，我平时不怎么看漫画或类似的东西。总觉得到了我这个年纪，已经不太适合看这些了...
+Text/1d8/text,You're never too old! Meet up with me at the comic shop!,¡Nunca eres demaciado vieja! ¡Vamos juntos a la tienda de comics!,,看漫画永远不嫌晚！和我约在漫画店见面吧！
+Text/1d9/text,"I will prove to you that you can still enjoy them... oh but, don't be too surprised by what you see...","Te provare que todavia puedes disfrutarlas... Ah pero, no estes demacida sorprendida...",,我会证明给你看的，你还是会喜欢上它们的...啊，不过先说好，见面时可别太惊讶...
+Text/1da/text,"Khanh Cá Trê, Head Advertising Manager Team A, B, C","Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,Khanh Cá Trê｜A、B、C 组广告主管
+Choice/1db/text,Yes!,¡Si!,,嗯！
 Choice/1db/disabled_text,,,,
-Text/1dc/text,"I have, I enjoy reading comics a lot. I have another favorite but I love talking about Fishman too!","¡Si, me gusta leer comics mucho. Tengo otro favorito pero me gusta hablar del Hombre Pez tambien!",,
-Text/1dd/text,How much do you know about the series?,¿Sabes mucho sobre la serie?,,
-Text/1de/text,More than you'd think! Let's meet up and talk about it at the local comic shop... I have something to tell you anyway...,¡Mas de lo que esperarias! Vamos a juntarnos y hablar sobre el en la tienda de comics local... Tengo algo que decirte como quiera...,,
-Text/1df/text,"Khanh Cá Trê, Hed Advertising Manager Team A, B, C","Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,
-Choice/1e0/text,What is it?,¿Que es?,,
+Text/1dc/text,"I have, I enjoy reading comics a lot. I have another favorite but I love talking about Fishman too!","¡Si, me gusta leer comics mucho. Tengo otro favorito pero me gusta hablar del Hombre Pez tambien!",,听说过，我非常喜欢看漫画。虽然我另有最喜欢的作品，但我也很乐意聊聊《鱼侠》！
+Text/1dd/text,How much do you know about the series?,¿Sabes mucho sobre la serie?,,你对这个系列了解多少？
+Text/1de/text,More than you'd think! Let's meet up and talk about it at the local comic shop... I have something to tell you anyway...,¡Mas de lo que esperarias! Vamos a juntarnos y hablar sobre el en la tienda de comics local... Tengo algo que decirte como quiera...,,肯定比你以为的多！去本地漫画店见面聊吧...反正我也有件事要告诉你...
+Text/1df/text,"Khanh Cá Trê, Hed Advertising Manager Team A, B, C","Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,Khanh Cá Trê｜A、B、C 组广告主管
+Choice/1e0/text,What is it?,¿Que es?,,那是什么？
 Choice/1e0/disabled_text,,,,
-Text/1e1/text,No... is it like a kids book? Nothing wrong with that but I never had a chance to get into it...,No... como los libros de niños? No hay nada malo con eso pero nunca tuve la oportunidad de involucrarme en eso,,
+Text/1e1/text,No... is it like a kids book? Nothing wrong with that but I never had a chance to get into it...,No... como los libros de niños? No hay nada malo con eso pero nunca tuve la oportunidad de involucrarme en eso,,没听说过...它是那种给小孩子看的书吗？我不是说儿童读物有什么不好，只是一直没机会接触...
 Text/1e2/text,"It's not really just for children, let's meet so I can show you the truth. We’ll have a lot of fun. Just don’t get too shocked okay? 
 
-Khanh Cá Trê, Head Advertising Manager Team A, B, C","No nadamas es para niños, vamos a juntarnos para enseñar te la verdad. Tendremos muchas diversion. ¿Nadamas no te sorprendas demaciado okay? Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,
-Choice/1e3/text,Not impressed,No impresiona,,
+Khanh Cá Trê, Head Advertising Manager Team A, B, C","No nadamas es para niños, vamos a juntarnos para enseñar te la verdad. Tendremos muchas diversion. ¿Nadamas no te sorprendas demaciado okay? Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,"它并不是单纯的儿童读物。我们见个面吧，我可以让你看看它究竟有多棒。一定会很有意思的，只是见到我时别太惊讶，好吗？
+ 
+ Khanh Cá Trê｜A、B、C 组广告主管"
+Choice/1e3/text,Not impressed,No impresiona,,不怎么样
 Choice/1e3/disabled_text,,,,
-Text/1e4/text,"Oh, so a regular office worker... Ok. I work as a chef","Ah, como un trabajador de oficina regualar... Ok. Yo trabajo de chef",,
-Text/1e5/text,"Well, yes I suppose... A chef, that's interesting!","¡Pues, supongo que si... Un chef, eso es interesante!",,
+Text/1e4/text,"Oh, so a regular office worker... Ok. I work as a chef","Ah, como un trabajador de oficina regualar... Ok. Yo trabajo de chef",,哦，所以就是普通办公室职员啊...行吧。我是厨师。
+Text/1e5/text,"Well, yes I suppose... A chef, that's interesting!","¡Pues, supongo que si... Un chef, eso es interesante!",,呃，算是吧...厨师啊？那还挺有意思的！
 Text/1e6/text,"Have you worked in any of the restaurants that have had a Fishman collab? 
 
-Khanh Cá Trê, Head Advertising Manager Team A, B, C","¿As trabajado en alguno de los restaurantes que tuvo coloboracion con El Hombre Pez? Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,
-Choice/1e7/text,Embarrassing idea,Idea vergonzosa,,
+Khanh Cá Trê, Head Advertising Manager Team A, B, C","¿As trabajado en alguno de los restaurantes que tuvo coloboracion con El Hombre Pez? Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,"你有没有在举办过《鱼侠》联动活动的餐厅工作过？
+ 
+ Khanh Cá Trê｜A、B、C 组广告主管"
+Choice/1e7/text,Embarrassing idea,Idea vergonzosa,,那也太掉价了
 Choice/1e7/disabled_text,,,,
-Text/1e8/text,"No, my restaurant is high end, we wouldn't host such collaborations. It'd be a little embarrassing.","No, mi restaurante es de calida superior, no hariamos colaboraciones como esas. Seria un poco vergonzoso.",,
-Text/1e9/text,"It seems that you and I aren't going to be a good match, especially if you think that way.","Se mira como que tu y yo no seriamos buenos juntos, especialmente si piensas asi.",,
+Text/1e8/text,"No, my restaurant is high end, we wouldn't host such collaborations. It'd be a little embarrassing.","No, mi restaurante es de calida superior, no hariamos colaboraciones como esas. Seria un poco vergonzoso.",,没有。我的餐厅走的是高端路线，不会举办这种联名活动，未免有些失格调。
+Text/1e9/text,"It seems that you and I aren't going to be a good match, especially if you think that way.","Se mira como que tu y yo no seriamos buenos juntos, especialmente si piensas asi.",,如果你真是这么想的，那我们恐怕不太合适。
 Text/1ea/text,"I'm going to end it here, Goodbye.  
 
-Khanh Cá Trê, Head Advertising Manager Team A, B, C","Aqui voy a dejar esto, adios. Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,
-Choice/1eb/text,Should I?,¿Deberia?,,
+Khanh Cá Trê, Head Advertising Manager Team A, B, C","Aqui voy a dejar esto, adios. Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,"我就聊到这里吧。再见。
+ 
+ Khanh Cá Trê｜A、B、C 组广告主管"
+Choice/1eb/text,Should I?,¿Deberia?,,可以考虑？
 Choice/1eb/disabled_text,,,,
-Text/1ec/text,"No, but that sounds like something I should considered doing sometime, do you think it would get good attention?","No, pero suena como halgo que deberia considerar, tu piensas que me trairia atencion positiva?",,
-Text/1ed/text,"I think it can be a great source of good publicity, if we meet at the comic shop, I can help you decide exactly what to aim for!","¡Creo que podria ser una forma fantastica de ganar publicidad positiva, si nos juntamos en la tienda de comics, yo puedo ayudarte a decidir tu meta!",,
+Text/1ec/text,"No, but that sounds like something I should considered doing sometime, do you think it would get good attention?","No, pero suena como halgo que deberia considerar, tu piensas que me trairia atencion positiva?",,没有，但我以后或许应该考虑一下。你觉得这种活动的宣传效果会好吗？
+Text/1ed/text,"I think it can be a great source of good publicity, if we meet at the comic shop, I can help you decide exactly what to aim for!","¡Creo que podria ser una forma fantastica de ganar publicidad positiva, si nos juntamos en la tienda de comics, yo puedo ayudarte a decidir tu meta!",,这绝对是个不错的宣传机会。我们去漫画店见面吧，我可以帮你确定最合适的方案！
 Text/1ee/text,"Oh... but I have to warn you, don't be surprised okay? 
 
-Khan Cá Trê, Head Advrtising Manager Team A, B, C","Ah... pero tengo que avertirte, no te sorprendas much ¿okay? Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,
-Choice/1ef/text,Never,Nunca,,
+Khan Cá Trê, Head Advrtising Manager Team A, B, C","Ah... pero tengo que avertirte, no te sorprendas much ¿okay? Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,"啊...不过我得先提醒你，到时候可别太惊讶，好吗？
+ 
+ Khanh Cá Trê｜A、B、C 组广告主管"
+Choice/1ef/text,Never,Nunca,,绝不
 Choice/1ef/disabled_text,,,,
-Text/1f0/text,I don't think I'd do a collaboration like that honestly... Sorry...,No creo que aria un coloboracion asi... Perdon...,,
-Text/1f1/text,"Well, it's your restaurant... But I don’t think I am your man. I think you should find someone else, goodbye.","Bueno, es tu restaurante... Pero no crea que yo soy tu hombre. Creo que deberias buscar a alguien mas, adios.",,
-Text/1f2/text,"Khanh Cá Trê, Head Advertising Manager Team A, B, C","Khanh Cá Trê Manejador Principal de Publicidd Equipos A, B, C",,
-Choice/1f3/text,Not really,De verdad no,,
+Text/1f0/text,I don't think I'd do a collaboration like that honestly... Sorry...,No creo que aria un coloboracion asi... Perdon...,,说实话，我应该不会做那种联动...抱歉...
+Text/1f1/text,"Well, it's your restaurant... But I don’t think I am your man. I think you should find someone else, goodbye.","Bueno, es tu restaurante... Pero no crea que yo soy tu hombre. Creo que deberias buscar a alguien mas, adios.",,好吧，那是你的餐厅，自然由你决定...但我觉得我们不太合适。你还是去找别人吧。再见。
+Text/1f2/text,"Khanh Cá Trê, Head Advertising Manager Team A, B, C","Khanh Cá Trê Manejador Principal de Publicidd Equipos A, B, C",,Khanh Cá Trê｜A、B、C 组广告主管
+Choice/1f3/text,Not really,De verdad no,,没有
 Choice/1f3/disabled_text,,,,
-Text/1f4/text,"Um, I don't really have any..","Em, de verdad no tengo ninguna..",,
-Text/1f5/text,FR?!,"¡¿EN SERIO?! Pense que tendrias al menos una porque hicimos match, pero bueno, ¿y tu que haces?",,
-Text/1f6/text,"I thought you'd have at least one since we matched, but well, what do you do?","Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,
-Text/1f7/text,"Khanh Cá Trê, Head Advertising Manager Team A, B, C",,,
-Choice/1f8/text,Model peer?,¿Los dos somos modelos?,,
+Text/1f4/text,"Um, I don't really have any..","Em, de verdad no tengo ninguna..",,嗯，我其实没有什么...
+Text/1f5/text,FR?!,"¡¿EN SERIO?! Pense que tendrias al menos una porque hicimos match, pero bueno, ¿y tu que haces?",,真的？！
+Text/1f6/text,"I thought you'd have at least one since we matched, but well, what do you do?","Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,我们都匹配上了，我还以为你至少会有一个呢。那，你是做什么的？
+Text/1f7/text,"Khanh Cá Trê, Head Advertising Manager Team A, B, C",,,Khanh Cá Trê｜A、B、C 组广告主管
+Choice/1f8/text,Model peer?,¿Los dos somos modelos?,,模特同行？
 Choice/1f8/disabled_text,,,,
-Text/1f9/text,"I'm a model, that's why I matched with you",Soy modelo por eso ise match contigo,,
-Text/1fa/text,"I assumed you might be too and thought we could like, network","Asumi que tu eras uno tambien y podriamos como, hacer conecions de trabajo",,
-Text/1fb/text,AND get to know each other!,¡Y conocernos!,,
-Text/1fc/text,"Oh, well, about that, as you can see, I am an office worker! It says so in my bio, did you not read it?","¡Ah, bueno, sobre eso, como puedes ver, so trabajador en una oficina! Lo dice and mi sobre mi, ¿no lo leiste?",,
-Text/1fd/text,"Khanh Cá Trê, Head Advertising Manager Team A, B, C","Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,
-Choice/1fe/text,No tbh,De verdad no,,
+Text/1f9/text,"I'm a model, that's why I matched with you",Soy modelo por eso ise match contigo,,我是模特，所以才会右滑你。
+Text/1fa/text,"I assumed you might be too and thought we could like, network","Asumi que tu eras uno tambien y podriamos como, hacer conecions de trabajo",,我还以为你可能也是，想着也许能拓展一下人脉。
+Text/1fb/text,AND get to know each other!,¡Y conocernos!,,当然，也是为了互相了解！
+Text/1fc/text,"Oh, well, about that, as you can see, I am an office worker! It says so in my bio, did you not read it?","¡Ah, bueno, sobre eso, como puedes ver, so trabajador en una oficina! Lo dice and mi sobre mi, ¿no lo leiste?",,哦，关于这个...如你所见，我是个办公室职员！我的简介里写着呢，你没看吗？
+Text/1fd/text,"Khanh Cá Trê, Head Advertising Manager Team A, B, C","Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,Khanh Cá Trê｜A、B、C 组广告主管
+Choice/1fe/text,No tbh,De verdad no,,说实话没看
 Choice/1fe/disabled_text,,,,
-Text/1ff/text,Not really! Sorry I got super distracted by how good looking you are!,"¡De verdad no! ¡Perdon, me distrai!",,
-Text/200/text,"Oh, you clearly place importance on appearance...","Ah, se nota que le pones much enfoque a las aparencias...",,
-Text/201/text,"Sorry I don't think this will work, I will end this conversation now.","Perdon no creo que esto funcione, Terminaer esta conversacion ahora.",,
+Text/1ff/text,Not really! Sorry I got super distracted by how good looking you are!,"¡De verdad no! ¡Perdon, me distrai!",,其实没怎么看！抱歉，我光顾着被你的颜值吸引了！
+Text/200/text,"Oh, you clearly place importance on appearance...","Ah, se nota que le pones much enfoque a las aparencias...",,所以，你果然很看重外表...
+Text/201/text,"Sorry I don't think this will work, I will end this conversation now.","Perdon no creo que esto funcione, Terminaer esta conversacion ahora.",,对不起，我觉得我们不太合适。就聊到这里吧。
 Text/202/text,"Goodbye! 
 
-Khanh Cá Trê, Head Advertising Manager Team A, B, C","¡Adios! Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,
-Choice/203/text,Too excited,Demaciada emocion,,
+Khanh Cá Trê, Head Advertising Manager Team A, B, C","¡Adios! Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,"再见！
+ 
+ Khanh Cá Trê｜A、B、C 组广告主管"
+Choice/203/text,Too excited,Demaciada emocion,,一时激动
 Choice/203/disabled_text,,,,
-Text/204/text,"Oh you're right. Sorry, I got excited by the possibility that we might share careers that I skipped it.",Ah tienes razon. Perdon me emocione tanto por la posibilidad de que pudieramos comparti carrera que la salte,,
-Text/205/text,I understand,Entiendo,,
-Text/206/text,"but I am a little too nervous to continue this conversation now, sorry and goodbye.","pero ahora estoy muy nervioso para continuar esta conversacion, mis disculpas y adios.",,
-Text/207/text,Khanh Cá Trê Head Advertising Manager,Khanh Cá Trê Manejador Principal de Publicidad,,
-Text/208/text,"Team A, B, C","Equipos A, B, C",,
-Choice/209/text,"Yes, but...","Si, pero...",,
+Text/204/text,"Oh you're right. Sorry, I got excited by the possibility that we might share careers that I skipped it.",Ah tienes razon. Perdon me emocione tanto por la posibilidad de que pudieramos comparti carrera que la salte,,你说得没错。抱歉，我因为想到我们可能从事同一个行业，太兴奋了，所以没仔细看简介。
+Text/205/text,I understand,Entiendo,,理解。
+Text/206/text,"but I am a little too nervous to continue this conversation now, sorry and goodbye.","pero ahora estoy muy nervioso para continuar esta conversacion, mis disculpas y adios.",,不过我现在有点太紧张了，没法继续聊下去了。对不起，再见。
+Text/207/text,Khanh Cá Trê Head Advertising Manager,Khanh Cá Trê Manejador Principal de Publicidad,,Khanh Cá Trê
+Text/208/text,"Team A, B, C","Equipos A, B, C",,A、B、C组广告主管
+Choice/209/text,"Yes, but...","Si, pero...",,嗯，但...
 Choice/209/disabled_text,,,,
-Text/20a/text,Yea but the watermark? I thought you were roleplaying or something...,"Si, ¿pero la marca de agua? Pense que estabas jugando la rol...",,
-Text/20b/text,I am not.,No hago eso.,,
-Text/20c/text,"Uh, sorry. I will end this conversation now.","Uy, perdon. Terminare esta conversacion ahora.",,
+Text/20a/text,Yea but the watermark? I thought you were roleplaying or something...,"Si, ¿pero la marca de agua? Pense que estabas jugando la rol...",,是，但那个水印怎么解释？我还以为你只是在玩角色扮演什么的...
+Text/20b/text,I am not.,No hago eso.,,我没假扮任何人。
+Text/20c/text,"Uh, sorry. I will end this conversation now.","Uy, perdon. Terminare esta conversacion ahora.",,呃，不好意思，我就先结束这段对话了。
 Text/20d/text,"Goodbye 
 
-Khanh Cá Trê, Head Advertising Manager Team A, B, C","Goodbye Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,
-Choice/20e/text,"Sorry, nerves","Nervios, perdon",,
+Khanh Cá Trê, Head Advertising Manager Team A, B, C","Goodbye Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,"再见！
+ 
+ Khanh Cá Trê｜A、B、C 组广告主管"
+Choice/20e/text,"Sorry, nerves","Nervios, perdon",,对不起，我有些紧张
 Choice/20e/disabled_text,,,,
-Text/20f/text,"Sorry, I am not always the best at conversations and your biography was impressive so I was not expecting a match.","Perdon, no soy la meojor a conversaciones y tu acerca de mi me impresiono, pense que no ibamos hacer match.",,
-Text/210/text,"I have a typical kitchen job, not very interesting.","Trabajo en una cocina, no es muy interesante.",,
-Text/211/text,"Don't put yourself down, I definitely understand being nervous or self concious...","No hables mal de ti misma, definitivamente entiendo ser nervioso o tiido...",,
-Text/212/text,trust me.,creeme.,,
-Text/213/text,Do you think someone has to be impressive to meet someone...?,Tu piensas que alguien tiene que ser impresionante para conocer a alguien...?,,
-Text/214/text,"Khanh Cá Trê, Head Advertising Manager Team A, B, C","Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,
-Choice/215/text,It helps,Ayuda,,
+Text/20f/text,"Sorry, I am not always the best at conversations and your biography was impressive so I was not expecting a match.","Perdon, no soy la meojor a conversaciones y tu acerca de mi me impresiono, pense que no ibamos hacer match.",,抱歉，我一直不太擅长和别人聊天。你的个人简介又那么亮眼，所以我没想到我们真的会配对上。
+Text/210/text,"I have a typical kitchen job, not very interesting.","Trabajo en una cocina, no es muy interesante.",,我只是在厨房里做一份普通工作，没什么值得一提的。
+Text/211/text,"Don't put yourself down, I definitely understand being nervous or self concious...","No hables mal de ti misma, definitivamente entiendo ser nervioso o tiido...",,别这么看轻自己。我很清楚紧张和缺乏自信是什么感觉...
+Text/212/text,trust me.,creeme.,,相信我。
+Text/213/text,Do you think someone has to be impressive to meet someone...?,Tu piensas que alguien tiene que ser impresionante para conocer a alguien...?,,你觉得一个人必须足够优秀，才有资格去认识别人吗？
+Text/214/text,"Khanh Cá Trê, Head Advertising Manager Team A, B, C","Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,Khanh Cá Trê｜A、B、C 组广告主管
+Choice/215/text,It helps,Ayuda,,会有帮助
 Choice/215/disabled_text,,,,
-Text/216/text,"I think it definitely helps, isn't it natural for people to want someone impressive?","Creo que definitivamente ayuda, no es natural que las personas quieran a alguien impresionante?",,
-Text/217/text,That's why I get nervous...,Por eso me dan nervios...,,
-Text/218/text,"Oh, well if you feel that way then I don't think we will work out...","Ah, pues si asi te sientes no creo que esto baya a ninguna parte...",,
-Text/219/text,Sorry... I will end this conversation now.,Perdon... Terminare esta conversacion ahora.,,
+Text/216/text,"I think it definitely helps, isn't it natural for people to want someone impressive?","Creo que definitivamente ayuda, no es natural que las personas quieran a alguien impresionante?",,我觉得肯定有帮助吧。人不都是更想认识优秀的人吗？
+Text/217/text,That's why I get nervous...,Por eso me dan nervios...,,也正因如此，我才会如此紧张...
+Text/218/text,"Oh, well if you feel that way then I don't think we will work out...","Ah, pues si asi te sientes no creo que esto baya a ninguna parte...",,你要是这么想，我们可能并不适合彼此...
+Text/219/text,Sorry... I will end this conversation now.,Perdon... Terminare esta conversacion ahora.,,抱歉，我们就聊到这里吧。
 Text/21a/text,"Goodbye 
 
-Khanh Cá Trê, Head Advertising Manager Team A, B,","Adios Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B,",,
-Choice/21b/text,No!,,,
+Khanh Cá Trê, Head Advertising Manager Team A, B,","Adios Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B,",,"再见！
+ 
+ Khanh Cá Trê｜A、B、C 组广告主管"
+Choice/21b/text,No!,,,不！
 Choice/21b/disabled_text,,,,
-Text/21c/text,"No, that's why I am still trying despite the fact that I am not showing my face...","No, por eso trato aunque no enseño mi cara...",,
-Text/21d/text,That's great... I... I want to live up to that! Let's meet up at the local comic shop and we can talk some more about it...,Eso es fantastico... Yo... ¡Yo quiero estar a esa altura! Vamos a juntarnos en la tienda de comics local y podemos hablar mas de eso...,,
+Text/21c/text,"No, that's why I am still trying despite the fact that I am not showing my face...","No, por eso trato aunque no enseño mi cara...",,当然不是。不然我也不会在自己都没露脸的情况下，继续尝试认识别人...
+Text/21d/text,That's great... I... I want to live up to that! Let's meet up at the local comic shop and we can talk some more about it...,Eso es fantastico... Yo... ¡Yo quiero estar a esa altura! Vamos a juntarnos en la tienda de comics local y podemos hablar mas de eso...,,那太好了...我...我也想成为配得上这番话的人！我们在附近的漫画店见面吧，到时可以继续聊...
 Text/21e/text,"Just don't be too shocked! 
 
-Khanh Cá Trê, Head Advertising Manager Team A, B, C","¡Nadamas no te sorprendas demaciado! Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,
-Choice/21f/text,Of course,Claro,,
+Khanh Cá Trê, Head Advertising Manager Team A, B, C","¡Nadamas no te sorprendas demaciado! Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,"不过到时候可别太惊讶！
+ 
+ Khanh Cá Trê｜A、B、C 组广告主管"
+Choice/21f/text,Of course,Claro,,当然
 Choice/21f/disabled_text,,,,
-Text/220/text,"Yes, I don't expect many matches because of it, but you surely don't relate to that like you say","Si, por eso no espero que me hagan match mucho, pero deseguro no puedes entender como dices",,
-Text/221/text,"Oh, well I don't think you should feel that bad about yourself... but now I feel like I will disappoint you.","Ah, pues no pienso que deberias sentirte tan feo de ti misma... pero ahora siento que te decepcionare.",,
+Text/220/text,"Yes, I don't expect many matches because of it, but you surely don't relate to that like you say","Si, por eso no espero que me hagan match mucho, pero deseguro no puedes entender como dices",,我没有露脸，所以本来也不指望得到很多匹配。可你说自己能够感同身受，我看未必吧。
+Text/221/text,"Oh, well I don't think you should feel that bad about yourself... but now I feel like I will disappoint you.","Ah, pues no pienso que deberias sentirte tan feo de ti misma... pero ahora siento que te decepcionare.",,你不该这么看轻自己...现在，我反而担心自己会让你失望。
 Text/222/text,"I should end this. Goodbye 
 
-Khanh Cá Trê, Head Advertising Manager Team A, B, C","Deberia terminar esto. Adios Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,
-Choice/223/text,Pretty man,Hombre bonito,,
+Khanh Cá Trê, Head Advertising Manager Team A, B, C","Deberia terminar esto. Adios Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,"我还是结束这段对话吧。再见。
+ 
+ Khanh Cá Trê｜A、B、C 组广告主管"
+Choice/223/text,Pretty man,Hombre bonito,,帅哥
 Choice/223/disabled_text,,,,
-Text/224/text,You're pretty... Isn't that what matters? I work as a,Eres bonito... ¿No es eso lo que importa?,,
-Text/225/text,Fisherman... or something like that,Yo trabajo como MC: un pescador... o algo haci,,
-Text/226/text,...Or something like that? That doesn't seem very honest or like you care much...,... ¿O algo haci? Eso no suena muy honesto o como que te importa mucho...,,
+Text/224/text,You're pretty... Isn't that what matters? I work as a,Eres bonito... ¿No es eso lo que importa?,,你长得好看...这不才是重点吗？我是做
+Text/225/text,Fisherman... or something like that,Yo trabajo como MC: un pescador... o algo haci,,渔夫...之类的工作。
+Text/226/text,...Or something like that? That doesn't seem very honest or like you care much...,... ¿O algo haci? Eso no suena muy honesto o como que te importa mucho...,,之类的？这实在很不坦诚，也不像是真心想认识我。
 Text/227/text,"Do you not know what you do? 
 
-Khanh Cá Trê, Head Advertising Manager Team A, B, C","No sabes lo que haces? Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,
-Choice/228/text,Liars together,Mentimos los dos,,
+Khanh Cá Trê, Head Advertising Manager Team A, B, C","No sabes lo que haces? Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,"你连自己是做什么的都不知道吗？
+ 
+ Khanh Cá Trê｜A、B、C 组广告主管"
+Choice/228/text,Liars together,Mentimos los dos,,彼此彼此
 Choice/228/disabled_text,,,,
-Text/229/text,"Well, we're both not being honest right? What does it matter what I do?","Pues, ¿los does no estamos siendo honestos verdad? ¿Que importa lo que haga?",,
-Text/22a/text,"This conversation is off putting, you shouldn't mess with people like this, goodbye.","Esta conversacion me esta cayendo mal, no deberias jugar con las persona asi, adios. [Fail]",,
-Choice/22b/text,You wouldn’t get it,No entenderias,,
+Text/229/text,"Well, we're both not being honest right? What does it matter what I do?","Pues, ¿los does no estamos siendo honestos verdad? ¿Que importa lo que haga?",,反正我们都没说实话，不是吗？我做什么有什么关系？
+Text/22a/text,"This conversation is off putting, you shouldn't mess with people like this, goodbye.","Esta conversacion me esta cayendo mal, no deberias jugar con las persona asi, adios. [Fail]",,这段对话让人很不舒服。你不该这样戏弄别人，再见。
+Choice/22b/text,You wouldn’t get it,No entenderias,,你不会懂的
 Choice/22b/disabled_text,,,,
-Text/22c/text,"I didn't mean to come off that way, my job title is just sort of unstable.","No quise decir eso, mi posicion de trabajo no es estable.",,
-Text/22d/text,That was just embarrassing to say. You're so cool you probably don't understand,Me dio verguenza decir eso. Tu eres tan cool que no lo entenderias,,
-Text/22e/text,Don't be embarrassed... Your job being unstable isn't your fault...,No estes avergonzada... Tu trabajo no siendo estable no es tu culpa...,,
-Text/22f/text,"Sorry, now I am too nervous I will disappoint you. Goodbye.","Perdon, ahora estoy muy nervioso que te voy a decepcionar. Adios.",,
-Text/230/text,"Khanh Cá Trê, Head Advertising Manager Team A, B, C","Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,
-Choice/231/text,Nevermind.,Da igual.,,
+Text/22c/text,"I didn't mean to come off that way, my job title is just sort of unstable.","No quise decir eso, mi posicion de trabajo no es estable.",,我不是那个意思。只是我的工作不太稳定，很难说清楚。
+Text/22d/text,That was just embarrassing to say. You're so cool you probably don't understand,Me dio verguenza decir eso. Tu eres tan cool que no lo entenderias,,只是这种话说出口挺难为情的。你这么优秀，大概不会理解吧。
+Text/22e/text,Don't be embarrassed... Your job being unstable isn't your fault...,No estes avergonzada... Tu trabajo no siendo estable no es tu culpa...,,不用为此感到羞耻...工作不够稳定，也不是你能决定的...
+Text/22f/text,"Sorry, now I am too nervous I will disappoint you. Goodbye.","Perdon, ahora estoy muy nervioso que te voy a decepcionar. Adios.",,抱歉，现在我太紧张了，怕自己会让你失望。再见。
+Text/230/text,"Khanh Cá Trê, Head Advertising Manager Team A, B, C","Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,Khanh Cá Trê｜A、B、C 组广告主管
+Choice/231/text,Nevermind.,Da igual.,,算了
 Choice/231/disabled_text,,,,
-Text/232/text,"Yea, I just looked at your profile again and I saw the watermark so I lost interest to be honest...","Yea, Acabo de checar tu perfil otra vez y vi la marca de agua...",,
-Text/233/text,That's not even you. Bummer.,Ni eres tu. Bummer.,,
-Text/234/text,Yes it is!,¡Si so you!,,
-Text/235/text,"But well, that doesn't leave much room for more conversation, does it? I will end it now.","Pero bueno, eso no deja mucho espacio para conversar, ¿o si? Lo voy a terminar ahora.",,
+Text/232/text,"Yea, I just looked at your profile again and I saw the watermark so I lost interest to be honest...","Yea, Acabo de checar tu perfil otra vez y vi la marca de agua...",,嗯，我刚又看了一眼你的资料，看到那个水印以后，说实话就没兴趣了...
+Text/233/text,That's not even you. Bummer.,Ni eres tu. Bummer.,,那根本不是你。真扫兴。
+Text/234/text,Yes it is!,¡Si so you!,,那就是我！
+Text/235/text,"But well, that doesn't leave much room for more conversation, does it? I will end it now.","Pero bueno, eso no deja mucho espacio para conversar, ¿o si? Lo voy a terminar ahora.",,好吧，既然话已经说到这里，看来也没有继续谈下去的必要了。我就先结束这段对话。
 Text/236/text,"Goodbye. 
 
-Khanh Cá Trê, Head Advertising Manager Team A, B, C","Adios. Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,
+Khanh Cá Trê, Head Advertising Manager Team A, B, C","Adios. Khanh Cá Trê Manejador Principal de Publicidad Equipos A, B, C",,"再见。
+ 
+ Khanh Cá Trê｜A、B、C 组广告主管"

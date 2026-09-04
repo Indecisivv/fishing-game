@@ -26,9 +26,13 @@ func _on_btn_pressed() -> void:
 	button_heart.modulate = Color("636363")
 	date_choices_view.hide()
 	date_profile_view.set_profile("lineboil_mc")
-	date_profile_view.set_text("Voraz" + ", " + "25",
-							   tr("CHAR_MC_PRONOUNS"),
-							   tr("CHAR_MC_DESC"))
+	
+	date_profile_view.current_char_data = CharacterLibrary.mc
+	
+	date_profile_view.update_profile_text()
+	#date_profile_view.set_text("Voraz" + ", " + "25",
+	#						   tr("CHAR_MC_PRONOUNS"),
+	#						   tr("CHAR_MC_DESC"))
 	date_profile_view.texture_intensity.texture = MC_INTENSITY
 	date_profile_view.show()
 

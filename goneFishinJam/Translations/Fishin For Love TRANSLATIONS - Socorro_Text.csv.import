@@ -6,10 +6,10 @@ uid="uid://51gx6lwh54nw"
 
 [deps]
 
-files=["res://Translations/Fishin For Love TRANSLATIONS - Socorro_Text.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Socorro_Text.es.translation"]
+files=["res://Translations/Fishin For Love TRANSLATIONS - Socorro_Text.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Socorro_Text.es.translation", "res://Translations/Fishin For Love TRANSLATIONS - Socorro_Text.zh_CN.translation"]
 
 source_file="res://Translations/Fishin For Love TRANSLATIONS - Socorro_Text.csv"
-dest_files=["res://Translations/Fishin For Love TRANSLATIONS - Socorro_Text.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Socorro_Text.es.translation"]
+dest_files=["res://Translations/Fishin For Love TRANSLATIONS - Socorro_Text.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Socorro_Text.es.translation", "res://Translations/Fishin For Love TRANSLATIONS - Socorro_Text.zh_CN.translation"]
 
 [params]
 

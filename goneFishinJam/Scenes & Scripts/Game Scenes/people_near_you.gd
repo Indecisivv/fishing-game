@@ -136,6 +136,24 @@ func reset_screen() -> void:
 	match_screen.hide()
 	button_app_logo.modulate = Color("ffffff")
 	button_app_logo.disabled = false
+		
+var current_online_count : int = 0
 
 func set_people_online(num:int) -> void:
-	label_3_online.text = str(num) + " online"
+	current_online_count = num 
+	update_online_label()
+	#label_3_online.text = str(num) + "online"
+	#var localized_text = tr("UI_ONLINE_LABEL").format({"num":str(num)})
+	#label_3_online.text(localized_text)
+	#label_3_online.text = localized_text
+
+func update_online_label() -> void:
+	var localized_text = tr("UI_ONLINE_LABEL").format({"num": str(current_online_count)})
+	label_3_online.text = localized_text
+
+#refresh when the translation is changed
+func _notification(what: int) -> void:
+	if what == NOTIFICATION_TRANSLATION_CHANGED:
+		if is_node_ready() and label_3_online:
+			update_online_label()
+	

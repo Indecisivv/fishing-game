@@ -1,66 +1,70 @@
 key,en,es,fil,zh_CN
-UI_SETTINGS_BUTTON,Settings,Opciones,opsyon,
-UI_CREDITS_BUTTON,Credits,Creditos ,kredito,
-UI_MAIN_MENU_BUTTON,Main Menu,Menu,menu,
-UI_BACK_BUTTON,Back,Regreso,bumalik,
-UI_RETURNMENU_LABEL,Return to menu?,Regresar al Menu,bumalik sa menu?,
-UI_CONFIRM_BUTTON,Confirm,Confirmar,oo,
-UI_CANCEL_BUTTON,Cancel,Cancelar,hindi,
-UI_QUIT_BUTTON,Quit,Salir ,hinto,
-UI_DONTQUIT_BUTTON,Don't Quit,No Salir,huwag ihinto,
-UI_QUIT_LABEL,Are you sure you want to quit?,Segure que quiere salir?,gusto mo na bang huminto?,
-UI_TEST_SOUND_BUTTON,Test Sound,Probar Audio,subukan ang tunog,
-UI_TRANSLATIONS_LABEL,Translations,,pagsalin,
-UI_TRANSLATIONSBLURB_LABEL,special thanks with translations to,,salamat sa pagsalin kay,
-UI_LANGUAGE_LABEL,LANGUAGE,LENGUAJE,LENGWAHE,
-UI_WRITER_LABEL,Writer,Autor,May-akda,
-UI_CODER_LABEL,Coder,Programadore,Programer,
-UI_ARTIST_LABEL,Artist,Aristista,Ilustrador,
-UI_MUSIC_LABEL,Music,Musica,Musika,
-UI_AUDIO_LABEL,Audio,Audio ,Odyo,
-UI_SOUNDS_LABEL,Sounds,Sonidos,Katunugan,
-UI_SOUNDSBLURB_LABEL,sourced from freesound.org and dova-s.jp,Aprovidionados de freesound.org and dova-s-jp,mula sa freesound.org at dova-s.jp,
-UI_BACKGROUNDS_LABEL,Backgrounds,Fondos,totoong larawan,
-UI_BACKGROUNDSBLURB_LABEL,sourced from unsplash.com,Aprovidionados de unsplash.com,mula sa unsplash.com,
-UI_LISCENSE_LABEL,Liscense,Licencia,lisensya,
-UI_LISCENSEBLURB_LABEL,links to liscense and software used,Elances a licencia,mga ginamit na lisensya at programa,
-UI_ONLINE_LABEL,Online,En linea,aktibo,
-UI_NEARYOU_LABEL,people near you,Cerca de Ti,mga malapit sa'yo,
-UI_MATCH_LABEL,it's a match!,Es un match!,tugma ka d'yan bading!,
-UI_MESSAGE_LABEL,send a message,Manda un mensaje,magiwan ng mensahe,
-ENDING_GREED_LABEL,Greed from the Bible,Comer hasta pecar,Patay Gutom,
-ENDING_1_LABEL,ALL CAUGHT!,Reservas!,HAKOT LAHAT!,
-ENDING_1A_LABEL,After a good time fishing...,"Despues de pasarla bien pescando, ",Sa sobrang tuwa mo sa pangigisda...,
-ENDING_1B_LABEL,"You're so full, it's a dream. ",estas tan llena,Busog na busog ka na. 'Di ka nga makapaniwala.,
+UI_SETTINGS_BUTTON,Settings,Opciones,opsyon,设置
+UI_CREDITS_BUTTON,Credits,Creditos ,kredito,制作人员名单
+UI_MAIN_MENU_BUTTON,Main Menu,Menu,menu,主菜单
+UI_BACK_BUTTON,Back,Regreso,bumalik,返回
+UI_RETURNMENU_LABEL,Return to menu?,Regresar al Menu,bumalik sa menu?,确认返回主菜单吗？
+UI_CONFIRM_BUTTON,Confirm,Confirmar,oo,确认
+UI_CANCEL_BUTTON,Cancel,Cancelar,hindi,取消
+UI_QUIT_BUTTON,Quit,Salir ,hinto,退出
+UI_DONTQUIT_BUTTON,Don't Quit,No Salir,huwag ihinto,不退出
+UI_QUIT_LABEL,Are you sure you want to quit?,Segure que quiere salir?,gusto mo na bang huminto?,你确定要退出游戏吗？
+UI_TEST_SOUND_BUTTON,Test Sound,Probar Audio,subukan ang tunog,音效测试
+UI_TRANSLATIONS_LABEL,Translations,Traducciones,pagsalin,本地化
+UI_TRANSLATIONSBLURB_LABEL,special thanks with translations to,Agradecimientos especiales por traduccion a  ,salamat sa pagsalin kay,特别感谢以下人员提供翻译
+UI_LANGUAGE_LABEL,LANGUAGE,LENGUAJE,LENGWAHE,语言
+UI_WRITER_LABEL,Writer,Autor,May-akda,编剧
+UI_CODER_LABEL,Coder,Programadore,Programer,程序
+UI_ARTIST_LABEL,Artist,Aristista,Ilustrador,美术
+UI_MUSIC_LABEL,Music,Musica,Musika,音乐
+UI_AUDIO_LABEL,Audio,Audio ,Odyo,音频
+UI_SOUNDS_LABEL,Sounds,Sonidos,Katunugan,音效
+UI_SOUNDSBLURB_LABEL,sourced from freesound.org and dova-s.jp,Aprovidionados de freesound.org and dova-s-jp,mula sa freesound.org at dova-s.jp,资源来源：freesound.org、dova-s.jp
+UI_BACKGROUNDS_LABEL,Backgrounds,Fondos,totoong larawan,背景
+UI_BACKGROUNDSBLURB_LABEL,sourced from unsplash.com,Aprovidionados de unsplash.com,mula sa unsplash.com,资源来源：unsplash.com
+UI_LISCENSE_LABEL,Liscense,Licencia,lisensya,许可
+UI_LISCENSEBLURB_LABEL,links to liscense and software used,Elances a licencia,mga ginamit na lisensya at programa,查看本作所用软件及许可信息
+UI_ONLINE_LABEL,{num} Online,{num} En linea, aktibo,{num}在线
+UI_NEARYOU_LABEL,people near you,Cerca de Ti,mga malapit sa'yo,附近的人
+UI_MATCH_LABEL,it's a match!,Es un match!,tugma ka d'yan bading!,配对成功！
+UI_MESSAGE_LABEL,send a message,Manda un mensaje,magiwan ng mensahe,发送消息
+ENDING_GREED_LABEL,Greed from the Bible,Comer hasta pecar,Patay Gutom,暴食
+ENDING_1_LABEL,ALL CAUGHT!,Reservas!,HAKOT LAHAT!,一网打尽！
+ENDING_1A_LABEL,After a good time fishing...,"Despues de pasarla bien pescando, ",Sa sobrang tuwa mo sa pangigisda...,痛痛快快地捕猎一番后...
+ENDING_1B_LABEL,"You're so full, it's a dream. ",estas tan llena,Busog na busog ka na. 'Di ka nga makapaniwala.,你饱足得仿佛置身梦中。
 ENDING_1C_LABEL,"You have so much leftover, you won't have to think 
 of what to eat for a long time. :)","que parece un sueño y no tendras que pensar en
-que comer por un buen rato ",Ang dami mo pang sobra... 'Di mo na kailangan magisip ng ibang kakainin pa. :),
-ENDING_ROOM_LABEL,Room for dessert,Esepacio para postre,May pang-dessert pa,
-ENDING_2_LABEL,JUST ONE MORE BITE!,Una mordida mas!,ISA PA!,
-ENDING_2A_LABEL,You've had enough...,Comiste casi suficiente... ,Sapat na sana...,
-ENDING_2B_LABEL,...to almost feel satisfied.,...para sentirte satisfecha.,...pero parang kulang pa.,
+que comer por un buen rato :)",Ang dami mo pang sobra... 'Di mo na kailangan magisip ng ibang kakainin pa. :),"剩下的食物还有很多，
+ 接下来很长一段时间都不用愁吃的了。:)"
+ENDING_ROOM_LABEL,Room for dessert,Esepacio para postre,May pang-dessert pa,还吃得下甜点
+ENDING_2_LABEL,JUST ONE MORE BITE!,Una mordida mas!,ISA PA!,再吃一口就好！
+ENDING_2A_LABEL,You've had enough...,Comiste casi suficiente... ,Sapat na sana...,你已经吃了不少...
+ENDING_2B_LABEL,...to almost feel satisfied.,...para sentirte satisfecha.,...pero parang kulang pa.,...但离心满意足还差一点。
 ENDING_2C_LABEL,"This stock is enough for you to
 lay low for a while...","Ademas! Esto es suficiente para mantenerte 
-oculta por un rato… ","Pwede nang pagtiyagaan, hinay hinay muna para 'di mahuli agad...",
-ENDING_UNSATISFIED_LABEL,Unsatisfied,Insatisfecha,Bitin,
-ENDING_3_LABEL,CAUGHT ONE!,Enganchaste uno!,HAKOT ISA!,
-ENDING_3A_LABEL,That was delicious...,Ese estuvo delicioso...,Ang sarap sarap...,
-ENDING_3B_LABEL,...but you're still hungry.,...pero todavia tienes hambre.,...pero gutom ka pa.,
+oculta por un rato… ","Pwede nang pagtiyagaan, hinay hinay muna para 'di mahuli agad...","这些食物足够你
+ 蛰伏一阵子了..."
+ENDING_UNSATISFIED_LABEL,Unsatisfied,Insatisfecha,Bitin,欲壑未填
+ENDING_3_LABEL,CAUGHT ONE!,Enganchaste uno!,HAKOT ISA!,钓到一个！
+ENDING_3A_LABEL,That was delicious...,Ese estuvo delicioso...,Ang sarap sarap...,那可真是一顿美餐...
+ENDING_3B_LABEL,...but you're still hungry.,...pero todavia tienes hambre.,...pero gutom ka pa.,...但你还是很饿。
 ENDING_3C_LABEL,"Maybe you'd have better luck fishing normally.
 This amount won't last very long...","Al a mejor tendrias mas suerte con pesca normal!
-Esto no durara tiempo…",Siguro mas suswertehin ka kung sa totoong isda ka na lang. 'Di magtatagal 'tong hinuli mo...,
-ENDING_STARVING_LABEL,Starving,Hambrienta,Gutom na Gutom,
-ENDING_4_LABEL,NO PULL!,No Pull!,NGEK!,
-ENDING_4A_LABEL,Not a single catch?,¿No enganchaste nada? ,Ni isa man lang wala?,
-ENDING_4B_LABEL,You're starving.,Te mueres del hambre!,Gutom ka na oh.,
+Esto no durara tiempo…",Siguro mas suswertehin ka kung sa totoong isda ka na lang. 'Di magtatagal 'tong hinuli mo...,"也许正常钓鱼反而能有更好的收获。
+ 这点东西很快就会吃光..."
+ENDING_STARVING_LABEL,Starving,Hambrienta,Gutom na Gutom,饥肠辘辘
+ENDING_4_LABEL,NO PULL!,No Pull!,NGEK!,没人上钩！
+ENDING_4A_LABEL,Not a single catch?,¿No enganchaste nada? ,Ni isa man lang wala?,空军了？
+ENDING_4B_LABEL,You're starving.,Te mueres del hambre!,Gutom ka na oh.,你饿得要命。
 ENDING_4C_LABEL,"You might want to stick to regular fish.
 The supermarket will save you.","Quiza quieras regresar a pezes regulares… 
-El super mercado te salvara!",Sa totoong isda ka nalang. May palengke naman d'yan.,
-ENDING_END_LABEL,Ending ,Final ,Katapusan,
-ENDING_REPLAY_LABEL,cast again,lanzar de nuevo,mangisda uli,
-ENDING_QUIT_LABEL,quit,salir,hinto,
-ENDING_YOUMADE_LABEL,you made...,vocinaste...,ika'y naghanda ng...,
-CHAR_ADA_PRONOUNS,They/Them,Elle/Elles,they/them,
+El super mercado te salvara!",Sa totoong isda ka nalang. May palengke naman d'yan.,"你还是老老实实吃普通的鱼吧。
+ 超市总不至于让你饿死。"
+ENDING_END_LABEL,Ending ,Final ,Katapusan,结局
+ENDING_REPLAY_LABEL,cast again,lanzar de nuevo,mangisda uli,再抛一竿
+ENDING_QUIT_LABEL,quit,salir,hinto,退出
+ENDING_YOUMADE_LABEL,you made...,vocinaste...,ika'y naghanda ng...,你做出了...
+CHAR_ADA_PRONOUNS,They/Them,Elle/Elles,They/Them,ta/ta
 CHAR_ADA_DESC,"Heyy, I'm Ada! I’m Chic na Chic’s business owner! Yes, you heard that right, I'm our town's most popular clothing store’s owner!! Despite my busy schedule and booming business, I looove to party, dancing is my second calling so I make sure my work/life balance includes time to go out and socialize!
 
 I'm the big 28 now, I'm looking for my forever so we can build our future- NOW. Passion is my passion. I need someone who is like me: confident, established and also loves fun! There's no time to waste, either we click or we don't. 
@@ -73,27 +77,36 @@ Si crees en el amor a la primera vista y podriamos sentir un chispa en la primer
 
 I'm the big 28 na, I'm looking for my forever para naman we build our future - NOW. Passion ko ang passion. I need someone na katulad ko: confident, established, and LOOOVE na love ang fun! No wasting time na, basta we click or we don't.
 
-If naniniwala ka sa love at first sight and you think magkakaron tayo ng spark sa first date, let's match and get planning xoxo",
-CHAR_KHANH_PRONOUNS,He/Him,El/Ellos,he/him,
+If naniniwala ka sa love at first sight and you think magkakaron tayo ng spark sa first date, let's match and get planning xoxo","嗨，我是Ada！Chic na Chic的经营者。是的，你没看错，我拥有镇上最受欢迎的服装店。虽然工作繁忙，生意也正红火，但我依然非常喜欢参加派对。除了工作之外，跳舞就是我最热爱的事。所以不管多忙，我都会安排好工作和生活，留出时间出去玩、认识新朋友、参加社交活动！
+ 
+ 我今年28岁，正在寻找可以共度余生的伴侣，希望我们从现在开始一起规划未来。我喜欢充满激情的生活，也需要一个和我一样自信、事业稳定、懂得享受生活的人！时间宝贵，我们要么一拍即合，要么就说明不合适。
+ 
+ 如果你相信一见钟情，也觉得我们第一次约会就可能擦出火花，那就和我配对，一起开始计划未来吧。么么哒！"
+CHAR_KHANH_PRONOUNS,He/Him,El/Ellos,He/Him,他/他
 CHAR_KHANH_DESC,"I am Khanh, a Lionfish Aquakin. Be open minded and not a prick and we can probably get along just fine. I am into fitness and work.
 
 I am a bit of a foodie and like to visit nice places. Not much more to say, if you would like to get to know me below the surface, message me.","Soy Khanh, un Lionfish Aquakin. Si tienes la mente abierta y no eres un cretino, probablemente nos llevemos bien. Me gusta la actividad fisica y trabajar.
 
 Soy bastante amante de la buena comida y me gusta visitar sitios agradables. No hay mucho más que decir; si quieres conocerme más a fondo, envíame un mensaje.","Ako si Khanh, isang Lionfish Aquakin. Basta maging open-minded ka lang at wag kang gago, we'd probably get along just fine. I am into fitness and work.
 
-Medyo may pagka-foodie, mahilig din ako gumala. Not much more to say. Kung gusto mo ko kilalanin, message me.",
-CHAR_SOCORRO_PRONOUNS,She/Her,Ella/Ellas,she/her,
+Medyo may pagka-foodie, mahilig din ako gumala. Not much more to say. Kung gusto mo ko kilalanin, message me.","我叫Khanh，是一名狮子鱼水族裔。只要你思想开放、别太讨人厌，我们应该能相处得不错。我喜欢健身，也喜欢工作。
+ 
+ 我对美食也很感兴趣，喜欢到环境不错的地方探店。其他没什么好说的。如果你想透过表面深入了解我，欢迎给我发消息。"
+CHAR_SOCORRO_PRONOUNS,She/Her,Ella/Ellas,She/Her,她/她
 CHAR_SOCORRO_DESC,"My name is Socorro. I am a Dogfish Aquakin. I love gardening! Growing delicious food and beautiful flowers feels like magic. I enjoy the sun, long conversations, and soft scents. 
 
 This is my first time looking for a relationship so I am a little nervous, I would appreciate some patience.","Me llamo Socorro. Soy una Dogfish Aquakin. ¡Me encanta la jardinería! Cultivar alimentos deliciosos y flores hermosas se siente como magia. Disfruto el sol, largas conversaciones y los aromas suaves.
 
 Es la primera vez que busco por una relación, así que estoy un poco nerviosa; agradecería algo de paciencia.","Ang pangalan ko ay Socorro. Isa akong Dogfish Aquakin. Mahal ko ang pagtatanim! Para bang mahika sa'kin ang pagtatanim ng masasarap na gulay at magagandang bulaklak. Hilig ko ang araw, mahahabang kwentuhan, at mga mababangong amoy. 
 
-Unang beses ko pa lamang maghanap ng makakasinta, kaya medyo kabado pa ako haha, paumanhin sana.",
-CHAR_MC_PRONOUNS,She/Her,Ella/Ellas,she/her,
+Unang beses ko pa lamang maghanap ng makakasinta, kaya medyo kabado pa ako haha, paumanhin sana.","我是Socorro，鲨鱼水族裔，喜欢园艺！亲手种出好吃的蔬果、养出漂亮的花朵，感觉就像变魔法一样。我喜欢阳光、长谈，也喜欢淡淡的花香。
+ 
+ 这是我第一次在这里认真寻找伴侣，所以多少有点紧张。还请对我多一点耐心。"
+CHAR_MC_PRONOUNS,She/Her,Ella/Ellas,She/Her,她/她
 CHAR_MC_DESC,"My name is Voraz, I'm a half Aquakin and I enjoy cooking. My main hobby is finding new dishes to try. I enjoy making sure my partners are always full. A good meal is always my main priority.","Hola ahi. Mi nombre es Voraz y me encanta cocinar. Mi pasatiempo principal es econtra platillos nuevos para pobrar. Me gusta asegurar me que mi pareja nunca tenga hambre.  Una buena comida siempre es mi prioridad.
-","Ako si Voraz. Isang half aquakin, at mahilig ako magluto. ",
-UI_SNAPPED_LABEL," has snapped 
-the line...","%fn corto la 
-linea...",,
-UI_LOOKINGFOR_LABEL,looking for ,buscando,,
+","Ako si Voraz, half aquakin. Hilig ko magluto. Main hobby ko ang maghanap ng bagong potahe. I make sure na busog lagi ang partners ko. Main priority ko ang masarap na hainan.",我叫Voraz，半水族裔，爱好烹饪。我的主要爱好是寻找新菜式来尝试。最大的兴趣就是发掘没试过的新料理。我很享受把另一半喂饱这件事。一顿令人满足的饭菜，永远是我的头等大事。
+UI_SNAPPED_LABEL,"{name} has snapped 
+the line...","{name} corto la 
+linea...",pinutulan ka ni {name}...,"{name}断开了
+ 连线..."
+UI_LOOKINGFOR_LABEL,looking for ,buscando,Naghahanap ng...,希望寻找...

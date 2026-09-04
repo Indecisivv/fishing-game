@@ -161,16 +161,24 @@ dialogic_default_action={
 [internationalization]
 
 locale/translation_remaps={
+"res://Assets/Buttons/Ada_Intensity.png": PackedStringArray(),
 "res://Assets/Buttons/Credits_Button.png": PackedStringArray("res://Assets/Buttons/Spanish Version/Spanish Menu_Credits.png:es_MX"),
 "res://Assets/Buttons/Credits_Button_2.png": PackedStringArray("res://Assets/Buttons/Spanish Version/Spanish Menu_Credits_V2.png:es_MX"),
+"res://Assets/Buttons/Khanh_Intensity.png": PackedStringArray(),
 "res://Assets/Buttons/Menu Button_01.png": PackedStringArray("res://Assets/Buttons/Spanish Version/Spanish Menu_Play.png:es_MX"),
 "res://Assets/Buttons/Menu Button_01_V2.png": PackedStringArray("res://Assets/Buttons/Spanish Version/Spanish Menu_Play_V2.png:es_MX"),
 "res://Assets/Buttons/Menu Button_03.png": PackedStringArray("res://Assets/Buttons/Spanish Version/Spanish Menu_Settings.png:es_MX"),
 "res://Assets/Buttons/Menu Button_03_V2.png": PackedStringArray("res://Assets/Buttons/Spanish Version/Spanish Menu_Settings_V2.png:es_MX"),
 "res://Assets/Buttons/Menu Button_05.png": PackedStringArray("res://Assets/Buttons/Spanish Version/Spanish Menu_Quit.png:es_MX"),
-"res://Assets/Buttons/Menu Button_05_V2.png": PackedStringArray("res://Assets/Buttons/Spanish Version/Spanish Menu_Quit_V2.png:es_MX")
+"res://Assets/Buttons/Menu Button_05_V2.png": PackedStringArray("res://Assets/Buttons/Spanish Version/Spanish Menu_Quit_V2.png:es_MX"),
+"res://Assets/Buttons/Socorro_Intensity.png": PackedStringArray(),
+"res://Assets/Buttons/Tutorial_Label.png": PackedStringArray(),
+"res://Assets/Buttons/Voraz_Intensity.png": PackedStringArray(),
+"res://Assets/CGs/DatingText_Background.png": PackedStringArray(),
+"res://Assets/CGs/Phone_BG_01.png": PackedStringArray(),
+"res://Assets/CGs/Phone_BG_02.png": PackedStringArray()
 }
-locale/translations=PackedStringArray("res://Translations/Fishin For Love TRANSLATIONS - Khanh_Date.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Khanh_Date.es.translation", "res://Translations/Fishin For Love TRANSLATIONS - Khanh_Text.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Khanh_Text.es.translation", "res://Translations/Fishin For Love TRANSLATIONS - Socorro_Date.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Socorro_Date.es.translation", "res://Translations/Fishin For Love TRANSLATIONS - Socorro_Text.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Socorro_Text.es.translation", "res://Translations/Fishin For Love TRANSLATIONS - Ada_Text.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Ada_Text.es.translation", "res://Translations/Fishin For Love TRANSLATIONS - UI.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - UI.es.translation", "res://Translations/Fishin For Love TRANSLATIONS - Ada_Date.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Ada_Date.es.translation", "res://Translations/Fishin For Love TRANSLATIONS - UI.fil.translation")
+locale/translations=PackedStringArray("res://Translations/Fishin For Love TRANSLATIONS - Ada_Date.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Ada_Date.es.translation", "res://Translations/Fishin For Love TRANSLATIONS - Ada_Date.zh_CN.translation", "res://Translations/Fishin For Love TRANSLATIONS - Ada_Text.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Ada_Text.es.translation", "res://Translations/Fishin For Love TRANSLATIONS - Ada_Text.fil.translation", "res://Translations/Fishin For Love TRANSLATIONS - Ada_Text.zh_CN.translation", "res://Translations/Fishin For Love TRANSLATIONS - Khanh_Date.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Khanh_Date.es.translation", "res://Translations/Fishin For Love TRANSLATIONS - Khanh_Date.zh_CN.translation", "res://Translations/Fishin For Love TRANSLATIONS - Khanh_Text.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Khanh_Text.es.translation", "res://Translations/Fishin For Love TRANSLATIONS - Khanh_Text.zh_CN.translation", "res://Translations/Fishin For Love TRANSLATIONS - Socorro_Date.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Socorro_Date.es.translation", "res://Translations/Fishin For Love TRANSLATIONS - Socorro_Date.zh_CN.translation", "res://Translations/Fishin For Love TRANSLATIONS - Socorro_Text.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Socorro_Text.es.translation", "res://Translations/Fishin For Love TRANSLATIONS - Socorro_Text.zh_CN.translation", "res://Translations/Fishin For Love TRANSLATIONS - UI.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - UI.es.translation", "res://Translations/Fishin For Love TRANSLATIONS - UI.fil.translation", "res://Translations/Fishin For Love TRANSLATIONS - UI.zh_CN.translation")
 locale/locale_filter_mode=1
 
 [physics]

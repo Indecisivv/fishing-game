@@ -6,10 +6,10 @@ uid="uid://cxb3uudwxkuo6"
 
 [deps]
 
-files=["res://Translations/Fishin For Love TRANSLATIONS - Ada_Text.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Ada_Text.es.translation"]
+files=["res://Translations/Fishin For Love TRANSLATIONS - Ada_Text.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Ada_Text.es.translation", "res://Translations/Fishin For Love TRANSLATIONS - Ada_Text.fil.translation", "res://Translations/Fishin For Love TRANSLATIONS - Ada_Text.zh_CN.translation"]
 
 source_file="res://Translations/Fishin For Love TRANSLATIONS - Ada_Text.csv"
-dest_files=["res://Translations/Fishin For Love TRANSLATIONS - Ada_Text.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Ada_Text.es.translation"]
+dest_files=["res://Translations/Fishin For Love TRANSLATIONS - Ada_Text.en.translation", "res://Translations/Fishin For Love TRANSLATIONS - Ada_Text.es.translation", "res://Translations/Fishin For Love TRANSLATIONS - Ada_Text.fil.translation", "res://Translations/Fishin For Love TRANSLATIONS - Ada_Text.zh_CN.translation"]
 
 [params]
 

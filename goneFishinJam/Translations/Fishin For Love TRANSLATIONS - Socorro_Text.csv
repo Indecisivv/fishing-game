@@ -1,159 +1,159 @@
 key,en,es,fil,zh_CN
-Text/237/text,Hello. I am Socorro. I saw your pictures and think your gloves are very nice.,Hola. Soy Socorro. Vi tus fotos y creo que tus guantes son muy bonitos.,,
-Text/238/text,May I ask where you got those green onions?,¿Podría preguntar dónde conseguiste esas cebolletas?,,
-Choice/239/text,Thank you beautiful,Gracias hermosa,,
+Text/237/text,Hello. I am Socorro. I saw your pictures and think your gloves are very nice.,Hola. Soy Socorro. Vi tus fotos y creo que tus guantes son muy bonitos.,,你好，我是Socorro。你照片里的那副手套很好看。
+Text/238/text,May I ask where you got those green onions?,¿Podría preguntar dónde conseguiste esas cebolletas?,,可以问一下，那些青葱是从哪里买的吗？
+Choice/239/text,Thank you beautiful,Gracias hermosa,,谢了，亲爱的
 Choice/239/disabled_text,,,,
-Text/23a/text,"Wow, thanks! I think your eyes are beautiful!","¡Guau, gracias! ¡Creo que tienes unos ojos preciosos!",,
-Text/23b/text,"Oh, thank you... That is very kind of you. You did not answer about your green onions, does that mean do you not want to answer? If so, that is alright!","Oh, gracias... Es muy amable de tu parte. No respondiste sobre tus cebolletas; ¿eso significa que no quieres responder? Si es así, ¡no pasa nada!",,
-Choice/23c/text,"The store, why?","La tienda, ¿Porque?",,
+Text/23a/text,"Wow, thanks! I think your eyes are beautiful!","¡Guau, gracias! ¡Creo que tienes unos ojos preciosos!",,哇，谢谢夸奖！我觉得你的眼睛也很漂亮！
+Text/23b/text,"Oh, thank you... That is very kind of you. You did not answer about your green onions, does that mean do you not want to answer? If so, that is alright!","Oh, gracias... Es muy amable de tu parte. No respondiste sobre tus cebolletas; ¿eso significa que no quieres responder? Si es así, ¡no pasa nada!",,哦，谢谢...你太客气了。不过，你还没有回答我关于青葱的问题，是不方便说吗？如果是的话，也没关系！
+Choice/23c/text,"The store, why?","La tienda, ¿Porque?",,超市买的，怎么了？
 Choice/23c/disabled_text,,,,
-Text/23d/text,"Oh, sorry! I got them from the grocery store near me. Why? Did you want to go shopping with me?","¡Ah, perdon! Los compré en el supermercado que tengo cerca. ¿Por qué? ¿Querías ir de compras conmigo?",,
-Text/23e/text,"No. I apologize, I am sure you are great to shop with, that is just not what I meant. Are you normally this forward?","No. Te pido disculpas, estoy segura de que es un placer ir de compras contigo, pero no era eso a lo que me refería.",,
-Choice/23f/text,No time to waste.,No hay tiempo que perder.,,
+Text/23d/text,"Oh, sorry! I got them from the grocery store near me. Why? Did you want to go shopping with me?","¡Ah, perdon! Los compré en el supermercado que tengo cerca. ¿Por qué? ¿Querías ir de compras conmigo?",,啊，不好意思！那些是在我家附近的超市买的。你问这个，是想约我去逛超市？
+Text/23e/text,"No. I apologize, I am sure you are great to shop with, that is just not what I meant. Are you normally this forward?","No. Te pido disculpas, estoy segura de que es un placer ir de compras contigo, pero no era eso a lo que me refería.",,不是啦，对不起。我觉得你一定是个不错的购物搭子，但我刚刚不是在暗示这个。你平时都这么直接吗？
+Choice/23f/text,No time to waste.,No hay tiempo que perder.,,时间宝贵，别绕弯子
 Choice/23f/disabled_text,,,,
-Text/240/text,"I think there is no time to waste, I fell in love with your eyes and would like to get to know you.","Creo que no hay tiempo que perder, me enamoré de tus ojos y me gustaría conocerte.",,
-Text/241/text,"I am sorry, you are obviously looking for someone who is more ready to move to the next step than me. I don't think we fit each other. I will unmatch with you now.","Lo siento, pero es evidente que buscas a alguien más preparada que yo para dar el siguiente paso. No creo que encajemos. Voy a quebrar la conexión ahora.",,
-Choice/242/text,"Sorry, but...",Perdon pero...,,
+Text/240/text,"I think there is no time to waste, I fell in love with your eyes and would like to get to know you.","Creo que no hay tiempo que perder, me enamoré de tus ojos y me gustaría conocerte.",,我不想浪费彼此时间。看到你的眼睛时我就心动了，所以想深入了解你。
+Text/241/text,"I am sorry, you are obviously looking for someone who is more ready to move to the next step than me. I don't think we fit each other. I will unmatch with you now.","Lo siento, pero es evidente que buscas a alguien más preparada que yo para dar el siguiente paso. No creo que encajemos. Voy a quebrar la conexión ahora.",,抱歉，你似乎想找一个能更快和你发展关系的人，而我还没有准备好。我们可能并不适合，我还是先取消配对吧。
+Choice/242/text,"Sorry, but...",Perdon pero...,,对不起，但...
 Choice/242/disabled_text,,,,
-Text/243/text,"Sorry if I came on too strong, but this app is for dating right?","Perdon si me he mostrado demasiada lanzada, pero esta aplicación es para encontrar una cita, ¿O, no?",,
-Text/244/text,I suppose you are right but everyone will have different speeds they are comfortable with no? I think you and I aren't compatible. I will unmatch with you now.,"Supongo que tienes razón, pero cada persona se siente cómoda con ritmos diferentes, ¿no? Creo que tú y yo no somos compatibles. Voy a quebrar la conexión ahora.",,
-Choice/245/text,"Not usually, but...","Regularmente no, pero...",,
+Text/243/text,"Sorry if I came on too strong, but this app is for dating right?","Perdon si me he mostrado demasiada lanzada, pero esta aplicación es para encontrar una cita, ¿O, no?",,我可能有些操之过急，我向你道歉。但这个软件不就是用来约会的吗？
+Text/244/text,I suppose you are right but everyone will have different speeds they are comfortable with no? I think you and I aren't compatible. I will unmatch with you now.,"Supongo que tienes razón, pero cada persona se siente cómoda con ritmos diferentes, ¿no? Creo que tú y yo no somos compatibles. Voy a quebrar la conexión ahora.",,你说得也没错，只是每个人都有自己觉得舒服的恋爱节奏，不是吗？我觉得我们不太适合，我会取消配对。
+Choice/245/text,"Not usually, but...","Regularmente no, pero...",,我平时不会这样，但这次...
 Choice/245/disabled_text,,,,
-Text/246/text,"Not usually, I typically prefer slower romance. But I really want to go on a date today.","No normalmente, you prefiero  romance lento. Pero quiero salir con alguien hoy. ",,
-Text/247/text,"I understand but I do not think I am the right person for you if that's what you're looking for! Sorry, I will unmatch you now.","Lo entiendo, pero no creo que soy la persona correcta para ti si eso es lo que buscas. Lo siento, voy a quebrar la conexión ahora.",,
-Choice/248/text,"No, more effort","No, es mas esfuerzo",,
+Text/246/text,"Not usually, I typically prefer slower romance. But I really want to go on a date today.","No normalmente, you prefiero  romance lento. Pero quiero salir con alguien hoy. ",,一般来说，我比较喜欢细水长流的感情。不过今天，我真的很想和人约会。
+Text/247/text,"I understand but I do not think I am the right person for you if that's what you're looking for! Sorry, I will unmatch you now.","Lo entiendo, pero no creo que soy la persona correcta para ti si eso es lo que buscas. Lo siento, voy a quebrar la conexión ahora.",,我理解你的想法，但如果你想要的是这个，那我恐怕不适合你。抱歉，我现在就会解除配对。
+Choice/248/text,"No, more effort","No, es mas esfuerzo",,不行，再用点心
 Choice/248/disabled_text,,,,
-Text/249/text,"They're just green onions, I didn't realize it was super important, my bad.","Son solo cebolletas, no me di cuenta de que fuera tan importantes, fue mi error.",,
-Text/24a/text,"That is true! However, I personally feel that the source of your ingredients matters a lot. I promise if you try, you might fall in love.","¡Eso es cierto! Sin embargo, personalmente creo que el origen de los ingredientes es muy importante. Te prometo que, si lo pruebas, podrías enamorarte.",,
-Choice/24b/text,"No thanks, shill","No, gracias, promotora",,
+Text/249/text,"They're just green onions, I didn't realize it was super important, my bad.","Son solo cebolletas, no me di cuenta de que fuera tan importantes, fue mi error.",,只是些葱而已，我没想到这事这么重要，抱歉。
+Text/24a/text,"That is true! However, I personally feel that the source of your ingredients matters a lot. I promise if you try, you might fall in love.","¡Eso es cierto! Sin embargo, personalmente creo que el origen de los ingredientes es muy importante. Te prometo que, si lo pruebas, podrías enamorarte.",,是这样没错！但我始终觉得，食材的来源会带来很大的不同。你如果肯试一试，也许就会改观，甚至喜欢上。
+Choice/24b/text,"No thanks, shill","No, gracias, promotora",,免了吧，推销员
 Choice/24b/disabled_text,,,,
-Text/24c/text,"I think I am good, even though I am sure your produce is great. Are you trying to sell on the app? Or is that your only interest?","Creo que estoy bien asi, aunque estoy segura de que tus productos son excelentes. ¿Estás intentando vender a través de la aplicación? ¿O es ese tu único interés?",,
-Text/24d/text,"I apologize, I clearly did not pick the right topic... And you seem quite unkind. I do not think I want to continue this conversation however, so I will unmatch you now.","Te pido disculpas, claramente elegi el tema adecuado... y pareces bastante desagradable. Sin embargo, no creo que quiera continuar con esta conversacion, asi que voy a quebrar la conexion ahora.",,
-Choice/24e/text,Maybe sometime,Al a mejor,,
+Text/24c/text,"I think I am good, even though I am sure your produce is great. Are you trying to sell on the app? Or is that your only interest?","Creo que estoy bien asi, aunque estoy segura de que tus productos son excelentes. ¿Estás intentando vender a través de la aplicación? ¿O es ese tu único interés?",,谢谢，不过我不需要。你的农产品应该很好，但你是来这里推销的吗？还是你平时只对这个感兴趣？
+Text/24d/text,"I apologize, I clearly did not pick the right topic... And you seem quite unkind. I do not think I want to continue this conversation however, so I will unmatch you now.","Te pido disculpas, claramente elegi el tema adecuado... y pareces bastante desagradable. Sin embargo, no creo que quiera continuar con esta conversacion, asi que voy a quebrar la conexion ahora.",,抱歉，看来我确实不该聊这个...但你说话实在有些伤人。我不想再继续交流了，现在会取消配对。
+Choice/24e/text,Maybe sometime,Al a mejor,,或许改天吧
 Choice/24e/disabled_text,,,,
-Text/24f/text,I don't really think it matters much? I have never met someone who cares so much before,¿No creo que importa tanto? Nunca he concido a alguien que le importe tanto,,
-Text/250/text,"It is my life's work, I apologize for being strange... I do not want to continue. I will unmatch you now.","Es a lo que dedique mi vida, perdon por ser rara... No quiero continuar. Voy a quebrar la conexion ahora.",,
-Choice/251/text,Persuaded too easily,Facil de comvencer,,
+Text/24f/text,I don't really think it matters much? I have never met someone who cares so much before,¿No creo que importa tanto? Nunca he concido a alguien que le importe tanto,,这真的有那么重要吗？我还是第一次见有人这么在意这个。
+Text/250/text,"It is my life's work, I apologize for being strange... I do not want to continue. I will unmatch you now.","Es a lo que dedique mi vida, perdon por ser rara... No quiero continuar. Voy a quebrar la conexion ahora.",,这是我倾注一生的事业。抱歉，我可能是有点奇怪...我不想再聊下去了。就到这里吧，我会取消配对。
+Choice/251/text,Persuaded too easily,Facil de comvencer,,太容易被说服了
 Choice/251/disabled_text,,,,
-Text/252/text,"Hm, maybe you have a point? But I can't tell if that is because I am easy to persuade and not because it actually matters... Maybe I will try... Or not","¿Hm, al a mejor tienes un punto? Pero no se si es porque soy facil de onvencer o si porque de verdad importe... Al a mejor lo probare... O no",,
-Text/253/text,I am glad you are willing to give them a try but I think the way we see things is too different. I will unmatch now.,Me alogra que estas dispuesta a tratar cosas nuevas pero creo que la forma que miramos las cosas es demaciado diferente. Voy a quebrar la conexion ahora.,,
-Choice/254/text,Oh sorry!,¡Ay perdon!,,
+Text/252/text,"Hm, maybe you have a point? But I can't tell if that is because I am easy to persuade and not because it actually matters... Maybe I will try... Or not","¿Hm, al a mejor tienes un punto? Pero no se si es porque soy facil de onvencer o si porque de verdad importe... Al a mejor lo probare... O no",,唔，你的话或许有几分道理。但我也说不清，究竟是我太容易被说动，还是它真的那么重要...我以后可能会试试...再说吧
+Text/253/text,I am glad you are willing to give them a try but I think the way we see things is too different. I will unmatch now.,Me alogra que estas dispuesta a tratar cosas nuevas pero creo que la forma que miramos las cosas es demaciado diferente. Voy a quebrar la conexion ahora.,,很高兴你愿意试试，但我觉得我们看待事情的方式太不一样了。还是到这里吧。
+Choice/254/text,Oh sorry!,¡Ay perdon!,,哦，抱歉！
 Choice/254/disabled_text,,,,
-Text/255/text,"Oh, sorry. That must've seen impolite... I was just distracted. I got farmers’ market, I prefer it over the fluorescence of the grocery store.","Ay, perdon. Eso se debio ver sin modales... Estaba distraida. Los agarre en el mercado de granjeros, la prefiero sobre las luces luminosas de la tienda.",,
-Text/256/text,Oh! I do too! What a happy coincidence huh? What do you usually shop for?,¡Ah! ¡Yo tambien! ¿Que gran coincidencia verdad? ¿Qué pasas a comprar normalmente?,,
-Choice/257/text,I go to haggle,Voy a regatear,,
+Text/255/text,"Oh, sorry. That must've seen impolite... I was just distracted. I got farmers’ market, I prefer it over the fluorescence of the grocery store.","Ay, perdon. Eso se debio ver sin modales... Estaba distraida. Los agarre en el mercado de granjeros, la prefiero sobre las luces luminosas de la tienda.",,哦，抱歉。刚才那样可能显得不太礼貌...我只是走神了。那些葱是从农贸市场买的。比起超市惨白的荧光灯，我更喜欢农贸市场的氛围。
+Text/256/text,Oh! I do too! What a happy coincidence huh? What do you usually shop for?,¡Ah! ¡Yo tambien! ¿Que gran coincidencia verdad? ¿Qué pasas a comprar normalmente?,,哦！我也是！这也太巧了吧？你平时都买些什么？
+Choice/257/text,I go to haggle,Voy a regatear,,我去那里是为了砍价
 Choice/257/disabled_text,,,,
-Text/258/text,Whatever I need at the moment. I like that you can haggle with the vendors unlike the grocery store,"Lo que necesite al momento. Me gusta que puedes regatear con los vendedores, no como en la tienda",,
-Text/259/text,"Oh! You know, local farmers can not really compete with chain grocery stores. Haggling them is not the best practice... I do not think we could even be friends. I will unmatch with you now.","¡Ah! Sabes, granjeros locales de verdad no pueden competir con tiendas haci. Regatear lo hace peor... No creo que podamos ni ser amigas. Voy a quebrar la conexion ahora.",,
-Choice/25a/text,Anything but produce,Todo menos verduras,,
+Text/258/text,Whatever I need at the moment. I like that you can haggle with the vendors unlike the grocery store,"Lo que necesite al momento. Me gusta que puedes regatear con los vendedores, no como en la tienda",,没有固定的东西，缺什么就买什么。毕竟那里能和摊贩讲价，不像超市价格都是定死的
+Text/259/text,"Oh! You know, local farmers can not really compete with chain grocery stores. Haggling them is not the best practice... I do not think we could even be friends. I will unmatch with you now.","¡Ah! Sabes, granjeros locales de verdad no pueden competir con tiendas haci. Regatear lo hace peor... No creo que podamos ni ser amigas. Voy a quebrar la conexion ahora.",,啊！本地农户本来就很难和连锁超市竞争，你还向他们压价，这并不厚道...我觉得我们可能连朋友都做不成。就到这里吧，我会取消配对。
+Choice/25a/text,Anything but produce,Todo menos verduras,,除了农产品，什么都买
 Choice/25a/disabled_text,,,,
-Text/25b/text,Things like bread or other cooked goods. I don't like buying dirty vegetables... I have to wash them,Cosas como pan o otra cosas que estan cocidas. No me gusta compra verdura sucia... La tengo que lavar,,
-Text/25c/text,"You understand that grocery vegetables are also dirty... You should be washing them too- Ah, I do not think we are compatible. I will unmatch with you now.","Si entiendes que la verdura de la tienda tambien esta sucia... La deberias estar lavando tambien- Ah, no creo que seamos compatibles. Voy a quebrar la conexion ahora.",,
-Choice/25d/text,Anything yummy,Lo que sea rico,,
+Text/25b/text,Things like bread or other cooked goods. I don't like buying dirty vegetables... I have to wash them,Cosas como pan o otra cosas que estan cocidas. No me gusta compra verdura sucia... La tengo que lavar,,我会买些面包之类的现成食品。我不喜欢买带泥的菜，买回去还要清洗
+Text/25c/text,"You understand that grocery vegetables are also dirty... You should be washing them too- Ah, I do not think we are compatible. I will unmatch with you now.","Si entiendes que la verdura de la tienda tambien esta sucia... La deberias estar lavando tambien- Ah, no creo que seamos compatibles. Voy a quebrar la conexion ahora.",,你知道超市里的菜其实也不干净吧...那些也得洗。唉，我觉得我们不太合适。就到这里吧，我会取消配对。
+Choice/25d/text,Anything yummy,Lo que sea rico,,什么好吃就买什么
 Choice/25d/disabled_text,,,,
-Text/25e/text,"I don’t usually go with a set list or plan, just whatever looks yummy... I think wandering is part of the appeal",Normalmente no voy con lista o plan... Creo que pasear es parte de la atracion,,
-Text/25f/text,"I know what you mean, the scents and colors are so pretty. Since we can not go tonight, how about we hang out at a diner? On me, of course.","Se de que te refieres, los olores y colors son tan bonitos. Como no podemos ir hoy, ¿que tal que nos vemos en el diner? Invito yo, por supuesto.",,
-Choice/260/text,Where everyone else does,Donde todo los demas,,
+Text/25e/text,"I don’t usually go with a set list or plan, just whatever looks yummy... I think wandering is part of the appeal",Normalmente no voy con lista o plan... Creo que pasear es parte de la atracion,,我通常不会带着固定的清单或计划去，看到什么好吃就买什么...边走边逛不就是逛市场的乐趣
+Text/25f/text,"I know what you mean, the scents and colors are so pretty. Since we can not go tonight, how about we hang out at a diner? On me, of course.","Se de que te refieres, los olores y colors son tan bonitos. Como no podemos ir hoy, ¿que tal que nos vemos en el diner? Invito yo, por supuesto.",,我完全明白你的意思，那里闻起来、看起来都很舒服。既然今晚市场不开，我们去餐馆见面怎么样？我请客。
+Choice/260/text,Where everyone else does,Donde todo los demas,,大家平常购物的地方
 Choice/260/disabled_text,,,,
-Text/261/text,"The store, isn't that where everyone shops?","La tienda, ¿no es ahi donde todos van de compras?",,
-Text/262/text,"Well, not everyone! I personally sell my veggies at the farmers’ market. Have you ever been?","¡Pues, no todos! Personalmente vendo mis vegetales en el mercado de granjeros. ¿Has ido?",,
-Choice/263/text,Overpriced honestly,Es muy caro,,
+Text/261/text,"The store, isn't that where everyone shops?","La tienda, ¿no es ahi donde todos van de compras?",,当然是超市，大家买东西不都去那里吗？
+Text/262/text,"Well, not everyone! I personally sell my veggies at the farmers’ market. Have you ever been?","¡Pues, no todos! Personalmente vendo mis vegetales en el mercado de granjeros. ¿Has ido?",,嗯，那倒未必！我就在农贸市场卖自己种的蔬菜。你以前去过吗？
+Choice/263/text,Overpriced honestly,Es muy caro,,实话实说，那里的东西卖得太贵了
 Choice/263/disabled_text,,,,
-Text/264/text,Yea but it's overpriced. Do you give freebies to your dates? I could take you out for some free produce.,Si pero es demaciado caro. ¿Le regalas muestras a tus citas? Yo te podria sacar por productos gratis.,,
-Text/265/text,"If I gift someone something, it is usually flowers... Are you saying you only want to get free stuff?","Si le regalo algo a alguien, normalmente son floros... ¿Estas diciendo que solo quieres las muestras?",,
-Choice/266/text,Market focused,Enfocada en mercado,,
+Text/264/text,Yea but it's overpriced. Do you give freebies to your dates? I could take you out for some free produce.,Si pero es demaciado caro. ¿Le regalas muestras a tus citas? Yo te podria sacar por productos gratis.,,去是去过，但那里的东西价格有点虚高。你通常会给约会对象一些赠品吗？如果有免费农产品，我可以约你出去。
+Text/265/text,"If I gift someone something, it is usually flowers... Are you saying you only want to get free stuff?","Si le regalo algo a alguien, normalmente son floros... ¿Estas diciendo que solo quieres las muestras?",,我送礼一般会选择鲜花...所以你是在说，你只是想要免费的东西？
+Choice/266/text,Market focused,Enfocada en mercado,,一直都在聊农贸市场
 Choice/266/disabled_text,,,,
-Text/267/text,"Well, we really haven't talked about anything else and you seem cute but at this point it feels like I know more about the market than you","Pues, de verdad no hemos hablado de nada mas y me pareces linda pero ahorita se siente como que conosco el mercado mas que a ti",,
-Text/268/text,"I am sorry, you clearly feel like this conversation was a waste of time and I am starting to feel the same. I will unmatch with you now.","Mis disculpas, claramente sientes que esta conversacion es una perdida de tiempo y estoy empazando a sentir lo mismo. Voy a quebrar la conexion ahora.",,
-Choice/269/text,As a bonus,Como extra,,
+Text/267/text,"Well, we really haven't talked about anything else and you seem cute but at this point it feels like I know more about the market than you","Pues, de verdad no hemos hablado de nada mas y me pareces linda pero ahorita se siente como que conosco el mercado mas que a ti",,嗯，我们基本没聊过别的。虽然你很可爱，但聊到现在，我感觉自己对市场的了解都快超过对你的了解了。
+Text/268/text,"I am sorry, you clearly feel like this conversation was a waste of time and I am starting to feel the same. I will unmatch with you now.","Mis disculpas, claramente sientes que esta conversacion es una perdida de tiempo y estoy empazando a sentir lo mismo. Voy a quebrar la conexion ahora.",,对不起，既然你觉得这段聊天是在浪费时间，我也逐渐有同感，那就别聊了。我现在解除配对。
+Choice/269/text,As a bonus,Como extra,,当作额外福利
 Choice/269/disabled_text,,,,
-Text/26a/text,Maybe not 'only' but wouldn't you consider it a bonus if I offered something high quality for free?,"Al amejor no ‘solo’ pero, ¿no lo consideradias ganancia si yo te ofreciera halgo de alta calida gratis?",,
-Text/26b/text,"The only high quality thing I am after is good company, but I do not think you can provide that. I will unmatch you now.","La unica cosas de alta calidad que yo busco es compañia, pero no creo que tu puedas proveir eso. Voy a quebrar la conexion ahora.",,
-Choice/26c/text,"Sorry, got excited","Perdon, me emocione...",,
+Text/26a/text,Maybe not 'only' but wouldn't you consider it a bonus if I offered something high quality for free?,"Al amejor no ‘solo’ pero, ¿no lo consideradias ganancia si yo te ofreciera halgo de alta calida gratis?",,倒也不能说“只是”为了免费东西，但如果我能免费得到优质产品，你不觉得这算一项额外福利吗？
+Text/26b/text,"The only high quality thing I am after is good company, but I do not think you can provide that. I will unmatch you now.","La unica cosas de alta calidad que yo busco es compañia, pero no creo que tu puedas proveir eso. Voy a quebrar la conexion ahora.",,我真正想要的，是一位相处愉快的约会对象。但我不觉得你能成为那个人。我现在会解除匹配。
+Choice/26c/text,"Sorry, got excited","Perdon, me emocione...",,不好意思，我有些得意忘形了
 Choice/26c/disabled_text,,,,
-Text/26d/text,"Sorry if that offended you, I was enthused by the idea of free produce and came off rudely.","Perdon si eso te offendio, me emocione por la idea y sone sin modales.",,
-Text/26e/text,Thank you for apologizing but you have mostly come off as rude. I think it would be best if I unmatch with you now.,Gracias por disculparte pero no has echo nada excepto sonar mal educado. Creo que seria lo mejor si quebro la conexion ahora..,,
-Choice/26f/text,No plans to,No y no lo hare,,
+Text/26d/text,"Sorry if that offended you, I was enthused by the idea of free produce and came off rudely.","Perdon si eso te offendio, me emocione por la idea y sone sin modales.",,抱歉让你不舒服了。我一想到免费蔬果就有些激动，结果表现得很粗鲁。
+Text/26e/text,Thank you for apologizing but you have mostly come off as rude. I think it would be best if I unmatch with you now.,Gracias por disculparte pero no has echo nada excepto sonar mal educado. Creo que seria lo mejor si quebro la conexion ahora..,,我接受你的道歉，但你的言行总体上还是很无礼。我认为解除配对对我们都好。
+Choice/26f/text,No plans to,No y no lo hare,,没这个打算
 Choice/26f/disabled_text,,,,
-Text/270/text,"No, it's too early in the morning, I don’t like that... and I don't like sweat honestly.","No, es muy temprano en la mañana, no me gusta eso... y no me gusta el sudar honestamente",,
-Text/271/text,"Ah, not an early riser? Not everyone is. I personally love being awake early! When you say you don't like sweat however, do you mean yourself or others?","¡Ah, ¿no eres madrugadora? No todos los son. Yo personalmente amo estar despierta el la mañana! Cuand disces que no te gusta el sudor, ¿te refieres de ti o los demas?",,
-Choice/272/text,Anyone,En nadien,,
+Text/270/text,"No, it's too early in the morning, I don’t like that... and I don't like sweat honestly.","No, es muy temprano en la mañana, no me gusta eso... y no me gusta el sudar honestamente",,没，农贸市场开得太早了，我不喜欢起那么早...而且说实话，我也不喜欢出汗。
+Text/271/text,"Ah, not an early riser? Not everyone is. I personally love being awake early! When you say you don't like sweat however, do you mean yourself or others?","¡Ah, ¿no eres madrugadora? No todos los son. Yo personalmente amo estar despierta el la mañana! Cuand disces que no te gusta el sudor, ¿te refieres de ti o los demas?",,啊，你不习惯早起吗？这很正常。我个人倒很享受早早醒来！至于不喜欢出汗，是指自己出汗，还是别人出汗？
+Choice/272/text,Anyone,En nadien,,任何人都不行
 Choice/272/disabled_text,,,,
-Text/273/text,"Anyone! I don't want to be around people who stink, it's gross!","¡En andien! ¡No quero estar cerca de personas que apestan, es asqueroso !",,
-Text/274/text,Some of have jobs that cause a lot of sweat... that doesn't make them gross... I do not think this will go anywhere... I will unmatch with you now.,Algunos tenien trabajos que causan sudor... eso nos los hace asquerosos... No creo que esto vaya a ninguna parte... Voy a quebrar la conexion ahora.,,
-Choice/275/text,Both,Ambos,,
+Text/273/text,"Anyone! I don't want to be around people who stink, it's gross!","¡En andien! ¡No quero estar cerca de personas que apestan, es asqueroso !",,谁出汗我都不喜欢！我可不想和臭烘烘的人待在一起，太恶心了！
+Text/274/text,Some of have jobs that cause a lot of sweat... that doesn't make them gross... I do not think this will go anywhere... I will unmatch with you now.,Algunos tenien trabajos que causan sudor... eso nos los hace asquerosos... No creo que esto vaya a ninguna parte... Voy a quebrar la conexion ahora.,,有些工作难免让人汗流浃背，但从事这些工作的人并不恶心...我想我们聊不下去了，就到这里吧。
+Choice/275/text,Both,Ambos,,皆有
 Choice/275/disabled_text,,,,
-Text/276/text,"Both, the idea of my partner being sweaty is unappealing, even if they shower I will smell them first...","Both, the idea of my partner being sweaty is unappealing, even if they shower I will smell them first...",,
-Text/277/text,I think our lifestyles will make us incompatible... I will unmatch with you now.,Creo que nuestos estilos de vida nos haran incompatibles.... Voy a quebrar la conexion contigo ahora.,,
-Choice/278/text,I avoid it,Lo evito,,
+Text/276/text,"Both, the idea of my partner being sweaty is unappealing, even if they shower I will smell them first...","Both, the idea of my partner being sweaty is unappealing, even if they shower I will smell them first...",,两种我都受不了。一想到另一半浑身是汗，我就觉得很不舒服。就算之后会洗澡，可在那之前，我还是会先闻到汗味...
+Text/277/text,I think our lifestyles will make us incompatible... I will unmatch with you now.,Creo que nuestos estilos de vida nos haran incompatibles.... Voy a quebrar la conexion contigo ahora.,,我觉得我们的生活方式会让我们无法相处...我现在会解除配对。
+Choice/278/text,I avoid it,Lo evito,,我会尽量避免出汗
 Choice/278/disabled_text,,,,
-Text/279/text,I avoid sweating and I don't think people who are sweaty are gross but...,"Evito sudar y no me parece que la gente sudorosa dé asco, pero…",,
-Text/27a/text,You'd rather avoid them? I understand but I don't think we will mesh well. My job requires it. I will unmatch with you now.,"¿Prefieres evitarlos? Lo entiendo, pero no creo que encajemos bien. Mi trabajo lo requiere. Voy a quebrar la conexión ahora.",,
-Choice/27b/text,"Oh, yes","Oh, si",,
+Text/279/text,I avoid sweating and I don't think people who are sweaty are gross but...,"Evito sudar y no me parece que la gente sudorosa dé asco, pero…",,我通常会尽量避免出汗。我倒不觉得出汗的人恶心，只是...
+Text/27a/text,You'd rather avoid them? I understand but I don't think we will mesh well. My job requires it. I will unmatch with you now.,"¿Prefieres evitarlos? Lo entiendo, pero no creo que encajemos bien. Mi trabajo lo requiere. Voy a quebrar la conexión ahora.",,也就是说，你会有意避开这类人吗？我明白了。可惜我的工作需要大量体力劳动。看来我们并不合适，我会解除配对。
+Choice/27b/text,"Oh, yes","Oh, si",,嗯，去过
 Choice/27b/disabled_text,,,,
-Text/27c/text,"Yes, a few times. I guess you're right then, it just didn't come to mind.","Sí, unas cuantas veces. Supongo que tienes razón, simplemente no se me ocurrió.",,
-Text/27d/text,"That is alright, it is not the first thought everyone has. It is probably mine because I am a vendor, haha🤣. What do you normally buy when you stop by?","No pasa nada, no es lo primero que se le ocurre a todo el mundo. Probablemente sea mi caso porque soy vendedora, jaja . ¿Qué comprars cuando pasas por ahí?",,
-Choice/27e/text,What I need,"Obviamente, lo que necesito",,
+Text/27c/text,"Yes, a few times. I guess you're right then, it just didn't come to mind.","Sí, unas cuantas veces. Supongo que tienes razón, simplemente no se me ocurrió.",,去过几次。你这么一说确实有道理，我只是一下子没想起来。
+Text/27d/text,"That is alright, it is not the first thought everyone has. It is probably mine because I am a vendor, haha🤣. What do you normally buy when you stop by?","No pasa nada, no es lo primero que se le ocurre a todo el mundo. Probablemente sea mi caso porque soy vendedora, jaja . ¿Qué comprars cuando pasas por ahí?",,没关系，不是每个人第一时间都会想到那里。我会先想到，大概因为我是摊贩吧，哈哈🤣。你去的时候通常会买什么？
+Choice/27e/text,What I need,"Obviamente, lo que necesito",,买我需要的东西
 Choice/27e/disabled_text,,,,
-Text/27f/text,What I need to buy? What kind of question is that? Do you not have another topic?,¿Lo qué necesito comprar? ¿Qué clase de pregunta es esa? ¿No tienes otro tema?,,
-Text/280/text,"I apologize, but you do not have to be so hostile. I do not think this conversation will go anywhere. I will unmatch with you now.","Te pido disculpas, pero no tienes por qué ser agresiva. No creo que esta conversación va a llegar a ninguna parte. Voy a quebrar la conexión ahora.",,
-Choice/281/text,I have a vendor,Tengo un vendedor,,
+Text/27f/text,What I need to buy? What kind of question is that? Do you not have another topic?,¿Lo qué necesito comprar? ¿Qué clase de pregunta es esa? ¿No tienes otro tema?,,当然是买我需要的东西。这算什么问题？你没有其他话题可聊吗？
+Text/280/text,"I apologize, but you do not have to be so hostile. I do not think this conversation will go anywhere. I will unmatch with you now.","Te pido disculpas, pero no tienes por qué ser agresiva. No creo que esta conversación va a llegar a ninguna parte. Voy a quebrar la conexión ahora.",,很抱歉，但你没必要表现得这么有敌意。我不认为这段对话会有什么结果。我现在会解除配对。
+Choice/281/text,I have a vendor,Tengo un vendedor,,我已经有固定的摊贩了
 Choice/281/disabled_text,,,,
-Text/282/text,"The usual things, produce mostly. I already have a vendor though for when it's not the grocery store... So I'm alright","Lo de siempre, sobre todo frutas y verduras. Aunque ya tengo un vendedor para cuando no voy al supermercado... Así que estoy bien.",,
-Text/283/text,"I must have come off like a sales pitch... Maybe I am not ready for this, I apologize. I will unmatch with you now.",Debo haber sonado como si estuviera intentando venderte algo... Quizás no estoy lista para esto; te pido disculpas. Voy a quebrar la conexión ahora.,,
-Choice/284/text,Lots of things!,¡Muchas cosas!,,
+Text/282/text,"The usual things, produce mostly. I already have a vendor though for when it's not the grocery store... So I'm alright","Lo de siempre, sobre todo frutas y verduras. Aunque ya tengo un vendedor para cuando no voy al supermercado... Así que estoy bien.",,我平时主要买些蔬果。不过，不去超市的时候，我已经有固定光顾的摊位了...所以暂时不需要别的。
+Text/283/text,"I must have come off like a sales pitch... Maybe I am not ready for this, I apologize. I will unmatch with you now.",Debo haber sonado como si estuviera intentando venderte algo... Quizás no estoy lista para esto; te pido disculpas. Voy a quebrar la conexión ahora.,,我可能表现得太像在推销了...也许我还不太适合这个，抱歉。我现在就取消和你的配对。
+Choice/284/text,Lots of things!,¡Muchas cosas!,,很多东西！
 Choice/284/disabled_text,,,,
-Text/285/text,"Vegetables and fruits, I sometimes look at the flowers but I don't usually buy... maybe I will buy some next time","Verduras y frutas, a veces miro las flores, pero no compro normalmente... tal vez compre algunas a la próxima.",,
-Text/286/text,"I would love to talk to you about flowers if you would be willing to discuss over some food at the diner? A flower hang out! On me, of course.","Me encantaría hablar contigo sobre flores, si te gustaria platicar mientras comemos also en el diner. ¡Una salida dedicada a las flores! Invito yo, por supuesto.",,
-Choice/287/text,Farmers’ market,Mercado de granjeros,,
+Text/285/text,"Vegetables and fruits, I sometimes look at the flowers but I don't usually buy... maybe I will buy some next time","Verduras y frutas, a veces miro las flores, pero no compro normalmente... tal vez compre algunas a la próxima.",,我会买水果和蔬菜，有时也会欣赏那些花，但我一般只看不买。或许下次可以买几朵试试
+Text/286/text,"I would love to talk to you about flowers if you would be willing to discuss over some food at the diner? A flower hang out! On me, of course.","Me encantaría hablar contigo sobre flores, si te gustaria platicar mientras comemos also en el diner. ¡Una salida dedicada a las flores! Invito yo, por supuesto.",,如果你愿意，我们可以去小餐馆吃点东西，顺便聊聊花。就当是一次以鲜花为主题的普通见面吧！当然，我请客。
+Choice/287/text,Farmers’ market,Mercado de granjeros,,农贸市场
 Choice/287/disabled_text,,,,
-Text/288/text,"Oh, at the farmers’ market... I prefer fresh ingredients. The grocery store is also too bright for me.","Ah, en el mercado de granjeros... Prefiero los ingredientes frescos. El super mercado siempro esta demaciado luminoso para mi.",,
-Text/289/text,"Oh, wonderful! Not that there is anything wrong with the grocery store but I love the farmers’ market. I vend there actually... Maybe you could stop by my stall if you ever need fresh veggies or fruit!","¡Ah, maravilloso! ¡No que haiga algo malo con el super mercado pero you amo el mercado de granjeros. De hecho yo vendo ahi... Tal vez podrias pasar por mi puesto cuando necesites verdura o fruta!",,
-Choice/28a/text,At your job?,¿En tu trabajo?,,
+Text/288/text,"Oh, at the farmers’ market... I prefer fresh ingredients. The grocery store is also too bright for me.","Ah, en el mercado de granjeros... Prefiero los ingredientes frescos. El super mercado siempro esta demaciado luminoso para mi.",,啊，我会去农贸市场...我更喜欢新鲜食材。而且超市的灯对我来说也太亮了。
+Text/289/text,"Oh, wonderful! Not that there is anything wrong with the grocery store but I love the farmers’ market. I vend there actually... Maybe you could stop by my stall if you ever need fresh veggies or fruit!","¡Ah, maravilloso! ¡No que haiga algo malo con el super mercado pero you amo el mercado de granjeros. De hecho yo vendo ahi... Tal vez podrias pasar por mi puesto cuando necesites verdura o fruta!",,太好了！我不是说超市有什么不好，只是我很喜欢农贸市场。其实我就在那儿摆摊...以后需要新鲜蔬果的话，可以来我的摊位看看！
+Choice/28a/text,At your job?,¿En tu trabajo?,,在你工作的地方？
 Choice/28a/disabled_text,,,,
-Text/28b/text,"If I meet with you, I rather it not be at our job. Don't you have somewhere more interesting we could go?","Si te voy a conocer, prefiero que sea en el trabajo. ¿No trendras algun sitio mas interesante a donde podamos ir?",,
-Text/28c/text,"Sorry if that wasn't the right suggestion, but I thought you could learn about my job while we got to know each other... What do you find interesting to do?","Perdon si es no fue la mejor sugerencia, pero pense que prodrias aprender de mi trabajo mientras nos conocemos... ¿Que te gusta hacer?",,
-Choice/28d/text,Figure it out,Busca que,,
+Text/28b/text,"If I meet with you, I rather it not be at our job. Don't you have somewhere more interesting we could go?","Si te voy a conocer, prefiero que sea en el trabajo. ¿No trendras algun sitio mas interesante a donde podamos ir?",,如果我们要见面，我希望不要选在工作的地方。难道没有更有趣的地方可以去吗？
+Text/28c/text,"Sorry if that wasn't the right suggestion, but I thought you could learn about my job while we got to know each other... What do you find interesting to do?","Perdon si es no fue la mejor sugerencia, pero pense que prodrias aprender de mi trabajo mientras nos conocemos... ¿Que te gusta hacer?",,抱歉，也许我提议得不好。我只是觉得我们互相了解时，你也可以顺便了解我的工作...那你喜欢做什么？
+Choice/28d/text,Figure it out,Busca que,,你自己想
 Choice/28d/disabled_text,,,,
-Text/28e/text,"I don't know but I'm tired of dinner and a movie, can you get creative please? Surely you can figure something out, right?","No se pero estoy cansada de cena y peliculas, ¿prodrias ser creativa por favor? Seguro se te ocurre algo, ¿verdad?",,
-Text/28f/text,I do not think I want to get creative enough for you... It will be best if we did not continue this conversation it seems. I will unmatch with you now.,No creo poder ser suficientemente creativa para ti... Parece que lo mejor sera no continuar con esta conversacion. Voy a quebrar la conexión contigo ahora.,,
-Choice/290/text,Indoor events,Eventos interiores,,
+Text/28e/text,"I don't know but I'm tired of dinner and a movie, can you get creative please? Surely you can figure something out, right?","No se pero estoy cansada de cena y peliculas, ¿prodrias ser creativa por favor? Seguro se te ocurre algo, ¿verdad?",,我不知道，但我已经厌倦吃饭看电影这种安排了。你能不能有点创意？你肯定能想出其他活动，对吧？
+Text/28f/text,I do not think I want to get creative enough for you... It will be best if we did not continue this conversation it seems. I will unmatch with you now.,No creo poder ser suficientemente creativa para ti... Parece que lo mejor sera no continuar con esta conversacion. Voy a quebrar la conexión contigo ahora.,,恐怕我想不出能让你满意的创意安排...看来不再继续这段对话才是最好的选择。我现在会解除配对。
+Choice/290/text,Indoor events,Eventos interiores,,室内活动
 Choice/290/disabled_text,,,,
-Text/291/text,"I prefer indoor events, away from the sun. It’s cooler indoors. I especially like watching sports. Most normal people have at least one sport they're into I think","Prefiero eventos interiores, lejos del sol. Esta mas fresco adentro. Especialmente me gusta ver deportes. Creo que la mayoria de la gente normal sige al menos un deporte",,
-Text/292/text,"Indoors and away from the sun? Oh... I apologize, but I do not think we will have fun together. That sounds like the opposite of what I would enjoy. I will unmatch with you now.","¿Adentro y lejos del sol? Ah... Te pido disculpas, no creo que podriamos tener diversion juntas. Eso suena como lo contrario a lo que disfrutaria. Voy a quebrar la conexión ahora.",,
-Choice/293/text,Focus activities,Actividades de enfoque,,
+Text/291/text,"I prefer indoor events, away from the sun. It’s cooler indoors. I especially like watching sports. Most normal people have at least one sport they're into I think","Prefiero eventos interiores, lejos del sol. Esta mas fresco adentro. Especialmente me gusta ver deportes. Creo que la mayoria de la gente normal sige al menos un deporte",,我更喜欢室内活动，能避开阳光，而且里面也更凉快。我很喜欢看体育比赛，正常人应该多少都会喜欢一种运动吧
+Text/292/text,"Indoors and away from the sun? Oh... I apologize, but I do not think we will have fun together. That sounds like the opposite of what I would enjoy. I will unmatch with you now.","¿Adentro y lejos del sol? Ah... Te pido disculpas, no creo que podriamos tener diversion juntas. Eso suena como lo contrario a lo que disfrutaria. Voy a quebrar la conexión ahora.",,待在室内、避开阳光？哦...对不起，我们恐怕无法愉快相处。你喜欢的似乎与我正好相反。我现在会解除配对。
+Choice/293/text,Focus activities,Actividades de enfoque,,需要专注的活动
 Choice/293/disabled_text,,,,
-Text/294/text,"Well, I like calmer activities that require focus. Especially if they can be done in pairs... Any type of activity too. I have a few I enjoy already, like puzzles.","Bueno, yo prefiero actividades calmadas que requieren enfocarse. Especialmente si se pueden hacer en parejas... Cualquier tipo de actividad tambien. Tengo unas que ya disfruto, me gustan los rompecabesa.",,
-Text/295/text,"I enjoy focus based activities too! I think if we hang out, we could learn to enjoy each other's current past times. We could start today even... Diner and a puzzle!","¡Yo tambien disrfruto las actividades que requieren concentracion tambien! Creo que si pasamos tiempo juntas, podriamos apredener a disfruta los pasatiempos de cada una. Incluso podriamos comenzar hoy... ¡Cena y un rompecabeza!",,
-Choice/296/text,Not there...,Ahi no...,,
+Text/294/text,"Well, I like calmer activities that require focus. Especially if they can be done in pairs... Any type of activity too. I have a few I enjoy already, like puzzles.","Bueno, yo prefiero actividades calmadas que requieren enfocarse. Especialmente si se pueden hacer en parejas... Cualquier tipo de actividad tambien. Tengo unas que ya disfruto, me gustan los rompecabesa.",,嗯，我喜欢比较安静、需要专注的活动，尤其是能两个人一起进行的...类型倒没有限制。我已经有几个喜欢的项目，比如拼图。
+Text/295/text,"I enjoy focus based activities too! I think if we hang out, we could learn to enjoy each other's current past times. We could start today even... Diner and a puzzle!","¡Yo tambien disrfruto las actividades que requieren concentracion tambien! Creo que si pasamos tiempo juntas, podriamos apredener a disfruta los pasatiempos de cada una. Incluso podriamos comenzar hoy... ¡Cena y un rompecabeza!",,我也喜欢需要专注的活动！如果我们一起出去玩，也许可以试着了解并欣赏彼此平时的爱好。甚至今天就可以开始...去小餐馆吃饭，再一起拼图！
+Choice/296/text,Not there...,Ahi no...,,别在那里...
 Choice/296/disabled_text,,,,
-Text/297/text,"That sounds like it'd be nice, but not really a date location so maybe somewhere else.","Eso suena como que seria lindo, pero en verdad no es lugar para una cita, tal vez otro lugar.",,
-Text/298/text,"Ah, right a date. I was hoping we could go slower... A haong out maybe?","Ah, verdad, una cita. Esperaba que prodiamos ir mas lento... ¿Una junta de amgas?",,
-Choice/299/text,Typo!,¡Error de dedo!,,
+Text/297/text,"That sounds like it'd be nice, but not really a date location so maybe somewhere else.","Eso suena como que seria lindo, pero en verdad no es lugar para una cita, tal vez otro lugar.",,这个主意挺好的，不过那里不太像适合约会的地方。还是换个地方吧。
+Text/298/text,"Ah, right a date. I was hoping we could go slower... A haong out maybe?","Ah, verdad, una cita. Esperaba que prodiamos ir mas lento... ¿Una junta de amgas?",,啊，原来是约会。我其实是希望我们能慢慢来...要不先扑通地见个面？
+Choice/299/text,Typo!,¡Error de dedo!,,你打错字了！
 Choice/299/disabled_text,,,,
-Text/29a/text,LOL. 'haong'.,JAJAJA. 'amgas'.,,
-Text/29b/text,...I do not think this will work out. I will unmatch with you now.,...No creo que esto funcionara. Voy a quebrar la conexión contigo ahora.,,
-Choice/29c/text,What does that mean?,¿Es que significa?,,
+Text/29a/text,LOL. 'haong'.,JAJAJA. 'amgas'.,,哈哈，“扑通地见面”。
+Text/29b/text,...I do not think this will work out. I will unmatch with you now.,...No creo que esto funcionara. Voy a quebrar la conexión contigo ahora.,,...我觉得我们不合适，我现在会取消配对。
+Choice/29c/text,What does that mean?,¿Es que significa?,,那是什么意思？
 Choice/29c/disabled_text,,,,
-Text/29d/text,What is 'haong?' I don’t recognize that word lol.,Que significa ¿'amgas'? No reconosco esa palabra.,,
-Text/29e/text,"I meant... hang... Sorry, I have to go. I will unmatch with you now.","Quize decir... amigas... Perdon, me tengo que ir. Voy a quebrar la conexión contigo ahora.",,
-Choice/29f/text,Yes please,Si porfavor,,
+Text/29d/text,What is 'haong?' I don’t recognize that word lol.,Que significa ¿'amgas'? No reconosco esa palabra.,,“扑通”是什么意思？我没看懂，哈哈。
+Text/29e/text,"I meant... hang... Sorry, I have to go. I will unmatch with you now.","Quize decir... amigas... Perdon, me tengo que ir. Voy a quebrar la conexión contigo ahora.",,我的意思是...普通地见个面...不好意思，我该离开了，我会取消配对。
+Choice/29f/text,Yes please,Si porfavor,,好啊，我很愿意
 Choice/29f/disabled_text,,,,
-Text/2a0/text,"Slow? That sounds alright, perfect even... I would like to hang out!","¿Lento? Eso suena bien, perfecto aun... ¡Me gustaria juntarnos!",,
-Text/2a1/text,"I am so glad we are on the same page, I was worried! Thank you for not pointing out my typo by the way... I was embarrassed so I appreciate it... How about we go to the Diner tonight?","¡Estoy tan feliz que estemos en la misma sintonia, estaba preocupada! Por cierto gracias por no señalar mi error de dedo... Me dio verguenza haci que te lo agradezco... ¿Que tal si vamos al diner esta noche?",,
-Choice/2a2/text,I’d love that.,Me ecantaria eso,,
+Text/2a0/text,"Slow? That sounds alright, perfect even... I would like to hang out!","¿Lento? Eso suena bien, perfecto aun... ¡Me gustaria juntarnos!",,先慢慢了解彼此？听起来不错，甚至可以说正合我意...我很想和你一起出去玩！
+Text/2a1/text,"I am so glad we are on the same page, I was worried! Thank you for not pointing out my typo by the way... I was embarrassed so I appreciate it... How about we go to the Diner tonight?","¡Estoy tan feliz que estemos en la misma sintonia, estaba preocupada! Por cierto gracias por no señalar mi error de dedo... Me dio verguenza haci que te lo agradezco... ¿Que tal si vamos al diner esta noche?",,能达成一致我就放心了，之前还有点担心呢！还有，谢谢你没拿我的错别字开玩笑...我当时真的很难为情，所以真的挺感谢你没说出来...今晚一起去小餐馆怎么样？
+Choice/2a2/text,I’d love that.,Me ecantaria eso,,乐意之至。
 Choice/2a2/disabled_text,,,,
-Text/2a3/text,I'd really enjoy that... you could tell me about your favorite things to grow and what products you really think are worth it... Anything else you like about gardening too if that’s okay...,Me encantaria eso... Me prodrias decir de tu cosas favoritas para crecer and que productos crees que enverdad valgan la pena... Cual quier otra cosa que te guste de la jardineria...,,
-Text/2a4/text,"Yes! Of course, I'd really enjoy that. We should plan our hang out soon... Is it okay it is a hang out first?","¡Si! Claro que si, me gustaria eso mucho. Deberiamos planear nuestra primera junta de amigos... ¿Esta bien is es de amigos?",,
-Choice/2a5/text,I can try,Puedo intentar,,
+Text/2a3/text,I'd really enjoy that... you could tell me about your favorite things to grow and what products you really think are worth it... Anything else you like about gardening too if that’s okay...,Me encantaria eso... Me prodrias decir de tu cosas favoritas para crecer and que productos crees que enverdad valgan la pena... Cual quier otra cosa que te guste de la jardineria...,,那一定会很有意思...你可以告诉我最喜欢种什么，以及你认为哪些农产品最值得购买...如果可以的话，也想听听你还喜欢园艺的哪些方面。
+Text/2a4/text,"Yes! Of course, I'd really enjoy that. We should plan our hang out soon... Is just a hang out okay at first?","¡Si! Claro que si, me gustaria eso mucho. Deberiamos planear nuestra primera junta de amigos... ¿Esta bien is es de amigos?",,没问题！我很愿意和你聊这些。我们应该尽快安排见面...但先说好，第一次只是普通聚会，可以吗？
+Choice/2a5/text,I can try,Puedo intentar,,可以
 Choice/2a5/disabled_text,,,,
-Text/2a6/text,"I am looking to date sooner than later but... With how cute you are... Well, as dating is our end goal then I can be patient.","Estoy buscando pareja pero... Con lo bonita que eres... Bueno, mientras hacernos pareja sea la meta, puedo ser paciente.",,
-Text/2a7/text,"Ah, well, that is what I am looking for... Eventually... You might be moving a little fast for me, but let us meet and discuss tonight at the diner. On me, of course.","Ah, bueno, eso es lo que busco... Eventualmente... Al a mejor estas yendo un poco rapida para mi, pero podemos discutirlo esta noche sobre una cena. Claro, por mi cuenta.",,
-Choice/2a8/text,Not what I had in mind,No es lo que tenia en mente,,
+Text/2a6/text,"I am looking to date sooner than later but... With how cute you are... Well, as dating is our end goal then I can be patient.","Estoy buscando pareja pero... Con lo bonita que eres... Bueno, mientras hacernos pareja sea la meta, puedo ser paciente.",,我更倾向于早点开始约会，但...看在你这么可爱的份上...既然我们最终是想认真发展，那我可以慢慢来。
+Text/2a7/text,"Ah, well, that is what I am looking for... Eventually... You might be moving a little fast for me, but let us meet and discuss tonight at the diner. On me, of course.","Ah, bueno, eso es lo que busco... Eventualmente... Al a mejor estas yendo un poco rapida para mi, pero podemos discutirlo esta noche sobre una cena. Claro, por mi cuenta.",,嗯，那个确实也是我想要的...不过需要时间...只是你进展得有点快，但我们今晚可以在餐馆见面讨论。当然，我请。
+Choice/2a8/text,Not what I had in mind,No es lo que tenia en mente,,这和我想的不太一样
 Choice/2a8/disabled_text,,,,
-Text/2a9/text,"Slow is not exactly what I had in mind but as long as you’re comfortable, we can move at whatever pace feels natural.","Lento no es exactamente lo que tenia en mente pero mientra tu estes comoda, nos podemos avanzar al ritmo que se te sienta natural.",,
-Text/2aa/text,I understand but I appreciate the patience. This sound good to me. Are you free tonight? We could have dinner together at the diner... On me.,Lo entiendo pero aprecio tu paciencia. Eso me suena bien. ¿Esta libre esta noche? Podriamos cenar esta noche en el diner... Por mi cuenta.,,
-Choice/2ab/text,Sounds perfect,Suena perfecto,,
+Text/2a9/text,"Slow is not exactly what I had in mind but as long as you’re comfortable, we can move at whatever pace feels natural.","Lento no es exactamente lo que tenia en mente pero mientra tu estes comoda, nos podemos avanzar al ritmo que se te sienta natural.",,放慢节奏并不是我最初的计划，你的感受更重要，我们就顺其自然吧。
+Text/2aa/text,I understand but I appreciate the patience. This sound good to me. Are you free tonight? We could have dinner together at the diner... On me.,Lo entiendo pero aprecio tu paciencia. Eso me suena bien. ¿Esta libre esta noche? Podriamos cenar esta noche en el diner... Por mi cuenta.,,我理解你的想法，也很感激你愿意慢慢来。我觉得这样不错。今晚有空吗？我们可以一起去小餐馆吃饭...我请。
+Choice/2ab/text,Sounds perfect,Suena perfecto,,听起来很棒
 Choice/2ab/disabled_text,,,,
-Text/2ac/text,That sounds perfect actually... I would love to be friends with you first. That kind of romance feels better. I would like to hang out with you soon if possible though!,De hecho eso suena perfecto... Me encantaria ser amigas contigo primero. Ese tipo de romanse se siente mejor. ¡Me gustaria juntarnos lo mas pronto posible!,,
-Text/2ad/text,"Oh, great! Yes! Well, I am actually free tonight! I would love to keep chatting with you since we seem so alike. Let us go to the Diner tonight, it is my treat!","¡Ah, excelento! ¡Si! ¡Bueno, de hecho estoy libre esta noche! Me gustaria seguir hablando contigo ya parecemos tan parecidas. ¡Vamos al diner esta noche, por mi cuenta!",,
+Text/2ac/text,That sounds perfect actually... I would love to be friends with you first. That kind of romance feels better. I would like to hang out with you soon if possible though!,De hecho eso suena perfecto... Me encantaria ser amigas contigo primero. Ese tipo de romanse se siente mejor. ¡Me gustaria juntarnos lo mas pronto posible!,,这样听起来正合我意...我很愿意先和你做朋友。这样的感情发展更舒服。不过要是可以的话，我也想很快见你一面！
+Text/2ad/text,"Oh, great! Yes! Well, I am actually free tonight! I would love to keep chatting with you since we seem so alike. Let us go to the Diner tonight, it is my treat!","¡Ah, excelento! ¡Si! ¡Bueno, de hecho estoy libre esta noche! Me gustaria seguir hablando contigo ya parecemos tan parecidas. ¡Vamos al diner esta noche, por mi cuenta!",,太好了！当然可以！其实我今晚正好有空。既然我们似乎如此相似，我很愿意继续和你聊下去。今晚一起去小餐馆吧，我请客！

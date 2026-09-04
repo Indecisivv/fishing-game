@@ -8,8 +8,9 @@ func _on_item_selected(index: int) -> void:
 		1:
 			TranslationServer.set_locale("es")
 		2:
-			TranslationServer.set_locale("fil")
-		3:
 			TranslationServer.set_locale("zh_CN")
-		4:
-			pass
+		#3:
+			#TranslationServer.set_locale("fil")
+			#CharacterLibrary.update_translations() 
+		#4:
+			#pass

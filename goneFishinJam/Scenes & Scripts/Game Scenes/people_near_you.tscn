@@ -1030,13 +1030,14 @@ texture = ExtResource("55_f4rt7")
 [node name="Label_Name" type="Label" parent="Phone/MatchScreen" unique_id=2020651778]
 z_index = 1
 layout_mode = 0
-offset_left = 68.80127
-offset_top = 499.0
-offset_right = 523.8013
-offset_bottom = 618.0
+offset_left = -37.873062
+offset_top = 501.69568
+offset_right = 661.12695
+offset_bottom = 620.6957
 size_flags_horizontal = 4
 text = "UI_MATCH_LABEL"
 label_settings = SubResource("LabelSettings_vs1ln")
+horizontal_alignment = 1
 
 [node name="TextureButton" type="TextureButton" parent="Phone/MatchScreen" unique_id=2110321604]
 layout_mode = 0
@@ -1051,10 +1052,10 @@ script = ExtResource("43_vcp38")
 
 [node name="Label" type="Label" parent="Phone/MatchScreen/TextureButton" unique_id=682353716]
 layout_mode = 0
-offset_left = 67.0
-offset_top = 22.0
-offset_right = 444.0
-offset_bottom = 93.0
+offset_left = -3.254509
+offset_top = 23.760622
+offset_right = 493.74548
+offset_bottom = 94.76062
 theme_override_colors/font_color = Color(0.89492244, 0.89492244, 0.8949224, 1)
 theme_override_fonts/font = ExtResource("8_pc0yv")
 theme_override_font_sizes/font_size = 52

@@ -25,10 +25,14 @@ func _on_btn_khanh_pressed() -> void:
 	
 	self.get_parent().hide()
 	scroll_container.get_v_scroll_bar().value = scroll_container.get_v_scroll_bar().min_value
+	
 	date_profile_view.set_profile("lineboil_khanh")
-	date_profile_view.set_text(CharacterLibrary.khanh.char_name + ", " + CharacterLibrary.khanh.age,
-							   CharacterLibrary.khanh.job,
-							   CharacterLibrary.khanh.bio)
+	date_profile_view.current_char_data = CharacterLibrary.khanh
+	
+	date_profile_view.update_profile_text()
+	#date_profile_view.set_text(CharacterLibrary.khanh.char_name + ", " + CharacterLibrary.khanh.age,
+	#						   tr("CHAR_KHANH_PRONOUNS"),
+	#						   tr("CHAR_KHANH_DESC"))
 	date_profile_view.texture_intensity.texture = KHANH_INTENSITY
 	date_profile_view.show()
 	button_app_logo.modulate = Color("636363")

@@ -18,17 +18,22 @@ func _on_btn_soccoro_entered() -> void:
 	btn_tween.tween_property(self, "scale", Vector2(0.94, 0.94), 0.4)
 	
 	btn_line_boiler.get_animation('lineboil').track_set_enabled(2, false)
-
+		
 func _on_btn_soccoro_pressed() -> void:
 	if (self.disabled):
 		return
 	
 	self.get_parent().hide()
 	scroll_container.get_v_scroll_bar().value = scroll_container.get_v_scroll_bar().min_value
+
 	date_profile_view.set_profile("lineboil_soccoro")
-	date_profile_view.set_text(CharacterLibrary.soccoro.char_name + ", " + CharacterLibrary.soccoro.age,
-							   CharacterLibrary.soccoro.job,
-							   CharacterLibrary.soccoro.bio)
+	
+	date_profile_view.current_char_data = CharacterLibrary.soccoro
+	
+	date_profile_view.update_profile_text()
+	#date_profile_view.set_text(CharacterLibrary.soccoro.char_name + ", " + CharacterLibrary.soccoro.age,
+	#						   tr("CHAR_SOCORRO_PRONOUNS"),
+	#						   tr("CHAR_SOCORRO_DESC"))
 	date_profile_view.show()
 	date_profile_view.texture_intensity.texture = SOCORRO_INTENSITY
 	button_app_logo.modulate = Color("636363")
